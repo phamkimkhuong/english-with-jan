@@ -2,6 +2,8 @@ import React from "react";
 import { IPASound } from "@/types/pronunciation";
 import { ExampleWordCard } from "./ExampleWordCard";
 import { useSpeechRecognition } from "@/hooks/useSpeechRecognition";
+import { useAuth } from "@/context/AuthContext";
+import { usePracticeSync } from "@/hooks/usePracticeSync";
 import styles from "@/app/pronunciation/pronunciation.module.css";
 
 interface IPADetailPanelProps {
@@ -16,14 +18,24 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
   playingWord,
 }) => {
   const [activeSubTab, setActiveSubTab] = React.useState<"word" | "phrase" | "sentence">("word");
+  const { user } = useAuth();
+
   const {
     isSupported,
     listeningWord,
     practiceResult,
     recognitionError,
+    savedPracticeKey,
     startSpeechPractice,
     setPracticeResult,
   } = useSpeechRecognition();
+
+  // Tích hợp hook đồng bộ hóa tiến trình ghi âm lên Cloud
+  usePracticeSync(
+    user?.uid || null,
+    selectedSound ? selectedSound.ipa : null,
+    savedPracticeKey
+  );
 
   if (!selectedSound) {
     return (
@@ -92,7 +104,6 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
           />
           <div>
             <h5 style={{ fontSize: "0.85rem", fontWeight: 700 }}>Minh họa khẩu hình</h5>
-            <p style={{ fontSize: "0.8rem", color: "rgb(var(--secondary-rgb))" }}>Đặt môi, răng, lưỡi đúng vị trí để có âm phát ra tự nhiên nhất.</p>
           </div>
         </div>
       )}
@@ -111,7 +122,7 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
       {selectedSound.commonMistakes && selectedSound.commonMistakes.length > 0 && (
         <div className={styles.mistakesCard}>
           <h4 className={styles.sectionTitle} style={{ color: "rgb(239, 68, 68)" }}>
-            ⚠️ Lỗi thường gặp của người Việt
+            Lỗi thường gặp của người Việt
           </h4>
           <ul className={styles.mistakesList}>
             {selectedSound.commonMistakes.map((mistake, idx) => (
@@ -171,6 +182,8 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
                 <ExampleWordCard
                   key={`word-${index}`}
                   ex={ex}
+                  soundIpa={selectedSound.ipa}
+                  savedPracticeKey={savedPracticeKey}
                   playingWord={playingWord}
                   listeningWord={listeningWord}
                   practiceResult={practiceResult}
@@ -193,6 +206,8 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
                 <ExampleWordCard
                   key={`phrase-${index}`}
                   ex={ex}
+                  soundIpa={selectedSound.ipa}
+                  savedPracticeKey={savedPracticeKey}
                   playingWord={playingWord}
                   listeningWord={listeningWord}
                   practiceResult={practiceResult}
@@ -215,6 +230,8 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
                 <ExampleWordCard
                   key={`sentence-${index}`}
                   ex={ex}
+                  soundIpa={selectedSound.ipa}
+                  savedPracticeKey={savedPracticeKey}
                   playingWord={playingWord}
                   listeningWord={listeningWord}
                   practiceResult={practiceResult}

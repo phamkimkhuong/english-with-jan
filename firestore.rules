@@ -35,6 +35,12 @@ service cloud.firestore {
       );
     }
 
+    // Quy tắc cho bộ sưu tập ipa_progress (tiến độ luyện âm của học sinh)
+    match /ipa_progress/{studentUid} {
+      allow read: if request.auth != null && (request.auth.uid == studentUid || isTeacher());
+      allow write: if request.auth != null && (request.auth.uid == studentUid || isTeacher());
+    }
+
     // Quy tắc cho bộ sưu tập courses (khóa học) và lessons (bài học)
     match /courses/{courseId} {
       allow read: if true; // Ai cũng xem được danh sách khóa học
