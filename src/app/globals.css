@@ -395,4 +395,122 @@ a {
   background-color: rgba(239, 68, 68, 0.05);
 }
 
+/* Mobile Toggle Button */
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: rgb(var(--secondary-rgb));
+  padding: 8px;
+  z-index: 1001;
+}
+
+/* Responsive Split Layouts */
+.split-layout {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.split-col-left {
+  flex: 2 1 500px;
+  min-width: 0;
+}
+
+.split-col-right {
+  flex: 1 1 350px;
+  min-width: 0;
+  position: sticky;
+  top: 90px;
+  height: fit-content;
+}
+
+.admin-split-layout {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.admin-col-left {
+  flex: 1 1 250px;
+  min-width: 0;
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+.admin-col-right {
+  flex: 2 2 500px;
+  min-width: 0;
+}
+
+/* Media Queries for Mobile Screens */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: rgb(var(--card-bg-rgb));
+    border-bottom: 1px solid rgb(var(--card-border-rgb));
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    box-shadow: var(--shadow-md);
+    z-index: 999;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+    letter-spacing: -1px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .split-layout, .admin-split-layout {
+    flex-direction: column;
+  }
+
+  .split-col-left, .split-col-right, .admin-col-left, .admin-col-right {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .split-col-right {
+    position: static;
+    height: auto;
+  }
+  
+  .admin-col-left {
+    max-height: none;
+    overflow-y: visible;
+    border-right: none !important;
+    padding-right: 0 !important;
+    border-bottom: 1px solid rgb(var(--card-border-rgb));
+    padding-bottom: 20px;
+  }
+}
+
+
 

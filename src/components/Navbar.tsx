@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
@@ -8,11 +8,12 @@ import { useAuth } from "@/context/AuthContext";
 export const Navbar: React.FC = () => {
   const { user, role, loginWithGoogle, logout, loading } = useAuth();
   const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav className="navbar">
       <div className="container navbar-container">
-        <Link href="/" className="logo">
+        <Link href="/" className="logo" onClick={() => setMenuOpen(false)}>
           <svg
             width="24"
             height="24"
@@ -30,29 +31,56 @@ export const Navbar: React.FC = () => {
           <span>English with Jan</span>
         </Link>
 
-        <ul className="nav-links">
+        {/* Mobile Toggle Button */}
+        <button
+          className="menu-toggle"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+            {menuOpen ? (
+              <>
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </>
+            ) : (
+              <>
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <line x1="3" y1="18" x2="21" y2="18" />
+              </>
+            )}
+          </svg>
+        </button>
+
+        <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
           <li>
-            <Link href="/" className={`nav-link ${pathname === "/" ? "active" : ""}`}>
+            <Link 
+              href="/" 
+              className={`nav-link ${pathname === "/" ? "active" : ""}`}
+              onClick={() => setMenuOpen(false)}
+            >
               Trang chủ
             </Link>
           </li>
           <li>
-            <Link href="/courses" className={`nav-link ${pathname.startsWith("/courses") ? "active" : ""}`}>
+            <Link 
+              href="/courses" 
+              className={`nav-link ${pathname.startsWith("/courses") ? "active" : ""}`}
+              onClick={() => setMenuOpen(false)}
+            >
               Khóa học
             </Link>
           </li>
           <li>
-            <Link href="/pronunciation" className={`nav-link ${pathname.startsWith("/pronunciation") ? "active" : ""}`}>
+            <Link 
+              href="/pronunciation" 
+              className={`nav-link ${pathname.startsWith("/pronunciation") ? "active" : ""}`}
+              onClick={() => setMenuOpen(false)}
+            >
               Phát âm (IPA)
             </Link>
           </li>
-          {user && (
-            <li>
-              <Link href="/learning" className={`nav-link ${pathname.startsWith("/learning") ? "active" : ""}`}>
-                Lớp học của tôi
-              </Link>
-            </li>
-          )}
           <li>
             {loading ? (
               <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>

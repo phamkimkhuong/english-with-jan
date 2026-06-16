@@ -162,10 +162,10 @@ export default function PronunciationPage() {
         </div>
 
         {/* Split Workspace */}
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "30px" }}>
+        <div className="split-layout">
           
           {/* Left Area: IPA Interactive Board */}
-          <div style={{ flex: "1 1 600px", display: "flex", flexDirection: "column", gap: "24px" }}>
+          <div className="split-col-left" style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
             
             {/* 1. NGUYÊN ÂM (VOWELS) */}
             {(activeTab === "all" || activeTab === "vowels") && (
@@ -309,7 +309,7 @@ export default function PronunciationPage() {
           </div>
 
           {/* Right Area: Detail Panel */}
-          <div style={{ flex: "1 1 380px", position: "sticky", top: "90px", height: "fit-content" }}>
+          <div className="split-col-right">
             {selectedSound ? (
               <div className="card" style={{ padding: "26px", gap: "20px" }}>
                 {/* Sound Header with Speaker */}

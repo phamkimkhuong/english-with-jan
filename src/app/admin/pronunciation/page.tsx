@@ -194,10 +194,10 @@ export default function AdminPronunciationPage() {
       )}
 
       {/* Split interface */}
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "24px" }}>
+      <div className="admin-split-layout">
         
         {/* Left column: 44 Sounds list */}
-        <div style={{ flex: "1 1 250px", borderRight: "1px solid rgb(var(--card-border-rgb))", paddingRight: "16px", display: "flex", flexDirection: "column", gap: "10px", maxHeight: "75vh", overflowY: "auto" }}>
+        <div className="admin-col-left" style={{ borderRight: "1px solid rgb(var(--card-border-rgb))", paddingRight: "16px", display: "flex", flexDirection: "column", gap: "10px" }}>
           <h4 style={{ fontSize: "0.9rem", fontWeight: 700, color: "rgb(var(--secondary-rgb))" }}>Danh sách 44 âm:</h4>
           
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(70px, 1fr))", gap: "8px" }}>
@@ -225,7 +225,7 @@ export default function AdminPronunciationPage() {
         </div>
 
         {/* Right column: Edit form */}
-        <div style={{ flex: "2 2 500px" }}>
+        <div className="admin-col-right">
           {editSound ? (
             <form onSubmit={handleSaveToMemory} className="card" style={{ padding: "24px", gap: "20px" }}>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
