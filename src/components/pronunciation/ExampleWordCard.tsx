@@ -14,6 +14,12 @@ interface ExampleWordCardProps {
     spokenText: string;
     isCorrect: boolean;
     confidence: number;
+    accuracy?: number;
+    wordResults?: Array<{
+      text: string;
+      isCorrect: boolean;
+      spoken?: string;
+    }>;
   } | null;
   setPracticeResult: (result: null) => void;
   playSoundAudio: (textToSpeak: string, customAudioUrl: string, isWord: boolean) => void;
@@ -163,24 +169,54 @@ export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
       {/* Result feedback */}
       {hasResult && practiceResult && (
         <div className={`${styles.feedbackBlock} ${practiceResult.isCorrect ? styles.feedbackCorrect : styles.feedbackIncorrect}`}>
-          <div style={{ display: "flex", gap: "8px", alignItems: "flex-start" }}>
-            <span style={{ fontSize: "1.1rem", lineHeight: "1" }}>
+          <div style={{ display: "flex", gap: "8px", alignItems: "flex-start", width: "100%" }}>
+            <span style={{ fontSize: "1.2rem", lineHeight: "1.2" }}>
               {practiceResult.isCorrect ? "🎉" : "😢"}
             </span>
-            <div>
+            <div style={{ flex: 1 }}>
               <p className={practiceResult.isCorrect ? styles.feedbackTitleCorrect : styles.feedbackTitleIncorrect}>
-                {practiceResult.isCorrect ? "Phát âm chính xác!" : "Chưa trùng khớp"}
+                {practiceResult.isCorrect ? "Phát âm chính xác!" : "Cần luyện tập thêm"}
+                {practiceResult.accuracy !== undefined && ` (Đúng: ${practiceResult.accuracy}%)`}
               </p>
-              <p style={{ margin: "2px 0 0 0", color: "rgb(var(--secondary-rgb))" }}>
-                Bạn phát âm: <strong>&quot;{practiceResult.spokenText}&quot;</strong> 
-                {practiceResult.isCorrect && ` (Độ tương đồng: ${practiceResult.confidence}%)`}
-              </p>
+              
+              {/* Hiển thị chi tiết từng từ để học sinh sửa lỗi (Word-by-word highlight) */}
+              {practiceResult.wordResults && practiceResult.wordResults.length > 0 ? (
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", margin: "8px 0" }}>
+                  {practiceResult.wordResults.map((res, idx) => (
+                    <span
+                      key={idx}
+                      style={{
+                        padding: "2px 6px",
+                        borderRadius: "4px",
+                        fontWeight: "600",
+                        fontSize: "0.9rem",
+                        backgroundColor: res.isCorrect ? "rgba(16, 185, 129, 0.1)" : "rgba(239, 68, 68, 0.1)",
+                        color: res.isCorrect ? "rgb(16, 185, 129)" : "rgb(239, 68, 68)",
+                        border: `1px solid ${res.isCorrect ? "rgba(16, 185, 129, 0.2)" : "rgba(239, 68, 68, 0.2)"}`,
+                      }}
+                      title={res.isCorrect ? "Đúng" : res.spoken ? `Bạn nói: "${res.spoken}"` : "Bỏ sót"}
+                    >
+                      {res.text}
+                    </span>
+                  ))}
+                </div>
+              ) : (
+                <p style={{ margin: "4px 0 0 0", color: "rgb(var(--secondary-rgb))" }}>
+                  Bạn phát âm: <strong>&quot;{practiceResult.spokenText}&quot;</strong>
+                </p>
+              )}
+              
+              {practiceResult.isCorrect && practiceResult.confidence !== undefined && (
+                <p style={{ margin: "2px 0 0 0", fontSize: "0.8rem", color: "rgb(var(--secondary-rgb))" }}>
+                  Độ tương đồng giọng đọc: {practiceResult.confidence}%
+                </p>
+              )}
             </div>
           </div>
           <button 
             type="button"
             onClick={() => setPracticeResult(null)}
-            style={{ background: "none", border: "none", cursor: "pointer", color: "rgb(var(--secondary-rgb))", fontSize: "1rem", opacity: 0.6 }}
+            style={{ background: "none", border: "none", cursor: "pointer", color: "rgb(var(--secondary-rgb))", fontSize: "1.2rem", opacity: 0.6, alignSelf: "flex-start" }}
           >
             &times;
           </button>

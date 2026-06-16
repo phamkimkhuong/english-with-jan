@@ -295,6 +295,22 @@ a {
   padding: 5px 0;
 }
 
+.avatar-container::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 240px;
+  height: 20px;
+  background: transparent;
+  display: none;
+  z-index: 999;
+}
+
+.avatar-container:hover::before {
+  display: block;
+}
+
 .avatar-dropdown {
   position: absolute;
   top: calc(100% + 10px);
@@ -483,6 +499,32 @@ a {
 
   .nav-links.open {
     display: flex;
+  }
+
+  .avatar-container::before {
+    left: 0;
+    right: auto;
+    width: 240px;
+  }
+
+  .avatar-dropdown {
+    left: 0;
+    right: auto;
+    transform: translateY(10px);
+  }
+
+  .avatar-container:hover .avatar-dropdown {
+    transform: translateY(0);
+  }
+
+  .avatar-dropdown::before {
+    left: 10px;
+    right: auto;
+  }
+
+  .avatar-dropdown::after {
+    left: 9px;
+    right: auto;
   }
 
   .hero-title {
