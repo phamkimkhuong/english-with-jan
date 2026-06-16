@@ -34,9 +34,9 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
   }
 
   const isConsonant = selectedSound.type.startsWith("consonant");
-  const wordExamples = selectedSound.examples.filter((ex) => !ex.type || ex.type === "word");
-  const phraseExamples = selectedSound.examples.filter((ex) => ex.type === "phrase");
-  const sentenceExamples = selectedSound.examples.filter((ex) => ex.type === "sentence");
+  const wordExamples = selectedSound.examples.filter((ex) => (!ex.type || ex.type === "word") && ex.hidden !== true);
+  const phraseExamples = selectedSound.examples.filter((ex) => ex.type === "phrase" && ex.hidden !== true);
+  const sentenceExamples = selectedSound.examples.filter((ex) => ex.type === "sentence" && ex.hidden !== true);
 
   return (
     <div className="card" style={{ padding: "26px", gap: "20px" }}>

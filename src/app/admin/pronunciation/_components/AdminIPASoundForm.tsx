@@ -21,6 +21,7 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
   const [editSound, setEditSound] = useState<IPASound>(() => JSON.parse(JSON.stringify(selectedSound)));
   const [isSaving, setIsSaving] = useState(false);
   const [uploadingField, setUploadingField] = useState<string | null>(null);
+  const [activeExampleTab, setActiveExampleTab] = useState<"word" | "phrase" | "sentence">("word");
   const [confirmModal, setConfirmModal] = useState<{
     isOpen: boolean;
     title: string;
@@ -215,104 +216,156 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
       {/* Từ vựng, cụm từ & câu ví dụ */}
       <div className={styles.examplesContainer}>
         <div className={styles.sectionHeaderRow}>
-          <label className={styles.inputLabel}>Danh sách từ vựng, cụm từ & câu thực hành</label>
+          <label className={styles.inputLabel}>Danh sách ví dụ luyện phát âm</label>
           <button
             type="button"
-            onClick={() => updateEditSound({ examples: [...editSound.examples, { word: "", ipa: "", meaning: "", audioUrl: "", type: "word" }] })}
+            onClick={() => updateEditSound({ 
+              examples: [
+                ...editSound.examples, 
+                { word: "", ipa: "", meaning: "", audioUrl: "", type: activeExampleTab, hidden: false }
+              ] 
+            })}
             className={styles.addBtn}
           >
-            + Thêm ví dụ mới
+            {activeExampleTab === "word" ? "+ Thêm từ vựng mới" :
+             activeExampleTab === "phrase" ? "+ Thêm cụm từ mới" :
+             "+ Thêm câu mẫu mới"}
+          </button>
+        </div>
+
+        {/* Thanh chọn tab ngang cho ví dụ */}
+        <div className={styles.subTabBar}>
+          <button
+            type="button"
+            className={`${styles.subTabBtn} ${activeExampleTab === "word" ? styles.subTabActive : ""}`}
+            onClick={() => setActiveExampleTab("word")}
+          >
+            Từ vựng ({editSound.examples.filter(e => !e.type || e.type === "word").length})
+          </button>
+          <button
+            type="button"
+            className={`${styles.subTabBtn} ${activeExampleTab === "phrase" ? styles.subTabActive : ""}`}
+            onClick={() => setActiveExampleTab("phrase")}
+          >
+            Cụm từ ({editSound.examples.filter(e => e.type === "phrase").length})
+          </button>
+          <button
+            type="button"
+            className={`${styles.subTabBtn} ${activeExampleTab === "sentence" ? styles.subTabActive : ""}`}
+            onClick={() => setActiveExampleTab("sentence")}
+          >
+            Câu mẫu ({editSound.examples.filter(e => e.type === "sentence").length})
           </button>
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-          {editSound.examples.map((ex, idx) => (
-            <div key={idx} className={styles.exampleCard}>
-              <div className={styles.exampleGrid}>
-                <select
-                  value={ex.type || "word"}
-                  onChange={(e) => updateExample(idx, { type: e.target.value as "word" | "phrase" | "sentence" })}
-                  className={styles.exampleSelect}
-                  style={{
-                    padding: "8px",
-                    borderRadius: "8px",
-                    border: "1px solid rgb(var(--card-border-rgb))",
-                    background: "transparent",
-                    color: "inherit",
-                    fontSize: "0.85rem",
-                    height: "37px",
-                  }}
-                >
-                  <option value="word" style={{ background: "rgb(var(--card-bg-rgb))" }}>Từ vựng</option>
-                  <option value="phrase" style={{ background: "rgb(var(--card-bg-rgb))" }}>Cụm từ</option>
-                  <option value="sentence" style={{ background: "rgb(var(--card-bg-rgb))" }}>Câu mẫu</option>
-                </select>
+          {editSound.examples
+            .map((ex, originalIndex) => ({ ex, originalIndex }))
+            .filter(({ ex }) => {
+              if (activeExampleTab === "word") {
+                return !ex.type || ex.type === "word";
+              }
+              return ex.type === activeExampleTab;
+            })
+            .map(({ ex, originalIndex }) => (
+              <div 
+                key={originalIndex} 
+                className={styles.exampleCard}
+                style={ex.hidden ? { opacity: 0.6, borderStyle: "dashed", backgroundColor: "rgba(var(--foreground-rgb), 0.02)" } : undefined}
+              >
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "6px" }}>
+                  {ex.hidden ? (
+                    <span style={{ fontSize: "0.75rem", background: "rgb(var(--foreground-rgb) / 0.05)", padding: "2px 6px", borderRadius: "4px", color: "rgb(var(--secondary-rgb))", fontWeight: 600 }}>
+                      🔇 Đang ẩn với học viên
+                    </span>
+                  ) : (
+                    <span style={{ fontSize: "0.75rem", background: "rgb(16 185 129 / 0.1)", padding: "2px 6px", borderRadius: "4px", color: "rgb(16 185 129)", fontWeight: 600 }}>
+                      👁️ Đang hiển thị
+                    </span>
+                  )}
+                </div>
 
-                <input
-                  type="text"
-                  value={ex.word}
-                  placeholder={
-                    ex.type === "sentence" ? "Câu mẫu (Ví dụ: Nice to meet you.)" :
-                    ex.type === "phrase" ? "Cụm từ (Ví dụ: meet you)" :
-                    "Từ vựng (Ví dụ: meet)"
-                  }
-                  onChange={(e) => updateExample(idx, { word: e.target.value })}
-                  className={styles.exampleInput}
-                />
-                <input
-                  type="text"
-                  value={ex.ipa}
-                  placeholder="Phiên âm IPA (Ví dụ: /miːt/)"
-                  onChange={(e) => updateExample(idx, { ipa: e.target.value })}
-                  className={styles.exampleInput}
-                />
-                <input
-                  type="text"
-                  value={ex.meaning}
-                  placeholder="Dịch nghĩa (Ví dụ: gặp gỡ)"
-                  onChange={(e) => updateExample(idx, { meaning: e.target.value })}
-                  className={styles.exampleInput}
-                />
-              </div>
-
-              <div className={styles.exampleRowFooter}>
-                <div style={{ flex: 1 }}>
+                <div className={styles.exampleGrid}>
                   <input
                     type="text"
-                    value={ex.audioUrl}
-                    placeholder="Đường dẫn âm thanh (URL)"
-                    onChange={(e) => updateExample(idx, { audioUrl: e.target.value })}
-                    className={styles.exampleInputUrl}
+                    value={ex.word}
+                    placeholder={
+                      activeExampleTab === "sentence" ? "Câu mẫu (Ví dụ: Nice to meet you.)" :
+                      activeExampleTab === "phrase" ? "Cụm từ (Ví dụ: meet you)" :
+                      "Từ vựng (Ví dụ: meet)"
+                    }
+                    onChange={(e) => updateExample(originalIndex, { word: e.target.value })}
+                    className={styles.exampleInput}
+                  />
+                  <input
+                    type="text"
+                    value={ex.ipa}
+                    placeholder="Phiên âm IPA (Ví dụ: /miːt/)"
+                    onChange={(e) => updateExample(originalIndex, { ipa: e.target.value })}
+                    className={styles.exampleInput}
+                  />
+                  <input
+                    type="text"
+                    value={ex.meaning}
+                    placeholder="Dịch nghĩa (Ví dụ: gặp gỡ)"
+                    onChange={(e) => updateExample(originalIndex, { meaning: e.target.value })}
+                    className={styles.exampleInput}
                   />
                 </div>
-                <input
-                  type="file"
-                  accept="audio/*"
-                  onChange={(e) => handleUploadFile(e, "examples", "exampleAudio", idx)}
-                  className={styles.exampleFileInput}
-                />
-                <button
-                  type="button"
-                  onClick={() => {
-                    const typeText = ex.type === "sentence" ? "câu" : ex.type === "phrase" ? "cụm từ" : "từ";
-                    const itemText = ex.word ? `${typeText} "${ex.word}"` : "ví dụ này";
-                    setConfirmModal({
-                      isOpen: true,
-                      title: "Xác nhận xóa ví dụ",
-                      message: `Bạn có chắc chắn muốn xóa ${itemText} khỏi danh sách thực hành không?`,
-                      onConfirm: () => {
-                        updateEditSound({ examples: editSound.examples.filter((_, i) => i !== idx) });
-                      },
-                    });
-                  }}
-                  className={styles.exampleDeleteBtn}
-                >
-                  Xóa ví dụ
-                </button>
+
+                <div className={styles.exampleRowFooter}>
+                  <div style={{ flex: 1 }}>
+                    <input
+                      type="text"
+                      value={ex.audioUrl}
+                      placeholder="Đường dẫn âm thanh (URL)"
+                      onChange={(e) => updateExample(originalIndex, { audioUrl: e.target.value })}
+                      className={styles.exampleInputUrl}
+                    />
+                  </div>
+                  <input
+                    type="file"
+                    accept="audio/*"
+                    onChange={(e) => handleUploadFile(e, "examples", "exampleAudio", originalIndex)}
+                    className={styles.exampleFileInput}
+                  />
+                  <button
+                    type="button"
+                    onClick={() => updateExample(originalIndex, { hidden: !ex.hidden })}
+                    className={styles.exampleHideBtn}
+                  >
+                    {ex.hidden ? "Hiện ví dụ" : "Ẩn ví dụ"}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const typeText = activeExampleTab === "sentence" ? "câu" : activeExampleTab === "phrase" ? "cụm từ" : "từ";
+                      const itemText = ex.word ? `${typeText} "${ex.word}"` : "ví dụ này";
+                      setConfirmModal({
+                        isOpen: true,
+                        title: "Xác nhận xóa ví dụ",
+                        message: `Bạn có chắc chắn muốn xóa ${itemText} khỏi danh sách thực hành không?`,
+                        onConfirm: () => {
+                          updateEditSound({ examples: editSound.examples.filter((_, i) => i !== originalIndex) });
+                        },
+                      });
+                    }}
+                    className={styles.exampleDeleteBtn}
+                  >
+                    Xóa ví dụ
+                  </button>
+                </div>
+                {uploadingField === `exampleAudio_${originalIndex}` && <span className={styles.uploadStatus}>Đang tải âm thanh lên...</span>}
               </div>
-              {uploadingField === `exampleAudio_${idx}` && <span className={styles.uploadStatus}>Đang tải âm thanh của từ lên...</span>}
-            </div>
-          ))}
+            ))
+          }
+          {editSound.examples.filter(e => activeExampleTab === "word" ? (!e.type || e.type === "word") : e.type === activeExampleTab).length === 0 && (
+            <p style={{ textAlign: "center", color: "rgb(var(--secondary-rgb))", fontSize: "0.85rem", padding: "20px 0", border: "1px dashed rgb(var(--card-border-rgb))", borderRadius: "8px" }}>
+              {activeExampleTab === "word" ? "Chưa có từ vựng nào cho phần này." :
+               activeExampleTab === "phrase" ? "Chưa có cụm từ nào cho phần này." :
+               "Chưa có câu mẫu nào cho phần này."}
+            </p>
+          )}
         </div>
       </div>
 

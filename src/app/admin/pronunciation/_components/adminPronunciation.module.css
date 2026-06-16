@@ -135,7 +135,7 @@
 
 .exampleGrid {
   display: grid;
-  grid-template-columns: 1.2fr 2fr 1.5fr 1.5fr;
+  grid-template-columns: 1.2fr 1fr 1fr;
   gap: 8px;
 }
 
@@ -196,4 +196,48 @@
   padding: 10px 24px;
   margin-top: 10px;
   transition: all 0.2s;
+}
+
+.subTabBar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgb(var(--card-border-rgb));
+  padding-bottom: 8px;
+}
+
+.subTabBtn {
+  background: none;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  color: rgb(var(--secondary-rgb));
+  transition: all 0.2s ease;
+}
+
+.subTabBtn:hover {
+  background-color: rgb(var(--foreground-rgb) / 0.04);
+}
+
+.subTabActive {
+  background-color: rgb(var(--primary-rgb) / 0.08);
+  color: rgb(var(--primary-rgb));
+}
+
+.exampleHideBtn {
+  padding: 6px 12px;
+  border: 1px solid rgb(var(--card-border-rgb));
+  background: transparent;
+  color: rgb(var(--secondary-rgb));
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+}
+
+.exampleHideBtn:hover {
+  background-color: rgb(var(--foreground-rgb) / 0.04);
 }

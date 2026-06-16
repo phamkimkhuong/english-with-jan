@@ -6,6 +6,7 @@ export const IPAExampleSchema = z.object({
   meaning: z.string(),
   audioUrl: z.string(),
   type: z.enum(["word", "phrase", "sentence"]).optional().default("word"),
+  hidden: z.boolean().optional().default(false),
 });
 
 export const IPASoundSchema = z.object({
