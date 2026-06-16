@@ -1,0 +1,49 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Hàm kiểm tra xem người dùng hiện tại có phải là Admin tối cao hay không (Email cứng)
+    function isSuperAdmin() {
+      return request.auth != null && request.auth.token.email == 'phamkhuong436@gmail.com';
+    }
+
+    // Hàm kiểm tra xem người dùng hiện tại có phải là Admin trong Firestore hay không
+    function isAdmin() {
+      return isSuperAdmin() || 
+        (request.auth != null && 
+         exists(/databases/$(database)/documents/users/$(request.auth.uid)) && 
+         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin');
+    }
+    
+    // Hàm kiểm tra xem người dùng hiện tại có phải là Giáo viên hay không
+    function isTeacher() {
+      return isAdmin() || 
+        (request.auth != null && 
+         exists(/databases/$(database)/documents/users/$(request.auth.uid)) && 
+         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'teacher');
+    }
+
+    // Quy tắc cho bộ sưu tập users
+    match /users/{userId} {
+      // Bất kỳ ai đã đăng nhập đều có thể đọc thông tin người dùng
+      allow read: if request.auth != null;
+      
+      // Cho phép đăng ký ban đầu (nếu ghi đè lên tài khoản của chính mình và để mặc định role là student)
+      // Hoặc cho phép Admin chỉnh sửa quyền bất kỳ ai
+      allow write: if request.auth != null && (
+        (request.auth.uid == userId && (!exists(/databases/$(database)/documents/users/$(userId)) || request.resource.data.role == 'student')) || 
+        isAdmin()
+      );
+    }
+
+    // Quy tắc cho bộ sưu tập courses (khóa học) và lessons (bài học)
+    match /courses/{courseId} {
+      allow read: if true; // Ai cũng xem được danh sách khóa học
+      allow write: if isTeacher(); // Chỉ Giáo viên và Admin mới được viết
+      
+      match /lessons/{lessonId} {
+        allow read: if request.auth != null; // Chỉ học sinh đã đăng nhập mới được xem chi tiết bài học
+        allow write: if isTeacher();
+      }
+    }
+  }
+}

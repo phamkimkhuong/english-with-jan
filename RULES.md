@@ -46,7 +46,8 @@ Dự án sử dụng Next.js **App Router** với cấu trúc thư mục nằm t
 
 ## 4. Quy Chuẩn Chất Lượng Code & Kiểm Tra (Quality & Validation)
 
-Trước khi thực hiện lệnh build dự án hoặc trước khi commit mã nguồn lên Git, bắt buộc phải chạy lệnh kiểm định toàn diện:
+- **Quy tắc 4.1**: **Giới hạn độ dài tệp tin nguồn**: Mỗi tệp tin mã nguồn phát triển tính năng (như `.ts`, `.tsx`, `.js`, `.css`) **không được vượt quá 500 dòng code**. Điều này giúp mã nguồn được mô-đun hóa hợp lý, dễ đọc, dễ kiểm thử và bảo trì lâu dài. Quy tắc này ngoại trừ các tệp dữ liệu tĩnh JSON và tệp cấu hình hệ thống.
+- **Quy tắc 4.2**: Trước khi thực hiện lệnh build dự án hoặc trước khi commit mã nguồn lên Git, bắt buộc phải chạy lệnh kiểm định toàn diện để đảm bảo không có lỗi:
 
 - **Lệnh kiểm tra định dạng và quy tắc code (Linting)**:
   ```bash
