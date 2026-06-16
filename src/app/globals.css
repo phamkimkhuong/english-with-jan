@@ -250,3 +250,27 @@ a {
   color: rgb(var(--secondary-rgb));
   font-size: 0.9rem;
 }
+
+/* Skeleton Loading Utilities */
+@keyframes skeleton-pulse {
+  0% {
+    background-color: rgba(var(--foreground-rgb), 0.05);
+  }
+  50% {
+    background-color: rgba(var(--foreground-rgb), 0.15);
+  }
+  100% {
+    background-color: rgba(var(--foreground-rgb), 0.05);
+  }
+}
+
+.skeleton {
+  animation: skeleton-pulse 1.5s ease-in-out infinite;
+  background-color: rgba(var(--foreground-rgb), 0.05);
+  border-radius: var(--border-radius);
+}
+
+.skeleton-circle {
+  border-radius: 50%;
+}
+

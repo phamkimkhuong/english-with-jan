@@ -2,10 +2,12 @@
 
 import React from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
 
 export const Navbar: React.FC = () => {
   const { user, loginWithGoogle, logout, loading } = useAuth();
+  const pathname = usePathname();
 
   return (
     <nav className="navbar">
@@ -30,25 +32,33 @@ export const Navbar: React.FC = () => {
 
         <ul className="nav-links">
           <li>
-            <Link href="/" className="nav-link">
+            <Link href="/" className={`nav-link ${pathname === "/" ? "active" : ""}`}>
               Trang chủ
             </Link>
           </li>
           <li>
-            <Link href="/courses" className="nav-link">
+            <Link href="/courses" className={`nav-link ${pathname.startsWith("/courses") ? "active" : ""}`}>
               Khóa học
+            </Link>
+          </li>
+          <li>
+            <Link href="/pronunciation" className={`nav-link ${pathname.startsWith("/pronunciation") ? "active" : ""}`}>
+              Phát âm (IPA)
             </Link>
           </li>
           {user && (
             <li>
-              <Link href="/learning" className="nav-link">
+              <Link href="/learning" className={`nav-link ${pathname.startsWith("/learning") ? "active" : ""}`}>
                 Lớp học của tôi
               </Link>
             </li>
           )}
           <li>
             {loading ? (
-              <span className="nav-link">Đang tải...</span>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                <div className="skeleton skeleton-circle" style={{ width: "36px", height: "36px" }} />
+                <div className="skeleton" style={{ width: "80px", height: "32px", borderRadius: "var(--border-radius)" }} />
+              </div>
             ) : user ? (
               <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
                 {user.photoURL ? (

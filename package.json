@@ -10,7 +10,7 @@
     "lint:fix": "eslint . --fix",
     "type-check": "tsc --noEmit",
     "validate": "npm run lint && npm run type-check",
-    "deploy": "npm run build && npx firebase-tools deploy --only hosting"
+    "deploy": "npm run build && npx firebase-tools deploy"
   },
   "dependencies": {
     "firebase": "^12.14.0",

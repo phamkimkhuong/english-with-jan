@@ -1,0 +1,594 @@
+{
+  "lastUpdated": "2026-06-16T09:00:00Z",
+  "version": 1,
+  "sounds": [
+    {
+      "ipa": "i:",
+      "name": "i dài",
+      "type": "monophthong_long",
+      "description": "Môi mở rộng sang hai bên như đang cười. Lưỡi nâng cao, đầu lưỡi chạm vào răng dưới. Âm phát ra dài hơn âm /i/ trong tiếng Việt.",
+      "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+      "audioUrl": "",
+      "examples": [
+        { "word": "sheep", "ipa": "/ʃiːp/", "meaning": "con cừu", "audioUrl": "" },
+        { "word": "meet", "ipa": "/miːt/", "meaning": "gặp gỡ", "audioUrl": "" },
+        { "word": "see", "ipa": "/siː/", "meaning": "nhìn thấy", "audioUrl": "" }
+      ],
+      "commonMistakes": [
+        "Phát âm quá ngắn giống âm 'i' tiếng Việt.",
+        "Không cười (không mở rộng môi sang hai bên) làm âm bị nghẹt."
+      ]
+    },
+    {
+      "ipa": "ɪ",
+      "name": "i ngắn",
+      "type": "monophthong_short",
+      "description": "Môi hơi mở rộng, lưỡi hạ thấp hơn so với âm /i:/. Phát âm ngắn, nhanh, dứt khoát, lai giữa âm 'i' và 'ê' tiếng Việt.",
+      "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+      "audioUrl": "",
+      "examples": [
+        { "word": "ship", "ipa": "/ʃɪp/", "meaning": "tàu thủy", "audioUrl": "" },
+        { "word": "sit", "ipa": "/sɪt/", "meaning": "ngồi", "audioUrl": "" },
+        { "word": "pin", "ipa": "/pɪn/", "meaning": "cái ghim", "audioUrl": "" }
+      ],
+      "commonMistakes": [
+        "Kéo dài âm giống như /i:/.",
+        "Phát âm quá rõ thành chữ 'i' hoặc chữ 'ê' hoàn toàn."
+      ]
+    },
+    {
+      "ipa": "e",
+      "name": "e ngắn",
+      "type": "monophthong_short",
+      "description": "Môi mở rộng vừa phải sang hai bên. Lưỡi hạ thấp hơn so với âm /ɪ/. Phát âm ngắn và dứt khoát.",
+      "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+      "audioUrl": "",
+      "examples": [
+        { "word": "pen", "ipa": "/pen/", "meaning": "cái bút", "audioUrl": "" },
+        { "word": "bed", "ipa": "/bed/", "meaning": "cái giường", "audioUrl": "" },
+        { "word": "met", "ipa": "/met/", "meaning": "đã gặp", "audioUrl": "" }
+      ],
+      "commonMistakes": [
+        "Phát âm thành âm 'ê' trong tiếng Việt."
+      ]
+    },
+    {
+      "ipa": "æ",
+      "name": "e bẹt (a bẹt)",
+      "type": "monophthong_short",
+      "description": "Miệng mở rộng hết cỡ sang hai bên và xuống dưới. Đầu lưỡi chạm vào chân răng dưới. Phát âm lai giữa 'a' và 'e'.",
+      "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+      "audioUrl": "",
+      "examples": [
+        { "word": "man", "ipa": "/mæn/", "meaning": "người đàn ông", "audioUrl": "" },
+        { "word": "cat", "ipa": "/kæt/", "meaning": "con mèo", "audioUrl": "" },
+        { "word": "bad", "ipa": "/bæd/", "meaning": "tệ hại", "audioUrl": "" }
+      ],
+      "commonMistakes": [
+        "Phát âm thành âm 'e' hoặc âm 'a' thuần tiếng Việt.",
+        "Không mở rộng miệng đủ rộng."
+      ]
+    },
+    {
+      "ipa": "ɑ:",
+      "name": "a dài",
+      "type": "monophthong_long",
+      "description": "Miệng mở rộng theo chiều dọc như đang ngáp. Lưỡi hạ thấp và thụt về phía sau. Âm phát ra sâu trong cổ họng.",
+      "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+      "audioUrl": "",
+      "examples": [
+        { "word": "father", "ipa": "/ˈfɑːðə/", "meaning": "cha", "audioUrl": "" },
+        { "word": "car", "ipa": "/kɑː/", "meaning": "ô tô", "audioUrl": "" },
+        { "word": "start", "ipa": "/stɑːt/", "meaning": "bắt đầu", "audioUrl": "" }
+      ],
+      "commonMistakes": [
+        "Phát âm ngắn và bẹt như âm 'a' tiếng Việt."
+      ]
+    },
+    {
+      "ipa": "ɒ",
+      "name": "o ngắn",
+      "type": "monophthong_short",
+      "description": "Môi hơi tròn, mở rộng vừa phải. Lưỡi thụt về phía sau. Phát âm dứt khoát.",
+      "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+      "audioUrl": "",
+      "examples": [
+        { "word": "hot", "ipa": "/hɒt/", "meaning": "nóng", "audioUrl": "" },
+        { "word": "on", "ipa": "/ɒn/", "meaning": "trên", "audioUrl": "" },
+        { "word": "box", "ipa": "/bɒks/", "meaning": "cái hộp", "audioUrl": "" }
+      ],
+      "commonMistakes": [
+        "Phát âm thành âm 'o' kéo dài hoặc phát âm giống âm 'ô'."
+      ]
+    },
+    {
+      "ipa": "ɔ:",
+      "name": "o dài",
+      "type": "monophthong_long",
+      "description": "Tròn môi hết cỡ và đẩy ra phía trước. Lưỡi thụt sâu về phía sau và hơi cong lên. Phát âm kéo dài.",
+      "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+      "audioUrl": "",
+      "examples": [
+        { "word": "law", "ipa": "/lɔː/", "meaning": "luật pháp", "audioUrl": "" },
+        { "word": "sport", "ipa": "/spɔːt/", "meaning": "thể thao", "audioUrl": "" },
+        { "word": "four", "ipa": "/fɔː/", "meaning": "số bốn", "audioUrl": "" }
+      ],
+      "commonMistakes": [
+        "Không tròn môi và chu môi ra phía trước."
+      ]
+    },
+    {
+      "ipa": "ʊ",
+      "name": "u ngắn",
+      "type": "monophthong_short",
+      "description": "Môi hơi tròn và đẩy nhẹ ra trước. Lưỡi thụt nhẹ về sau. Phát âm ngắn, hơi lai giữa 'u' và 'ư'.",
+      "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+      "audioUrl": "",
+      "examples": [
+        { "word": "book", "ipa": "/bʊk/", "meaning": "cuốn sách", "audioUrl": "" },
+        { "word": "put", "ipa": "/pʊt/", "meaning": "đặt", "audioUrl": "" },
+        { "word": "good", "ipa": "/ɡʊd/", "meaning": "tốt", "audioUrl": "" }
+      ],
+      "commonMistakes": [
+        "Phát âm thành chữ 'u' tiếng Việt kéo dài hoặc quá rõ."
+      ]
+    },
+    {
+      "ipa": "u:",
+      "name": "u dài",
+      "type": "monophthong_long",
+      "description": "Tròn môi và chu ra trước như đang huýt sáo. Lưỡi thụt sâu và nâng cao phần cuống lưỡi. Phát âm kéo dài.",
+      "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+      "audioUrl": "",
+      "examples": [
+        { "word": "shoot", "ipa": "/ʃuːt/", "meaning": "bắn", "audioUrl": "" },
+        { "word": "blue", "ipa": "/bluː/", "meaning": "màu xanh dương", "audioUrl": "" },
+        { "word": "food", "ipa": "/fuːd/", "meaning": "thức ăn", "audioUrl": "" }
+      ],
+      "commonMistakes": [
+        "Không chu môi hết cỡ làm âm bị ngắn và loãng."
+      ]
+    },
+    {
+      "ipa": "ʌ",
+      "name": "á (a ngắn)",
+      "type": "monophthong_short",
+      "description": "Miệng mở vừa phải bằng một nửa âm /ɑ:/. Lưỡi hạ thấp nhẹ. Phát âm nhanh giống âm 'á' hay 'ớ' tiếng Việt.",
+      "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+      "audioUrl": "",
+      "examples": [
+        { "word": "cup", "ipa": "/kʌp/", "meaning": "cái cốc", "audioUrl": "" },
+        { "word": "love", "ipa": "/lʌv/", "meaning": "yêu", "audioUrl": "" },
+        { "word": "bus", "ipa": "/bʌs/", "meaning": "xe buýt", "audioUrl": "" }
+      ],
+      "commonMistakes": [
+        "Phát âm thành âm 'u' hoặc quá rõ thành 'a' Việt."
+      ]
+    },
+    {
+      "ipa": "ɜ:",
+      "name": "ơ dài",
+      "type": "monophthong_long",
+      "description": "Môi mở hờ, lưỡi để tự nhiên và hơi cong lên một chút. Phát âm giống âm 'ơ' nhưng kéo dài và uốn lưỡi nhẹ.",
+      "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+      "audioUrl": "",
+      "examples": [
+        { "word": "girl", "ipa": "/ɡɜːl/", "meaning": "cô gái", "audioUrl": "" },
+        { "word": "bird", "ipa": "/bɜːd/", "meaning": "con chim", "audioUrl": "" },
+        { "word": "learn", "ipa": "/lɜːn/", "meaning": "học tập", "audioUrl": "" }
+      ],
+      "commonMistakes": [
+        "Quên uốn lưỡi ở cuối âm trong tiếng Anh-Mỹ.",
+        "Phát âm quá ngắn."
+      ]
+    },
+    {
+      "ipa": "ə",
+      "name": "ơ ngắn (Schwa)",
+      "type": "monophthong_short",
+      "description": "Môi và lưỡi ở trạng thái thả lỏng hoàn toàn. Là âm phổ biến nhất trong tiếng Anh, phát âm rất ngắn và nhẹ.",
+      "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+      "audioUrl": "",
+      "examples": [
+        { "word": "about", "ipa": "/əˈbaʊt/", "meaning": "về", "audioUrl": "" },
+        { "word": "teacher", "ipa": "/ˈtiːtʃə/", "meaning": "giáo viên", "audioUrl": "" },
+        { "word": "ago", "ipa": "/əˈɡəʊ/", "meaning": "cách đây", "audioUrl": "" }
+      ],
+      "commonMistakes": [
+        "Nhấn trọng âm vào âm này (âm schwa không bao giờ nhận trọng âm)."
+      ]
+    },
+    {
+      "ipa": "eɪ",
+      "name": "nguyên âm đôi /eɪ/",
+      "type": "diphthong",
+      "description": "Bắt đầu bằng âm /e/ và trượt dần sang âm /ɪ/. Môi mở rộng dần sang hai bên.",
+      "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+      "audioUrl": "",
+      "examples": [
+        { "word": "face", "ipa": "/feɪs/", "meaning": "khuôn mặt", "audioUrl": "" },
+        { "word": "say", "ipa": "/seɪ/", "meaning": "nói", "audioUrl": "" }
+      ],
+      "commonMistakes": ["Đọc giống chữ 'ê' trong tiếng Việt."]
+    },
+    {
+      "ipa": "aɪ",
+      "name": "nguyên âm đôi /aɪ/",
+      "type": "diphthong",
+      "description": "Bắt đầu từ âm /ɑ:/ và trượt nhanh lên âm /ɪ/. Tương tự âm 'ai' tiếng Việt nhưng rộng miệng hơn.",
+      "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+      "audioUrl": "",
+      "examples": [
+        { "word": "my", "ipa": "/maɪ/", "meaning": "của tôi", "audioUrl": "" },
+        { "word": "price", "ipa": "/praɪs/", "meaning": "giá cả", "audioUrl": "" }
+      ],
+      "commonMistakes": ["Đọc thành chữ 'ai' Việt Nam quá cụt."]
+    },
+    {
+      "ipa": "ɔɪ",
+      "name": "nguyên âm đôi /ɔɪ/",
+      "type": "diphthong",
+      "description": "Bắt đầu từ âm /ɔ:/ và trượt nhanh sang âm /ɪ/. Môi từ tròn dẹt mở dần sang hai bên.",
+      "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+      "audioUrl": "",
+      "examples": [
+        { "word": "boy", "ipa": "/bɔɪ/", "meaning": "cậu bé", "audioUrl": "" },
+        { "word": "choice", "ipa": "/tʃɔɪs/", "meaning": "sự lựa chọn", "audioUrl": "" }
+      ],
+      "commonMistakes": ["Đọc thành 'oi' Việt Nam."]
+    },
+    {
+      "ipa": "aʊ",
+      "name": "nguyên âm đôi /aʊ/",
+      "type": "diphthong",
+      "description": "Bắt đầu từ âm /ɑ:/ và trượt nhanh sang âm /ʊ/. Môi khép tròn dần.",
+      "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+      "audioUrl": "",
+      "examples": [
+        { "word": "mouth", "ipa": "/maʊθ/", "meaning": "cái miệng", "audioUrl": "" },
+        { "word": "now", "ipa": "/naʊ/", "meaning": "bây giờ", "audioUrl": "" }
+      ],
+      "commonMistakes": ["Đọc thành chữ 'ao' tiếng Việt."]
+    },
+    {
+      "ipa": "əʊ",
+      "name": "nguyên âm đôi /əʊ/",
+      "type": "diphthong",
+      "description": "Bắt đầu từ âm /ə/ và trượt sang âm /ʊ/. Môi khép tròn nhẹ.",
+      "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+      "audioUrl": "",
+      "examples": [
+        { "word": "go", "ipa": "/ɡəʊ/", "meaning": "đi", "audioUrl": "" },
+        { "word": "show", "ipa": "/ʃəʊ/", "meaning": "chỉ ra", "audioUrl": "" }
+      ],
+      "commonMistakes": ["Đọc thành âm 'ô' hoặc 'âu' tiếng Việt."]
+    },
+    {
+      "ipa": "ɪə",
+      "name": "nguyên âm đôi /ɪə/",
+      "type": "diphthong",
+      "description": "Bắt đầu từ âm /ɪ/ và lướt nhẹ sang âm /ə/. Lưỡi thả lỏng dần.",
+      "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+      "audioUrl": "",
+      "examples": [
+        { "word": "near", "ipa": "/nɪə/", "meaning": "gần", "audioUrl": "" },
+        { "word": "here", "ipa": "/hɪə/", "meaning": "ở đây", "audioUrl": "" }
+      ],
+      "commonMistakes": ["Đọc giống chữ 'ia' tiếng Việt."]
+    },
+    {
+      "ipa": "eə",
+      "name": "nguyên âm đôi /eə/",
+      "type": "diphthong",
+      "description": "Bắt đầu từ âm /e/ và lướt nhẹ sang âm /ə/. Tránh uốn lưỡi quá sớm.",
+      "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+      "audioUrl": "",
+      "examples": [
+        { "word": "hair", "ipa": "/heə/", "meaning": "tóc", "audioUrl": "" },
+        { "word": "there", "ipa": "/ðeə/", "meaning": "ở đó", "audioUrl": "" }
+      ],
+      "commonMistakes": ["Đọc thành chữ 'e' Việt Nam."]
+    },
+    {
+      "ipa": "ʊə",
+      "name": "nguyên âm đôi /ʊə/",
+      "type": "diphthong",
+      "description": "Bắt đầu từ âm /ʊ/ và lướt nhẹ sang âm /ə/. Âm thanh tương tự 'ua'.",
+      "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+      "audioUrl": "",
+      "examples": [
+        { "word": "tour", "ipa": "/tʊə/", "meaning": "chuyến du lịch", "audioUrl": "" },
+        { "word": "cure", "ipa": "/kjʊə/", "meaning": "chữa trị", "audioUrl": "" }
+      ],
+      "commonMistakes": ["Đọc thành chữ 'ua' Việt Nam."]
+    },
+    {
+      "ipa": "p",
+      "name": "phụ âm vô thanh /p/",
+      "type": "consonant_voiceless",
+      "description": "Mím chặt hai môi để chặn luồng hơi, sau đó bật mạnh hơi ra ngoài. Không rung dây thanh quản.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "pen", "ipa": "/pen/", "meaning": "cái bút", "audioUrl": "" }
+      ],
+      "commonMistakes": ["Rung dây thanh âm làm biến thành âm /b/."]
+    },
+    {
+      "ipa": "b",
+      "name": "phụ âm hữu thanh /b/",
+      "type": "consonant_voiced",
+      "description": "Giống âm /p/ nhưng làm rung dây thanh quản ở cổ họng khi phát âm.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "bad", "ipa": "/bæd/", "meaning": "tệ hại", "audioUrl": "" }
+      ],
+      "commonMistakes": []
+    },
+    {
+      "ipa": "t",
+      "name": "phụ âm vô thanh /t/",
+      "type": "consonant_voiceless",
+      "description": "Đặt đầu lưỡi ở chân răng trên, chặn luồng khí, sau đó bật hơi mạnh ra ngoài. Không rung cổ họng.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "tea", "ipa": "/tiː/", "meaning": "trà", "audioUrl": "" }
+      ],
+      "commonMistakes": ["Đọc giống chữ 't' trong tiếng Việt (hãy bật hơi mạnh hơn)."]
+    },
+    {
+      "ipa": "d",
+      "name": "phụ âm hữu thanh /d/",
+      "type": "consonant_voiced",
+      "description": "Giống âm /t/ nhưng làm rung dây thanh quản ở cổ họng.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "did", "ipa": "/dɪd/", "meaning": "đã làm", "audioUrl": "" }
+      ],
+      "commonMistakes": ["Đọc giống chữ 'đ' tiếng Việt."]
+    },
+    {
+      "ipa": "k",
+      "name": "phụ âm vô thanh /k/",
+      "type": "consonant_voiceless",
+      "description": "Nâng cuống lưỡi lên chạm vào ngạc mềm phía sau, chặn luồng khí, rồi hạ xuống để hơi bật mạnh ra. Không rung cổ.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "cat", "ipa": "/kæt/", "meaning": "con mèo", "audioUrl": "" }
+      ],
+      "commonMistakes": ["Đọc giống chữ 'c/k' tiếng Việt mà không bật hơi."]
+    },
+    {
+      "ipa": "g",
+      "name": "phụ âm hữu thanh /g/",
+      "type": "consonant_voiced",
+      "description": "Giống âm /k/ nhưng làm rung dây thanh quản ở cổ họng.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "got", "ipa": "/ɡɒt/", "meaning": "đã có", "audioUrl": "" }
+      ],
+      "commonMistakes": []
+    },
+    {
+      "ipa": "f",
+      "name": "phụ âm vô thanh /f/",
+      "type": "consonant_voiceless",
+      "description": "Đặt răng cửa hàm trên chạm nhẹ vào môi dưới, đẩy luồng khí đi qua khe hở giữa răng và môi.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "fall", "ipa": "/fɔːl/", "meaning": "mùa thu / ngã", "audioUrl": "" }
+      ],
+      "commonMistakes": ["Phát âm giống âm 'ph' tiếng Việt (hơi lỏng răng)."]
+    },
+    {
+      "ipa": "v",
+      "name": "phụ âm hữu thanh /v/",
+      "type": "consonant_voiced",
+      "description": "Giống âm /f/ nhưng làm rung dây thanh quản ở cổ họng.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "voice", "ipa": "/vɔɪs/", "meaning": "giọng nói", "audioUrl": "" }
+      ],
+      "commonMistakes": []
+    },
+    {
+      "ipa": "θ",
+      "name": "phụ âm vô thanh /θ/",
+      "type": "consonant_voiceless",
+      "description": "Đặt đầu lưỡi giữa răng cửa trên và răng dưới, đẩy luồng hơi đi ra ngoài qua khe răng. Không rung cổ.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "thin", "ipa": "/θɪn/", "meaning": "mỏng", "audioUrl": "" }
+      ],
+      "commonMistakes": ["Đọc thành chữ 't' hoặc 'th' tiếng Việt."]
+    },
+    {
+      "ipa": "ð",
+      "name": "phụ âm hữu thanh /ð/",
+      "type": "consonant_voiced",
+      "description": "Giống âm /θ/ nhưng làm rung dây thanh quản ở cổ họng.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "this", "ipa": "/ðɪs/", "meaning": "cái này", "audioUrl": "" }
+      ],
+      "commonMistakes": ["Đọc thành chữ 'đ' hoặc 'd' tiếng Việt."]
+    },
+    {
+      "ipa": "s",
+      "name": "phụ âm vô thanh /s/",
+      "type": "consonant_voiceless",
+      "description": "Hai răng khép hờ, lưỡi để tự nhiên chạm chân răng dưới, đẩy luồng hơi thoát ra qua khe giữa hai hàm răng.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "so", "ipa": "/səʊ/", "meaning": "như vậy", "audioUrl": "" }
+      ],
+      "commonMistakes": ["Nuốt âm 's' ở cuối từ."]
+    },
+    {
+      "ipa": "z",
+      "name": "phụ âm hữu thanh /z/",
+      "type": "consonant_voiced",
+      "description": "Giống âm /s/ nhưng làm rung dây thanh quản ở cổ họng.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "zoo", "ipa": "/zuː/", "meaning": "vườn bách thú", "audioUrl": "" }
+      ],
+      "commonMistakes": ["Phát âm giống âm 'd' hay 'gi' tiếng Việt."]
+    },
+    {
+      "ipa": "ʃ",
+      "name": "phụ âm vô thanh /ʃ/",
+      "type": "consonant_voiceless",
+      "description": "Môi hơi chu và đưa ra trước. Lưỡi cong lên gần ngạc trên. Đẩy hơi thoát ra mạnh. Không rung cổ.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "she", "ipa": "/ʃiː/", "meaning": "cô ấy", "audioUrl": "" }
+      ],
+      "commonMistakes": ["Phát âm nhẹ giống âm /s/ mà không chu môi."]
+    },
+    {
+      "ipa": "ʒ",
+      "name": "phụ âm hữu thanh /ʒ/",
+      "type": "consonant_voiced",
+      "description": "Giống âm /ʃ/ nhưng làm rung dây thanh quản ở cổ họng.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "vision", "ipa": "/ˈvɪʒn/", "meaning": "tầm nhìn", "audioUrl": "" }
+      ],
+      "commonMistakes": []
+    },
+    {
+      "ipa": "tʃ",
+      "name": "phụ âm vô thanh /tʃ/",
+      "type": "consonant_voiceless",
+      "description": "Bắt đầu từ vị trí âm /t/, sau đó chu môi và bật hơi nhanh sang âm /ʃ/. Không rung cổ.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "church", "ipa": "/tʃɜːtʃ/", "meaning": "nhà thờ", "audioUrl": "" }
+      ],
+      "commonMistakes": ["Đọc giống chữ 'ch' Việt Nam (chữ 'ch' Việt Nam không bật hơi)."]
+    },
+    {
+      "ipa": "dʒ",
+      "name": "phụ âm hữu thanh /dʒ/",
+      "type": "consonant_voiced",
+      "description": "Giống âm /tʃ/ nhưng làm rung dây thanh quản ở cổ họng.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "judge", "ipa": "/dʒʌdʒ/", "meaning": "thẩm phán", "audioUrl": "" }
+      ],
+      "commonMistakes": []
+    },
+    {
+      "ipa": "h",
+      "name": "phụ âm vô thanh /h/",
+      "type": "consonant_voiceless",
+      "description": "Mở miệng hờ, đẩy luồng hơi từ trong cổ họng ra ngoài nhẹ nhàng như đang thở dài.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "how", "ipa": "/haʊ/", "meaning": "như thế nào", "audioUrl": "" }
+      ],
+      "commonMistakes": []
+    },
+    {
+      "ipa": "m",
+      "name": "phụ âm mũi /m/",
+      "type": "consonant_voiced",
+      "description": "Mím chặt môi, luồng hơi đi lên và thoát ra ngoài bằng đường mũi. Rung dây thanh quản.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "man", "ipa": "/mæn/", "meaning": "người đàn ông", "audioUrl": "" }
+      ],
+      "commonMistakes": []
+    },
+    {
+      "ipa": "n",
+      "name": "phụ âm mũi /n/",
+      "type": "consonant_voiced",
+      "description": "Đặt đầu lưỡi chạm vào lợi răng hàm trên, chặn luồng hơi lại rồi để thoát ra bằng mũi.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "no", "ipa": "/nəʊ/", "meaning": "không", "audioUrl": "" }
+      ],
+      "commonMistakes": []
+    },
+    {
+      "ipa": "ŋ",
+      "name": "phụ âm mũi /ŋ/",
+      "type": "consonant_voiced",
+      "description": "Cuống lưỡi nâng lên chạm ngạc mềm phía sau, luồng khí đi ra bằng mũi. Rung dây thanh quản.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "sing", "ipa": "/sɪŋ/", "meaning": "hát", "audioUrl": "" }
+      ],
+      "commonMistakes": []
+    },
+    {
+      "ipa": "l",
+      "name": "phụ âm hữu thanh /l/",
+      "type": "consonant_voiced",
+      "description": "Đặt đầu lưỡi vào phần chân răng trên. Luồng hơi thoát ra hai bên cạnh lưỡi.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "leg", "ipa": "/leɡ/", "meaning": "chân", "audioUrl": "" }
+      ],
+      "commonMistakes": ["Quên nâng đầu lưỡi chạm chân răng khi âm /l/ đứng cuối từ (Dark L)."]
+    },
+    {
+      "ipa": "r",
+      "name": "phụ âm hữu thanh /r/",
+      "type": "consonant_voiced",
+      "description": "Môi hơi mở tròn. Đầu lưỡi hơi cong ngược về phía sau ngạc mềm nhưng không chạm vào ngạc.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "red", "ipa": "/red/", "meaning": "màu đỏ", "audioUrl": "" }
+      ],
+      "commonMistakes": ["Phát âm quá cứng giống âm 'r' uốn rung mạnh của tiếng Việt."]
+    },
+    {
+      "ipa": "w",
+      "name": "bán nguyên âm /w/",
+      "type": "consonant_voiced",
+      "description": "Môi tròn và chu ra trước như âm /u:/ rồi lướt nhanh sang âm tiếp theo.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "wet", "ipa": "/wet/", "meaning": "ẩm ướt", "audioUrl": "" }
+      ],
+      "commonMistakes": []
+    },
+    {
+      "ipa": "j",
+      "name": "bán nguyên âm /j/",
+      "type": "consonant_voiced",
+      "description": "Môi mở rộng vừa phải. Đầu lưỡi hạ thấp, phần giữa lưỡi nâng cao lên gần ngạc trên như phát âm /i:/ rồi lướt nhanh.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        { "word": "yes", "ipa": "/jes/", "meaning": "vâng/có", "audioUrl": "" }
+      ],
+      "commonMistakes": []
+    }
+  ]
+}

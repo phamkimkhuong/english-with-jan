@@ -60,6 +60,19 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             </svg>
             Quản lý khóa học
           </Link>
+
+          <Link
+            href="/admin/pronunciation"
+            className={`btn ${pathname === "/admin/pronunciation" ? "btn-primary" : "btn-outline"}`}
+            style={{ justifyContent: "flex-start", width: "100%", padding: "12px 16px" }}
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginRight: "8px" }}>
+              <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+              <line x1="12" x2="12" y1="19" y2="22" />
+            </svg>
+            Quản lý Phát âm (IPA)
+          </Link>
         </aside>
 
         {/* Main Workspace */}

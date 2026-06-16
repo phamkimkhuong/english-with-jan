@@ -1,0 +1,33 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Hàm kiểm tra xem người dùng có phải là Super Admin hay không
+    function isSuperAdmin() {
+      return request.auth != null && request.auth.token.email == 'phamkhuong436@gmail.com';
+    }
+
+    // Hàm kiểm tra xem người dùng hiện tại có phải là Admin trong Firestore hay không
+    function isAdmin() {
+      return isSuperAdmin() || 
+        (request.auth != null && 
+         firestore.exists(/databases/(default)/documents/users/$(request.auth.uid)) && 
+         firestore.get(/databases/(default)/documents/users/$(request.auth.uid)).data.role == 'admin');
+    }
+    
+    // Hàm kiểm tra xem người dùng hiện tại có phải là Giáo viên hay không
+    function isTeacher() {
+      return isAdmin() || 
+        (request.auth != null && 
+         firestore.exists(/databases/(default)/documents/users/$(request.auth.uid)) && 
+         firestore.get(/databases/(default)/documents/users/$(request.auth.uid)).data.role == 'teacher');
+    }
+
+    // Quy tắc chung cho toàn bộ Storage
+    match /{allPaths=**} {
+      // Ai cũng có thể tải về nghe/xem tài nguyên học tập
+      allow read: if true;
+      // Chỉ Admin/Teacher mới được thêm, cập nhật hoặc xóa tài nguyên
+      allow write: if isTeacher();
+    }
+  }
+}
