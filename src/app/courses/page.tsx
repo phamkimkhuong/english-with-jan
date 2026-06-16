@@ -1,5 +1,13 @@
 import React from "react";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Khóa Học Tiếng Anh Giao Tiếp & Luyện Thi | English with Ms.Jan",
+  description: "Tổng hợp các khóa học tiếng Anh thực chiến cho người đi làm và sinh viên. Học phát âm giao tiếp văn phòng, ngữ pháp thực hành tinh gọn hiệu quả.",
+  keywords: ["Khóa học tiếng Anh", "Tiếng Anh giao tiếp", "Tiếng Anh văn phòng", "Học tiếng Anh thực chiến", "English with Ms. Jan Courses"],
+};
+
 
 interface Course {
   id: string;
@@ -85,7 +93,7 @@ export default function CoursesPage() {
               <p style={{ color: "rgb(var(--secondary-rgb))", fontSize: "0.95rem", marginBottom: "20px", flex: 1 }}>
                 {course.description}
               </p>
-              
+
               <div
                 style={{
                   display: "flex",
@@ -112,7 +120,7 @@ export default function CoursesPage() {
                   {course.duration}
                 </span>
               </div>
-              
+
               <Link
                 href={`/courses/${course.id}`}
                 className="btn btn-primary"

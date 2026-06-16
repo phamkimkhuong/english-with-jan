@@ -9,7 +9,7 @@ export default function Home() {
         <div className="container">
           <span className="hero-badge">Học Tiếng Anh Hiệu Quả</span>
           <h1 className="hero-title">
-            Chinh phục tiếng Anh chuyên nghiệp cùng <span>English with Jan</span>
+            Chinh phục tiếng Anh chuyên nghiệp cùng <span>English with Ms.Jan</span>
           </h1>
           <p className="hero-subtitle">
             Các khóa học tinh gọn, tập trung vào tiếng Anh giao tiếp thực tế và văn phòng dành riêng cho người đi làm và sinh viên đại học.

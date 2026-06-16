@@ -1,0 +1,193 @@
+/* CSS Module cho Trang Quản Trị Phát Âm (Admin) */
+
+.formContainer {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rowHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.typeBadge {
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  background: rgb(var(--foreground-rgb), 0.05);
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.inputLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgb(var(--card-border-rgb));
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.9rem;
+  resize: vertical;
+}
+
+.gridTwoCols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.inputText {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid rgb(var(--card-border-rgb));
+  font-size: 0.9rem;
+  background: transparent;
+  color: inherit;
+}
+
+.fileInput {
+  font-size: 0.75rem;
+  margin-top: 4px;
+}
+
+.uploadStatus {
+  font-size: 0.75rem;
+  color: rgb(var(--primary-rgb));
+}
+
+.sectionHeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addBtn {
+  font-size: 0.75rem;
+  color: rgb(var(--primary-rgb));
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.mistakesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mistakeRow {
+  display: flex;
+  gap: 8px;
+}
+
+.mistakeInput {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid rgb(var(--card-border-rgb));
+  background: transparent;
+  color: inherit;
+  font-size: 0.85rem;
+}
+
+.deleteBtn {
+  padding: 8px 12px;
+  border: 1px solid rgb(239 68 68);
+  background: transparent;
+  color: rgb(239 68 68);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.deleteBtn:hover {
+  background-color: rgb(239 68 68 / 0.05);
+}
+
+.examplesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.exampleCard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid rgb(var(--card-border-rgb));
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.exampleGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+.exampleInput {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid rgb(var(--card-border-rgb));
+  font-size: 0.85rem;
+  background: transparent;
+  color: inherit;
+}
+
+.exampleRowFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.exampleInputUrl {
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid rgb(var(--card-border-rgb));
+  font-size: 0.8rem;
+  background: transparent;
+  color: inherit;
+}
+
+.exampleFileInput {
+  font-size: 0.75rem;
+  width: 180px;
+}
+
+.exampleDeleteBtn {
+  padding: 6px 12px;
+  border: 1px solid rgb(239 68 68);
+  background: transparent;
+  color: rgb(239 68 68);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background-color 0.2s;
+}
+
+.exampleDeleteBtn:hover {
+  background-color: rgb(239 68 68 / 0.05);
+}
+
+.submitBtn {
+  align-self: flex-end;
+  padding: 10px 24px;
+  margin-top: 10px;
+  transition: all 0.2s;
+}

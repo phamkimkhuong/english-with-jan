@@ -3,22 +3,17 @@
   --foreground-rgb: 15, 23, 42;
   --card-bg-rgb: 255, 255, 255;
   --card-border-rgb: 241, 245, 249;
-  
   --primary-rgb: 79, 70, 229;
   --primary-hover-rgb: 67, 56, 202;
   --primary-light-rgb: 238, 242, 255;
-  
   --accent-rgb: 16, 185, 129;
   --accent-light-rgb: 240, 253, 250;
-  
   --secondary-rgb: 71, 85, 105;
-  
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
-  --shadow-premium: 0 20px 25px -5px rgba(79, 70, 229, 0.05), 0 10px 10px -5px rgba(79, 70, 229, 0.02);
-
-  --font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -1px rgb(0 0 0 / 0.03);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -2px rgb(0 0 0 / 0.02);
+  --shadow-premium: 0 20px 25px -5px rgb(79 70 229 / 0.05), 0 10px 10px -5px rgb(79 70 229 / 0.02);
+  --font-family: var(--font-geist-sans), -apple-system, blinkmacsystemfont, "Segoe UI", roboto, helvetica, arial, sans-serif;
   --border-radius: 12px;
 }
 
@@ -65,7 +60,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(var(--background-rgb), 0.8);
+  background: rgb(var(--background-rgb), 0.8);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgb(var(--card-border-rgb));
@@ -141,7 +136,7 @@ a {
 }
 
 .btn-secondary:hover {
-  background: rgba(var(--primary-rgb), 0.15);
+  background: rgb(var(--primary-rgb), 0.15);
   transform: translateY(-1px);
 }
 
@@ -152,7 +147,7 @@ a {
 }
 
 .btn-outline:hover {
-  background: rgba(var(--foreground-rgb), 0.05);
+  background: rgb(var(--foreground-rgb), 0.05);
 }
 
 /* Cards & Grid */
@@ -176,14 +171,14 @@ a {
 .card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-premium);
-  border-color: rgba(var(--primary-rgb), 0.3);
+  border-color: rgb(var(--primary-rgb), 0.3);
 }
 
 /* Hero Section */
 .hero {
   padding: 80px 0;
   text-align: center;
-  background: radial-gradient(circle at top, rgba(var(--primary-rgb), 0.08) 0%, transparent 60%);
+  background: radial-gradient(circle at top, rgb(var(--primary-rgb), 0.08) 0%, transparent 60%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -214,6 +209,7 @@ a {
 .hero-title span {
   background: linear-gradient(135deg, rgb(var(--primary-rgb)) 0%, rgb(var(--accent-rgb)) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -254,19 +250,21 @@ a {
 /* Skeleton Loading Utilities */
 @keyframes skeleton-pulse {
   0% {
-    background-color: rgba(var(--foreground-rgb), 0.05);
+    background-color: rgb(var(--foreground-rgb), 0.05);
   }
+
   50% {
-    background-color: rgba(var(--foreground-rgb), 0.15);
+    background-color: rgb(var(--foreground-rgb), 0.15);
   }
+
   100% {
-    background-color: rgba(var(--foreground-rgb), 0.05);
+    background-color: rgb(var(--foreground-rgb), 0.05);
   }
 }
 
 .skeleton {
   animation: skeleton-pulse 1.5s ease-in-out infinite;
-  background-color: rgba(var(--foreground-rgb), 0.05);
+  background-color: rgb(var(--foreground-rgb), 0.05);
   border-radius: var(--border-radius);
 }
 
@@ -317,7 +315,7 @@ a {
   right: 14px;
   border-width: 8px;
   border-style: solid;
-  border-color: transparent transparent rgb(var(--card-bg-rgb)) transparent;
+  border-color: transparent transparent rgb(var(--card-bg-rgb));
 }
 
 .avatar-dropdown::after {
@@ -327,7 +325,7 @@ a {
   right: 13px;
   border-width: 9px;
   border-style: solid;
-  border-color: transparent transparent rgb(var(--card-border-rgb)) transparent;
+  border-color: transparent transparent rgb(var(--card-border-rgb));
   z-index: -1;
 }
 
@@ -383,16 +381,16 @@ a {
 }
 
 .dropdown-menu-item:hover {
-  background-color: rgba(var(--foreground-rgb), 0.04);
+  background-color: rgb(var(--foreground-rgb), 0.04);
 }
 
 .dropdown-menu-item.danger {
-  color: rgb(239, 68, 68);
+  color: rgb(239 68 68);
   margin-top: 4px;
 }
 
 .dropdown-menu-item.danger:hover {
-  background-color: rgba(239, 68, 68, 0.05);
+  background-color: rgb(239 68 68 / 0.05);
 }
 
 /* Mobile Toggle Button */
@@ -447,7 +445,7 @@ a {
 }
 
 /* Media Queries for Mobile Screens */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .menu-toggle {
     display: block;
   }

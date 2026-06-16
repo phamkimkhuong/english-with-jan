@@ -1,0 +1,279 @@
+/* CSS Module cho Tính năng Phát âm học sinh */
+
+.loadingContainer {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.tabBar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.sectionHeader {
+  font-size: 1.1rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sectionDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.subSectionTitle {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: rgb(var(--secondary-rgb));
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  gap: 10px;
+}
+
+.soundBtn {
+  height: 65px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  background: transparent;
+}
+
+.soundBtnVowel {
+  border: 1px solid rgb(var(--card-border-rgb));
+}
+
+.soundBtnVowelSelected {
+  border: 2px solid rgb(var(--primary-rgb));
+  background: rgb(var(--primary-light-rgb)) !important;
+}
+
+.soundBtnConsonant {
+  border: 1px solid rgb(var(--card-border-rgb));
+}
+
+.soundBtnConsonantSelected {
+  border: 2px solid rgb(var(--accent-rgb));
+  background: rgb(var(--accent-light-rgb)) !important;
+}
+
+.soundBtnSymbol {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: rgb(var(--foreground-rgb));
+}
+
+.soundBtnName {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  color: rgb(var(--secondary-rgb));
+}
+
+/* Detail Panel styles */
+.detailHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.soundBadge {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.speakerBtn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s ease;
+}
+
+.mouthShapeCard {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: rgb(var(--foreground-rgb), 0.02);
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.mouthShapeImg {
+  width: 65px;
+  height: 65px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.sectionTitle {
+  font-size: 0.95rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.descriptionText {
+  font-size: 0.92rem;
+  color: rgb(var(--secondary-rgb));
+  line-height: 1.5;
+}
+
+.mistakesCard {
+  background: rgb(239 68 68 / 0.03);
+  border: 1px solid rgb(239 68 68 / 0.1);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.mistakesList {
+  padding-left: 16px;
+  font-size: 0.85rem;
+  color: rgb(var(--secondary-rgb));
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.errorCard {
+  padding: 10px 14px;
+  border-radius: 10px;
+  background-color: rgb(239 68 68 / 0.08);
+  color: rgb(239 68 68);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  border: 1px solid rgb(239 68 68 / 0.15);
+}
+
+/* Example Word Card styles */
+.wordCard {
+  border-radius: 12px;
+  border: 1px solid rgb(var(--card-border-rgb));
+  background: rgb(var(--foreground-rgb), 0.01);
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.wordHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wordText {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: rgb(var(--foreground-rgb));
+}
+
+.ipaText {
+  font-size: 0.9rem;
+  color: rgb(var(--primary-rgb));
+  margin-left: 10px;
+  font-family: monospace;
+}
+
+.meaningText {
+  font-size: 0.8rem;
+  color: rgb(var(--secondary-rgb));
+  margin-top: 2px;
+}
+
+.actionBtnGroup {
+  display: flex;
+  gap: 8px;
+}
+
+.actionBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid rgb(var(--card-border-rgb));
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(var(--secondary-rgb));
+  transition: all 0.2s ease;
+}
+
+.actionBtnPlaying {
+  color: rgb(var(--accent-rgb)) !important;
+}
+
+.recordingStatus {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: rgb(239 68 68);
+  font-weight: 700;
+  padding: 4px 0;
+}
+
+.pulseDot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgb(239 68 68);
+  animation: micPulse 1.2s infinite ease-in-out;
+}
+
+.feedbackBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  animation: fadeIn 0.2s ease;
+}
+
+.feedbackCorrect {
+  border: 1px solid rgb(16 185 129 / 0.2);
+  background: rgb(16 185 129 / 0.06);
+}
+
+.feedbackIncorrect {
+  border: 1px solid rgb(245 158 11 / 0.2);
+  background: rgb(245 158 11 / 0.06);
+}
+
+.feedbackTitleCorrect {
+  margin: 0;
+  font-weight: 700;
+  color: rgb(16 185 129);
+}
+
+.feedbackTitleIncorrect {
+  margin: 0;
+  font-weight: 700;
+  color: rgb(217 119 6);
+}

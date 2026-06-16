@@ -14,21 +14,7 @@ export const Navbar: React.FC = () => {
     <nav className="navbar">
       <div className="container navbar-container">
         <Link href="/" className="logo" onClick={() => setMenuOpen(false)}>
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
-            <path d="M6 6h10" />
-            <path d="M6 10h10" />
-          </svg>
-          <span>English with Jan</span>
+          <span>English with Ms.Jan</span>
         </Link>
 
         {/* Mobile Toggle Button */}
@@ -55,8 +41,8 @@ export const Navbar: React.FC = () => {
 
         <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
           <li>
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               className={`nav-link ${pathname === "/" ? "active" : ""}`}
               onClick={() => setMenuOpen(false)}
             >
@@ -64,8 +50,8 @@ export const Navbar: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link 
-              href="/courses" 
+            <Link
+              href="/courses"
               className={`nav-link ${pathname.startsWith("/courses") ? "active" : ""}`}
               onClick={() => setMenuOpen(false)}
             >
@@ -73,8 +59,8 @@ export const Navbar: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link 
-              href="/pronunciation" 
+            <Link
+              href="/pronunciation"
               className={`nav-link ${pathname.startsWith("/pronunciation") ? "active" : ""}`}
               onClick={() => setMenuOpen(false)}
             >
@@ -126,9 +112,9 @@ export const Navbar: React.FC = () => {
                     <div className="dropdown-name">{user.displayName || "Học viên"}</div>
                     <div className="dropdown-email">{user.email}</div>
                   </div>
-                  
+
                   <div className="dropdown-divider" />
-                  
+
                   <ul className="dropdown-menu-list">
                     <li>
                       <Link href="/profile" className="dropdown-menu-item">
@@ -139,7 +125,7 @@ export const Navbar: React.FC = () => {
                         Hồ sơ cá nhân
                       </Link>
                     </li>
-                    
+
                     {/* Admin / Teacher link option */}
                     {(role === "admin" || role === "teacher") && (
                       <li>
@@ -155,9 +141,9 @@ export const Navbar: React.FC = () => {
                       </li>
                     )}
                   </ul>
-                  
+
                   <div className="dropdown-divider" />
-                  
+
                   <button onClick={logout} className="dropdown-menu-item danger">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                       <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
