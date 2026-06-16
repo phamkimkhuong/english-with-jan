@@ -3,6 +3,7 @@
 import React from "react";
 import { useIPASyllabus } from "@/hooks/useIPASyllabus";
 import { IPADetailPanel } from "@/components/pronunciation/IPADetailPanel";
+import { CourseGuard } from "@/components/common/CourseGuard";
 import styles from "./pronunciation.module.css";
 
 export default function PronunciationPage() {
@@ -36,7 +37,8 @@ export default function PronunciationPage() {
   const consonants = sounds.filter(s => s.type.startsWith("consonant"));
 
   return (
-    <div style={{ padding: "40px 0" }}>
+    <CourseGuard courseId="ipa" courseTitle="Luyện phát âm chuẩn IPA">
+      <div style={{ padding: "40px 0" }}>
       <div className="container">
         {/* Header */}
         <div style={{ marginBottom: "30px", textAlign: "center" }}>
@@ -197,5 +199,6 @@ export default function PronunciationPage() {
         </div>
       </div>
     </div>
+    </CourseGuard>
   );
 }

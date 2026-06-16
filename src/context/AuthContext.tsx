@@ -8,7 +8,7 @@ import {
   GoogleAuthProvider, 
   signOut 
 } from "firebase/auth";
-import { doc, getDoc, setDoc, serverTimestamp } from "firebase/firestore";
+import { doc, getDoc, setDoc, onSnapshot, serverTimestamp, Timestamp } from "firebase/firestore";
 import { auth, db } from "@/lib/firebase/config";
 
 export type UserRole = "admin" | "teacher" | "student";
@@ -17,6 +17,9 @@ interface AuthContextType {
   user: User | null;
   role: UserRole | null;
   loading: boolean;
+  unlockedCourses: string[];
+  unlockedCoursesExpiry: Record<string, Timestamp | null>;
+  activatedCodes: string[];
   loginWithGoogle: () => Promise<void>;
   logout: () => Promise<void>;
 }
@@ -28,71 +31,108 @@ const SUPER_ADMIN_EMAIL = process.env.NEXT_PUBLIC_SUPER_ADMIN_EMAIL;
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);
   const [role, setRole] = useState<UserRole | null>(null);
+  const [unlockedCourses, setUnlockedCourses] = useState<string[]>([]);
+  const [unlockedCoursesExpiry, setUnlockedCoursesExpiry] = useState<Record<string, Timestamp | null>>({});
+  const [activatedCodes, setActivatedCodes] = useState<string[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
+    let unsubscribeDoc: (() => void) | null = null;
+
     // Đăng ký lắng nghe sự thay đổi trạng thái đăng nhập từ Firebase Auth
-    const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
-      setLoading(true);
+    const unsubscribeAuth = onAuthStateChanged(auth, async (firebaseUser) => {
+      // Hủy lắng nghe tài liệu user cũ nếu có
+      if (unsubscribeDoc) {
+        unsubscribeDoc();
+        unsubscribeDoc = null;
+      }
+
       if (firebaseUser) {
         setUser(firebaseUser);
         
-        try {
-          // Lấy thông tin role từ Firestore
-          const userDocRef = doc(db, "users", firebaseUser.uid);
-          const userDoc = await getDoc(userDocRef);
-          
-          let userRole: UserRole = "student";
-          let preGrantedName = "";
-          
-          // Kiểm tra nếu là email Super Admin cấu hình cứng
-          if (firebaseUser.email === SUPER_ADMIN_EMAIL) {
-            userRole = "admin";
-          } else if (userDoc.exists()) {
-            userRole = userDoc.data().role as UserRole;
-          } else if (firebaseUser.email) {
-            // Nếu UID chưa có trong DB, quét xem có document cấp quyền trước bằng ID Email không
-            const emailDocRef = doc(db, "users", firebaseUser.email.trim().toLowerCase());
-            const emailDoc = await getDoc(emailDocRef);
-            if (emailDoc.exists()) {
-              userRole = emailDoc.data().role as UserRole;
-              preGrantedName = emailDoc.data().displayName || "";
+        const userDocRef = doc(db, "users", firebaseUser.uid);
+        
+        // Thiết lập lắng nghe thời gian thực tài liệu user trong Firestore
+        unsubscribeDoc = onSnapshot(userDocRef, async (docSnap) => {
+          setLoading(true);
+          try {
+            let userRole: UserRole = "student";
+            let courses: string[] = [];
+            let coursesExpiry: Record<string, Timestamp | null> = {};
+            let codes: string[] = [];
+            let preGrantedName = "";
+
+            if (firebaseUser.email === SUPER_ADMIN_EMAIL) {
+              userRole = "admin";
             }
-          }
 
-          // Nếu user chưa tồn tại trong Firestore (lần đầu đăng nhập), tạo mới profile
-          if (!userDoc.exists()) {
-            await setDoc(userDocRef, {
-              email: firebaseUser.email,
-              displayName: preGrantedName || firebaseUser.displayName || "Người dùng",
-              photoURL: firebaseUser.photoURL || "",
-              role: userRole,
-              createdAt: serverTimestamp(),
-            });
-          } else if (firebaseUser.email === SUPER_ADMIN_EMAIL && userDoc.data().role !== "admin") {
-            // Cập nhật lại db nếu super admin chưa có quyền admin trên DB
-            await setDoc(userDocRef, { role: "admin" }, { merge: true });
-          }
+            if (docSnap.exists()) {
+              const data = docSnap.data();
+              userRole = (data.role as UserRole) || userRole;
+              courses = data.unlockedCourses || [];
+              coursesExpiry = data.unlockedCoursesExpiry || {};
+              codes = data.activatedCodes || [];
+            } else {
+              // Nếu UID chưa có trong DB, quét xem có email được cấp quyền trước không
+              if (firebaseUser.email) {
+                const emailDocRef = doc(db, "users", firebaseUser.email.trim().toLowerCase());
+                const emailDoc = await getDoc(emailDocRef);
+                if (emailDoc.exists()) {
+                  userRole = emailDoc.data().role as UserRole;
+                  preGrantedName = emailDoc.data().displayName || "";
+                }
+              }
 
-          setRole(userRole);
-        } catch (error) {
-          console.error("Lỗi đồng bộ hồ sơ người dùng với Firestore:", error);
-          // Fallback mặc định cho email Super Admin
-          if (firebaseUser.email === SUPER_ADMIN_EMAIL) {
-            setRole("admin");
-          } else {
-            setRole("student");
+              // Khởi tạo tài liệu mới trong DB
+              await setDoc(userDocRef, {
+                email: firebaseUser.email,
+                displayName: preGrantedName || firebaseUser.displayName || "Người dùng",
+                photoURL: firebaseUser.photoURL || "",
+                role: userRole,
+                createdAt: serverTimestamp(),
+                unlockedCourses: [],
+                activatedCodes: [],
+              });
+            }
+
+            // Đồng bộ quyền admin cho tài khoản Super Admin nếu DB chưa khớp
+            if (firebaseUser.email === SUPER_ADMIN_EMAIL && (!docSnap.exists() || docSnap.data()?.role !== "admin")) {
+              await setDoc(userDocRef, { role: "admin" }, { merge: true });
+            }
+
+            setRole(userRole);
+            setUnlockedCourses(courses);
+            setUnlockedCoursesExpiry(coursesExpiry);
+            setActivatedCodes(codes);
+          } catch (error) {
+            console.error("Lỗi đồng bộ dữ liệu thời gian thực từ Firestore:", error);
+            setRole(firebaseUser.email === SUPER_ADMIN_EMAIL ? "admin" : "student");
+            setUnlockedCourses([]);
+            setUnlockedCoursesExpiry({});
+            setActivatedCodes([]);
+          } finally {
+            setLoading(false);
           }
-        }
+        }, (error) => {
+          console.error("Lỗi listener Firestore user document:", error);
+          setLoading(false);
+        });
+
       } else {
         setUser(null);
         setRole(null);
+        setUnlockedCourses([]);
+        setUnlockedCoursesExpiry({});
+        setActivatedCodes([]);
+        setLoading(false);
       }
-      setLoading(false);
     });
 
-    // Hủy đăng ký khi component unmount
-    return () => unsubscribe();
+    // Hủy tất cả listener khi component unmount
+    return () => {
+      unsubscribeAuth();
+      if (unsubscribeDoc) unsubscribeDoc();
+    };
   }, []);
 
   const loginWithGoogle = async () => {
@@ -117,7 +157,18 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   return (
-    <AuthContext.Provider value={{ user, role, loading, loginWithGoogle, logout }}>
+    <AuthContext.Provider
+      value={{
+        user,
+        role,
+        loading,
+        unlockedCourses,
+        unlockedCoursesExpiry,
+        activatedCodes,
+        loginWithGoogle,
+        logout,
+      }}
+    >
       {children}
     </AuthContext.Provider>
   );
