@@ -3,6 +3,7 @@
 import React, { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
+import styles from "./adminGuard.module.css";
 
 export const AdminGuard: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { user, role, loading } = useAuth();
@@ -17,32 +18,9 @@ export const AdminGuard: React.FC<{ children: React.ReactNode }> = ({ children }
 
   if (loading) {
     return (
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          minHeight: "80vh",
-          gap: "16px",
-        }}
-      >
-        <div
-          style={{
-            width: "40px",
-            height: "40px",
-            border: "3px solid rgb(var(--primary-light-rgb))",
-            borderTopColor: "rgb(var(--primary-rgb))",
-            borderRadius: "50%",
-            animation: "spin 1s linear infinite",
-          }}
-        />
-        <style>{`
-          @keyframes spin {
-            to { transform: rotate(360deg); }
-          }
-        `}</style>
-        <p style={{ color: "rgb(var(--secondary-rgb))", fontSize: "0.95rem" }}>
+      <div className={styles.loadingContainer}>
+        <div className="spinner" />
+        <p className={styles.loadingText}>
           Đang xác thực quyền truy cập trang quản trị...
         </p>
       </div>

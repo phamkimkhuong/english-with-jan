@@ -4,6 +4,10 @@ import React, { useState, useEffect } from "react";
 import { useAuth } from "@/context/AuthContext";
 import { collection, query, where, getDocs, doc, setDoc, serverTimestamp } from "firebase/firestore";
 import { db } from "@/lib/firebase/config";
+import { toast } from "@/hooks/useToastStore";
+import { createLogger } from "@/utils/logger";
+
+const logger = createLogger("AdminDashboard");
 
 interface StudentProgress {
   id: string;
@@ -13,8 +17,6 @@ interface StudentProgress {
   progress: number;
   lastActive: string;
 }
-
-
 
 const mapCourseIdToName = (courseId: string) => {
   const mapping: { [key: string]: string } = {
@@ -55,7 +57,6 @@ export default function AdminDashboard() {
   const [newTeacherEmail, setNewTeacherEmail] = useState("");
   const [newTeacherName, setNewTeacherName] = useState("");
   const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState({ text: "", type: "" });
   const [teachers, setTeachers] = useState<{ id: string; email: string; displayName: string; role: string }[]>([]);
   const [students, setStudents] = useState<StudentProgress[]>([]);
   const [loadingStudents, setLoadingStudents] = useState(true);
@@ -97,7 +98,7 @@ export default function AdminDashboard() {
       });
       setStudents(list);
     } catch (error) {
-      console.error("Lỗi lấy danh sách học sinh:", error);
+      logger.error("Lỗi lấy danh sách học sinh:", error);
     } finally {
       setLoadingStudents(false);
     }
@@ -122,7 +123,7 @@ export default function AdminDashboard() {
       });
       setTeachers(list);
     } catch (error) {
-      console.error("Lỗi lấy danh sách giáo viên:", error);
+      logger.error("Lỗi lấy danh sách giáo viên:", error);
     }
   };
 
@@ -135,12 +136,11 @@ export default function AdminDashboard() {
   const handleAddTeacher = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!newTeacherEmail || !newTeacherName) {
-      setMessage({ text: "Vui lòng nhập đầy đủ thông tin!", type: "error" });
+      toast.warning("Vui lòng nhập đầy đủ thông tin tên và email!");
       return;
     }
 
     setLoading(true);
-    setMessage({ text: "", type: "" });
 
     try {
       // Vì không thể tạo tài khoản hộ bằng email trong client SDK, ta sẽ gán quyền trước vào DB.
@@ -164,13 +164,13 @@ export default function AdminDashboard() {
         createdAt: serverTimestamp(),
       });
 
-      setMessage({ text: `Đã cấp quyền Giáo viên thành công cho email: ${normalizedEmail}`, type: "success" });
+      toast.success(`Đã cấp quyền Giáo viên thành công cho email: ${normalizedEmail}`);
       setNewTeacherEmail("");
       setNewTeacherName("");
       fetchTeachers();
     } catch (error: unknown) {
-      console.error("Lỗi cấp quyền giáo viên:", error);
-      setMessage({ text: "Lỗi phân quyền: " + (error instanceof Error ? error.message : "Đã có lỗi xảy ra"), type: "error" });
+      logger.error("Lỗi cấp quyền giáo viên:", error);
+      toast.error("Lỗi phân quyền giáo viên. Vui lòng thử lại sau.");
     } finally {
       setLoading(false);
     }
@@ -252,21 +252,6 @@ export default function AdminDashboard() {
             </button>
           </form>
 
-          {message.text && (
-            <div
-              style={{
-                padding: "12px 16px",
-                borderRadius: "8px",
-                fontSize: "0.9rem",
-                marginBottom: "20px",
-                backgroundColor: message.type === "success" ? "rgb(var(--accent-light-rgb))" : "rgba(239, 68, 68, 0.1)",
-                color: message.type === "success" ? "rgb(var(--accent-rgb))" : "rgb(239, 68, 68)",
-              }}
-            >
-              {message.text}
-            </div>
-          )}
-
           {/* Danh sách giáo viên hiện tại */}
           <div>
             <h4 style={{ fontSize: "0.9rem", fontWeight: 700, marginBottom: "10px", color: "rgb(var(--secondary-rgb))" }}>
@@ -299,7 +284,7 @@ export default function AdminDashboard() {
                       color: t.role === "admin" ? "rgb(var(--primary-rgb))" : "rgb(var(--accent-rgb))",
                     }}
                   >
-                    {t.role}
+                    {t.role === "admin" ? "Quản trị viên" : "Giáo viên"}
                   </span>
                 </div>
               ))}

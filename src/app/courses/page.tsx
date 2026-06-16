@@ -1,53 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { staticCourses } from "@/types/course";
 
 export const metadata: Metadata = {
   title: "Khóa Học Tiếng Anh Giao Tiếp & Luyện Thi | English with Ms.Jan",
   description: "Tổng hợp các khóa học tiếng Anh thực chiến cho người đi làm và sinh viên. Học phát âm giao tiếp văn phòng, ngữ pháp thực hành tinh gọn hiệu quả.",
   keywords: ["Khóa học tiếng Anh", "Tiếng Anh giao tiếp", "Tiếng Anh văn phòng", "Học tiếng Anh thực chiến", "English with Ms. Jan Courses"],
 };
-
-
-interface Course {
-  id: string;
-  title: string;
-  description: string;
-  level: string;
-  lessonsCount: number;
-  duration: string;
-  color: string;
-}
-
-const dummyCourses: Course[] = [
-  {
-    id: "office-communication",
-    title: "Tiếng Anh Giao Tiếp Văn Phòng Thực Chiến",
-    description: "Học các mẫu câu, hội thoại thông dụng trong môi trường văn phòng, viết email, thuyết trình và tham gia các cuộc họp chuyên nghiệp.",
-    level: "Trung cấp (Intermediate)",
-    lessonsCount: 12,
-    duration: "6 tuần",
-    color: "var(--primary-rgb)",
-  },
-  {
-    id: "practical-grammar",
-    title: "Ngữ Pháp Tiếng Anh Thực Hành Cho Người Đi Làm",
-    description: "Hệ thống hóa toàn bộ các cấu trúc ngữ pháp quan trọng nhất trong công việc mà không gây nhàm chán. Tập trung vào thực hành thực tế.",
-    level: "Căn bản & Trung cấp",
-    lessonsCount: 15,
-    duration: "8 tuần",
-    color: "var(--accent-rgb)",
-  },
-  {
-    id: "academic-vocabulary",
-    title: "Từ Vựng & Phát Âm Căn Bản Cho Sinh Viên",
-    description: "Xây dựng nền tảng từ vựng học thuật và giao tiếp thiết yếu cho sinh viên đại học chuẩn bị đi làm hoặc chuẩn bị cho các kỳ thi chuẩn đầu ra.",
-    level: "Cơ bản (Beginner)",
-    lessonsCount: 10,
-    duration: "5 tuần",
-    color: "var(--primary-rgb)",
-  },
-];
 
 export default function CoursesPage() {
   return (
@@ -64,7 +24,7 @@ export default function CoursesPage() {
         </div>
 
         <div className="grid">
-          {dummyCourses.map((course) => (
+          {staticCourses.map((course) => (
             <div key={course.id} className="card">
               <div
                 style={{

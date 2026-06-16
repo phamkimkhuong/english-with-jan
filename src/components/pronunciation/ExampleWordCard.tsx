@@ -15,6 +15,7 @@ interface ExampleWordCardProps {
   setPracticeResult: (result: null) => void;
   playSoundAudio: (textToSpeak: string, customAudioUrl: string, isWord: boolean) => void;
   startSpeechPractice: (word: string) => void;
+  isSupported?: boolean;
 }
 
 export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
@@ -25,6 +26,7 @@ export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
   setPracticeResult,
   playSoundAudio,
   startSpeechPractice,
+  isSupported = true,
 }) => {
   const isWordListening = listeningWord === ex.word;
   const hasResult = practiceResult && practiceResult.word === ex.word;
@@ -59,7 +61,9 @@ export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
           <button
             type="button"
             onClick={() => startSpeechPractice(ex.word)}
-            className={`${styles.actionBtn} ${isWordListening ? "mic-listening" : ""}`}
+            className={`${styles.actionBtn} ${isWordListening ? styles.micListening : ""} ${!isSupported ? styles.actionBtnDisabled : ""}`}
+            disabled={!isSupported}
+            title={!isSupported ? "Trình duyệt không hỗ trợ micro luyện đọc" : "Bấm để bắt đầu luyện đọc với micro"}
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />

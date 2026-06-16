@@ -4,6 +4,7 @@ import "./globals.css";
 import { Providers } from "@/app/providers";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { ToastContainer } from "@/components/common/ToastContainer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,12 +45,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="vi" className={`${geistSans.variable} ${geistMono.variable}`} suppressHydrationWarning>
-      <body suppressHydrationWarning>
+    <html lang="vi" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body>
         <Providers>
           <Navbar />
           <main style={{ flex: 1 }}>{children}</main>
           <Footer />
+          <ToastContainer />
         </Providers>
       </body>
     </html>

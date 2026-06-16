@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export interface SpeechPracticeResult {
   word: string;
@@ -8,10 +8,22 @@ export interface SpeechPracticeResult {
 }
 
 export function useSpeechRecognition() {
+  const [isSupported, setIsSupported] = useState(true);
   const [isListening, setIsListening] = useState(false);
   const [listeningWord, setListeningWord] = useState<string | null>(null);
   const [practiceResult, setPracticeResult] = useState<SpeechPracticeResult | null>(null);
   const [recognitionError, setRecognitionError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+      const supported = !!SpeechRecognition;
+      setTimeout(() => {
+        setIsSupported(supported);
+      }, 0);
+    }
+  }, []);
 
   const startSpeechPractice = (wordToPractice: string) => {
     if (typeof window === "undefined") return;
@@ -80,6 +92,7 @@ export function useSpeechRecognition() {
   };
 
   return {
+    isSupported,
     isListening,
     listeningWord,
     practiceResult,

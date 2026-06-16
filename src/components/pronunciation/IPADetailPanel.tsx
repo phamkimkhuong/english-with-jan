@@ -16,6 +16,7 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
   playingWord,
 }) => {
   const {
+    isSupported,
     listeningWord,
     practiceResult,
     recognitionError,
@@ -35,34 +36,19 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
 
   return (
     <div className="card" style={{ padding: "26px", gap: "20px" }}>
-      {/* CSS keyframes animation */}
-      <style>{`
-        @keyframes micPulse {
-          0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
-          70% { box-shadow: 0 0 0 8px rgba(239, 68, 68, 0); }
-          100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
-        }
-        .mic-listening {
-          background-color: rgb(239, 68, 68) !important;
-          color: #ffffff !important;
-          border-color: rgb(239, 68, 68) !important;
-          animation: micPulse 1.2s infinite ease-in-out;
-        }
-      `}</style>
-
       {/* Sound Header with Speaker */}
       <div className={styles.detailHeader}>
         <div>
-          <span 
+          <span
             className={styles.soundBadge}
-            style={{ 
+            style={{
               color: isConsonant ? "rgb(var(--accent-rgb))" : "rgb(var(--primary-rgb))",
             }}
           >
-            {selectedSound.type.includes("long") ? "Nguyên âm đơn dài" : 
-             selectedSound.type.includes("short") ? "Nguyên âm đơn ngắn" :
-             selectedSound.type === "diphthong" ? "Nguyên âm đôi" :
-             selectedSound.type === "consonant_voiceless" ? "Phụ âm vô thanh" : "Phụ âm hữu thanh"}
+            {selectedSound.type.includes("long") ? "Nguyên âm đơn dài" :
+              selectedSound.type.includes("short") ? "Nguyên âm đơn ngắn" :
+                selectedSound.type === "diphthong" ? "Nguyên âm đôi" :
+                  selectedSound.type === "consonant_voiceless" ? "Phụ âm vô thanh" : "Phụ âm hữu thanh"}
           </span>
           <h2 style={{ fontSize: "2.5rem", fontWeight: 900, color: "rgb(var(--foreground-rgb))", marginTop: "4px" }}>
             /{selectedSound.ipa}/
@@ -71,9 +57,9 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
             Tên gọi khác: {selectedSound.name}
           </p>
         </div>
-        
+
         {/* Speaker circle */}
-        <button 
+        <button
           type="button"
           onClick={() => playSoundAudio(selectedSound.ipa, selectedSound.audioUrl)}
           className={styles.speakerBtn}
@@ -95,8 +81,8 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
       {selectedSound.mouthShapeImage && (
         <div className={styles.mouthShapeCard}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img 
-            src={selectedSound.mouthShapeImage} 
+          <img
+            src={selectedSound.mouthShapeImage}
             alt={`Khẩu hình miệng phát âm ${selectedSound.ipa}`}
             className={styles.mouthShapeImg}
           />
@@ -137,6 +123,12 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
           🗣️ Từ vựng luyện tập thực tế
         </h4>
 
+        {!isSupported && (
+          <div className={styles.warningCard} style={{ marginBottom: "12px" }}>
+            Trình duyệt của bạn không hỗ trợ nhận dạng giọng nói qua Micro. Hãy sử dụng Google Chrome hoặc Microsoft Edge để luyện đọc.
+          </div>
+        )}
+
         {recognitionError && (
           <div className={styles.errorCard}>
             ⚠️ {recognitionError}
@@ -154,6 +146,7 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
               setPracticeResult={setPracticeResult}
               playSoundAudio={playSoundAudio}
               startSpeechPractice={startSpeechPractice}
+              isSupported={isSupported}
             />
           ))}
         </div>

@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { IPASound, IPAExample } from "@/types/pronunciation";
 import { publishIPASyllabus, uploadPronunciationMedia } from "@/services/pronunciationService";
+import { toast } from "@/hooks/useToastStore";
+import { createLogger } from "@/utils/logger";
 import styles from "./adminPronunciation.module.css";
+
+const logger = createLogger("AdminIPASoundForm");
 
 interface AdminIPASoundFormProps {
   selectedSound: IPASound;
@@ -15,9 +19,8 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
   onPublishSuccess,
 }) => {
   const [editSound, setEditSound] = useState<IPASound>(() => JSON.parse(JSON.stringify(selectedSound)));
-  const [publishing, setPublishing] = useState(false);
+  const [isSaving, setIsSaving] = useState(false);
   const [uploadingField, setUploadingField] = useState<string | null>(null);
-  const [message, setMessage] = useState({ text: "", type: "" });
   const [confirmModal, setConfirmModal] = useState<{
     isOpen: boolean;
     title: string;
@@ -57,35 +60,28 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
         }
         return prev;
       });
-      setMessage({ text: "Tải lên tệp thành công!", type: "success" });
+      toast.success("Tải ảnh/âm thanh lên thành công!");
     } catch (err: unknown) {
-      console.error("Lỗi tải lên tệp:", err);
-      setMessage({
-        text: "Không thể tải tệp lên: " + (err instanceof Error ? err.message : ""),
-        type: "error",
-      });
+      logger.error("Lỗi tải lên tệp:", err);
+      toast.error("Không thể tải tệp lên. Vui lòng kiểm tra dung lượng hoặc kết nối mạng.");
     } finally {
       setUploadingField(null);
     }
   };
 
-  const handlePublishToCloud = async (e: React.FormEvent) => {
+  const handleSaveChanges = async (e: React.FormEvent) => {
     e.preventDefault();
-    setPublishing(true);
-    setMessage({ text: "", type: "" });
+    setIsSaving(true);
     try {
       const updatedSounds = sounds.map((s) => (s.ipa === editSound.ipa ? editSound : s));
       await publishIPASyllabus(updatedSounds);
-      setMessage({ text: `Đã xuất bản thành công thay đổi âm /${editSound.ipa}/!`, type: "success" });
+      toast.success(`Đã lưu thay đổi cho âm /${editSound.ipa}/ thành công!`);
       onPublishSuccess(updatedSounds);
     } catch (err: unknown) {
-      console.error("Lỗi xuất bản:", err);
-      setMessage({
-        text: "Lỗi lưu file lên Cloud: " + (err instanceof Error ? err.message : ""),
-        type: "error",
-      });
+      logger.error("Lỗi lưu thay đổi:", err);
+      toast.error("Lỗi hệ thống không thể lưu thay đổi. Vui lòng thử lại sau.");
     } finally {
-      setPublishing(false);
+      setIsSaving(false);
     }
   };
 
@@ -104,28 +100,19 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
   const hasFormChanges = JSON.stringify(selectedSound) !== JSON.stringify(editSound);
 
   return (
-    <form onSubmit={handlePublishToCloud} className={`${styles.formContainer} card`}>
-      {message.text && (
-        <div
-          style={{
-            padding: "12px 16px",
-            borderRadius: "8px",
-            fontSize: "0.9rem",
-            backgroundColor: message.type === "success" ? "rgb(var(--accent-light-rgb))" : "rgba(239, 68, 68, 0.1)",
-            color: message.type === "success" ? "rgb(var(--accent-rgb))" : "rgb(239, 68, 68)",
-            marginBottom: "10px",
-          }}
-        >
-          {message.text}
-        </div>
-      )}
+    <form onSubmit={handleSaveChanges} className={`${styles.formContainer} card`}>
 
       <div className={styles.rowHeader}>
         <h3 style={{ fontSize: "1.2rem", fontWeight: 700 }}>
           Chỉnh Sửa Âm: <span style={{ color: "rgb(var(--primary-rgb))" }}>/{editSound.ipa}/</span> ({editSound.name})
         </h3>
         <span className={styles.typeBadge}>
-          Mã loại: {editSound.type}
+          Phân loại: {
+            editSound.type === "monophthong_long" ? "Nguyên âm đơn dài" :
+            editSound.type === "monophthong_short" ? "Nguyên âm đơn ngắn" :
+            editSound.type === "diphthong" ? "Nguyên âm đôi" :
+            editSound.type === "consonant_voiceless" ? "Phụ âm vô thanh" : "Phụ âm hữu thanh"
+          }
         </span>
       </div>
 
@@ -144,12 +131,13 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
       <div className={styles.gridTwoCols}>
         {/* Ảnh khẩu hình */}
         <div className={styles.inputGroup}>
-          <label className={styles.inputLabel}>Ảnh khẩu hình miệng (URL)</label>
+          <label className={styles.inputLabel}>Ảnh khẩu hình miệng</label>
           <input
             type="text"
             value={editSound.mouthShapeImage}
             onChange={(e) => updateEditSound({ mouthShapeImage: e.target.value })}
             className={styles.inputText}
+            placeholder="Đường dẫn ảnh khẩu hình miệng (URL)"
           />
           <input
             type="file"
@@ -157,17 +145,18 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
             onChange={(e) => handleUploadFile(e, "images", "mouthShapeImage")}
             className={styles.fileInput}
           />
-          {uploadingField === "mouthShapeImage" && <span className={styles.uploadStatus}>Đang tải ảnh lên...</span>}
+          {uploadingField === "mouthShapeImage" && <span className={styles.uploadStatus}>Đang tải ảnh khẩu hình miệng lên...</span>}
         </div>
 
         {/* Audio âm mẫu */}
         <div className={styles.inputGroup}>
-          <label className={styles.inputLabel}>Audio phát âm mẫu (URL)</label>
+          <label className={styles.inputLabel}>Âm thanh phát âm mẫu</label>
           <input
             type="text"
             value={editSound.audioUrl}
             onChange={(e) => updateEditSound({ audioUrl: e.target.value })}
             className={styles.inputText}
+            placeholder="Đường dẫn âm thanh phát âm mẫu (URL)"
           />
           <input
             type="file"
@@ -175,7 +164,7 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
             onChange={(e) => handleUploadFile(e, "audios", "audioUrl")}
             className={styles.fileInput}
           />
-          {uploadingField === "audioUrl" && <span className={styles.uploadStatus}>Đang tải file nghe lên...</span>}
+          {uploadingField === "audioUrl" && <span className={styles.uploadStatus}>Đang tải âm thanh phát âm mẫu lên...</span>}
         </div>
       </div>
 
@@ -209,7 +198,7 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
                 setConfirmModal({
                   isOpen: true,
                   title: "Xác nhận xóa lỗi",
-                  message: "Bạn có chắc chắn muốn xóa lỗi thường gặp này không? Hành động này sẽ loại bỏ lỗi khỏi danh sách chỉnh sửa của âm phát âm hiện tại.",
+                  message: "Bạn có chắc chắn muốn xóa lỗi thường gặp này không? Lỗi này sẽ bị loại bỏ khỏi danh sách của âm phát âm hiện tại.",
                   onConfirm: () => {
                     updateEditSound({ commonMistakes: editSound.commonMistakes.filter((_, i) => i !== idx) });
                   },
@@ -250,14 +239,14 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
                 <input
                   type="text"
                   value={ex.ipa}
-                  placeholder="IPA (Ví dụ: /miːt/)"
+                  placeholder="Phiên âm IPA (Ví dụ: /miːt/)"
                   onChange={(e) => updateExample(idx, { ipa: e.target.value })}
                   className={styles.exampleInput}
                 />
                 <input
                   type="text"
                   value={ex.meaning}
-                  placeholder="Nghĩa (Ví dụ: gặp gỡ)"
+                  placeholder="Nghĩa của từ (Ví dụ: gặp gỡ)"
                   onChange={(e) => updateExample(idx, { meaning: e.target.value })}
                   className={styles.exampleInput}
                 />
@@ -268,7 +257,7 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
                   <input
                     type="text"
                     value={ex.audioUrl}
-                    placeholder="Audio URL từ vựng"
+                    placeholder="Đường dẫn âm thanh (URL)"
                     onChange={(e) => updateExample(idx, { audioUrl: e.target.value })}
                     className={styles.exampleInputUrl}
                   />
@@ -297,7 +286,7 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
                   Xóa từ
                 </button>
               </div>
-              {uploadingField === `exampleAudio_${idx}` && <span className={styles.uploadStatus}>Đang tải audio từ vựng lên...</span>}
+              {uploadingField === `exampleAudio_${idx}` && <span className={styles.uploadStatus}>Đang tải âm thanh của từ lên...</span>}
             </div>
           ))}
         </div>
@@ -306,14 +295,14 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
       {/* Submit button */}
       <button
         type="submit"
-        disabled={publishing || !hasFormChanges}
-        className={`${styles.submitBtn} btn ${hasFormChanges && !publishing ? "btn-primary" : "btn-outline"}`}
+        disabled={isSaving || !hasFormChanges}
+        className={`${styles.submitBtn} btn ${hasFormChanges && !isSaving ? "btn-primary" : "btn-outline"}`}
         style={{
-          opacity: hasFormChanges && !publishing ? 1 : 0.5,
-          cursor: hasFormChanges && !publishing ? "pointer" : "not-allowed",
+          opacity: hasFormChanges && !isSaving ? 1 : 0.5,
+          cursor: hasFormChanges && !isSaving ? "pointer" : "not-allowed",
         }}
       >
-        {publishing ? "Đang xuất bản..." : "Xuất bản ngay"}
+        {isSaving ? "Đang lưu thay đổi..." : "Lưu thay đổi"}
       </button>
 
       {/* Custom Confirmation Modal */}
