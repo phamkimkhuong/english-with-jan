@@ -43,6 +43,7 @@ export default function PronunciationPage() {
           setSounds(data.sounds);
           // Mặc định chọn âm đầu tiên
           if (data.sounds.length > 0) setSelectedSound(data.sounds[0]);
+          setLoading(false);
           return;
         }
       } catch (storageError) {

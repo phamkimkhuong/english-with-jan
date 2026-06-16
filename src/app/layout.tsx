@@ -18,6 +18,24 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "English with Jan - Học Tiếng Anh Cho Người Đi Làm & Sinh Viên",
   description: "Trang web học tiếng anh trực tuyến chuyên nghiệp dành cho sinh viên và người đi làm. Các khóa học giao tiếp, ngữ pháp, từ vựng được thiết kế tinh gọn, thực chiến bởi giáo viên Jan.",
+  keywords: ["Học tiếng Anh", "English with Jan", "Phát âm tiếng Anh", "Học tiếng Anh giao tiếp", "Tiếng Anh người đi làm", "Học IPA"],
+  authors: [{ name: "Teacher Jan" }],
+  openGraph: {
+    title: "English with Jan - Học Tiếng Anh Cho Người Đi Làm & Sinh Viên",
+    description: "Trang web học tiếng anh trực tuyến chuyên nghiệp dành cho sinh viên và người đi làm. Các khóa học giao tiếp, ngữ pháp, từ vựng được thiết kế tinh gọn, thực chiến bởi giáo viên Jan.",
+    url: "https://english-with-jan.web.app",
+    siteName: "English with Jan",
+    locale: "vi_VN",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 export default function RootLayout({
