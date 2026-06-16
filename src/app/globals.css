@@ -274,3 +274,125 @@ a {
   border-radius: 50%;
 }
 
+/* Avatar Dropdown Menu (Premium UI) */
+.avatar-container {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 0;
+}
+
+.avatar-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 240px;
+  background: rgb(var(--card-bg-rgb));
+  border: 1px solid rgb(var(--card-border-rgb));
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-lg);
+  padding: 16px;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.2s;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+/* Hover trigger for smooth slide-up dropdown */
+.avatar-container:hover .avatar-dropdown {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Little top pointing triangle */
+.avatar-dropdown::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 14px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent rgb(var(--card-bg-rgb)) transparent;
+}
+
+.avatar-dropdown::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 13px;
+  border-width: 9px;
+  border-style: solid;
+  border-color: transparent transparent rgb(var(--card-border-rgb)) transparent;
+  z-index: -1;
+}
+
+.dropdown-user-info {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.dropdown-name {
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: rgb(var(--foreground-rgb));
+  margin-bottom: 2px;
+}
+
+.dropdown-email {
+  font-size: 0.8rem;
+  color: rgb(var(--secondary-rgb));
+  word-break: break-all;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background-color: rgb(var(--card-border-rgb));
+  margin: 12px 0;
+}
+
+.dropdown-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dropdown-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgb(var(--foreground-rgb));
+  transition: background-color 0.2s ease, color 0.2s ease;
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown-menu-item:hover {
+  background-color: rgba(var(--foreground-rgb), 0.04);
+}
+
+.dropdown-menu-item.danger {
+  color: rgb(239, 68, 68);
+  margin-top: 4px;
+}
+
+.dropdown-menu-item.danger:hover {
+  background-color: rgba(239, 68, 68, 0.05);
+}
+
+

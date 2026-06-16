@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { useAuth } from "@/context/AuthContext";
-import { collection, query, getDocs, doc, setDoc, serverTimestamp } from "firebase/firestore";
+import { collection, query, where, getDocs, doc, setDoc, serverTimestamp } from "firebase/firestore";
 import { db } from "@/lib/firebase/config";
 
 interface StudentProgress {
@@ -14,40 +14,41 @@ interface StudentProgress {
   lastActive: string;
 }
 
-const mockStudents: StudentProgress[] = [
-  {
-    id: "std1",
-    name: "Nguyễn Văn Anh",
-    email: "vananh.nguyen@gmail.com",
-    course: "Tiếng Anh Giao Tiếp Văn Phòng Thực Chiến",
-    progress: 75,
-    lastActive: "10 phút trước",
-  },
-  {
-    id: "std2",
-    name: "Trần Thị Bình",
-    email: "binh.tran@yahoo.com",
-    course: "Ngữ Pháp Tiếng Anh Thực Hành",
-    progress: 40,
-    lastActive: "2 giờ trước",
-  },
-  {
-    id: "std3",
-    name: "Lê Hoàng Cường",
-    email: "cuong.lh@student.edu.vn",
-    course: "Từ Vựng & Phát Âm Căn Bản",
-    progress: 90,
-    lastActive: "Hôm qua",
-  },
-  {
-    id: "std4",
-    name: "Phạm Minh Dung",
-    email: "minhdung@gmail.com",
-    course: "Tiếng Anh Giao Tiếp Văn Phòng Thực Chiến",
-    progress: 15,
-    lastActive: "3 ngày trước",
-  },
-];
+
+
+const mapCourseIdToName = (courseId: string) => {
+  const mapping: { [key: string]: string } = {
+    "office-communication": "Tiếng Anh Giao Tiếp Văn Phòng Thực Chiến",
+    "practical-grammar": "Ngữ Pháp Tiếng Anh Thực Hành Cho Người Đi Làm",
+    "academic-vocabulary": "Từ Vựng & Phát Âm Căn Bản Cho Sinh Viên",
+  };
+  return mapping[courseId] || courseId;
+};
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const formatLastActive = (timestamp: any) => {
+  if (!timestamp) return "Chưa hoạt động";
+  
+  let date: Date;
+  if (timestamp.toDate) {
+    date = timestamp.toDate();
+  } else {
+    date = new Date(timestamp);
+  }
+  
+  if (isNaN(date.getTime())) return "Chưa rõ";
+
+  const diffMs = Date.now() - date.getTime();
+  const diffMins = Math.floor(diffMs / 60000);
+  const diffHours = Math.floor(diffMins / 60);
+  const diffDays = Math.floor(diffHours / 24);
+
+  if (diffMins < 1) return "Vừa mới hoạt động";
+  if (diffMins < 60) return `${diffMins} phút trước`;
+  if (diffHours < 24) return `${diffHours} giờ trước`;
+  if (diffDays === 1) return "Hôm qua";
+  return `${diffDays} ngày trước`;
+};
 
 export default function AdminDashboard() {
   const { user } = useAuth();
@@ -56,6 +57,51 @@ export default function AdminDashboard() {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState({ text: "", type: "" });
   const [teachers, setTeachers] = useState<{ id: string; email: string; displayName: string; role: string }[]>([]);
+  const [students, setStudents] = useState<StudentProgress[]>([]);
+  const [loadingStudents, setLoadingStudents] = useState(true);
+
+  // Lấy danh sách học sinh thực tế từ Firestore
+  const fetchStudents = async () => {
+    try {
+      setLoadingStudents(true);
+      const q = query(collection(db, "users"), where("role", "==", "student"));
+      const querySnapshot = await getDocs(q);
+      const list: StudentProgress[] = [];
+      
+      querySnapshot.forEach((docSnap) => {
+        const data = docSnap.data();
+        const progressData = data.progress || {};
+        const courseIds = Object.keys(progressData);
+        
+        if (courseIds.length === 0) {
+          list.push({
+            id: docSnap.id,
+            name: data.displayName || "Học viên ẩn danh",
+            email: data.email || "",
+            course: "Chưa tham gia khóa học nào",
+            progress: 0,
+            lastActive: formatLastActive(data.lastActive || data.createdAt),
+          });
+        } else {
+          courseIds.forEach((courseId) => {
+            list.push({
+              id: `${docSnap.id}_${courseId}`,
+              name: data.displayName || "Học viên ẩn danh",
+              email: data.email || "",
+              course: mapCourseIdToName(courseId),
+              progress: progressData[courseId] || 0,
+              lastActive: formatLastActive(data.lastActive || data.createdAt),
+            });
+          });
+        }
+      });
+      setStudents(list);
+    } catch (error) {
+      console.error("Lỗi lấy danh sách học sinh:", error);
+    } finally {
+      setLoadingStudents(false);
+    }
+  };
 
   // Lấy danh sách giáo viên từ Firestore để hiển thị
   const fetchTeachers = async () => {
@@ -83,6 +129,7 @@ export default function AdminDashboard() {
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
     fetchTeachers();
+    fetchStudents();
   }, []);
 
   const handleAddTeacher = async (e: React.FormEvent) => {
@@ -277,39 +324,54 @@ export default function AdminDashboard() {
               </tr>
             </thead>
             <tbody>
-              {mockStudents.map((std) => (
-                <tr key={std.id} style={{ borderBottom: "1px solid rgb(var(--card-border-rgb))" }}>
-                  <td style={{ padding: "16px" }}>
-                    <div style={{ fontWeight: 600 }}>{std.name}</div>
-                    <div style={{ fontSize: "0.8rem", color: "rgb(var(--secondary-rgb))" }}>{std.email}</div>
+              {loadingStudents ? (
+                <tr>
+                  <td colSpan={4} style={{ padding: "30px", textAlign: "center", color: "rgb(var(--secondary-rgb))" }}>
+                    <div className="skeleton" style={{ width: "120px", height: "16px", margin: "0 auto 10px" }} />
+                    Đang tải danh sách học sinh...
                   </td>
-                  <td style={{ padding: "16px", color: "rgb(var(--secondary-rgb))" }}>{std.course}</td>
-                  <td style={{ padding: "16px" }}>
-                    <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-                      <div
-                        style={{
-                          flex: 1,
-                          height: "6px",
-                          borderRadius: "3px",
-                          background: "rgba(var(--foreground-rgb), 0.05)",
-                          maxWidth: "120px",
-                        }}
-                      >
+                </tr>
+              ) : students.length === 0 ? (
+                <tr>
+                  <td colSpan={4} style={{ padding: "30px", textAlign: "center", color: "rgb(var(--secondary-rgb))" }}>
+                    Chưa có học sinh nào đăng ký tham gia lớp học.
+                  </td>
+                </tr>
+              ) : (
+                students.map((std) => (
+                  <tr key={std.id} style={{ borderBottom: "1px solid rgb(var(--card-border-rgb))" }}>
+                    <td style={{ padding: "16px" }}>
+                      <div style={{ fontWeight: 600 }}>{std.name}</div>
+                      <div style={{ fontSize: "0.8rem", color: "rgb(var(--secondary-rgb))" }}>{std.email}</div>
+                    </td>
+                    <td style={{ padding: "16px", color: "rgb(var(--secondary-rgb))" }}>{std.course}</td>
+                    <td style={{ padding: "16px" }}>
+                      <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
                         <div
                           style={{
-                            height: "100%",
+                            flex: 1,
+                            height: "6px",
                             borderRadius: "3px",
-                            background: "rgb(var(--primary-rgb))",
-                            width: `${std.progress}%`,
+                            background: "rgba(var(--foreground-rgb), 0.05)",
+                            maxWidth: "120px",
                           }}
-                        />
+                        >
+                          <div
+                            style={{
+                              height: "100%",
+                              borderRadius: "3px",
+                              background: "rgb(var(--primary-rgb))",
+                              width: `${std.progress}%`,
+                            }}
+                          />
+                        </div>
+                        <span style={{ fontWeight: 700 }}>{std.progress}%</span>
                       </div>
-                      <span style={{ fontWeight: 700 }}>{std.progress}%</span>
-                    </div>
-                  </td>
-                  <td style={{ padding: "16px", color: "rgb(var(--secondary-rgb))" }}>{std.lastActive}</td>
-                </tr>
-              ))}
+                    </td>
+                    <td style={{ padding: "16px", color: "rgb(var(--secondary-rgb))" }}>{std.lastActive}</td>
+                  </tr>
+                ))
+              )}
             </tbody>
           </table>
         </div>
