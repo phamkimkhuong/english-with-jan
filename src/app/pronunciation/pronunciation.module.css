@@ -312,7 +312,36 @@
 .actionBtnDisabled {
   opacity: 0.4;
   cursor: not-allowed !important;
-  background-color: rgb(var(--foreground-rgb), 0.02) !important;
+  background-color: rgb(var(--foreground-rgb) / 0.02) !important;
+}
+
+.subTabBar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgb(var(--card-border-rgb));
+  padding-bottom: 8px;
+}
+
+.subTabBtn {
+  background: none;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  color: rgb(var(--secondary-rgb));
+  transition: all 0.2s ease;
+}
+
+.subTabBtn:hover {
+  background-color: rgb(var(--foreground-rgb) / 0.04);
+}
+
+.subTabActive {
+  background-color: rgb(var(--primary-rgb) / 0.08);
+  color: rgb(var(--primary-rgb));
 }
 
 

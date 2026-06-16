@@ -212,16 +212,16 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
         ))}
       </div>
 
-      {/* Từ vựng ví dụ */}
+      {/* Từ vựng, cụm từ & câu ví dụ */}
       <div className={styles.examplesContainer}>
         <div className={styles.sectionHeaderRow}>
-          <label className={styles.inputLabel}>Danh sách từ vựng ví dụ thực hành</label>
+          <label className={styles.inputLabel}>Danh sách từ vựng, cụm từ & câu thực hành</label>
           <button
             type="button"
-            onClick={() => updateEditSound({ examples: [...editSound.examples, { word: "", ipa: "", meaning: "", audioUrl: "" }] })}
+            onClick={() => updateEditSound({ examples: [...editSound.examples, { word: "", ipa: "", meaning: "", audioUrl: "", type: "word" }] })}
             className={styles.addBtn}
           >
-            + Thêm từ ví dụ mới
+            + Thêm ví dụ mới
           </button>
         </div>
 
@@ -229,10 +229,33 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
           {editSound.examples.map((ex, idx) => (
             <div key={idx} className={styles.exampleCard}>
               <div className={styles.exampleGrid}>
+                <select
+                  value={ex.type || "word"}
+                  onChange={(e) => updateExample(idx, { type: e.target.value as "word" | "phrase" | "sentence" })}
+                  className={styles.exampleSelect}
+                  style={{
+                    padding: "8px",
+                    borderRadius: "8px",
+                    border: "1px solid rgb(var(--card-border-rgb))",
+                    background: "transparent",
+                    color: "inherit",
+                    fontSize: "0.85rem",
+                    height: "37px",
+                  }}
+                >
+                  <option value="word" style={{ background: "rgb(var(--card-bg-rgb))" }}>Từ vựng</option>
+                  <option value="phrase" style={{ background: "rgb(var(--card-bg-rgb))" }}>Cụm từ</option>
+                  <option value="sentence" style={{ background: "rgb(var(--card-bg-rgb))" }}>Câu mẫu</option>
+                </select>
+
                 <input
                   type="text"
                   value={ex.word}
-                  placeholder="Từ (Ví dụ: meet)"
+                  placeholder={
+                    ex.type === "sentence" ? "Câu mẫu (Ví dụ: Nice to meet you.)" :
+                    ex.type === "phrase" ? "Cụm từ (Ví dụ: meet you)" :
+                    "Từ vựng (Ví dụ: meet)"
+                  }
                   onChange={(e) => updateExample(idx, { word: e.target.value })}
                   className={styles.exampleInput}
                 />
@@ -246,7 +269,7 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
                 <input
                   type="text"
                   value={ex.meaning}
-                  placeholder="Nghĩa của từ (Ví dụ: gặp gỡ)"
+                  placeholder="Dịch nghĩa (Ví dụ: gặp gỡ)"
                   onChange={(e) => updateExample(idx, { meaning: e.target.value })}
                   className={styles.exampleInput}
                 />
@@ -271,11 +294,12 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
                 <button
                   type="button"
                   onClick={() => {
-                    const wordText = ex.word ? `từ "${ex.word}"` : "từ ví dụ này";
+                    const typeText = ex.type === "sentence" ? "câu" : ex.type === "phrase" ? "cụm từ" : "từ";
+                    const itemText = ex.word ? `${typeText} "${ex.word}"` : "ví dụ này";
                     setConfirmModal({
                       isOpen: true,
-                      title: "Xác nhận xóa từ vựng",
-                      message: `Bạn có chắc chắn muốn xóa ${wordText} khỏi danh sách từ vựng thực hành không?`,
+                      title: "Xác nhận xóa ví dụ",
+                      message: `Bạn có chắc chắn muốn xóa ${itemText} khỏi danh sách thực hành không?`,
                       onConfirm: () => {
                         updateEditSound({ examples: editSound.examples.filter((_, i) => i !== idx) });
                       },
@@ -283,7 +307,7 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
                   }}
                   className={styles.exampleDeleteBtn}
                 >
-                  Xóa từ
+                  Xóa ví dụ
                 </button>
               </div>
               {uploadingField === `exampleAudio_${idx}` && <span className={styles.uploadStatus}>Đang tải âm thanh của từ lên...</span>}

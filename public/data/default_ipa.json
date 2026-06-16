@@ -10,9 +10,13 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "sheep", "ipa": "/ʃiːp/", "meaning": "con cừu", "audioUrl": "" },
-        { "word": "meet", "ipa": "/miːt/", "meaning": "gặp gỡ", "audioUrl": "" },
-        { "word": "see", "ipa": "/siː/", "meaning": "nhìn thấy", "audioUrl": "" }
+        { "word": "sheep", "ipa": "/ʃiːp/", "meaning": "con cừu", "audioUrl": "", "type": "word" },
+        { "word": "meet", "ipa": "/miːt/", "meaning": "gặp gỡ", "audioUrl": "", "type": "word" },
+        { "word": "see", "ipa": "/siː/", "meaning": "nhìn thấy", "audioUrl": "", "type": "word" },
+        { "word": "meet you", "ipa": "/miːt juː/", "meaning": "gặp bạn", "audioUrl": "", "type": "phrase" },
+        { "word": "green tea", "ipa": "/ɡriːn tiː/", "meaning": "trà xanh", "audioUrl": "", "type": "phrase" },
+        { "word": "Nice to meet you.", "ipa": "/naɪs tuː miːt juː/", "meaning": "Rất vui được gặp bạn.", "audioUrl": "", "type": "sentence" },
+        { "word": "I see a sheep.", "ipa": "/aɪ siː ə ʃiːp/", "meaning": "Tôi nhìn thấy một con cừu.", "audioUrl": "", "type": "sentence" }
       ],
       "commonMistakes": [
         "Phát âm quá ngắn giống âm 'i' tiếng Việt.",
@@ -27,9 +31,12 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "ship", "ipa": "/ʃɪp/", "meaning": "tàu thủy", "audioUrl": "" },
-        { "word": "sit", "ipa": "/sɪt/", "meaning": "ngồi", "audioUrl": "" },
-        { "word": "pin", "ipa": "/pɪn/", "meaning": "cái ghim", "audioUrl": "" }
+        { "word": "ship", "ipa": "/ʃɪp/", "meaning": "tàu thủy", "audioUrl": "", "type": "word" },
+        { "word": "sit", "ipa": "/sɪt/", "meaning": "ngồi", "audioUrl": "", "type": "word" },
+        { "word": "pin", "ipa": "/pɪn/", "meaning": "cái ghim", "audioUrl": "", "type": "word" },
+        { "word": "sit down", "ipa": "/sɪt daʊn/", "meaning": "ngồi xuống", "audioUrl": "", "type": "phrase" },
+        { "word": "big city", "ipa": "/bɪɡ ˈsɪti/", "meaning": "thành phố lớn", "audioUrl": "", "type": "phrase" },
+        { "word": "Please sit here.", "ipa": "/pliːz sɪt hɪə/", "meaning": "Xin vui lòng ngồi ở đây.", "audioUrl": "", "type": "sentence" }
       ],
       "commonMistakes": [
         "Kéo dài âm giống như /i:/.",

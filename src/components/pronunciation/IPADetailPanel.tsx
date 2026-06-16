@@ -15,6 +15,7 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
   playSoundAudio,
   playingWord,
 }) => {
+  const [activeSubTab, setActiveSubTab] = React.useState<"word" | "phrase" | "sentence">("word");
   const {
     isSupported,
     listeningWord,
@@ -33,6 +34,9 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
   }
 
   const isConsonant = selectedSound.type.startsWith("consonant");
+  const wordExamples = selectedSound.examples.filter((ex) => !ex.type || ex.type === "word");
+  const phraseExamples = selectedSound.examples.filter((ex) => ex.type === "phrase");
+  const sentenceExamples = selectedSound.examples.filter((ex) => ex.type === "sentence");
 
   return (
     <div className="card" style={{ padding: "26px", gap: "20px" }}>
@@ -120,8 +124,33 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
       {/* Example Words */}
       <div>
         <h4 className={styles.sectionTitle}>
-          🗣️ Từ vựng luyện tập thực tế
+          🗣️ Bài tập luyện đọc thực tế
         </h4>
+
+        {/* Sub-tabs for categories */}
+        <div className={styles.subTabBar}>
+          <button
+            type="button"
+            className={`${styles.subTabBtn} ${activeSubTab === "word" ? styles.subTabActive : ""}`}
+            onClick={() => setActiveSubTab("word")}
+          >
+            Từ vựng ({wordExamples.length})
+          </button>
+          <button
+            type="button"
+            className={`${styles.subTabBtn} ${activeSubTab === "phrase" ? styles.subTabActive : ""}`}
+            onClick={() => setActiveSubTab("phrase")}
+          >
+            Cụm từ ({phraseExamples.length})
+          </button>
+          <button
+            type="button"
+            className={`${styles.subTabBtn} ${activeSubTab === "sentence" ? styles.subTabActive : ""}`}
+            onClick={() => setActiveSubTab("sentence")}
+          >
+            Câu mẫu ({sentenceExamples.length})
+          </button>
+        </div>
 
         {!isSupported && (
           <div className={styles.warningCard} style={{ marginBottom: "12px" }}>
@@ -136,19 +165,71 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
         )}
 
         <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-          {selectedSound.examples.map((ex, index) => (
-            <ExampleWordCard
-              key={index}
-              ex={ex}
-              playingWord={playingWord}
-              listeningWord={listeningWord}
-              practiceResult={practiceResult}
-              setPracticeResult={setPracticeResult}
-              playSoundAudio={playSoundAudio}
-              startSpeechPractice={startSpeechPractice}
-              isSupported={isSupported}
-            />
-          ))}
+          {activeSubTab === "word" && (
+            wordExamples.length > 0 ? (
+              wordExamples.map((ex, index) => (
+                <ExampleWordCard
+                  key={`word-${index}`}
+                  ex={ex}
+                  playingWord={playingWord}
+                  listeningWord={listeningWord}
+                  practiceResult={practiceResult}
+                  setPracticeResult={setPracticeResult}
+                  playSoundAudio={playSoundAudio}
+                  startSpeechPractice={startSpeechPractice}
+                  isSupported={isSupported}
+                />
+              ))
+            ) : (
+              <p style={{ textAlign: "center", color: "rgb(var(--secondary-rgb))", fontSize: "0.85rem", padding: "20px 0" }}>
+                Chưa có từ vựng ví dụ nào cho âm này.
+              </p>
+            )
+          )}
+
+          {activeSubTab === "phrase" && (
+            phraseExamples.length > 0 ? (
+              phraseExamples.map((ex, index) => (
+                <ExampleWordCard
+                  key={`phrase-${index}`}
+                  ex={ex}
+                  playingWord={playingWord}
+                  listeningWord={listeningWord}
+                  practiceResult={practiceResult}
+                  setPracticeResult={setPracticeResult}
+                  playSoundAudio={playSoundAudio}
+                  startSpeechPractice={startSpeechPractice}
+                  isSupported={isSupported}
+                />
+              ))
+            ) : (
+              <p style={{ textAlign: "center", color: "rgb(var(--secondary-rgb))", fontSize: "0.85rem", padding: "20px 0" }}>
+                Chưa có cụm từ ví dụ nào cho âm này.
+              </p>
+            )
+          )}
+
+          {activeSubTab === "sentence" && (
+            sentenceExamples.length > 0 ? (
+              sentenceExamples.map((ex, index) => (
+                <ExampleWordCard
+                  key={`sentence-${index}`}
+                  ex={ex}
+                  playingWord={playingWord}
+                  listeningWord={listeningWord}
+                  practiceResult={practiceResult}
+                  setPracticeResult={setPracticeResult}
+                  playSoundAudio={playSoundAudio}
+                  startSpeechPractice={startSpeechPractice}
+                  isSupported={isSupported}
+                />
+              ))
+            ) : (
+              <p style={{ textAlign: "center", color: "rgb(var(--secondary-rgb))", fontSize: "0.85rem", padding: "20px 0" }}>
+                Chưa có câu ví dụ nào cho âm này.
+              </p>
+            )
+          )}
         </div>
       </div>
     </div>

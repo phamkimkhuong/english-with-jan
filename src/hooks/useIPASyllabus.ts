@@ -26,11 +26,6 @@ export function useIPASyllabus() {
   const speakWithTTS = (text: string, isWord: boolean) => {
     if (typeof window === "undefined" || !window.speechSynthesis) return;
 
-    if (isWord) {
-      setPlayingWord(text);
-      setTimeout(() => setPlayingWord(null), 1000);
-    }
-
     // Dọn sạch âm thanh đang nói dở
     window.speechSynthesis.cancel();
 
@@ -39,16 +34,43 @@ export function useIPASyllabus() {
 
     const utterance = new SpeechSynthesisUtterance(cleanedText);
     utterance.lang = "en-US";
-    utterance.rate = isWord ? 0.9 : 0.6;
+    // Phát âm ký tự âm đơn lẻ chậm hơn (0.6), từ/cụm từ/câu thì bình thường (0.9)
+    const isSingleSymbol = text.startsWith("/") && text.endsWith("/") && text.length <= 5;
+    utterance.rate = isSingleSymbol ? 0.6 : 0.95;
+
+    if (isWord) {
+      setPlayingWord(text);
+      utterance.onend = () => {
+        setPlayingWord(null);
+      };
+      utterance.onerror = () => {
+        setPlayingWord(null);
+      };
+    }
 
     window.speechSynthesis.speak(utterance);
   };
 
   const playSoundAudio = (textToSpeak: string, customAudioUrl: string, isWord = false) => {
     if (customAudioUrl) {
+      if (isWord) {
+        setPlayingWord(textToSpeak);
+      }
       const audio = new Audio(customAudioUrl);
+      
+      audio.onended = () => {
+        if (isWord) {
+          setPlayingWord(null);
+        }
+      };
+      
+      audio.onerror = (err) => {
+        console.warn("Lỗi phát file nghe, chuyển sang Text-to-Speech:", err);
+        speakWithTTS(textToSpeak, isWord);
+      };
+
       audio.play().catch((err) => {
-        console.warn("Lỗi phát audio file, đang dùng Text-to-Speech thay thế:", err);
+        console.warn("Lỗi phát file nghe, chuyển sang Text-to-Speech:", err);
         speakWithTTS(textToSpeak, isWord);
       });
     } else {

@@ -135,8 +135,14 @@
 
 .exampleGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1.2fr 2fr 1.5fr 1.5fr;
   gap: 8px;
+}
+
+@media (width <= 768px) {
+  .exampleGrid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .exampleInput {
