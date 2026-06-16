@@ -183,7 +183,7 @@ export default function AdminAccessCodesPage() {
     <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
       
       {/* Nút Tạo mã góc trên */}
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px" }}>
         <h2 style={{ fontSize: "1.25rem", fontWeight: 800, color: "rgb(var(--foreground-rgb))" }}>
           Danh sách mã học viên
         </h2>
@@ -422,7 +422,7 @@ export default function AdminAccessCodesPage() {
       </div>
 
       {/* Bộ lọc trạng thái */}
-      <div style={{ display: "flex", gap: "12px", borderBottom: "1px solid rgb(var(--card-border-rgb))", paddingBottom: "12px" }}>
+      <div style={{ display: "flex", gap: "12px", borderBottom: "1px solid rgb(var(--card-border-rgb))", paddingBottom: "12px", flexWrap: "wrap" }}>
         <button
           onClick={() => setFilterStatus("all")}
           style={{
@@ -642,6 +642,7 @@ export default function AdminAccessCodesPage() {
                   borderTop: "1px solid rgb(var(--card-border-rgb))",
                   paddingTop: "12px",
                   marginTop: "8px",
+                  flexWrap: "wrap",
                 }}
               >
                 <button

@@ -241,3 +241,36 @@
 .exampleHideBtn:hover {
   background-color: rgb(var(--foreground-rgb) / 0.04);
 }
+
+/* Responsive tweaks for mobile devices */
+@media (width <= 768px) {
+  .rowHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .gridTwoCols {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .subTabBar {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .exampleRowFooter {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .exampleFileInput {
+    width: 100%;
+  }
+
+  .submitBtn {
+    width: 100%;
+  }
+}

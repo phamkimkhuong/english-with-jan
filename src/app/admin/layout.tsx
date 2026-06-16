@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AdminGuard } from "@/components/admin/AdminGuard";
 import { useAuth } from "@/context/AuthContext";
+import styles from "./adminLayout.module.css";
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -12,20 +13,10 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
 
   return (
     <AdminGuard>
-      <div style={{ display: "flex", minHeight: "85vh", background: "rgba(var(--foreground-rgb), 0.01)" }}>
+      <div className={styles.adminContainer}>
         {/* Sidebar */}
-        <aside
-          style={{
-            width: "260px",
-            borderRight: "1px solid rgb(var(--card-border-rgb))",
-            background: "rgb(var(--card-bg-rgb))",
-            padding: "30px 20px",
-            display: "flex",
-            flexDirection: "column",
-            gap: "8px",
-          }}
-        >
-          <div style={{ marginBottom: "30px", paddingLeft: "10px" }}>
+        <aside className={styles.sidebar}>
+          <div className={styles.sidebarHeader}>
             <h2 style={{ fontSize: "1.1rem", fontWeight: 850, color: "rgb(var(--secondary-rgb))", textTransform: "uppercase", letterSpacing: "1px" }}>
               Bảng Quản Trị
             </h2>
@@ -102,18 +93,9 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         </aside>
 
         {/* Main Workspace */}
-        <main style={{ flex: 1, padding: "40px 30px" }}>
+        <main className={styles.mainWorkspace}>
           {/* Workspace Header */}
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              marginBottom: "30px",
-              paddingBottom: "20px",
-              borderBottom: "1px solid rgb(var(--card-border-rgb))",
-            }}
-          >
+          <div className={styles.workspaceHeader}>
             <div>
               <h1 style={{ fontSize: "1.75rem", fontWeight: 800, letterSpacing: "-0.5px" }}>
                 Chào giáo viên, {user?.displayName || "Jan"}
