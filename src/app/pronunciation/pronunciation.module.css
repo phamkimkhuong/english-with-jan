@@ -344,4 +344,136 @@
   color: rgb(var(--primary-rgb));
 }
 
+/* Helper styles to replace inline styles on the board and learn pages */
+.pageWrapper {
+  padding: 40px 0;
+}
+
+.pageHeader {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  letter-spacing: -1px;
+}
+
+.pageSubtitle {
+  color: rgb(var(--secondary-rgb));
+  font-size: 1.1rem;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.tabBtn {
+  padding: 8px 20px;
+  font-size: 0.9rem;
+}
+
+.boardWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.categoryCard {
+  padding: 20px;
+  gap: 16px;
+}
+
+.vowelHeader {
+  color: rgb(var(--primary-rgb));
+}
+
+.vowelDot {
+  background: rgb(var(--primary-rgb));
+}
+
+.consonantHeader {
+  color: rgb(var(--accent-rgb));
+}
+
+.consonantDot {
+  background: rgb(var(--accent-rgb));
+}
+
+.subSection {
+  margin-top: 10px;
+}
+
+/* Styling for details page header */
+.detailsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 0 4px;
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgb(var(--secondary-rgb));
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.backBtn:hover {
+  color: rgb(var(--primary-rgb));
+}
+
+.navBtnGroup {
+  display: flex;
+  gap: 12px;
+}
+
+.navLinkBtn {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: var(--border-radius);
+  transition: all 0.2s ease;
+}
+
+.navLinkBtnDisabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.detailsContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.centeredSpinner {
+  margin: 0 auto 20px;
+}
+
+.notFoundCard {
+  padding: 40px;
+  text-align: center;
+}
+
+.notFoundHeader {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.notFoundText {
+  margin-bottom: 20px;
+}
+
+
+
+
 
