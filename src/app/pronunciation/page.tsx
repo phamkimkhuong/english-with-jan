@@ -3,7 +3,8 @@
 import React from "react";
 import Link from "next/link";
 import { useIPASyllabus } from "@/hooks/useIPASyllabus";
-import { CourseGuard } from "@/components/common/CourseGuard";
+import { useAuth } from "@/context/AuthContext";
+import { toast } from "@/hooks/useToastStore";
 import { getSlugFromIpa } from "@/utils/ipaSlug";
 import styles from "./pronunciation.module.css";
 
@@ -17,12 +18,26 @@ const formatSoundName = (name: string) => {
 };
 
 export default function PronunciationPage() {
+  const { user, role, unlockedCourses } = useAuth();
   const {
     sounds,
     loading,
     activeTab,
     setActiveTab,
   } = useIPASyllabus();
+
+  const hasAccess = role === "admin" || role === "teacher" || unlockedCourses.includes("ipa") || unlockedCourses.includes("all");
+
+  const handleSoundClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (!hasAccess) {
+      e.preventDefault();
+      if (!user) {
+        toast.error("Vui lòng đăng nhập để xem chi tiết âm này và luyện tập.");
+      } else {
+        toast.error("Vui lòng kích hoạt khóa học để xem chi tiết âm này.");
+      }
+    }
+  };
 
   if (loading) {
     return (
@@ -43,8 +58,7 @@ export default function PronunciationPage() {
   const consonants = sounds.filter(s => s.type.startsWith("consonant"));
 
   return (
-    <CourseGuard courseId="ipa" courseTitle="Luyện phát âm chuẩn IPA">
-      <div className={styles.pageWrapper}>
+    <div className={styles.pageWrapper}>
         <div className="container">
           {/* Header */}
           <div className={styles.pageHeader}>
@@ -103,6 +117,7 @@ export default function PronunciationPage() {
                       <Link
                         key={sound.ipa}
                         href={`/pronunciation/${getSlugFromIpa(sound.ipa)}`}
+                        onClick={handleSoundClick}
                         className={`${styles.soundBtn} ${styles.soundBtnVowel}`}
                       >
                         <span className={styles.soundBtnSymbol}>/{sound.ipa}/</span>
@@ -122,6 +137,7 @@ export default function PronunciationPage() {
                       <Link
                         key={sound.ipa}
                         href={`/pronunciation/${getSlugFromIpa(sound.ipa)}`}
+                        onClick={handleSoundClick}
                         className={`${styles.soundBtn} ${styles.soundBtnVowel}`}
                       >
                         <span className={styles.soundBtnSymbol}>/{sound.ipa}/</span>
@@ -151,6 +167,7 @@ export default function PronunciationPage() {
                       <Link
                         key={sound.ipa}
                         href={`/pronunciation/${getSlugFromIpa(sound.ipa)}`}
+                        onClick={handleSoundClick}
                         className={`${styles.soundBtn} ${styles.soundBtnConsonant}`}
                       >
                         <span className={styles.soundBtnSymbol}>/{sound.ipa}/</span>
@@ -170,6 +187,7 @@ export default function PronunciationPage() {
                       <Link
                         key={sound.ipa}
                         href={`/pronunciation/${getSlugFromIpa(sound.ipa)}`}
+                        onClick={handleSoundClick}
                         className={`${styles.soundBtn} ${styles.soundBtnConsonant}`}
                       >
                         <span className={styles.soundBtnSymbol}>/{sound.ipa}/</span>
@@ -183,6 +201,5 @@ export default function PronunciationPage() {
           </div>
         </div>
       </div>
-    </CourseGuard>
   );
 }
