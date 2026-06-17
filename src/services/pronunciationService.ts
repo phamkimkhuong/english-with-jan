@@ -11,7 +11,7 @@ export async function fetchIPASyllabus(): Promise<IPASound[]> {
   try {
     const fileRef = ref(storage, "syllabuses/pronunciation_ipa.json");
     const downloadUrl = await getDownloadURL(fileRef);
-    const res = await fetch(downloadUrl);
+    const res = await fetch(downloadUrl, { cache: "no-store" });
     const rawData = await res.json();
     
     // Validate dữ liệu bằng Zod Schema để tránh app crash khi schema thay đổi đột ngột

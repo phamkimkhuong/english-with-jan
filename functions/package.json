@@ -1,0 +1,21 @@
+{
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.712.0",
+    "@google-cloud/text-to-speech": "^5.5.0",
+    "firebase-admin": "^12.7.0",
+    "firebase-functions": "^7.2.5"
+  },
+  "private": true
+}

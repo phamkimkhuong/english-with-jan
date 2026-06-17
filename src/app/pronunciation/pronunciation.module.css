@@ -37,51 +37,60 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 12px;
 }
 
 .soundBtn {
-  height: 65px;
-  border-radius: 10px;
+  height: 76px;
+  border-radius: 12px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s ease;
-  background: transparent;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgb(var(--card-bg-rgb));
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
 }
 
 .soundBtnVowel {
-  border: 1px solid rgb(var(--card-border-rgb));
+  border: 1px solid rgb(var(--primary-rgb) / 0.15);
 }
 
-.soundBtnVowelSelected {
-  border: 2px solid rgb(var(--primary-rgb));
-  background: rgb(var(--primary-light-rgb)) !important;
+.soundBtnVowel:hover {
+  transform: translateY(-3px);
+  border-color: rgb(var(--primary-rgb));
+  background: rgb(var(--primary-light-rgb));
+  box-shadow: 0 6px 16px rgb(var(--primary-rgb) / 0.12);
 }
 
 .soundBtnConsonant {
-  border: 1px solid rgb(var(--card-border-rgb));
+  border: 1px solid rgb(var(--accent-rgb) / 0.15);
 }
 
-.soundBtnConsonantSelected {
-  border: 2px solid rgb(var(--accent-rgb));
-  background: rgb(var(--accent-light-rgb)) !important;
+.soundBtnConsonant:hover {
+  transform: translateY(-3px);
+  border-color: rgb(var(--accent-rgb));
+  background: rgb(var(--accent-light-rgb));
+  box-shadow: 0 6px 16px rgb(var(--accent-rgb) / 0.12);
 }
+
 
 .soundBtnSymbol {
-  font-size: 1.15rem;
-  font-weight: 700;
+  font-size: 1.35rem;
+  font-weight: 800;
   color: rgb(var(--foreground-rgb));
 }
 
 .soundBtnName {
-  font-size: 0.75rem;
-  opacity: 0.7;
+  font-size: 0.78rem;
+  font-weight: 600;
   color: rgb(var(--secondary-rgb));
+  margin-top: 4px;
 }
+
 
 /* Detail Panel styles */
 .detailHeader {
@@ -108,6 +117,11 @@
   justify-content: center;
   transition: transform 0.1s ease;
 }
+
+.speakerBtn:active {
+  transform: scale(0.95);
+}
+
 
 .mouthShapeCard {
   display: flex;
@@ -307,7 +321,9 @@
   font-size: 0.85rem;
   font-weight: 600;
   border: 1px solid rgb(245 158 11 / 0.15);
+  margin-bottom: 12px;
 }
+
 
 .actionBtnDisabled {
   opacity: 0.4;
@@ -450,10 +466,6 @@
   pointer-events: none;
 }
 
-.detailsContainer {
-  max-width: 800px;
-  margin: 0 auto;
-}
 
 .centeredSpinner {
   margin: 0 auto 20px;
@@ -473,7 +485,130 @@
   margin-bottom: 20px;
 }
 
+/* 2-Column Details Layout */
+.detailsWorkspace {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.detailsContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.theoryColumn {
+  flex: 0 0 380px; /* Cố định độ rộng cột lý thuyết ở mức 380px để dễ đọc */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+  padding: 24px;
+}
+
+.practiceColumn {
+  flex: 1 1 500px; /* Cột bài tập chiếm trọn diện tích còn lại */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+  padding: 24px;
+}
 
 
 
+.mouthShapeCardLarge {
+  background: rgb(var(--foreground-rgb) / 0.02);
+  border: 1px solid rgb(var(--card-border-rgb));
+  padding: 12px;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mouthShapeImgLarge {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.soundSymbolTitle {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: rgb(var(--foreground-rgb));
+  margin-top: 4px;
+}
+
+.soundNameSubtitle {
+  font-size: 0.95rem;
+  color: rgb(var(--secondary-rgb));
+  font-weight: 500;
+}
+
+.mouthShapeCaption {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(var(--secondary-rgb));
+}
+
+.mistakesHeader {
+  color: rgb(239 68 68);
+}
+
+
+.practiceList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.emptyText {
+  text-align: center;
+  color: rgb(var(--secondary-rgb));
+  font-size: 0.85rem;
+  padding: 20px 0;
+}
+
+/* Gender toggle button classes */
+.genderToggleContainer {
+  display: flex;
+  background: rgb(var(--foreground-rgb) / 0.06);
+  padding: 4px;
+  border-radius: 9999px;
+  border: 1px solid rgb(var(--card-border-rgb));
+  gap: 2px;
+}
+
+.genderToggleBtn {
+  background: none;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  cursor: pointer;
+  color: rgb(var(--secondary-rgb));
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  user-select: none;
+}
+
+.genderToggleBtn:hover {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--foreground-rgb) / 0.04);
+}
+
+.genderToggleActive {
+  background: rgb(var(--card-bg-rgb)) !important;
+  color: rgb(var(--primary-rgb)) !important;
+  box-shadow: var(--shadow-sm);
+}
 

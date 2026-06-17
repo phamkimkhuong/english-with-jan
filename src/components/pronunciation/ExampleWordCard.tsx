@@ -25,6 +25,7 @@ interface ExampleWordCardProps {
   playSoundAudio: (textToSpeak: string, customAudioUrl: string, isWord: boolean) => void;
   startSpeechPractice: (word: string, soundIpa: string, exampleType: string) => void;
   isSupported?: boolean;
+  genderMode?: "female" | "male";
 }
 
 export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
@@ -38,6 +39,7 @@ export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
   playSoundAudio,
   startSpeechPractice,
   isSupported = true,
+  genderMode = "female",
 }) => {
   const isWordListening = listeningWord === ex.word;
   const hasResult = practiceResult && practiceResult.word === ex.word;
@@ -127,7 +129,12 @@ export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
           {/* Nút loa phát âm chuẩn */}
           <button
             type="button"
-            onClick={() => playSoundAudio(ex.word, ex.audioUrl, true)}
+            onClick={() => {
+              const audioToPlay = (genderMode === "male" && ex.audioUrlMale)
+                ? ex.audioUrlMale
+                : ex.audioUrl;
+              playSoundAudio(ex.word, audioToPlay, true);
+            }}
             className={`${styles.actionBtn} ${playingWord === ex.word ? styles.actionBtnPlaying : ""}`}
           >
             {playingWord === ex.word ? (

@@ -5,6 +5,7 @@ export const IPAExampleSchema = z.object({
   ipa: z.string(),
   meaning: z.string(),
   audioUrl: z.string(),
+  audioUrlMale: z.string().optional(),
   type: z.enum(["word", "phrase", "sentence"]).optional().default("word"),
   hidden: z.boolean().optional().default(false),
 });
@@ -23,6 +24,7 @@ export const IPASoundSchema = z.object({
   mouthShapeImage: z.string(),
   instructionVideo: z.string().optional(),
   audioUrl: z.string(),
+  audioUrlMale: z.string().optional(),
   examples: z.array(IPAExampleSchema),
   commonMistakes: z.array(z.string()),
 });

@@ -6,6 +6,15 @@ import { useIPASyllabus } from "@/hooks/useIPASyllabus";
 import { CourseGuard } from "@/components/common/CourseGuard";
 import styles from "./pronunciation.module.css";
 
+const formatSoundName = (name: string) => {
+  if (name.startsWith("nguyên âm đôi")) return "Âm đôi";
+  if (name.startsWith("phụ âm vô thanh")) return "Vô thanh";
+  if (name.startsWith("phụ âm hữu thanh")) return "Hữu thanh";
+  if (name.startsWith("phụ âm mũi")) return "Âm mũi";
+  if (name.startsWith("bán nguyên âm")) return "Bán nguyên âm";
+  return name.charAt(0).toUpperCase() + name.slice(1);
+};
+
 export default function PronunciationPage() {
   const {
     sounds,
@@ -96,7 +105,7 @@ export default function PronunciationPage() {
                         className={`${styles.soundBtn} ${styles.soundBtnVowel}`}
                       >
                         <span className={styles.soundBtnSymbol}>/{sound.ipa}/</span>
-                        <span className={styles.soundBtnName}>{sound.name}</span>
+                        <span className={styles.soundBtnName}>{formatSoundName(sound.name)}</span>
                       </Link>
                     ))}
                   </div>
@@ -115,7 +124,7 @@ export default function PronunciationPage() {
                         className={`${styles.soundBtn} ${styles.soundBtnVowel}`}
                       >
                         <span className={styles.soundBtnSymbol}>/{sound.ipa}/</span>
-                        <span className={styles.soundBtnName}>{sound.name}</span>
+                        <span className={styles.soundBtnName}>{formatSoundName(sound.name)}</span>
                       </Link>
                     ))}
                   </div>
@@ -144,7 +153,7 @@ export default function PronunciationPage() {
                         className={`${styles.soundBtn} ${styles.soundBtnConsonant}`}
                       >
                         <span className={styles.soundBtnSymbol}>/{sound.ipa}/</span>
-                        <span className={styles.soundBtnName}>{sound.name}</span>
+                        <span className={styles.soundBtnName}>{formatSoundName(sound.name)}</span>
                       </Link>
                     ))}
                   </div>
@@ -163,7 +172,7 @@ export default function PronunciationPage() {
                         className={`${styles.soundBtn} ${styles.soundBtnConsonant}`}
                       >
                         <span className={styles.soundBtnSymbol}>/{sound.ipa}/</span>
-                        <span className={styles.soundBtnName}>{sound.name}</span>
+                        <span className={styles.soundBtnName}>{formatSoundName(sound.name)}</span>
                       </Link>
                     ))}
                   </div>
