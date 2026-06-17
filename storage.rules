@@ -16,10 +16,14 @@ service firebase.storage {
     
     // Hàm kiểm tra xem người dùng hiện tại có phải là Giáo viên hay không
     function isTeacher() {
-      return isAdmin() || 
-        (request.auth != null && 
-         firestore.exists(/databases/(default)/documents/users/$(request.auth.uid)) && 
-         firestore.get(/databases/(default)/documents/users/$(request.auth.uid)).data.role == 'teacher');
+      return (request.auth != null && (
+        request.auth.token.email == 'huongnguyenjan@gmail.com' ||
+        request.auth.token.email == 'phamkhuong436@gmail.com'
+      )) || isAdmin() || (
+        request.auth != null && 
+        firestore.exists(/databases/(default)/documents/users/$(request.auth.uid)) && 
+        firestore.get(/databases/(default)/documents/users/$(request.auth.uid)).data.role == 'teacher'
+      );
     }
 
     // Quy tắc cho thư mục ghi âm của học sinh

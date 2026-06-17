@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { saveLocalPractice } from "@/utils/localPracticeDb";
+import { doubleMetaphone } from "double-metaphone";
+import { HOMOPHONES_MAP } from "@/utils/homophones";
 
 export interface WordMatchResult {
   text: string;
@@ -327,11 +329,37 @@ function cleanWord(w: string): string {
 function areWordsSimilar(w1: string, w2: string): boolean {
   const clean1 = cleanWord(w1);
   const clean2 = cleanWord(w2);
-  if (clean1 === clean2) return true;
-  if (clean1.length <= 3 || clean2.length <= 3) return clean1 === clean2;
   
+  // 1. Trùng khớp hoàn toàn về chữ viết
+  if (clean1 === clean2) return true;
+  
+  // 2. Kiểm tra từ đồng âm (Homophones) bằng danh sách đối chiếu chính xác
+  if (HOMOPHONES_MAP[clean1]?.includes(clean2) || HOMOPHONES_MAP[clean2]?.includes(clean1)) {
+    return true;
+  }
+
+  // 3. Sử dụng Double Metaphone để xử lý các biến thể chính tả (Ví dụ: color vs colour)
+  // và các lỗi phát âm nhỏ của các từ dài (> 4 ký tự) để tránh nhận diện nhầm nguyên âm ngắn/dài (như ship vs sheep)
+  try {
+    const code1 = doubleMetaphone(clean1);
+    const code2 = doubleMetaphone(clean2);
+    
+    const primaryMatch = code1[0] && code2[0] && code1[0] === code2[0];
+    
+    if (primaryMatch) {
+      // Chỉ cho phép trùng mã Metaphone trực tiếp nếu độ dài từ > 4 ký tự
+      // để tránh việc nhận diện nhầm các từ ngắn tương phản nguyên âm (như ship/sheep, bit/beat, bad/bed)
+      if (clean1.length > 4 && clean2.length > 4) {
+        return true;
+      }
+    }
+  } catch {
+    // Bỏ qua lỗi nếu có
+  }
+
+  // 4. Kiểm tra Levenshtein thô (như cũ) để bắt các lỗi gõ hoặc biến thể nhỏ khác
+  if (clean1.length <= 3 || clean2.length <= 3) return clean1 === clean2;
   const distance = getLevenshteinDistance(clean1, clean2);
-  // Từ ngắn (4-6 chữ) cho phép lệch 1 ký tự, từ dài hơn cho phép lệch tối đa 2 ký tự
   const maxAllowedDistance = clean1.length <= 6 ? 1 : 2;
   return distance <= maxAllowedDistance;
 }

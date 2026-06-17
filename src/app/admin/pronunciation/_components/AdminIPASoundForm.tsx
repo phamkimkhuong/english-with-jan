@@ -207,7 +207,8 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
       onPublishSuccess(updatedSounds);
     } catch (err: unknown) {
       logger.error("Lỗi lưu thay đổi:", err);
-      toast.error("Lỗi hệ thống không thể lưu thay đổi. Vui lòng thử lại sau.");
+      const errMsg = err instanceof Error ? err.message : String(err);
+      toast.error(`Lỗi hệ thống không thể lưu thay đổi: ${errMsg}`);
     } finally {
       setIsSaving(false);
     }
