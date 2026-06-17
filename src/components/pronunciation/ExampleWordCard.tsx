@@ -127,25 +127,28 @@ export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
           )}
 
           {/* Nút loa phát âm chuẩn */}
-          <button
-            type="button"
-            onClick={() => {
-              const audioToPlay = (genderMode === "male" && ex.audioUrlMale)
-                ? ex.audioUrlMale
-                : ex.audioUrl;
-              playSoundAudio(ex.word, audioToPlay, true);
-            }}
-            className={`${styles.actionBtn} ${playingWord === ex.word ? styles.actionBtnPlaying : ""}`}
-          >
-            {playingWord === ex.word ? (
-              <div className="skeleton skeleton-circle" style={{ width: "16px", height: "16px" }} />
-            ) : (
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
-                <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
-              </svg>
-            )}
-          </button>
+          {((genderMode === "female" && ex.audioUrl) ||
+            (genderMode === "male" && ex.audioUrlMale)) && (
+            <button
+              type="button"
+              onClick={() => {
+                const audioToPlay = (genderMode === "male" && ex.audioUrlMale)
+                  ? ex.audioUrlMale
+                  : ex.audioUrl;
+                playSoundAudio(ex.word, audioToPlay, true);
+              }}
+              className={`${styles.actionBtn} ${playingWord === ex.word ? styles.actionBtnPlaying : ""}`}
+            >
+              {playingWord === ex.word ? (
+                <div className="skeleton skeleton-circle" style={{ width: "16px", height: "16px" }} />
+              ) : (
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                  <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+                </svg>
+              )}
+            </button>
+          )}
 
           {/* Nút Micro thu âm */}
           <button
