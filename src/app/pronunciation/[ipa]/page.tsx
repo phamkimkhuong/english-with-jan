@@ -1,9 +1,10 @@
 import defaultIpaData from "../../../../public/data/default_ipa.json";
 import IPADetailsClientPage from "./IPADetailsClientPage";
+import { getSlugFromIpa } from "@/utils/ipaSlug";
 
 export function generateStaticParams() {
   return defaultIpaData.sounds.map((sound) => ({
-    ipa: encodeURIComponent(sound.ipa),
+    ipa: getSlugFromIpa(sound.ipa),
   }));
 }
 

@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { useIPASyllabus } from "@/hooks/useIPASyllabus";
 import { CourseGuard } from "@/components/common/CourseGuard";
+import { getSlugFromIpa } from "@/utils/ipaSlug";
 import styles from "./pronunciation.module.css";
 
 const formatSoundName = (name: string) => {
@@ -101,7 +102,7 @@ export default function PronunciationPage() {
                     {vowels.filter(s => s.type.startsWith("monophthong")).map((sound) => (
                       <Link
                         key={sound.ipa}
-                        href={`/pronunciation/${encodeURIComponent(sound.ipa)}`}
+                        href={`/pronunciation/${getSlugFromIpa(sound.ipa)}`}
                         className={`${styles.soundBtn} ${styles.soundBtnVowel}`}
                       >
                         <span className={styles.soundBtnSymbol}>/{sound.ipa}/</span>
@@ -120,7 +121,7 @@ export default function PronunciationPage() {
                     {vowels.filter(s => s.type === "diphthong").map((sound) => (
                       <Link
                         key={sound.ipa}
-                        href={`/pronunciation/${encodeURIComponent(sound.ipa)}`}
+                        href={`/pronunciation/${getSlugFromIpa(sound.ipa)}`}
                         className={`${styles.soundBtn} ${styles.soundBtnVowel}`}
                       >
                         <span className={styles.soundBtnSymbol}>/{sound.ipa}/</span>
@@ -149,7 +150,7 @@ export default function PronunciationPage() {
                     {consonants.filter(s => s.type === "consonant_voiceless").map((sound) => (
                       <Link
                         key={sound.ipa}
-                        href={`/pronunciation/${encodeURIComponent(sound.ipa)}`}
+                        href={`/pronunciation/${getSlugFromIpa(sound.ipa)}`}
                         className={`${styles.soundBtn} ${styles.soundBtnConsonant}`}
                       >
                         <span className={styles.soundBtnSymbol}>/{sound.ipa}/</span>
@@ -168,7 +169,7 @@ export default function PronunciationPage() {
                     {consonants.filter(s => s.type === "consonant_voiced").map((sound) => (
                       <Link
                         key={sound.ipa}
-                        href={`/pronunciation/${encodeURIComponent(sound.ipa)}`}
+                        href={`/pronunciation/${getSlugFromIpa(sound.ipa)}`}
                         className={`${styles.soundBtn} ${styles.soundBtnConsonant}`}
                       >
                         <span className={styles.soundBtnSymbol}>/{sound.ipa}/</span>

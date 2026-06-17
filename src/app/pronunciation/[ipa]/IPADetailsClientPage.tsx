@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useIPASyllabus } from "@/hooks/useIPASyllabus";
 import { IPADetailPanel } from "@/components/pronunciation/IPADetailPanel";
 import { CourseGuard } from "@/components/common/CourseGuard";
+import { getSlugFromIpa, getIpaFromSlug } from "@/utils/ipaSlug";
 import styles from "../pronunciation.module.css";
 
 interface IPADetailsClientPageProps {
@@ -12,7 +13,7 @@ interface IPADetailsClientPageProps {
 }
 
 export default function IPADetailsClientPage({ ipa }: IPADetailsClientPageProps) {
-  const decodedIpa = decodeURIComponent(ipa);
+  const decodedIpa = getIpaFromSlug(ipa);
 
   const {
     sounds,
@@ -69,7 +70,7 @@ export default function IPADetailsClientPage({ ipa }: IPADetailsClientPageProps)
             <div className={styles.navBtnGroup}>
               {prevSound ? (
                 <Link
-                  href={`/pronunciation/${encodeURIComponent(prevSound.ipa)}`}
+                  href={`/pronunciation/${getSlugFromIpa(prevSound.ipa)}`}
                   className={`${styles.navLinkBtn} btn btn-outline`}
                 >
                   ← /{prevSound.ipa}/
@@ -82,7 +83,7 @@ export default function IPADetailsClientPage({ ipa }: IPADetailsClientPageProps)
 
               {nextSound ? (
                 <Link
-                  href={`/pronunciation/${encodeURIComponent(nextSound.ipa)}`}
+                  href={`/pronunciation/${getSlugFromIpa(nextSound.ipa)}`}
                   className={`${styles.navLinkBtn} btn btn-outline`}
                 >
                   /{nextSound.ipa}/ →
