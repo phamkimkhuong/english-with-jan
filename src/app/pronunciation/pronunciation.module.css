@@ -216,6 +216,14 @@
   font-family: monospace;
 }
 
+.partOfSpeechText {
+  font-size: 0.82rem;
+  color: rgb(var(--secondary-rgb));
+  margin-left: 8px;
+  font-style: italic;
+  font-weight: 500;
+}
+
 .meaningText {
   font-size: 0.8rem;
   color: rgb(var(--secondary-rgb));
@@ -578,41 +586,60 @@
   padding: 20px 0;
 }
 
-/* Gender toggle button classes */
-.genderToggleContainer {
+/* Cụm nút loa phát âm kép Nam/Nữ */
+.speakerBtnRow {
   display: flex;
-  background: rgb(var(--foreground-rgb) / 0.06);
-  padding: 4px;
-  border-radius: 9999px;
-  border: 1px solid rgb(var(--card-border-rgb));
-  gap: 2px;
+  gap: 8px;
+  align-items: center;
 }
 
-.genderToggleBtn {
-  background: none;
-  border: none;
-  font-size: 0.85rem;
-  font-weight: 700;
-  padding: 6px 14px;
-  border-radius: 9999px;
-  cursor: pointer;
-  color: rgb(var(--secondary-rgb));
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
+.speakerBtnCompact {
+  display: inline-flex;
   align-items: center;
   gap: 6px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   user-select: none;
 }
 
-.genderToggleBtn:hover {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--foreground-rgb) / 0.04);
+.speakerBtnCompact:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+  filter: brightness(0.96);
 }
 
-.genderToggleActive {
-  background: rgb(var(--card-bg-rgb)) !important;
-  color: rgb(var(--primary-rgb)) !important;
-  box-shadow: var(--shadow-sm);
+.speakerBtnCompact:active {
+  transform: translateY(0);
+}
+
+.cardSpeakerBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 9999px;
+  background: rgb(var(--card-bg-rgb));
+  border: 1px solid rgb(var(--card-border-rgb));
+  color: rgb(var(--secondary-rgb));
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cardSpeakerBtn:hover {
+  background-color: rgb(var(--foreground-rgb) / 0.04);
+  color: rgb(var(--foreground-rgb));
+  border-color: rgb(var(--foreground-rgb) / 0.15);
+}
+
+.cardSpeakerBtn:active {
+  transform: scale(0.96);
 }
 
 /* Page-Level Main Tabs Layout */

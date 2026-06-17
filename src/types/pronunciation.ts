@@ -7,6 +7,7 @@ export const IPAExampleSchema = z.object({
   audioUrl: z.string(),
   audioUrlMale: z.string().optional(),
   type: z.enum(["word", "phrase", "sentence"]).optional().default("word"),
+  partOfSpeech: z.string().optional(),
   hidden: z.boolean().optional().default(false),
 });
 

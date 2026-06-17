@@ -23,59 +23,32 @@ export function useIPASyllabus() {
     setSelectedSoundIpa(sound ? sound.ipa : null);
   };
 
-  const speakWithTTS = (text: string, isWord: boolean) => {
-    if (typeof window === "undefined" || !window.speechSynthesis) return;
-
-    // Dọn sạch âm thanh đang nói dở
-    window.speechSynthesis.cancel();
-
-    // Loại bỏ các ký tự gạch chéo cho IPA nếu muốn phát âm trực tiếp
-    const cleanedText = text.replace(/\//g, "");
-
-    const utterance = new SpeechSynthesisUtterance(cleanedText);
-    utterance.lang = "en-US";
-    // Phát âm ký tự âm đơn lẻ chậm hơn (0.6), từ/cụm từ/câu thì bình thường (0.9)
-    const isSingleSymbol = text.startsWith("/") && text.endsWith("/") && text.length <= 5;
-    utterance.rate = isSingleSymbol ? 0.6 : 0.95;
+  const playSoundAudio = (textToSpeak: string, customAudioUrl: string, isWord = false) => {
+    if (!customAudioUrl) return;
 
     if (isWord) {
-      setPlayingWord(text);
-      utterance.onend = () => {
-        setPlayingWord(null);
-      };
-      utterance.onerror = () => {
-        setPlayingWord(null);
-      };
+      setPlayingWord(textToSpeak);
     }
-
-    window.speechSynthesis.speak(utterance);
-  };
-
-  const playSoundAudio = (textToSpeak: string, customAudioUrl: string, isWord = false) => {
-    if (customAudioUrl) {
+    const audio = new Audio(customAudioUrl);
+    
+    audio.onended = () => {
       if (isWord) {
-        setPlayingWord(textToSpeak);
+        setPlayingWord(null);
       }
-      const audio = new Audio(customAudioUrl);
-      
-      audio.onended = () => {
-        if (isWord) {
-          setPlayingWord(null);
-        }
-      };
-      
-      audio.onerror = (err) => {
-        console.warn("Lỗi phát file nghe, chuyển sang Text-to-Speech:", err);
-        speakWithTTS(textToSpeak, isWord);
-      };
+    };
+    
+    audio.onerror = () => {
+      if (isWord) {
+        setPlayingWord(null);
+      }
+    };
 
-      audio.play().catch((err) => {
-        console.warn("Lỗi phát file nghe, chuyển sang Text-to-Speech:", err);
-        speakWithTTS(textToSpeak, isWord);
-      });
-    } else {
-      speakWithTTS(textToSpeak, isWord);
-    }
+    audio.play().catch((err) => {
+      console.warn("Lỗi phát file âm thanh:", err);
+      if (isWord) {
+        setPlayingWord(null);
+      }
+    });
   };
 
   return {

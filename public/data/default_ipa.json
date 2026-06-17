@@ -10,9 +10,9 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "sheep", "ipa": "/ʃiːp/", "meaning": "con cừu", "audioUrl": "", "type": "word" },
-        { "word": "meet", "ipa": "/miːt/", "meaning": "gặp gỡ", "audioUrl": "", "type": "word" },
-        { "word": "see", "ipa": "/siː/", "meaning": "nhìn thấy", "audioUrl": "", "type": "word" },
+        { "word": "sheep", "ipa": "/ʃiːp/", "meaning": "con cừu", "audioUrl": "", "type": "word", "partOfSpeech": "noun" },
+        { "word": "meet", "ipa": "/miːt/", "meaning": "gặp gỡ", "audioUrl": "", "type": "word", "partOfSpeech": "verb" },
+        { "word": "see", "ipa": "/siː/", "meaning": "nhìn thấy", "audioUrl": "", "type": "word", "partOfSpeech": "verb" },
         { "word": "meet you", "ipa": "/miːt juː/", "meaning": "gặp bạn", "audioUrl": "", "type": "phrase" },
         { "word": "green tea", "ipa": "/ɡriːn tiː/", "meaning": "trà xanh", "audioUrl": "", "type": "phrase" },
         { "word": "Nice to meet you.", "ipa": "/naɪs tuː miːt juː/", "meaning": "Rất vui được gặp bạn.", "audioUrl": "", "type": "sentence" },
@@ -31,9 +31,9 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "ship", "ipa": "/ʃɪp/", "meaning": "tàu thủy", "audioUrl": "", "type": "word" },
-        { "word": "sit", "ipa": "/sɪt/", "meaning": "ngồi", "audioUrl": "", "type": "word" },
-        { "word": "pin", "ipa": "/pɪn/", "meaning": "cái ghim", "audioUrl": "", "type": "word" },
+        { "word": "ship", "ipa": "/ʃɪp/", "meaning": "tàu thủy", "audioUrl": "", "type": "word", "partOfSpeech": "noun" },
+        { "word": "sit", "ipa": "/sɪt/", "meaning": "ngồi", "audioUrl": "", "type": "word", "partOfSpeech": "verb" },
+        { "word": "pin", "ipa": "/pɪn/", "meaning": "cái ghim", "audioUrl": "", "type": "word", "partOfSpeech": "noun" },
         { "word": "sit down", "ipa": "/sɪt daʊn/", "meaning": "ngồi xuống", "audioUrl": "", "type": "phrase" },
         { "word": "big city", "ipa": "/bɪɡ ˈsɪti/", "meaning": "thành phố lớn", "audioUrl": "", "type": "phrase" },
         { "word": "Please sit here.", "ipa": "/pliːz sɪt hɪə/", "meaning": "Xin vui lòng ngồi ở đây.", "audioUrl": "", "type": "sentence" }
@@ -51,9 +51,9 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "pen", "ipa": "/pen/", "meaning": "cái bút", "audioUrl": "" },
-        { "word": "bed", "ipa": "/bed/", "meaning": "cái giường", "audioUrl": "" },
-        { "word": "met", "ipa": "/met/", "meaning": "đã gặp", "audioUrl": "" }
+        { "word": "pen", "ipa": "/pen/", "meaning": "cái bút", "audioUrl": "", "partOfSpeech": "noun" },
+        { "word": "bed", "ipa": "/bed/", "meaning": "cái giường", "audioUrl": "", "partOfSpeech": "noun" },
+        { "word": "met", "ipa": "/met/", "meaning": "đã gặp", "audioUrl": "", "partOfSpeech": "verb" }
       ],
       "commonMistakes": [
         "Phát âm thành âm 'ê' trong tiếng Việt."
@@ -67,9 +67,9 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "man", "ipa": "/mæn/", "meaning": "người đàn ông", "audioUrl": "" },
-        { "word": "cat", "ipa": "/kæt/", "meaning": "con mèo", "audioUrl": "" },
-        { "word": "bad", "ipa": "/bæd/", "meaning": "tệ hại", "audioUrl": "" }
+        { "word": "man", "ipa": "/mæn/", "meaning": "người đàn ông", "audioUrl": "", "partOfSpeech": "noun" },
+        { "word": "cat", "ipa": "/kæt/", "meaning": "con mèo", "audioUrl": "", "partOfSpeech": "noun" },
+        { "word": "bad", "ipa": "/bæd/", "meaning": "tệ hại", "audioUrl": "", "partOfSpeech": "adj" }
       ],
       "commonMistakes": [
         "Phát âm thành âm 'e' hoặc âm 'a' thuần tiếng Việt.",
@@ -84,9 +84,9 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "father", "ipa": "/ˈfɑːðə/", "meaning": "cha", "audioUrl": "" },
-        { "word": "car", "ipa": "/kɑː/", "meaning": "ô tô", "audioUrl": "" },
-        { "word": "start", "ipa": "/stɑːt/", "meaning": "bắt đầu", "audioUrl": "" }
+        { "word": "father", "ipa": "/ˈfɑːðə/", "meaning": "cha", "audioUrl": "", "partOfSpeech": "noun" },
+        { "word": "car", "ipa": "/kɑː/", "meaning": "ô tô", "audioUrl": "", "partOfSpeech": "noun" },
+        { "word": "start", "ipa": "/stɑːt/", "meaning": "bắt đầu", "audioUrl": "", "partOfSpeech": "verb" }
       ],
       "commonMistakes": [
         "Phát âm ngắn và bẹt như âm 'a' tiếng Việt."
@@ -100,9 +100,9 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "hot", "ipa": "/hɒt/", "meaning": "nóng", "audioUrl": "" },
-        { "word": "on", "ipa": "/ɒn/", "meaning": "trên", "audioUrl": "" },
-        { "word": "box", "ipa": "/bɒks/", "meaning": "cái hộp", "audioUrl": "" }
+        { "word": "hot", "ipa": "/hɒt/", "meaning": "nóng", "audioUrl": "", "partOfSpeech": "adj" },
+        { "word": "on", "ipa": "/ɒn/", "meaning": "trên", "audioUrl": "", "partOfSpeech": "prep" },
+        { "word": "box", "ipa": "/bɒks/", "meaning": "cái hộp", "audioUrl": "", "partOfSpeech": "noun" }
       ],
       "commonMistakes": [
         "Phát âm thành âm 'o' kéo dài hoặc phát âm giống âm 'ô'."

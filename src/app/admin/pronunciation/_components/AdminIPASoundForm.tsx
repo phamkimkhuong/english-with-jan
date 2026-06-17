@@ -411,7 +411,7 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
             onClick={() => updateEditSound({
               examples: [
                 ...editSound.examples,
-                { word: "", ipa: "", meaning: "", audioUrl: "", type: activeExampleTab, hidden: false }
+                { word: "", partOfSpeech: "", ipa: "", meaning: "", audioUrl: "", type: activeExampleTab, hidden: false }
               ]
             })}
             className={styles.addBtn}
@@ -484,6 +484,13 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
                           "Từ vựng (Ví dụ: meet)"
                     }
                     onChange={(e) => updateExample(originalIndex, { word: e.target.value })}
+                    className={styles.exampleInput}
+                  />
+                  <input
+                    type="text"
+                    value={ex.partOfSpeech || ""}
+                    placeholder="Từ loại (Ví dụ: adj, noun)"
+                    onChange={(e) => updateExample(originalIndex, { partOfSpeech: e.target.value })}
                     className={styles.exampleInput}
                   />
                   <input

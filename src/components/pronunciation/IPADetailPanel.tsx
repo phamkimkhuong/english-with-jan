@@ -18,7 +18,6 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
   playingWord,
 }) => {
   const [activeSubTab, setActiveSubTab] = React.useState<"word" | "phrase" | "sentence">("word");
-  const [genderMode, setGenderMode] = React.useState<"female" | "male">("female");
   const [activeMainTab, setActiveMainTab] = React.useState<"theory" | "practice">("theory");
   const { user } = useAuth();
 
@@ -57,7 +56,7 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
       {/* Sound Header with Speaker and Main Tabs - Shared at top */}
       <div className={`${styles.soundHeaderCard} card`}>
         <div className={styles.headerFlexRow}>
-          
+
           <div className={styles.soundInfoLeft}>
             <span
               className={styles.soundBadge}
@@ -70,32 +69,53 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
                   selectedSound.type === "diphthong" ? "Nguyên âm đôi" :
                     selectedSound.type === "consonant_voiceless" ? "Phụ âm vô thanh" : "Phụ âm hữu thanh"}
             </span>
-            
+
             <div className={styles.symbolAndSpeakerRow}>
               <h2 className={styles.soundSymbolTitle}>
                 /{selectedSound.ipa}/
               </h2>
-              
-              <button
-                type="button"
-                onClick={() => {
-                  const audioToPlay = (genderMode === "male" && selectedSound.audioUrlMale)
-                    ? selectedSound.audioUrlMale
-                    : selectedSound.audioUrl;
-                  playSoundAudio(selectedSound.ipa, audioToPlay || "");
-                }}
-                className={styles.speakerBtn}
-                style={{
-                  backgroundColor: isConsonant ? "rgb(var(--accent-light-rgb))" : "rgb(var(--primary-light-rgb))",
-                  color: isConsonant ? "rgb(var(--accent-rgb))" : "rgb(var(--primary-rgb))",
-                }}
-                title="Nghe phát âm mẫu"
-              >
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
-                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" />
-                </svg>
-              </button>
+
+              <div className={styles.speakerBtnRow}>
+                {/* Loa Nữ */}
+                {selectedSound.audioUrl && (
+                  <button
+                    type="button"
+                    onClick={() => playSoundAudio(`${selectedSound.ipa}-female`, selectedSound.audioUrl || "", false)}
+                    className={`${styles.speakerBtnCompact} ${playingWord === `${selectedSound.ipa}-female` ? styles.actionBtnPlaying : ""}`}
+                    style={{
+                      backgroundColor: isConsonant ? "rgb(var(--accent-light-rgb))" : "rgb(var(--primary-light-rgb))",
+                      color: isConsonant ? "rgb(var(--accent-rgb))" : "rgb(var(--primary-rgb))",
+                    }}
+                    title="Nghe giọng Nữ"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                      <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" />
+                    </svg>
+                    <span>Female</span>
+                  </button>
+                )}
+
+                {/* Loa Nam */}
+                {selectedSound.audioUrlMale && (
+                  <button
+                    type="button"
+                    onClick={() => playSoundAudio(`${selectedSound.ipa}-male`, selectedSound.audioUrlMale || "", false)}
+                    className={`${styles.speakerBtnCompact} ${playingWord === `${selectedSound.ipa}-male` ? styles.actionBtnPlaying : ""}`}
+                    style={{
+                      backgroundColor: isConsonant ? "rgb(var(--accent-light-rgb))" : "rgb(var(--primary-light-rgb))",
+                      color: isConsonant ? "rgb(var(--accent-rgb))" : "rgb(var(--primary-rgb))",
+                    }}
+                    title="Nghe giọng Nam"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                      <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" />
+                    </svg>
+                    <span>Male</span>
+                  </button>
+                )}
+              </div>
 
               <span className={styles.soundNameSubtitle}>
                 Tên gọi khác: {selectedSound.name}
@@ -129,7 +149,7 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
         {activeMainTab === "theory" ? (
           <div className={`${styles.theoryTabContent} card`}>
             <div className={styles.theoryLayoutGrid}>
-              
+
               {/* Mouth shape representation column */}
               {selectedSound.mouthShapeImage && (
                 <div className={styles.mouthShapeContainer}>
@@ -178,24 +198,6 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
               <h4 className={styles.sectionTitle} style={{ marginBottom: 0 }}>
                 🗣️ Bài tập luyện đọc thực tế
               </h4>
-
-              {/* Voice Switcher Toggle (Male/Female) */}
-              <div className={styles.genderToggleContainer}>
-                <button
-                  type="button"
-                  className={`${styles.genderToggleBtn} ${genderMode === "female" ? styles.genderToggleActive : ""}`}
-                  onClick={() => setGenderMode("female")}
-                >
-                  👩‍💼 Nữ
-                </button>
-                <button
-                  type="button"
-                  className={`${styles.genderToggleBtn} ${genderMode === "male" ? styles.genderToggleActive : ""}`}
-                  onClick={() => setGenderMode("male")}
-                >
-                  👨‍💼 Nam
-                </button>
-              </div>
             </div>
 
             {/* Sub-tabs for categories */}
@@ -251,7 +253,6 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
                       playSoundAudio={playSoundAudio}
                       startSpeechPractice={startSpeechPractice}
                       isSupported={isSupported}
-                      genderMode={genderMode}
                     />
                   ))
                 ) : (
@@ -276,7 +277,6 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
                       playSoundAudio={playSoundAudio}
                       startSpeechPractice={startSpeechPractice}
                       isSupported={isSupported}
-                      genderMode={genderMode}
                     />
                   ))
                 ) : (
@@ -301,7 +301,6 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
                       playSoundAudio={playSoundAudio}
                       startSpeechPractice={startSpeechPractice}
                       isSupported={isSupported}
-                      genderMode={genderMode}
                     />
                   ))
                 ) : (

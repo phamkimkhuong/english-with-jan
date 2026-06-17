@@ -28,6 +28,11 @@ export function useSpeechRecognition() {
   const streamRef = useRef<MediaStream | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
   const latestResultRef = useRef<SpeechPracticeResult | null>(null);
+  
+  // Lưu tham chiếu persistent để tránh bị garbage collector thu hồi trên Mobile (Chrome Android / iOS Safari)
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const recognitionRef = useRef<any>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -40,6 +45,22 @@ export function useSpeechRecognition() {
     }
   }, []);
 
+  // Cleanup khi component unmount
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+      if (recognitionRef.current) {
+        try {
+          recognitionRef.current.abort();
+        } catch {
+          // ignore
+        }
+      }
+    };
+  }, []);
+
   const startSpeechPractice = async (wordToPractice: string, soundIpa: string, exampleType: string) => {
     if (typeof window === "undefined") return;
 
@@ -47,13 +68,24 @@ export function useSpeechRecognition() {
     const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
 
     if (!SpeechRecognition) {
-      setRecognitionError("Trình duyệt không hỗ trợ nhận dạng giọng nói. Hãy dùng Google Chrome hoặc Microsoft Edge.");
+      setRecognitionError("Trình duyệt không hỗ trợ nhận dạng giọng nói. Hãy sử dụng Safari (nếu dùng iPhone) hoặc Google Chrome (nếu dùng Android/PC).");
       setTimeout(() => setRecognitionError(null), 5000);
       return;
     }
 
-    if (isListening) {
-      return;
+    // Nếu đang nghe, hủy session cũ trước khi bắt đầu session mới
+    if (recognitionRef.current) {
+      try {
+        recognitionRef.current.abort();
+      } catch (e) {
+        console.warn("Lỗi khi hủy session cũ:", e);
+      }
+      recognitionRef.current = null;
+    }
+
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
     }
 
     setPracticeResult(null);
@@ -63,54 +95,108 @@ export function useSpeechRecognition() {
     latestResultRef.current = null;
 
     try {
-      // 1. Yêu cầu quyền Micro và lấy stream âm thanh
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      streamRef.current = stream;
+      const isMobile = typeof window !== "undefined" && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-      // 2. Khởi tạo MediaRecorder để ghi âm
-      const mediaRecorder = new MediaRecorder(stream, { mimeType: "audio/webm" });
-      mediaRecorderRef.current = mediaRecorder;
-
-      mediaRecorder.ondataavailable = (event) => {
-        if (event.data.size > 0) {
-          audioChunksRef.current.push(event.data);
+      // Chỉ khởi chạy MediaRecorder trên Desktop để tránh xung đột phần cứng Micro trên thiết bị di động
+      if (!isMobile) {
+        // Kiểm tra môi trường an toàn HTTPS (bắt buộc cho getUserMedia trên PC)
+        if (typeof window !== "undefined" && !window.isSecureContext) {
+          throw new Error("NOT_SECURE_CONTEXT");
         }
-      };
 
-      mediaRecorder.onstop = async () => {
-        const audioBlob = new Blob(audioChunksRef.current, { type: "audio/webm" });
-        
-        // 3. Nếu nhận dạng giọng nói thành công và có kết quả chấm điểm, lưu cục bộ
-        if (latestResultRef.current) {
-          const exampleKey = `${soundIpa}_${exampleType}_${wordToPractice}`;
-          try {
-            await saveLocalPractice(exampleKey, audioBlob, latestResultRef.current);
-            setSavedPracticeKey(exampleKey);
-          } catch (dbErr) {
-            console.error("Lỗi lưu file ghi âm cục bộ:", dbErr);
+        if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+          throw new Error("NOT_SECURE_CONTEXT");
+        }
+
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        streamRef.current = stream;
+
+        // Tự động phát hiện mimeType được hỗ trợ (iOS không hỗ trợ audio/webm, chỉ hỗ trợ audio/mp4 hoặc audio/aac)
+        let selectedMimeType = "audio/webm";
+        if (typeof MediaRecorder !== "undefined" && MediaRecorder.isTypeSupported) {
+          if (!MediaRecorder.isTypeSupported(selectedMimeType)) {
+            if (MediaRecorder.isTypeSupported("audio/mp4")) {
+              selectedMimeType = "audio/mp4";
+            } else if (MediaRecorder.isTypeSupported("audio/aac")) {
+              selectedMimeType = "audio/aac";
+            } else {
+              selectedMimeType = ""; // Trình duyệt tự chọn định dạng mặc định
+            }
           }
         }
 
-        // 4. Giải phóng các track microphone
-        stream.getTracks().forEach((track) => track.stop());
-        streamRef.current = null;
-        mediaRecorderRef.current = null;
-      };
+        const recorderOptions = selectedMimeType ? { mimeType: selectedMimeType } : undefined;
+        const mediaRecorder = new MediaRecorder(stream, recorderOptions);
+        mediaRecorderRef.current = mediaRecorder;
 
-      // 5. Khởi tạo và cấu hình bộ nhận dạng giọng nói
+        mediaRecorder.ondataavailable = (event) => {
+          if (event.data.size > 0) {
+            audioChunksRef.current.push(event.data);
+          }
+        };
+
+        mediaRecorder.onstop = async () => {
+          const finalMimeType = selectedMimeType || mediaRecorder.mimeType || "audio/webm";
+          const audioBlob = new Blob(audioChunksRef.current, { type: finalMimeType });
+          
+          // Nếu nhận dạng giọng nói thành công và có kết quả chấm điểm, lưu cục bộ
+          if (latestResultRef.current) {
+            const exampleKey = `${soundIpa}_${exampleType}_${wordToPractice}`;
+            try {
+              await saveLocalPractice(exampleKey, audioBlob, latestResultRef.current);
+              setSavedPracticeKey(exampleKey);
+            } catch (dbErr) {
+              console.error("Lỗi lưu file ghi âm cục bộ:", dbErr);
+            }
+          }
+
+          // Giải phóng các track microphone
+          stream.getTracks().forEach((track) => track.stop());
+          streamRef.current = null;
+          mediaRecorderRef.current = null;
+        };
+      }
+
+      // Khởi tạo và cấu hình bộ nhận dạng giọng nói
       const recognition = new SpeechRecognition();
+      recognitionRef.current = recognition; // Giữ tham chiếu mạnh
+      
       recognition.lang = "en-US";
+      recognition.continuous = false;
       recognition.interimResults = false;
       recognition.maxAlternatives = 1;
+
+      // Hủy sau 10 giây nếu không phản hồi để tránh đơ giao diện
+      timeoutRef.current = setTimeout(() => {
+        console.warn("Safety timeout reached for SpeechRecognition.");
+        if (recognitionRef.current) {
+          try {
+            recognitionRef.current.abort();
+          } catch {
+            // ignore
+          }
+        }
+        setIsListening(false);
+        setListeningWord(null);
+        setRecognitionError("Không phát hiện giọng nói hoặc kết nối mạng yếu. Hãy thử nói to và rõ ràng hơn.");
+        setTimeout(() => setRecognitionError(null), 5000);
+      }, 10000);
 
       recognition.onstart = () => {
         setIsListening(true);
         setListeningWord(wordToPractice);
-        mediaRecorder.start();
+        if (mediaRecorderRef.current && mediaRecorderRef.current.state === "inactive") {
+          mediaRecorderRef.current.start();
+        }
       };
 
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       recognition.onresult = (event: any) => {
+        if (timeoutRef.current) {
+          clearTimeout(timeoutRef.current);
+          timeoutRef.current = null;
+        }
+
         const transcript = event.results[0][0].transcript;
         const confidence = event.results[0][0].confidence;
 
@@ -141,18 +227,30 @@ export function useSpeechRecognition() {
 
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       recognition.onerror = (event: any) => {
+        if (timeoutRef.current) {
+          clearTimeout(timeoutRef.current);
+          timeoutRef.current = null;
+        }
+
         console.error("Lỗi nhận dạng giọng nói:", event.error);
         if (event.error === "not-allowed") {
           setRecognitionError("Vui lòng cấp quyền truy cập Micro để luyện đọc.");
+        } else if (event.error === "no-speech") {
+          setRecognitionError("Không nghe thấy âm thanh. Hãy nói to, rõ ràng hơn.");
         } else {
-          setRecognitionError("Không thể nhận dạng. Hãy nói to, rõ ràng hơn.");
+          setRecognitionError("Không thể nhận dạng. Hãy kiểm tra kết nối mạng và thử lại.");
         }
-        setTimeout(() => setRecognitionError(null), 4000);
+        setTimeout(() => setRecognitionError(null), 5000);
       };
 
       recognition.onend = () => {
+        if (timeoutRef.current) {
+          clearTimeout(timeoutRef.current);
+          timeoutRef.current = null;
+        }
         setIsListening(false);
         setListeningWord(null);
+        recognitionRef.current = null;
         
         // Dừng ghi âm khi SpeechRecognition kết thúc
         if (mediaRecorderRef.current && mediaRecorderRef.current.state !== "inactive") {
@@ -162,12 +260,26 @@ export function useSpeechRecognition() {
 
       recognition.start();
 
-    } catch (err) {
+    } catch (err: unknown) {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+        timeoutRef.current = null;
+      }
       console.error("Lỗi truy cập micro để ghi âm:", err);
-      setRecognitionError("Không thể truy cập Micro. Vui lòng kiểm tra quyền thiết bị.");
-      setTimeout(() => setRecognitionError(null), 4000);
+      const errorMessage = err instanceof Error ? err.message : "";
+      const errorName = err instanceof Error ? err.name : "";
+
+      if (errorMessage === "NOT_SECURE_CONTEXT") {
+        setRecognitionError("Để ghi âm trên điện thoại, bạn bắt buộc phải dùng kết nối HTTPS bảo mật.");
+      } else if (errorName === "NotAllowedError" || errorName === "PermissionDeniedError") {
+        setRecognitionError("Vui lòng cấp quyền truy cập Micro trên điện thoại để luyện đọc.");
+      } else {
+        setRecognitionError("Không thể kết nối Micro. Hãy kiểm tra cài đặt thiết bị.");
+      }
+      setTimeout(() => setRecognitionError(null), 5000);
       setIsListening(false);
       setListeningWord(null);
+      recognitionRef.current = null;
     }
   };
 

@@ -25,7 +25,6 @@ interface ExampleWordCardProps {
   playSoundAudio: (textToSpeak: string, customAudioUrl: string, isWord: boolean) => void;
   startSpeechPractice: (word: string, soundIpa: string, exampleType: string) => void;
   isSupported?: boolean;
-  genderMode?: "female" | "male";
 }
 
 export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
@@ -39,7 +38,6 @@ export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
   playSoundAudio,
   startSpeechPractice,
   isSupported = true,
-  genderMode = "female",
 }) => {
   const isWordListening = listeningWord === ex.word;
   const hasResult = practiceResult && practiceResult.word === ex.word;
@@ -102,9 +100,12 @@ export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
         <div>
           <span className={styles.wordText}>{ex.word}</span>
           <span className={styles.ipaText}>{ex.ipa}</span>
+          {ex.partOfSpeech && (
+            <span className={styles.partOfSpeechText}>({ex.partOfSpeech})</span>
+          )}
           <p className={styles.meaningText}>Nghĩa: {ex.meaning}</p>
         </div>
-        
+
         <div className={styles.actionBtnGroup}>
           {/* Nút nghe lại giọng đọc của học viên */}
           {userAudioUrl && (
@@ -126,27 +127,43 @@ export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
             </button>
           )}
 
-          {/* Nút loa phát âm chuẩn */}
-          {((genderMode === "female" && ex.audioUrl) ||
-            (genderMode === "male" && ex.audioUrlMale)) && (
+          {/* Nút loa phát âm chuẩn - Giọng Nữ */}
+          {ex.audioUrl && (
             <button
               type="button"
-              onClick={() => {
-                const audioToPlay = (genderMode === "male" && ex.audioUrlMale)
-                  ? ex.audioUrlMale
-                  : ex.audioUrl;
-                playSoundAudio(ex.word, audioToPlay, true);
-              }}
-              className={`${styles.actionBtn} ${playingWord === ex.word ? styles.actionBtnPlaying : ""}`}
+              onClick={() => playSoundAudio(`${ex.word}-female`, ex.audioUrl || "", true)}
+              className={`${styles.cardSpeakerBtn} ${playingWord === `${ex.word}-female` ? styles.actionBtnPlaying : ""}`}
+              title="Nghe giọng Nữ"
             >
-              {playingWord === ex.word ? (
-                <div className="skeleton skeleton-circle" style={{ width: "16px", height: "16px" }} />
+              {playingWord === `${ex.word}-female` ? (
+                <div className="skeleton skeleton-circle" style={{ width: "12px", height: "12px" }} />
               ) : (
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                   <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
                   <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
                 </svg>
               )}
+              <span>Female</span>
+            </button>
+          )}
+
+          {/* Nút loa phát âm chuẩn - Giọng Nam */}
+          {ex.audioUrlMale && (
+            <button
+              type="button"
+              onClick={() => playSoundAudio(`${ex.word}-male`, ex.audioUrlMale || "", true)}
+              className={`${styles.cardSpeakerBtn} ${playingWord === `${ex.word}-male` ? styles.actionBtnPlaying : ""}`}
+              title="Nghe giọng Nam"
+            >
+              {playingWord === `${ex.word}-male` ? (
+                <div className="skeleton skeleton-circle" style={{ width: "12px", height: "12px" }} />
+              ) : (
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                  <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+                </svg>
+              )}
+              <span>Male</span>
             </button>
           )}
 
@@ -188,7 +205,7 @@ export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
                 {practiceResult.isCorrect ? "Phát âm chính xác!" : "Cần luyện tập thêm"}
                 {practiceResult.accuracy !== undefined && ` (Đúng: ${practiceResult.accuracy}%)`}
               </p>
-              
+
               {/* Hiển thị chi tiết từng từ để học sinh sửa lỗi (Word-by-word highlight) */}
               {practiceResult.wordResults && practiceResult.wordResults.length > 0 ? (
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", margin: "8px 0" }}>
@@ -215,7 +232,7 @@ export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
                   Bạn phát âm: <strong>&quot;{practiceResult.spokenText}&quot;</strong>
                 </p>
               )}
-              
+
               {practiceResult.isCorrect && practiceResult.confidence !== undefined && (
                 <p style={{ margin: "2px 0 0 0", fontSize: "0.8rem", color: "rgb(var(--secondary-rgb))" }}>
                   Độ tương đồng giọng đọc: {practiceResult.confidence}%
@@ -223,7 +240,7 @@ export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
               )}
             </div>
           </div>
-          <button 
+          <button
             type="button"
             onClick={() => setPracticeResult(null)}
             style={{ background: "none", border: "none", cursor: "pointer", color: "rgb(var(--secondary-rgb))", fontSize: "1.2rem", opacity: 0.6, alignSelf: "flex-start" }}
