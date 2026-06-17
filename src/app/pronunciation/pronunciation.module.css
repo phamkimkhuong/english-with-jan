@@ -107,15 +107,19 @@
 }
 
 .speakerBtn {
-  width: 60px;
-  height: 60px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.1s ease;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.speakerBtn:hover {
+  transform: scale(1.05);
 }
 
 .speakerBtn:active {
@@ -538,14 +542,13 @@
 }
 
 .soundSymbolTitle {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 900;
   color: rgb(var(--foreground-rgb));
-  margin-top: 4px;
 }
 
 .soundNameSubtitle {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: rgb(var(--secondary-rgb));
   font-weight: 500;
 }
@@ -611,4 +614,119 @@
   color: rgb(var(--primary-rgb)) !important;
   box-shadow: var(--shadow-sm);
 }
+
+/* Page-Level Main Tabs Layout */
+.detailsWorkspaceContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.soundHeaderCard {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerFlexRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.soundInfoLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.symbolAndSpeakerRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.mainTabBar {
+  display: flex;
+  gap: 8px;
+}
+
+.mainTabBtn {
+  background: none;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  color: rgb(var(--secondary-rgb));
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mainTabBtn:hover {
+  background-color: rgb(var(--foreground-rgb) / 0.04);
+  color: rgb(var(--foreground-rgb));
+}
+
+.mainTabActive {
+  background-color: rgb(var(--primary-rgb) / 0.08) !important;
+  color: rgb(var(--primary-rgb)) !important;
+}
+
+.tabContentArea {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.theoryTabContent {
+  padding: 24px;
+}
+
+.theoryLayoutGrid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 32px;
+}
+
+.mouthShapeContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.theoryTextDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.practiceTabContent {
+  padding: 24px;
+  width: 100%;
+}
+
+@media (width <= 768px) {
+  .theoryLayoutGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .headerFlexRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .mainTabBar {
+    width: 100%;
+    border-top: 1px solid rgb(var(--card-border-rgb));
+    padding-top: 16px;
+    margin-top: 4px;
+    justify-content: flex-start;
+  }
+}
+
 

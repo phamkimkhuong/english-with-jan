@@ -30,6 +30,7 @@ export interface AccessCode {
   usedBy: string[];
   usedAt?: Timestamp | null;
   durationDays?: number | null;
+  targetPath?: string | null;
 }
 
 /**
@@ -44,6 +45,7 @@ export async function createAccessCode(data: {
   maxUses?: number;
   createdBy: string;
   durationDays?: number | null;
+  targetPath?: string | null;
 }): Promise<void> {
   const codeFormatted = data.code.trim().toUpperCase();
   if (!codeFormatted) {
@@ -72,6 +74,7 @@ export async function createAccessCode(data: {
     currentUses: 0,
     usedBy: [],
     durationDays: data.durationDays || null,
+    targetPath: data.targetPath || null,
   });
 }
 
@@ -95,7 +98,7 @@ export async function getAccessCodes(): Promise<AccessCode[]> {
  * Thực hiện kích hoạt mã cho học sinh.
  * Sử dụng Transaction của Firestore để đảm bảo an toàn dữ liệu khi nhiều học sinh nhập mã cùng lúc.
  */
-export async function redeemAccessCode(uid: string, codeText: string): Promise<void> {
+export async function redeemAccessCode(uid: string, codeText: string): Promise<{ allowedCourses: string[]; targetPath: string | null }> {
   const codeFormatted = codeText.trim().toUpperCase();
   if (!codeFormatted) {
     throw new Error("Vui lòng nhập mã kích hoạt.");
@@ -103,6 +106,9 @@ export async function redeemAccessCode(uid: string, codeText: string): Promise<v
   
   const codeRef = doc(db, "access_codes", codeFormatted);
   const userRef = doc(db, "users", uid);
+  
+  let targetPath: string | null = null;
+  let allowedCourses: string[] = [];
   
   await runTransaction(db, async (transaction) => {
     // 1. Lấy thông tin mã
@@ -112,13 +118,14 @@ export async function redeemAccessCode(uid: string, codeText: string): Promise<v
     }
     
     const codeData = codeSnap.data() as AccessCode;
+    targetPath = codeData.targetPath || null;
+    allowedCourses = codeData.allowedCourses || [];
     
     // 2. Kiểm tra trạng thái mã
     if (codeData.status !== "active") {
       throw new Error("Mã này đã được sử dụng hoặc đã hết hiệu lực.");
     }
 
-    
     // 3. Kiểm tra xem học sinh này đã dùng mã này chưa
     if (codeData.usedBy && codeData.usedBy.includes(uid)) {
       throw new Error("Bạn đã kích hoạt mã này trước đó rồi.");
@@ -175,6 +182,8 @@ export async function redeemAccessCode(uid: string, codeText: string): Promise<v
 
     transaction.update(userRef, userUpdates);
   });
+
+  return { allowedCourses, targetPath };
 }
 /**
  * Xóa một mã kích hoạt.

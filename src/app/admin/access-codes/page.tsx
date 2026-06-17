@@ -13,6 +13,67 @@ const AVAILABLE_COURSES = [
   { id: "academic-vocabulary", title: "Từ Vựng & Phát Âm Căn Bản Cho Sinh Viên" },
 ];
 
+const IPA_SOUNDS_LIST = [
+  { slug: "i-long", ipa: "i:", desc: "Nguyên âm i dài" },
+  { slug: "i-short", ipa: "ɪ", desc: "Nguyên âm i ngắn" },
+  { slug: "e", ipa: "e", desc: "Nguyên âm e" },
+  { slug: "ae", ipa: "æ", desc: "Nguyên âm e bẹt (ae)" },
+  { slug: "a-long", ipa: "ɑ:", desc: "Nguyên âm a dài" },
+  { slug: "o-short", ipa: "ɒ", desc: "Nguyên âm o ngắn" },
+  { slug: "o-long", ipa: "ɔ:", desc: "Nguyên âm o dài" },
+  { slug: "u-short", ipa: "ʊ", desc: "Nguyên âm u ngắn" },
+  { slug: "u-long", ipa: "u:", desc: "Nguyên âm u dài" },
+  { slug: "er", ipa: "ɜ:", desc: "Nguyên âm ơ dài" },
+  { slug: "schwa", ipa: "ə", desc: "Nguyên âm ơ ngắn" },
+  { slug: "ah", ipa: "ʌ", desc: "Nguyên âm á (ah)" },
+  { slug: "ei", ipa: "eɪ", desc: "Nguyên âm đôi ei" },
+  { slug: "ai", ipa: "aɪ", desc: "Nguyên âm đôi ai" },
+  { slug: "oy", ipa: "ɔɪ", desc: "Nguyên âm đôi oi (oy)" },
+  { slug: "au", ipa: "aʊ", desc: "Nguyên âm đôi ao (au)" },
+  { slug: "ou", ipa: "əʊ", desc: "Nguyên âm đôi ou" },
+  { slug: "ia", ipa: "ɪə", desc: "Nguyên âm đôi ia" },
+  { slug: "ea", ipa: "eə", desc: "Nguyên âm đôi ea" },
+  { slug: "ua", ipa: "ʊə", desc: "Nguyên âm đôi ua" },
+  { slug: "p", ipa: "p", desc: "Phụ âm p" },
+  { slug: "b", ipa: "b", desc: "Phụ âm b" },
+  { slug: "t", ipa: "t", desc: "Phụ âm t" },
+  { slug: "d", ipa: "d", desc: "Phụ âm d" },
+  { slug: "ch", ipa: "tʃ", desc: "Phụ âm ch" },
+  { slug: "dj", ipa: "dʒ", desc: "Phụ âm dʒ (dj)" },
+  { slug: "k", ipa: "k", desc: "Phụ âm k" },
+  { slug: "g", ipa: "g", desc: "Phụ âm g" },
+  { slug: "f", ipa: "f", desc: "Phụ âm f" },
+  { slug: "v", ipa: "v", desc: "Phụ âm v" },
+  { slug: "th-voiceless", ipa: "θ", desc: "Phụ âm th vô thanh" },
+  { slug: "th-voiced", ipa: "ð", desc: "Phụ âm th hữu thanh" },
+  { slug: "s", ipa: "s", desc: "Phụ âm s" },
+  { slug: "z", ipa: "z", desc: "Phụ âm z" },
+  { slug: "sh", ipa: "ʃ", desc: "Phụ âm sh" },
+  { slug: "zh", ipa: "ʒ", desc: "Phụ âm zh" },
+  { slug: "h", ipa: "h", desc: "Phụ âm h" },
+  { slug: "m", ipa: "m", desc: "Phụ âm m" },
+  { slug: "n", ipa: "n", desc: "Phụ âm n" },
+  { slug: "ng", ipa: "ŋ", desc: "Phụ âm ng" },
+  { slug: "l", ipa: "l", desc: "Phụ âm l" },
+  { slug: "r", ipa: "r", desc: "Phụ âm r" },
+  { slug: "w", ipa: "w", desc: "Phụ âm w" },
+  { slug: "y", ipa: "j", desc: "Bán nguyên âm y (j)" },
+];
+
+const getFriendlyTargetLabel = (path: string): string => {
+  if (path === "/courses") return "Danh sách khóa học";
+  if (path === "/pronunciation") return "Bảng phát âm IPA";
+  if (path.startsWith("/pronunciation/")) {
+    const slug = path.replace("/pronunciation/", "");
+    const matchedSound = IPA_SOUNDS_LIST.find((s) => s.slug === slug);
+    if (matchedSound) {
+      return `Âm /${matchedSound.ipa}/ (${matchedSound.desc})`;
+    }
+    return `Phát âm: ${slug}`;
+  }
+  return path;
+};
+
 export default function AdminAccessCodesPage() {
   const { user } = useAuth();
   const [codes, setCodes] = useState<AccessCode[]>([]);
@@ -29,6 +90,11 @@ export default function AdminAccessCodesPage() {
   const [customDuration, setCustomDuration] = useState<string>("30");
   const [submitting, setSubmitting] = useState(false);
   const [showCreateForm, setShowCreateForm] = useState(false);
+
+  // Target Route State
+  const [targetPathType, setTargetPathType] = useState<"default" | "pronunciation" | "sound" | "custom">("default");
+  const [selectedSoundSlug, setSelectedSoundSlug] = useState("i-long");
+  const [customTargetPath, setCustomTargetPath] = useState("");
 
   const fetchCodes = async (showLoading = false) => {
     try {
@@ -113,6 +179,21 @@ export default function AdminAccessCodesPage() {
         }
       }
 
+      let finalTargetPath: string | null = null;
+      if (targetPathType === "pronunciation") {
+        finalTargetPath = "/pronunciation";
+      } else if (targetPathType === "sound") {
+        finalTargetPath = `/pronunciation/${selectedSoundSlug}`;
+      } else if (targetPathType === "custom") {
+        const path = customTargetPath.trim();
+        if (!path) {
+          toast.error("Vui lòng nhập đường dẫn chuyển hướng tùy chỉnh.");
+          setSubmitting(false);
+          return;
+        }
+        finalTargetPath = path;
+      }
+
       await createAccessCode({
         code: customCode.toUpperCase(),
         type: codeType,
@@ -121,6 +202,7 @@ export default function AdminAccessCodesPage() {
         maxUses: codeType === "multi" ? Number(maxUses) : 1,
         createdBy: user.uid,
         durationDays: durationVal,
+        targetPath: finalTargetPath,
       });
 
       toast.success("Tạo mã kích hoạt thành công!");
@@ -128,6 +210,9 @@ export default function AdminAccessCodesPage() {
       setDescription("");
       setDurationDays("unlimited");
       setCustomDuration("30");
+      setTargetPathType("default");
+      setSelectedSoundSlug("i-long");
+      setCustomTargetPath("");
       setShowCreateForm(false);
       await fetchCodes(true);
     } catch (error: unknown) {
@@ -311,6 +396,73 @@ export default function AdminAccessCodesPage() {
                     max="3650"
                     value={customDuration}
                     onChange={(e) => setCustomDuration(e.target.value)}
+                    style={{
+                      padding: "8px 12px",
+                      borderRadius: "8px",
+                      border: "1px solid rgb(var(--card-border-rgb))",
+                      fontSize: "0.9rem",
+                      outline: "none",
+                    }}
+                  />
+                </div>
+              )}
+
+              {/* Đích chuyển hướng */}
+              <div style={{ flex: "1 1 240px", display: "flex", flexDirection: "column", gap: "6px" }}>
+                <label style={{ fontSize: "0.85rem", fontWeight: 600 }}>Đường dẫn chuyển hướng (Sau kích hoạt)</label>
+                <select
+                  value={targetPathType}
+                  onChange={(e) => setTargetPathType(e.target.value as "default" | "pronunciation" | "sound" | "custom")}
+                  style={{
+                    padding: "8px 12px",
+                    borderRadius: "8px",
+                    border: "1px solid rgb(var(--card-border-rgb))",
+                    fontSize: "0.9rem",
+                    backgroundColor: "white",
+                    outline: "none",
+                  }}
+                >
+                  <option value="default">Mặc định (Trang khóa học `/courses`)</option>
+                  <option value="pronunciation">Bảng phát âm IPA (`/pronunciation`)</option>
+                  <option value="sound">Trực tiếp một âm IPA cụ thể</option>
+                  <option value="custom">Đường dẫn tùy chỉnh khác</option>
+                </select>
+              </div>
+
+              {/* Lựa chọn âm IPA */}
+              {targetPathType === "sound" && (
+                <div style={{ flex: "1 1 240px", display: "flex", flexDirection: "column", gap: "6px" }}>
+                  <label style={{ fontSize: "0.85rem", fontWeight: 600 }}>Chọn âm IPA đích</label>
+                  <select
+                    value={selectedSoundSlug}
+                    onChange={(e) => setSelectedSoundSlug(e.target.value)}
+                    style={{
+                      padding: "8px 12px",
+                      borderRadius: "8px",
+                      border: "1px solid rgb(var(--card-border-rgb))",
+                      fontSize: "0.9rem",
+                      backgroundColor: "white",
+                      outline: "none",
+                    }}
+                  >
+                    {IPA_SOUNDS_LIST.map((sound) => (
+                      <option key={sound.slug} value={sound.slug}>
+                        /{sound.ipa}/ - {sound.desc}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              )}
+
+              {/* Nhập đường dẫn tùy chỉnh */}
+              {targetPathType === "custom" && (
+                <div style={{ flex: "1 1 240px", display: "flex", flexDirection: "column", gap: "6px" }}>
+                  <label style={{ fontSize: "0.85rem", fontWeight: 600 }}>Nhập đường dẫn tùy chỉnh</label>
+                  <input
+                    type="text"
+                    placeholder="Ví dụ: /courses/office-communication"
+                    value={customTargetPath}
+                    onChange={(e) => setCustomTargetPath(e.target.value)}
                     style={{
                       padding: "8px 12px",
                       borderRadius: "8px",
@@ -591,6 +743,9 @@ export default function AdminAccessCodesPage() {
                 <div style={{ color: "rgb(var(--secondary-rgb))", fontSize: "0.8rem", marginTop: "4px", display: "flex", flexWrap: "wrap", gap: "8px 20px" }}>
                   <span>📅 Ngày phát: {item.createdAt ? new Date(item.createdAt.seconds * 1000).toLocaleString("vi-VN") : "Đang tạo..."}</span>
                   <span>📖 Hạn học: <strong>{item.durationDays ? `${item.durationDays} ngày` : "Vĩnh viễn (Trọn đời)"}</strong></span>
+                  {item.targetPath && (
+                    <span>🔗 Chuyển hướng: <strong>{getFriendlyTargetLabel(item.targetPath)}</strong></span>
+                  )}
                   {item.type === "multi" && (
                     <span>
                       👥 Đã kích hoạt: <strong>{item.currentUses} / {item.maxUses}</strong> lượt dùng.

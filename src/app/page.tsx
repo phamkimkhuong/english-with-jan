@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { RedeemCodeHomeInput } from "@/components/common/RedeemCodeHomeInput";
 
 export default function Home() {
   return (
@@ -14,7 +15,10 @@ export default function Home() {
           <p className="hero-subtitle">
             Các khóa học tinh gọn, tập trung vào tiếng Anh giao tiếp thực tế và văn phòng dành riêng cho người đi làm và sinh viên đại học.
           </p>
-          <div className="hero-actions">
+          
+          <RedeemCodeHomeInput />
+
+          <div className="hero-actions" style={{ marginTop: "32px" }}>
             <Link href="/courses" className="btn btn-primary" style={{ padding: "14px 28px", fontSize: "1.05rem" }}>
               Xem các khóa học
               <svg

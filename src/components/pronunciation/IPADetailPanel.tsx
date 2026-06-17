@@ -19,6 +19,7 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
 }) => {
   const [activeSubTab, setActiveSubTab] = React.useState<"word" | "phrase" | "sentence">("word");
   const [genderMode, setGenderMode] = React.useState<"female" | "male">("female");
+  const [activeMainTab, setActiveMainTab] = React.useState<"theory" | "practice">("theory");
   const { user } = useAuth();
 
   const {
@@ -52,12 +53,12 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
   const sentenceExamples = selectedSound.examples.filter((ex) => ex.type === "sentence" && ex.hidden !== true);
 
   return (
-    <div className={styles.detailsWorkspace}>
-      {/* CỘT TRÁI: Lý thuyết & Khẩu hình */}
-      <div className={`${styles.theoryColumn} card`}>
-        {/* Sound Header with Speaker */}
-        <div className={styles.detailHeader}>
-          <div>
+    <div className={styles.detailsWorkspaceContainer}>
+      {/* Sound Header with Speaker and Main Tabs - Shared at top */}
+      <div className={`${styles.soundHeaderCard} card`}>
+        <div className={styles.headerFlexRow}>
+          
+          <div className={styles.soundInfoLeft}>
             <span
               className={styles.soundBadge}
               style={{
@@ -69,218 +70,249 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
                   selectedSound.type === "diphthong" ? "Nguyên âm đôi" :
                     selectedSound.type === "consonant_voiceless" ? "Phụ âm vô thanh" : "Phụ âm hữu thanh"}
             </span>
-            <h2 className={styles.soundSymbolTitle}>
-              /{selectedSound.ipa}/
-            </h2>
-            <p className={styles.soundNameSubtitle}>
-              Tên gọi khác: {selectedSound.name}
-            </p>
+            
+            <div className={styles.symbolAndSpeakerRow}>
+              <h2 className={styles.soundSymbolTitle}>
+                /{selectedSound.ipa}/
+              </h2>
+              
+              <button
+                type="button"
+                onClick={() => {
+                  const audioToPlay = (genderMode === "male" && selectedSound.audioUrlMale)
+                    ? selectedSound.audioUrlMale
+                    : selectedSound.audioUrl;
+                  playSoundAudio(selectedSound.ipa, audioToPlay || "");
+                }}
+                className={styles.speakerBtn}
+                style={{
+                  backgroundColor: isConsonant ? "rgb(var(--accent-light-rgb))" : "rgb(var(--primary-light-rgb))",
+                  color: isConsonant ? "rgb(var(--accent-rgb))" : "rgb(var(--primary-rgb))",
+                }}
+                title="Nghe phát âm mẫu"
+              >
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" />
+                </svg>
+              </button>
+
+              <span className={styles.soundNameSubtitle}>
+                Tên gọi khác: {selectedSound.name}
+              </span>
+            </div>
           </div>
 
-          {/* Speaker circle */}
-          {((genderMode === "female" && selectedSound.audioUrl) ||
-            (genderMode === "male" && selectedSound.audioUrlMale)) && (
+          {/* Page-level Main Tab navigation */}
+          <div className={styles.mainTabBar}>
             <button
               type="button"
-              onClick={() => {
-                const audioToPlay = (genderMode === "male" && selectedSound.audioUrlMale)
-                  ? selectedSound.audioUrlMale
-                  : selectedSound.audioUrl;
-                playSoundAudio(selectedSound.ipa, audioToPlay);
-              }}
-              className={styles.speakerBtn}
-              style={{
-                backgroundColor: isConsonant ? "rgb(var(--accent-light-rgb))" : "rgb(var(--primary-light-rgb))",
-                color: isConsonant ? "rgb(var(--accent-rgb))" : "rgb(var(--primary-rgb))",
-              }}
+              className={`${styles.mainTabBtn} ${activeMainTab === "theory" ? styles.mainTabActive : ""}`}
+              onClick={() => setActiveMainTab("theory")}
             >
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
-                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" />
-              </svg>
+              📖 Hướng dẫn & Khẩu hình
             </button>
-          )}
-        </div>
-
-        {/* Mouth shape representation - Large */}
-        {selectedSound.mouthShapeImage && (
-          <div className={styles.mouthShapeCardLarge}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={selectedSound.mouthShapeImage}
-              alt={`Khẩu hình miệng phát âm ${selectedSound.ipa}`}
-              className={styles.mouthShapeImgLarge}
-            />
-            <h5 className={styles.mouthShapeCaption}>Minh họa khẩu hình</h5>
+            <button
+              type="button"
+              className={`${styles.mainTabBtn} ${activeMainTab === "practice" ? styles.mainTabActive : ""}`}
+              onClick={() => setActiveMainTab("practice")}
+            >
+              🗣️ Luyện tập thực hành
+            </button>
           </div>
-        )}
 
-        {/* Description */}
-        <div>
-          <h4 className={styles.sectionTitle}>
-            📝 Hướng dẫn cách phát âm
-          </h4>
-          <p className={styles.descriptionText}>
-            {selectedSound.description}
-          </p>
         </div>
-
-        {/* Common Mistakes */}
-        {selectedSound.commonMistakes && selectedSound.commonMistakes.length > 0 && (
-          <div className={styles.mistakesCard}>
-            <h4 className={`${styles.sectionTitle} ${styles.mistakesHeader}`}>
-              Lỗi thường gặp của người Việt
-            </h4>
-            <ul className={styles.mistakesList}>
-              {selectedSound.commonMistakes.map((mistake, idx) => (
-                <li key={idx}>{mistake}</li>
-              ))}
-            </ul>
-          </div>
-        )}
       </div>
 
-      {/* CỘT PHẢI: Bài tập luyện đọc thực hành */}
-      <div className={`${styles.practiceColumn} card`}>
-        <div>
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "16px", flexWrap: "wrap", gap: "10px" }}>
-            <h4 className={styles.sectionTitle} style={{ marginBottom: 0 }}>
-              🗣️ Bài tập luyện đọc thực tế
-            </h4>
+      {/* Main learning workspace area */}
+      <div className={styles.tabContentArea}>
+        {activeMainTab === "theory" ? (
+          <div className={`${styles.theoryTabContent} card`}>
+            <div className={styles.theoryLayoutGrid}>
+              
+              {/* Mouth shape representation column */}
+              {selectedSound.mouthShapeImage && (
+                <div className={styles.mouthShapeContainer}>
+                  <div className={styles.mouthShapeCardLarge}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={selectedSound.mouthShapeImage}
+                      alt={`Khẩu hình miệng phát âm ${selectedSound.ipa}`}
+                      className={styles.mouthShapeImgLarge}
+                    />
+                    <h5 className={styles.mouthShapeCaption}>Minh họa khẩu hình</h5>
+                  </div>
+                </div>
+              )}
 
-            {/* Voice Switcher Toggle (Male/Female) */}
-            <div className={styles.genderToggleContainer}>
+              {/* Text descriptions column */}
+              <div className={styles.theoryTextDetails}>
+                <div style={{ marginBottom: "24px" }}>
+                  <h4 className={styles.sectionTitle}>
+                    📝 Hướng dẫn cách phát âm
+                  </h4>
+                  <p className={styles.descriptionText}>
+                    {selectedSound.description}
+                  </p>
+                </div>
+
+                {selectedSound.commonMistakes && selectedSound.commonMistakes.length > 0 && (
+                  <div className={styles.mistakesCard}>
+                    <h4 className={`${styles.sectionTitle} ${styles.mistakesHeader}`}>
+                      Lỗi thường gặp của người Việt
+                    </h4>
+                    <ul className={styles.mistakesList}>
+                      {selectedSound.commonMistakes.map((mistake, idx) => (
+                        <li key={idx}>{mistake}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        ) : (
+          <div className={`${styles.practiceTabContent} card`}>
+            {/* Luyện tập thực hành */}
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "20px", flexWrap: "wrap", gap: "10px" }}>
+              <h4 className={styles.sectionTitle} style={{ marginBottom: 0 }}>
+                🗣️ Bài tập luyện đọc thực tế
+              </h4>
+
+              {/* Voice Switcher Toggle (Male/Female) */}
+              <div className={styles.genderToggleContainer}>
+                <button
+                  type="button"
+                  className={`${styles.genderToggleBtn} ${genderMode === "female" ? styles.genderToggleActive : ""}`}
+                  onClick={() => setGenderMode("female")}
+                >
+                  👩‍💼 Nữ
+                </button>
+                <button
+                  type="button"
+                  className={`${styles.genderToggleBtn} ${genderMode === "male" ? styles.genderToggleActive : ""}`}
+                  onClick={() => setGenderMode("male")}
+                >
+                  👨‍💼 Nam
+                </button>
+              </div>
+            </div>
+
+            {/* Sub-tabs for categories */}
+            <div className={styles.subTabBar}>
               <button
                 type="button"
-                className={`${styles.genderToggleBtn} ${genderMode === "female" ? styles.genderToggleActive : ""}`}
-                onClick={() => setGenderMode("female")}
+                className={`${styles.subTabBtn} ${activeSubTab === "word" ? styles.subTabActive : ""}`}
+                onClick={() => setActiveSubTab("word")}
               >
-                👩‍💼 Nữ
+                Từ vựng ({wordExamples.length})
               </button>
               <button
                 type="button"
-                className={`${styles.genderToggleBtn} ${genderMode === "male" ? styles.genderToggleActive : ""}`}
-                onClick={() => setGenderMode("male")}
+                className={`${styles.subTabBtn} ${activeSubTab === "phrase" ? styles.subTabActive : ""}`}
+                onClick={() => setActiveSubTab("phrase")}
               >
-                👨‍💼 Nam
+                Cụm từ ({phraseExamples.length})
+              </button>
+              <button
+                type="button"
+                className={`${styles.subTabBtn} ${activeSubTab === "sentence" ? styles.subTabActive : ""}`}
+                onClick={() => setActiveSubTab("sentence")}
+              >
+                Câu mẫu ({sentenceExamples.length})
               </button>
             </div>
-          </div>
 
-          {/* Sub-tabs for categories */}
-          <div className={styles.subTabBar}>
-            <button
-              type="button"
-              className={`${styles.subTabBtn} ${activeSubTab === "word" ? styles.subTabActive : ""}`}
-              onClick={() => setActiveSubTab("word")}
-            >
-              Từ vựng ({wordExamples.length})
-            </button>
-            <button
-              type="button"
-              className={`${styles.subTabBtn} ${activeSubTab === "phrase" ? styles.subTabActive : ""}`}
-              onClick={() => setActiveSubTab("phrase")}
-            >
-              Cụm từ ({phraseExamples.length})
-            </button>
-            <button
-              type="button"
-              className={`${styles.subTabBtn} ${activeSubTab === "sentence" ? styles.subTabActive : ""}`}
-              onClick={() => setActiveSubTab("sentence")}
-            >
-              Câu mẫu ({sentenceExamples.length})
-            </button>
-          </div>
+            {!isSupported && (
+              <div className={styles.warningCard}>
+                Trình duyệt của bạn không hỗ trợ nhận dạng giọng nói qua Micro. Hãy sử dụng Google Chrome hoặc Microsoft Edge để luyện đọc.
+              </div>
+            )}
 
-          {!isSupported && (
-            <div className={styles.warningCard}>
-              Trình duyệt của bạn không hỗ trợ nhận dạng giọng nói qua Micro. Hãy sử dụng Google Chrome hoặc Microsoft Edge để luyện đọc.
+            {recognitionError && (
+              <div className={styles.errorCard}>
+                ⚠️ {recognitionError}
+              </div>
+            )}
+
+            <div className={styles.practiceList}>
+              {activeSubTab === "word" && (
+                wordExamples.length > 0 ? (
+                  wordExamples.map((ex, index) => (
+                    <ExampleWordCard
+                      key={`word-${index}`}
+                      ex={ex}
+                      soundIpa={selectedSound.ipa}
+                      savedPracticeKey={savedPracticeKey}
+                      playingWord={playingWord}
+                      listeningWord={listeningWord}
+                      practiceResult={practiceResult}
+                      setPracticeResult={setPracticeResult}
+                      playSoundAudio={playSoundAudio}
+                      startSpeechPractice={startSpeechPractice}
+                      isSupported={isSupported}
+                      genderMode={genderMode}
+                    />
+                  ))
+                ) : (
+                  <p className={styles.emptyText}>
+                    Chưa có từ vựng ví dụ nào cho âm này.
+                  </p>
+                )
+              )}
+
+              {activeSubTab === "phrase" && (
+                phraseExamples.length > 0 ? (
+                  phraseExamples.map((ex, index) => (
+                    <ExampleWordCard
+                      key={`phrase-${index}`}
+                      ex={ex}
+                      soundIpa={selectedSound.ipa}
+                      savedPracticeKey={savedPracticeKey}
+                      playingWord={playingWord}
+                      listeningWord={listeningWord}
+                      practiceResult={practiceResult}
+                      setPracticeResult={setPracticeResult}
+                      playSoundAudio={playSoundAudio}
+                      startSpeechPractice={startSpeechPractice}
+                      isSupported={isSupported}
+                      genderMode={genderMode}
+                    />
+                  ))
+                ) : (
+                  <p className={styles.emptyText}>
+                    Chưa có cụm từ ví dụ nào cho âm này.
+                  </p>
+                )
+              )}
+
+              {activeSubTab === "sentence" && (
+                sentenceExamples.length > 0 ? (
+                  sentenceExamples.map((ex, index) => (
+                    <ExampleWordCard
+                      key={`sentence-${index}`}
+                      ex={ex}
+                      soundIpa={selectedSound.ipa}
+                      savedPracticeKey={savedPracticeKey}
+                      playingWord={playingWord}
+                      listeningWord={listeningWord}
+                      practiceResult={practiceResult}
+                      setPracticeResult={setPracticeResult}
+                      playSoundAudio={playSoundAudio}
+                      startSpeechPractice={startSpeechPractice}
+                      isSupported={isSupported}
+                      genderMode={genderMode}
+                    />
+                  ))
+                ) : (
+                  <p className={styles.emptyText}>
+                    Chưa có câu ví dụ nào cho âm này.
+                  </p>
+                )
+              )}
             </div>
-          )}
-
-          {recognitionError && (
-            <div className={styles.errorCard}>
-              ⚠️ {recognitionError}
-            </div>
-          )}
-
-          <div className={styles.practiceList}>
-            {activeSubTab === "word" && (
-              wordExamples.length > 0 ? (
-                wordExamples.map((ex, index) => (
-                  <ExampleWordCard
-                    key={`word-${index}`}
-                    ex={ex}
-                    soundIpa={selectedSound.ipa}
-                    savedPracticeKey={savedPracticeKey}
-                    playingWord={playingWord}
-                    listeningWord={listeningWord}
-                    practiceResult={practiceResult}
-                    setPracticeResult={setPracticeResult}
-                    playSoundAudio={playSoundAudio}
-                    startSpeechPractice={startSpeechPractice}
-                    isSupported={isSupported}
-                    genderMode={genderMode}
-                  />
-                ))
-              ) : (
-                <p className={styles.emptyText}>
-                  Chưa có từ vựng ví dụ nào cho âm này.
-                </p>
-              )
-            )}
-
-            {activeSubTab === "phrase" && (
-              phraseExamples.length > 0 ? (
-                phraseExamples.map((ex, index) => (
-                  <ExampleWordCard
-                    key={`phrase-${index}`}
-                    ex={ex}
-                    soundIpa={selectedSound.ipa}
-                    savedPracticeKey={savedPracticeKey}
-                    playingWord={playingWord}
-                    listeningWord={listeningWord}
-                    practiceResult={practiceResult}
-                    setPracticeResult={setPracticeResult}
-                    playSoundAudio={playSoundAudio}
-                    startSpeechPractice={startSpeechPractice}
-                    isSupported={isSupported}
-                    genderMode={genderMode}
-                  />
-                ))
-              ) : (
-                <p className={styles.emptyText}>
-                  Chưa có cụm từ ví dụ nào cho âm này.
-                </p>
-              )
-            )}
-
-            {activeSubTab === "sentence" && (
-              sentenceExamples.length > 0 ? (
-                sentenceExamples.map((ex, index) => (
-                  <ExampleWordCard
-                    key={`sentence-${index}`}
-                    ex={ex}
-                    soundIpa={selectedSound.ipa}
-                    savedPracticeKey={savedPracticeKey}
-                    playingWord={playingWord}
-                    listeningWord={listeningWord}
-                    practiceResult={practiceResult}
-                    setPracticeResult={setPracticeResult}
-                    playSoundAudio={playSoundAudio}
-                    startSpeechPractice={startSpeechPractice}
-                    isSupported={isSupported}
-                    genderMode={genderMode}
-                  />
-                ))
-              ) : (
-                <p className={styles.emptyText}>
-                  Chưa có câu ví dụ nào cho âm này.
-                </p>
-              )
-            )}
           </div>
-        </div>
+        )}
       </div>
     </div>
   );

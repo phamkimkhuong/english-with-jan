@@ -1,0 +1,98 @@
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 24px auto 0;
+}
+
+.form {
+  display: flex;
+  gap: 12px;
+  background: rgb(var(--card-bg-rgb));
+  border: 1px solid rgb(var(--card-border-rgb));
+  padding: 8px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+}
+
+.form:focus-within {
+  border-color: rgb(var(--primary-rgb));
+  box-shadow: var(--shadow-premium);
+}
+
+.input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(var(--foreground-rgb));
+  outline: none;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: rgb(var(--secondary-rgb), 0.7);
+  font-weight: 500;
+}
+
+.button {
+  background: rgb(var(--primary-rgb));
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.button:hover {
+  background: rgb(var(--primary-hover-rgb));
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (width <= 576px) {
+  .form {
+    flex-direction: column;
+    padding: 12px;
+    border-radius: 20px;
+  }
+  
+  .input {
+    padding: 8px 4px;
+    text-align: center;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 14px;
+  }
+}

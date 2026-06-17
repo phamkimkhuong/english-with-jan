@@ -179,6 +179,11 @@ export const LockedCourseView: React.FC<{
 export const CourseGuard: React.FC<CourseGuardProps> = ({ courseId, courseTitle = "khóa học", children }) => {
   const { role, unlockedCourses, unlockedCoursesExpiry, loading } = useAuth();
 
+  // Bỏ qua kiểm tra khóa học ở môi trường phát triển (Local Development) để thuận tiện kiểm thử
+  if (process.env.NODE_ENV === "development") {
+    return <>{children}</>;
+  }
+
   if (loading) {
     return (
       <div className="container" style={{ padding: "60px 0", display: "flex", flexDirection: "column", gap: "20px" }}>
