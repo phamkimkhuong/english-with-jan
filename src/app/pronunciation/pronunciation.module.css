@@ -30,65 +30,231 @@
   font-size: 0.85rem;
   font-weight: 700;
   color: rgb(var(--secondary-rgb));
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
+  padding-left: 10px;
+  border-left: 3px solid rgb(var(--card-border-rgb));
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
 }
 
 .soundBtn {
-  height: 76px;
-  border-radius: 12px;
+  flex: 0 1 125px;
+  width: 125px;
+  height: 84px;
+  border-radius: 16px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   background: rgb(var(--card-bg-rgb));
   box-shadow: var(--shadow-sm);
   text-decoration: none;
+  position: relative;
+  overflow: hidden;
 }
-
-.soundBtnVowel {
-  border: 1px solid rgb(var(--primary-rgb) / 0.15);
-}
-
-.soundBtnVowel:hover {
-  transform: translateY(-3px);
-  border-color: rgb(var(--primary-rgb));
-  background: rgb(var(--primary-light-rgb));
-  box-shadow: 0 6px 16px rgb(var(--primary-rgb) / 0.12);
-}
-
-.soundBtnConsonant {
-  border: 1px solid rgb(var(--accent-rgb) / 0.15);
-}
-
-.soundBtnConsonant:hover {
-  transform: translateY(-3px);
-  border-color: rgb(var(--accent-rgb));
-  background: rgb(var(--accent-light-rgb));
-  box-shadow: 0 6px 16px rgb(var(--accent-rgb) / 0.12);
-}
-
 
 .soundBtnSymbol {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   font-weight: 800;
-  color: rgb(var(--foreground-rgb));
+  margin-top: 10px;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .soundBtnName {
-  font-size: 0.78rem;
+  font-size: 0.7rem;
   font-weight: 600;
-  color: rgb(var(--secondary-rgb));
-  margin-top: 4px;
+  margin-top: 2px;
+  margin-bottom: 6px;
+  transition: opacity 0.3s ease;
+}
+
+.soundBadgeMini {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  font-size: 0.55rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 1px 6px;
+  border-radius: 99px;
+  letter-spacing: 0.3px;
+  pointer-events: none;
+}
+
+.hoverIconHint {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  opacity: 0;
+  transform: scale(0.6) translate(4px, -4px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+
+/* 1. Vowel Long (Nguyên âm đơn dài) - Violet/Purple */
+.soundBtnVowelLong {
+  border: 1px solid rgb(var(--card-border-rgb));
+  background: #fff;
+  color: rgb(var(--foreground-rgb));
+}
+
+.soundBtnVowelLong .soundBtnSymbol {
+  color: rgb(var(--foreground-rgb));
+}
+
+.soundBtnVowelLong .soundBadgeMini {
+  background-color: #f5f3ff;
+  color: #7c3aed;
+}
+
+.soundBtnVowelLong:hover {
+  transform: translateY(-4px);
+  border-color: rgb(139 92 246 / 0.4);
+  background: #fff;
+  box-shadow: 0 8px 24px rgb(139 92 246 / 0.1);
+}
+
+/* 2. Vowel Short (Nguyên âm đơn ngắn) - Green/Emerald */
+.soundBtnVowelShort {
+  border: 1px solid rgb(var(--card-border-rgb));
+  background: #fff;
+  color: rgb(var(--foreground-rgb));
+}
+
+.soundBtnVowelShort .soundBtnSymbol {
+  color: rgb(var(--foreground-rgb));
+}
+
+.soundBtnVowelShort .soundBadgeMini {
+  background-color: #f0fdf4;
+  color: #10b981;
+}
+
+.soundBtnVowelShort:hover {
+  transform: translateY(-4px);
+  border-color: rgb(16 185 129 / 0.4);
+  background: #fff;
+  box-shadow: 0 8px 24px rgb(16 185 129 / 0.1);
+}
+
+/* 3. Diphthong (Nguyên âm đôi) - Orange/Amber */
+.soundBtnDiphthong {
+  border: 1px solid rgb(var(--card-border-rgb));
+  background: #fff;
+  color: rgb(var(--foreground-rgb));
+}
+
+.soundBtnDiphthong .soundBtnSymbol {
+  color: rgb(var(--foreground-rgb));
+}
+
+.soundBtnDiphthong .soundBadgeMini {
+  background-color: #fff7ed;
+  color: #f59e0b;
+}
+
+.soundBtnDiphthong:hover {
+  transform: translateY(-4px);
+  border-color: rgb(245 158 11 / 0.4);
+  background: #fff;
+  box-shadow: 0 8px 24px rgb(245 158 11 / 0.1);
+}
+
+/* 4. Consonant Voiceless (Phụ âm vô thanh) - Grey/Slate */
+.soundBtnConsonantVoiceless {
+  border: 1px solid rgb(var(--card-border-rgb));
+  background: #fff;
+  color: rgb(var(--foreground-rgb));
+}
+
+.soundBtnConsonantVoiceless .soundBtnSymbol {
+  color: rgb(var(--foreground-rgb));
+}
+
+.soundBtnConsonantVoiceless .soundBadgeMini {
+  background-color: #f8fafc;
+  color: #64748b;
+}
+
+.soundBtnConsonantVoiceless:hover {
+  transform: translateY(-4px);
+  border-color: rgb(148 163 184 / 0.4);
+  background: #fff;
+  box-shadow: 0 8px 24px rgb(148 163 184 / 0.1);
+}
+
+/* 5. Consonant Voiced (Phụ âm hữu thanh) - Indigo/Blue */
+.soundBtnConsonantVoiced {
+  border: 1px solid rgb(var(--card-border-rgb));
+  background: #fff;
+  color: rgb(var(--foreground-rgb));
+}
+
+.soundBtnConsonantVoiced .soundBtnSymbol {
+  color: rgb(var(--foreground-rgb));
+}
+
+.soundBtnConsonantVoiced .soundBadgeMini {
+  background-color: #eff6ff;
+  color: #3b82f6;
+}
+
+.soundBtnConsonantVoiced:hover {
+  transform: translateY(-4px);
+  border-color: rgb(59 130 246 / 0.4);
+  background: #fff;
+  box-shadow: 0 8px 24px rgb(59 130 246 / 0.1);
+}
+
+.soundBtn:hover .soundBtnSymbol {
+  transform: scale(1.08);
+}
+
+.soundBtn:hover .hoverIconHint {
+  opacity: 0.8;
+  transform: scale(1) translate(0, 0);
+}
+
+@media (width <= 576px) {
+  .soundBtn {
+    flex: 0 1 calc(33.33% - 12px);
+    min-width: 90px;
+    height: 76px;
+    border-radius: 12px;
+  }
+
+  .soundBadgeMini {
+    font-size: 0.5rem;
+    padding: 1px 4px;
+    left: 4px;
+    top: 4px;
+  }
+
+  .soundBtnSymbol {
+    font-size: 1.25rem;
+    margin-top: 8px;
+  }
+
+  .soundBtnName {
+    font-size: 0.65rem;
+    margin-bottom: 4px;
+  }
+}
+
+@media (width <= 380px) {
+  .soundBtn {
+    flex: 0 1 calc(50% - 10px);
+  }
 }
 
 
@@ -378,39 +544,64 @@
 }
 
 .pageHeader {
-  margin-bottom: 30px;
+  margin-bottom: 48px;
   text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pageTitle {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 800;
-  margin-top: 8px;
-  margin-bottom: 12px;
-  letter-spacing: -1px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  letter-spacing: -1.5px;
+  line-height: 1.2;
+  background: linear-gradient(135deg, rgb(var(--foreground-rgb)) 30%, rgb(var(--primary-rgb)) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .pageSubtitle {
   color: rgb(var(--secondary-rgb));
-  font-size: 1.1rem;
-  max-width: 650px;
+  font-size: 1.05rem;
+  max-width: 600px;
   margin: 0 auto;
+  line-height: 1.6;
 }
 
 .tabBtn {
   padding: 8px 20px;
   font-size: 0.9rem;
+  border-radius: 10px !important;
 }
 
 .boardWrapper {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
 }
 
 .categoryCard {
-  padding: 20px;
-  gap: 16px;
+  background: rgb(var(--card-bg-rgb));
+  border: 1px solid rgb(var(--card-border-rgb));
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 4px 20px -2px rgb(0 0 0 / 0.02), 0 2px 6px -1px rgb(0 0 0 / 0.01);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.vowelCard {
+  border-top: 4px solid rgb(var(--primary-rgb));
+}
+
+.consonantCard {
+  border-top: 4px solid rgb(var(--accent-rgb));
 }
 
 .vowelHeader {
@@ -429,8 +620,17 @@
   background: rgb(var(--accent-rgb));
 }
 
+
+.vowelCard .subSectionTitle {
+  border-left-color: rgb(var(--primary-rgb) / 0.4);
+}
+
+.consonantCard .subSectionTitle {
+  border-left-color: rgb(var(--accent-rgb) / 0.4);
+}
+
 .subSection {
-  margin-top: 10px;
+  margin-top: 24px;
 }
 
 /* Styling for details page header */

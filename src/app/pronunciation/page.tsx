@@ -17,6 +17,57 @@ const formatSoundName = (name: string) => {
   return name.charAt(0).toUpperCase() + name.slice(1);
 };
 
+const getSoundBtnClass = (type: string) => {
+  switch (type) {
+    case "monophthong_long":
+      return styles.soundBtnVowelLong;
+    case "monophthong_short":
+      return styles.soundBtnVowelShort;
+    case "diphthong":
+      return styles.soundBtnDiphthong;
+    case "consonant_voiceless":
+      return styles.soundBtnConsonantVoiceless;
+    case "consonant_voiced":
+      return styles.soundBtnConsonantVoiced;
+    default:
+      return "";
+  }
+};
+
+const getSoundBadgeText = (type: string) => {
+  switch (type) {
+    case "monophthong_long":
+      return "Dài";
+    case "monophthong_short":
+      return "Ngắn";
+    case "diphthong":
+      return "Đôi";
+    case "consonant_voiceless":
+      return "Vô thanh";
+    case "consonant_voiced":
+      return "Hữu thanh";
+    default:
+      return "";
+  }
+};
+
+const HeadphonesIcon = () => (
+  <svg 
+    className={styles.hoverIconHint} 
+    width="12" 
+    height="12" 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    strokeWidth="2.5" 
+    strokeLinecap="round" 
+    strokeLinejoin="round"
+  >
+    <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+    <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+  </svg>
+);
+
 export default function PronunciationPage() {
   const { user, role, unlockedCourses } = useAuth();
   const {
@@ -101,7 +152,7 @@ export default function PronunciationPage() {
             
             {/* 1. NGUYÊN ÂM (VOWELS) */}
             {(activeTab === "all" || activeTab === "vowels") && (
-              <div className={`${styles.categoryCard} card`}>
+              <div className={`${styles.categoryCard} ${styles.vowelCard} card`}>
                 <h3 className={`${styles.sectionHeader} ${styles.vowelHeader}`}>
                   <span className={`${styles.sectionDot} ${styles.vowelDot}`} />
                   NGUYÊN ÂM (Vowels)
@@ -118,10 +169,12 @@ export default function PronunciationPage() {
                         key={sound.ipa}
                         href={`/pronunciation/${getSlugFromIpa(sound.ipa)}`}
                         onClick={handleSoundClick}
-                        className={`${styles.soundBtn} ${styles.soundBtnVowel}`}
+                        className={`${styles.soundBtn} ${getSoundBtnClass(sound.type)}`}
                       >
+                        <span className={styles.soundBadgeMini}>{getSoundBadgeText(sound.type)}</span>
                         <span className={styles.soundBtnSymbol}>/{sound.ipa}/</span>
                         <span className={styles.soundBtnName}>{formatSoundName(sound.name)}</span>
+                        <HeadphonesIcon />
                       </Link>
                     ))}
                   </div>
@@ -138,10 +191,12 @@ export default function PronunciationPage() {
                         key={sound.ipa}
                         href={`/pronunciation/${getSlugFromIpa(sound.ipa)}`}
                         onClick={handleSoundClick}
-                        className={`${styles.soundBtn} ${styles.soundBtnVowel}`}
+                        className={`${styles.soundBtn} ${getSoundBtnClass(sound.type)}`}
                       >
+                        <span className={styles.soundBadgeMini}>{getSoundBadgeText(sound.type)}</span>
                         <span className={styles.soundBtnSymbol}>/{sound.ipa}/</span>
                         <span className={styles.soundBtnName}>{formatSoundName(sound.name)}</span>
+                        <HeadphonesIcon />
                       </Link>
                     ))}
                   </div>
@@ -151,7 +206,7 @@ export default function PronunciationPage() {
 
             {/* 2. PHỤ ÂM (CONSONANTS) */}
             {(activeTab === "all" || activeTab === "consonants") && (
-              <div className={`${styles.categoryCard} card`}>
+              <div className={`${styles.categoryCard} ${styles.consonantCard} card`}>
                 <h3 className={`${styles.sectionHeader} ${styles.consonantHeader}`}>
                   <span className={`${styles.sectionDot} ${styles.consonantDot}`} />
                   PHỤ ÂM (Consonants)
@@ -168,10 +223,12 @@ export default function PronunciationPage() {
                         key={sound.ipa}
                         href={`/pronunciation/${getSlugFromIpa(sound.ipa)}`}
                         onClick={handleSoundClick}
-                        className={`${styles.soundBtn} ${styles.soundBtnConsonant}`}
+                        className={`${styles.soundBtn} ${getSoundBtnClass(sound.type)}`}
                       >
+                        <span className={styles.soundBadgeMini}>{getSoundBadgeText(sound.type)}</span>
                         <span className={styles.soundBtnSymbol}>/{sound.ipa}/</span>
                         <span className={styles.soundBtnName}>{formatSoundName(sound.name)}</span>
+                        <HeadphonesIcon />
                       </Link>
                     ))}
                   </div>
@@ -188,10 +245,12 @@ export default function PronunciationPage() {
                         key={sound.ipa}
                         href={`/pronunciation/${getSlugFromIpa(sound.ipa)}`}
                         onClick={handleSoundClick}
-                        className={`${styles.soundBtn} ${styles.soundBtnConsonant}`}
+                        className={`${styles.soundBtn} ${getSoundBtnClass(sound.type)}`}
                       >
+                        <span className={styles.soundBadgeMini}>{getSoundBadgeText(sound.type)}</span>
                         <span className={styles.soundBtnSymbol}>/{sound.ipa}/</span>
                         <span className={styles.soundBtnName}>{formatSoundName(sound.name)}</span>
+                        <HeadphonesIcon />
                       </Link>
                     ))}
                   </div>
