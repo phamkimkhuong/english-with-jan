@@ -547,7 +547,7 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
                         generatingField === `exampleAudio_female_${originalIndex}` ||
                         uploadingField === `exampleAudio_${originalIndex}`
                       }
-                      onClick={() => handleGenerateAIAudio(ex.word, ex.ipa, true, originalIndex, "female")}
+                      onClick={() => handleGenerateAIAudio(ex.word, undefined, true, originalIndex, "female")}
                       className={`${styles.aiGenBtn} btn btn-outline`}
                     >
                       {generatingField === `exampleAudio_female_${originalIndex}` ? "⏳ Đang sinh..." : "Sinh giọng Nữ"}
@@ -594,7 +594,7 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
                         generatingField === `exampleAudio_male_${originalIndex}` ||
                         uploadingField === `exampleAudioMale_${originalIndex}`
                       }
-                      onClick={() => handleGenerateAIAudio(ex.word, ex.ipa, true, originalIndex, "male")}
+                      onClick={() => handleGenerateAIAudio(ex.word, undefined, true, originalIndex, "male")}
                       className={`${styles.aiGenBtn} btn btn-outline`}
                     >
                       {generatingField === `exampleAudio_male_${originalIndex}` ? "⏳ Đang sinh..." : "Sinh giọng Nam"}
