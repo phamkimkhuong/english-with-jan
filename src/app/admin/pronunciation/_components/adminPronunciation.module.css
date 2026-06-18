@@ -290,3 +290,156 @@
   height: 32px;
 }
 
+.bottomAddBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px;
+  border: 2px dashed color-mix(in srgb, rgb(var(--primary-rgb)) 25%, transparent);
+  background: color-mix(in srgb, rgb(var(--primary-rgb)) 2%, transparent);
+  color: rgb(var(--primary-rgb));
+  font-weight: 700;
+  font-size: 0.88rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 16px 0 8px;
+}
+
+.bottomAddBtn:hover {
+  background: color-mix(in srgb, rgb(var(--primary-rgb)) 6%, transparent);
+  border-color: color-mix(in srgb, rgb(var(--primary-rgb)) 50%, transparent);
+  transform: translateY(-1px);
+}
+
+.bottomAddBtn:active {
+  transform: translateY(0);
+}
+
+/* Giao diện tìm kiếm và bộ lọc */
+.searchFilterRow {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.searchInputWrapper {
+  position: relative;
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  align-items: center;
+}
+
+.searchInputWrapper svg.searchIcon {
+  position: absolute;
+  left: 12px;
+  color: rgb(var(--secondary-rgb));
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px 38px 10px 36px;
+  border-radius: 10px;
+  border: 1px solid rgb(var(--card-border-rgb));
+  background: rgb(var(--card-bg-rgb));
+  color: inherit;
+  font-size: 0.88rem;
+  transition: all 0.2s ease;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: rgb(var(--primary-rgb));
+  box-shadow: 0 0 0 3px color-mix(in srgb, rgb(var(--primary-rgb)) 15%, transparent);
+}
+
+.clearSearchBtn {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  color: rgb(var(--secondary-rgb));
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.clearSearchBtn:hover {
+  background-color: rgb(var(--foreground-rgb) / 0.08);
+  color: rgb(var(--foreground-rgb));
+}
+
+.filterBadgeGroup {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filterBadge {
+  background: rgb(var(--foreground-rgb) / 0.04);
+  border: 1px solid rgb(var(--card-border-rgb));
+  color: rgb(var(--secondary-rgb));
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filterBadge:hover {
+  background: rgb(var(--foreground-rgb) / 0.08);
+  color: rgb(var(--foreground-rgb));
+  transform: translateY(-1px);
+}
+
+.filterBadgeActive {
+  background: rgb(var(--primary-rgb));
+  border-color: rgb(var(--primary-rgb));
+  color: #fff;
+}
+
+.filterBadgeActive:hover {
+  background: color-mix(in srgb, rgb(var(--primary-rgb)) 85%, black);
+  color: #fff;
+}
+
+/* Empty state khi tìm kiếm không khớp */
+.noResultsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  border: 2px dashed rgb(var(--card-border-rgb));
+  border-radius: 12px;
+  text-align: center;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.noResultsText {
+  color: rgb(var(--secondary-rgb));
+  font-size: 0.9rem;
+  margin-bottom: 14px;
+}
+
+.resetSearchBtn {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 8px;
+}

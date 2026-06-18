@@ -643,6 +643,22 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
             </p>
           )}
         </div>
+        
+        {/* Nút thêm nhanh ở cuối danh sách */}
+        <button
+          type="button"
+          onClick={() => updateEditSound({
+            examples: [
+              ...editSound.examples,
+              { word: "", partOfSpeech: "", ipa: "", meaning: "", audioUrl: "", type: activeExampleTab, hidden: false }
+            ]
+          })}
+          className={styles.bottomAddBtn}
+        >
+          {activeExampleTab === "word" ? "+ Thêm từ vựng mới" :
+            activeExampleTab === "phrase" ? "+ Thêm cụm từ mới" :
+              "+ Thêm câu mẫu mới"}
+        </button>
       </div>
 
       {/* Submit button */}
