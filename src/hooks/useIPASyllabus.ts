@@ -8,6 +8,7 @@ export function useIPASyllabus() {
   const { data: sounds = [], isLoading: loading } = useQuery<IPASound[]>({
     queryKey: ["ipa-syllabus"],
     queryFn: fetchIPASyllabus,
+    staleTime: 5 * 60 * 1000, // Cache dữ liệu trong 5 phút để tránh gọi Firebase Storage liên tục
   });
 
   const [selectedSoundIpa, setSelectedSoundIpa] = useState<string | null>(null);

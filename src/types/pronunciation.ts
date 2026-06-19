@@ -1,5 +1,10 @@
 import { z } from "zod";
 
+export const IPAMediaSchema = z.object({
+  type: z.enum(["image", "video"]),
+  url: z.string(),
+});
+
 export const IPAExampleSchema = z.object({
   word: z.string(),
   ipa: z.string(),
@@ -24,11 +29,14 @@ export const IPASoundSchema = z.object({
   description: z.string(),
   mouthShapeImage: z.string(),
   instructionVideo: z.string().optional(),
+  mouthShapeMedia: z.array(IPAMediaSchema).optional().default([]),
   audioUrl: z.string(),
   audioUrlMale: z.string().optional(),
   examples: z.array(IPAExampleSchema),
   commonMistakes: z.array(z.string()),
 });
+
+export type IPAMedia = z.infer<typeof IPAMediaSchema>;
 
 export const IPASyllabusSchema = z.object({
   lastUpdated: z.string().optional(),

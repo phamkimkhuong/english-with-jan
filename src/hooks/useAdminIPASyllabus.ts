@@ -10,6 +10,7 @@ export function useAdminIPASyllabus() {
   const { data: sounds = [], isLoading: loading } = useQuery<IPASound[]>({
     queryKey: ["ipa-syllabus"],
     queryFn: fetchIPASyllabus,
+    staleTime: 5 * 60 * 1000, // Cache 5 phút tương tự để hạn chế request khi quản trị viên chuyển màn hình
   });
 
   const [selectedSoundIpa, setSelectedSoundIpa] = useState<string | null>(null);

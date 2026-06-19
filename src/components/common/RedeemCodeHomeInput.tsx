@@ -18,14 +18,14 @@ export const RedeemCodeHomeInput: React.FC = () => {
     const pendingCode = localStorage.getItem("pending_redeem_code");
     if (user && pendingCode) {
       localStorage.removeItem("pending_redeem_code");
-      
+
       const autoRedeem = async () => {
         setLoading(true);
         try {
           toast.info("Đang tự động kích hoạt mã của bạn...");
           const result = await redeemAccessCode(user.uid, pendingCode);
           toast.success("Kích hoạt thành công! Đang chuyển hướng bạn đến bài học...");
-          
+
           if (result.targetPath) {
             router.push(result.targetPath);
           } else {
@@ -59,7 +59,7 @@ export const RedeemCodeHomeInput: React.FC = () => {
       const result = await redeemAccessCode(user.uid, codeTrimmed);
       toast.success("Kích hoạt mã thành công! Chúc bạn học tập vui vẻ.");
       setCode("");
-      
+
       if (result.targetPath) {
         router.push(result.targetPath);
       } else {
@@ -104,7 +104,7 @@ export const RedeemCodeHomeInput: React.FC = () => {
             className={styles.input}
           />
           <button type="submit" disabled={loading} className={styles.button}>
-            {loading ? <div className={styles.spinner} /> : "Kích hoạt học tập 🚀"}
+            {loading ? <div className={styles.spinner} /> : "Vào học 🚀"}
           </button>
         </form>
       ) : (

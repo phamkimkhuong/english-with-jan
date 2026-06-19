@@ -19,7 +19,28 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
 }) => {
   const [activeSubTab, setActiveSubTab] = React.useState<"word" | "phrase" | "sentence">("word");
   const [activeMainTab, setActiveMainTab] = React.useState<"theory" | "practice">("theory");
+  const [activeMediaIndex, setActiveMediaIndex] = React.useState(0);
   const { user } = useAuth();
+
+  // Tạo danh sách các media khẩu hình miệng, hỗ trợ tương thích ngược với mouthShapeImage cũ
+  const mediaList = React.useMemo(() => {
+    if (!selectedSound) return [];
+    if (selectedSound.mouthShapeMedia && selectedSound.mouthShapeMedia.length > 0) {
+      return selectedSound.mouthShapeMedia;
+    }
+    if (selectedSound.mouthShapeImage) {
+      return [{ type: "image" as const, url: selectedSound.mouthShapeImage }];
+    }
+    return [];
+  }, [selectedSound]);
+
+  const handlePrevMedia = () => {
+    setActiveMediaIndex((prev) => (prev > 0 ? prev - 1 : mediaList.length - 1));
+  };
+
+  const handleNextMedia = () => {
+    setActiveMediaIndex((prev) => (prev < mediaList.length - 1 ? prev + 1 : 0));
+  };
 
   const {
     isSupported,
@@ -151,15 +172,66 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
             <div className={styles.theoryLayoutGrid}>
 
               {/* Mouth shape representation column */}
-              {selectedSound.mouthShapeImage && (
+              {mediaList.length > 0 && (
                 <div className={styles.mouthShapeContainer}>
                   <div className={styles.mouthShapeCardLarge}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={selectedSound.mouthShapeImage}
-                      alt={`Khẩu hình miệng phát âm ${selectedSound.ipa}`}
-                      className={styles.mouthShapeImgLarge}
-                    />
+                    <div className={styles.carouselContainer}>
+                      {mediaList[activeMediaIndex].type === "video" ? (
+                        <video
+                          src={mediaList[activeMediaIndex].url}
+                          className={styles.carouselMedia}
+                          controls
+                          loop
+                          muted
+                          playsInline
+                        />
+                      ) : (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img
+                          src={mediaList[activeMediaIndex].url}
+                          alt={`Minh họa khẩu hình phát âm ${selectedSound.ipa}`}
+                          className={styles.carouselMedia}
+                        />
+                      )}
+
+                      {/* Navigation buttons */}
+                      {mediaList.length > 1 && (
+                        <>
+                          <button
+                            type="button"
+                            onClick={handlePrevMedia}
+                            className={`${styles.carouselNavBtn} ${styles.carouselNavBtnLeft}`}
+                            title="Ảnh/Video trước"
+                          >
+                            ‹
+                          </button>
+                          <button
+                            type="button"
+                            onClick={handleNextMedia}
+                            className={`${styles.carouselNavBtn} ${styles.carouselNavBtnRight}`}
+                            title="Ảnh/Video tiếp theo"
+                          >
+                            ›
+                          </button>
+                        </>
+                      )}
+                    </div>
+
+                    {/* Dot indicators */}
+                    {mediaList.length > 1 && (
+                      <div className={styles.carouselDots}>
+                        {mediaList.map((_, index) => (
+                          <button
+                            key={index}
+                            type="button"
+                            onClick={() => setActiveMediaIndex(index)}
+                            className={`${styles.carouselDot} ${index === activeMediaIndex ? styles.carouselDotActive : ""}`}
+                            title={`Chuyển tới ảnh/video thứ ${index + 1}`}
+                          />
+                        ))}
+                      </div>
+                    )}
+
                     <h5 className={styles.mouthShapeCaption}>Minh họa khẩu hình</h5>
                   </div>
                 </div>

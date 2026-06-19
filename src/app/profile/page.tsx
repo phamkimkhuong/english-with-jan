@@ -50,7 +50,7 @@ export default function ProfilePage() {
   useEffect(() => {
     const fetchUserData = async () => {
       if (!user) return;
-      
+
       try {
         setLoadingData(true);
         // Đặt mặc định display name từ Auth trước
@@ -150,7 +150,7 @@ export default function ProfilePage() {
   return (
     <div className={`${styles.profileContainer} container`}>
       <div className={styles.profileLayout}>
-        
+
         {/* Cột trái: Thẻ Sidebar tóm tắt */}
         <aside className={styles.sidebarCard}>
           <div className={styles.avatarCircle}>
@@ -177,7 +177,7 @@ export default function ProfilePage() {
               </svg>
               Thông tin tài khoản
             </button>
-            
+
             <button
               type="button"
               className={activeTab === "activation" ? styles.navBtnActive : styles.navBtn}
@@ -296,7 +296,7 @@ export default function ProfilePage() {
               </h3>
 
               <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
-                
+
                 {/* Form kích hoạt */}
                 <form onSubmit={handleActivateCode} style={{ display: "flex", flexDirection: "column", gap: "12px", maxWidth: "400px" }}>
                   <label style={{ fontSize: "0.85rem", fontWeight: 700 }}>Mã kích hoạt khóa học</label>
@@ -352,11 +352,11 @@ export default function ProfilePage() {
                                 {isAllExpired ? "❌ Quyền Truy Cập VIP (Hết Hạn)" : "🌟 Quyền Truy Cập VIP (Trọn Gói)"}
                               </h5>
                               <p style={{ fontSize: "0.85rem", color: "rgb(var(--secondary-rgb))", marginTop: "4px" }}>
-                                {isAllExpired 
+                                {isAllExpired
                                   ? `Quyền truy cập VIP của bạn đã hết hạn học vào ngày ${expiryDate?.toLocaleString("vi-VN")}.`
                                   : expiryDate
-                                  ? `Bạn có quyền truy cập toàn bộ các khóa học đến ngày ${expiryDate.toLocaleString("vi-VN")}.`
-                                  : "Tài khoản của bạn đã được mở khóa truy cập toàn bộ các khóa học vĩnh viễn."}
+                                    ? `Bạn có quyền truy cập toàn bộ các khóa học đến ngày ${expiryDate.toLocaleString("vi-VN")}.`
+                                    : "Tài khoản của bạn đã được mở khóa truy cập toàn bộ các khóa học vĩnh viễn."}
                               </p>
                             </div>
                           );
@@ -368,12 +368,12 @@ export default function ProfilePage() {
                               cId === "ipa"
                                 ? "Luyện phát âm IPA chuẩn Quốc tế"
                                 : cId === "office-communication"
-                                ? "Tiếng Anh Giao Tiếp Văn Phòng"
-                                : cId === "practical-grammar"
-                                ? "Ngữ Pháp Tiếng Anh Thực Hành"
-                                : cId === "academic-vocabulary"
-                                ? "Từ Vựng Cho Sinh Viên"
-                                : cId;
+                                  ? "Tiếng Anh Giao Tiếp Văn Phòng"
+                                  : cId === "practical-grammar"
+                                    ? "Ngữ Pháp Tiếng Anh Thực Hành"
+                                    : cId === "academic-vocabulary"
+                                      ? "Từ Vựng Cho Sinh Viên"
+                                      : cId;
 
                             const expiry = unlockedCoursesExpiry?.[cId];
                             const expiryDate = expiry ? new Date(expiry.seconds * 1000) : null;
@@ -394,11 +394,11 @@ export default function ProfilePage() {
                                   {isCourseExpired ? "✗ " : "✓ "}{courseName}
                                 </h5>
                                 <span style={{ fontSize: "0.75rem", color: isCourseExpired ? "rgb(239, 68, 68)" : "rgb(var(--secondary-rgb))" }}>
-                                  {isCourseExpired 
-                                    ? "Đã hết hạn học" 
-                                    : expiryDate 
-                                    ? `Hạn học: ${expiryDate.toLocaleDateString("vi-VN")}` 
-                                    : "Học trọn đời"}
+                                  {isCourseExpired
+                                    ? "Đã hết hạn học"
+                                    : expiryDate
+                                      ? `Hạn học: ${expiryDate.toLocaleDateString("vi-VN")}`
+                                      : "Học trọn đời"}
                                 </span>
                               </div>
                             );

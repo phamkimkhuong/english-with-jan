@@ -94,8 +94,11 @@ export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
     audio.play().catch(() => setIsPlayingUserAudio(false));
   };
 
+  const isLongExample = ex.type === "phrase" || ex.type === "sentence";
+  const isSentence = ex.type === "sentence";
+
   return (
-    <div className={styles.wordCard}>
+    <div className={`${styles.wordCard} ${isLongExample ? styles.longExampleCard : ""} ${isSentence ? styles.sentenceCard : ""}`}>
       <div className={styles.wordHeader}>
         <div>
           <span className={styles.wordText}>{ex.word}</span>

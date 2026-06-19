@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { IPASound, IPAExample } from "@/types/pronunciation";
 import { publishIPASyllabus, uploadPronunciationMedia } from "@/services/pronunciationService";
 import { toast } from "@/hooks/useToastStore";
 import { storage } from "@/lib/firebase/config";
 import { createLogger } from "@/utils/logger";
+import { IPAMediaManager } from "./IPAMediaManager";
 import styles from "./adminPronunciation.module.css";
 
 const logger = createLogger("AdminIPASoundForm");
@@ -24,6 +25,17 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
   const [uploadingField, setUploadingField] = useState<string | null>(null);
   const [generatingField, setGeneratingField] = useState<string | null>(null);
   const [activeExampleTab, setActiveExampleTab] = useState<"word" | "phrase" | "sentence">("word");
+
+  const descriptionRef = useRef<HTMLTextAreaElement>(null);
+
+  // Tự động co giãn chiều cao của ô nhập liệu khẩu hình dựa theo nội dung văn bản
+  useEffect(() => {
+    const textarea = descriptionRef.current;
+    if (textarea) {
+      textarea.style.height = "auto";
+      textarea.style.height = `${textarea.scrollHeight + 2}px`;
+    }
+  }, [editSound.description]);
   const [confirmModal, setConfirmModal] = useState<{
     isOpen: boolean;
     title: string;
@@ -249,32 +261,36 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
       <div className={styles.inputGroup}>
         <label className={styles.inputLabel}>Cách đặt khẩu hình miệng & lưỡi</label>
         <textarea
+          ref={descriptionRef}
           value={editSound.description}
           onChange={(e) => updateEditSound({ description: e.target.value })}
           rows={3}
           className={styles.textarea}
+          style={{ resize: "none", overflowY: "hidden" }}
         />
       </div>
 
       {/* Tải lên ảnh và audio */}
       <div className={styles.gridTwoCols}>
-        {/* Ảnh khẩu hình */}
+        {/* Quản lý ảnh/video khẩu hình */}
         <div className={styles.inputGroup}>
-          <label className={styles.inputLabel}>Ảnh khẩu hình miệng</label>
-          <input
-            type="text"
-            value={editSound.mouthShapeImage}
-            onChange={(e) => updateEditSound({ mouthShapeImage: e.target.value })}
-            className={styles.inputText}
-            placeholder="Đường dẫn ảnh khẩu hình miệng (URL)"
+          <IPAMediaManager
+            mediaList={
+              editSound.mouthShapeMedia && editSound.mouthShapeMedia.length > 0
+                ? editSound.mouthShapeMedia
+                : editSound.mouthShapeImage
+                  ? [{ type: "image" as const, url: editSound.mouthShapeImage }]
+                  : []
+            }
+            onChange={(newMedia) => {
+              const firstImageUrl = newMedia.find((m) => m.type === "image")?.url || "";
+              setEditSound((prev) => ({
+                ...prev,
+                mouthShapeMedia: newMedia,
+                mouthShapeImage: firstImageUrl || prev.mouthShapeImage,
+              }));
+            }}
           />
-          <input
-            type="file"
-            accept="image/*"
-            onChange={(e) => handleUploadFile(e, "images", "mouthShapeImage")}
-            className={styles.fileInput}
-          />
-          {uploadingField === "mouthShapeImage" && <span className={styles.uploadStatus}>Đang tải ảnh khẩu hình miệng lên...</span>}
         </div>
 
         {/* Audio âm mẫu */}

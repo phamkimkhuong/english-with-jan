@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-16T09:00:00Z",
-  "version": 1,
+  "lastUpdated": "2026-06-19T02:41:57.338Z",
+  "version": 1781836917339,
   "sounds": [
     {
       "ipa": "i:",
@@ -10,13 +10,69 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "sheep", "ipa": "/ʃiːp/", "meaning": "con cừu", "audioUrl": "", "type": "word", "partOfSpeech": "noun" },
-        { "word": "meet", "ipa": "/miːt/", "meaning": "gặp gỡ", "audioUrl": "", "type": "word", "partOfSpeech": "verb" },
-        { "word": "see", "ipa": "/siː/", "meaning": "nhìn thấy", "audioUrl": "", "type": "word", "partOfSpeech": "verb" },
-        { "word": "meet you", "ipa": "/miːt juː/", "meaning": "gặp bạn", "audioUrl": "", "type": "phrase" },
-        { "word": "green tea", "ipa": "/ɡriːn tiː/", "meaning": "trà xanh", "audioUrl": "", "type": "phrase" },
-        { "word": "Nice to meet you.", "ipa": "/naɪs tuː miːt juː/", "meaning": "Rất vui được gặp bạn.", "audioUrl": "", "type": "sentence" },
-        { "word": "I see a sheep.", "ipa": "/aɪ siː ə ʃiːp/", "meaning": "Tôi nhìn thấy một con cừu.", "audioUrl": "", "type": "sentence" }
+        {
+          "word": "sheep",
+          "ipa": "/ʃiːp/",
+          "meaning": "con cừu",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "noun",
+          "audioUrlMale": "https://dictionary.cambridge.org/media/english/us_pron/s/she/sheep/sheep.mp3",
+          "hidden": false
+        },
+        {
+          "word": "meet",
+          "ipa": "/miːt/",
+          "meaning": "gặp gỡ",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "verb",
+          "audioUrlMale": "https://dictionary.cambridge.org/media/english/us_pron/m/mea/meat_/meat.mp3",
+          "hidden": false
+        },
+        {
+          "word": "see",
+          "ipa": "/siː/",
+          "meaning": "nhìn thấy",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "verd",
+          "audioUrlMale": "https://dictionary.cambridge.org/media/english/us_pron/c/c__/c____/c.mp3",
+          "hidden": false
+        },
+        {
+          "word": "meet you",
+          "ipa": "/miːt juː/",
+          "meaning": "gặp bạn",
+          "audioUrl": "",
+          "type": "phrase"
+        },
+        {
+          "word": "green tea",
+          "ipa": "/ɡriːn tiː/",
+          "meaning": "trà xanh",
+          "audioUrl": "",
+          "type": "phrase",
+          "hidden": false
+        },
+        {
+          "word": "Nice to meet you.",
+          "ipa": "/naɪs tuː miːt juː/",
+          "meaning": "Rất vui được gặp bạn.",
+          "audioUrl": "https://pub-dcf4526057d04afcaf586bbb45cdf76a.r2.dev/tts/en-us/female/normal/nice_to_meet_you__efd349b3.mp3",
+          "type": "sentence",
+          "audioUrlMale": "https://pub-dcf4526057d04afcaf586bbb45cdf76a.r2.dev/tts/en-us/male/normal/nice_to_meet_you__a0f527c6.mp3",
+          "hidden": false
+        },
+        {
+          "word": "I see a sheep.",
+          "ipa": "/aɪ siː ə ʃiːp/",
+          "meaning": "Tôi nhìn thấy một con cừu.",
+          "audioUrl": "https://pub-dcf4526057d04afcaf586bbb45cdf76a.r2.dev/tts/en-us/female/normal/i_see_a_sheep__ba587fdd.mp3",
+          "type": "sentence",
+          "audioUrlMale": "https://pub-dcf4526057d04afcaf586bbb45cdf76a.r2.dev/tts/en-us/male/normal/i_see_a_sheep__c53fcd5d.mp3",
+          "hidden": false
+        }
       ],
       "commonMistakes": [
         "Phát âm quá ngắn giống âm 'i' tiếng Việt.",
@@ -31,12 +87,56 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "ship", "ipa": "/ʃɪp/", "meaning": "tàu thủy", "audioUrl": "", "type": "word", "partOfSpeech": "noun" },
-        { "word": "sit", "ipa": "/sɪt/", "meaning": "ngồi", "audioUrl": "", "type": "word", "partOfSpeech": "verb" },
-        { "word": "pin", "ipa": "/pɪn/", "meaning": "cái ghim", "audioUrl": "", "type": "word", "partOfSpeech": "noun" },
-        { "word": "sit down", "ipa": "/sɪt daʊn/", "meaning": "ngồi xuống", "audioUrl": "", "type": "phrase" },
-        { "word": "big city", "ipa": "/bɪɡ ˈsɪti/", "meaning": "thành phố lớn", "audioUrl": "", "type": "phrase" },
-        { "word": "Please sit here.", "ipa": "/pliːz sɪt hɪə/", "meaning": "Xin vui lòng ngồi ở đây.", "audioUrl": "", "type": "sentence" }
+        {
+          "word": "ship",
+          "ipa": "/ʃɪp/",
+          "meaning": "tàu thủy",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "noun",
+          "hidden": false
+        },
+        {
+          "word": "sit",
+          "ipa": "/sɪt/",
+          "meaning": "ngồi",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "verb",
+          "hidden": false
+        },
+        {
+          "word": "pin",
+          "ipa": "/pɪn/",
+          "meaning": "cái ghim",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "noun"
+        },
+        {
+          "word": "sit down",
+          "ipa": "/sɪt daʊn/",
+          "meaning": "ngồi xuống",
+          "audioUrl": "",
+          "type": "phrase",
+          "hidden": false
+        },
+        {
+          "word": "big city",
+          "ipa": "/bɪɡ ˈsɪti/",
+          "meaning": "thành phố lớn",
+          "audioUrl": "",
+          "type": "phrase",
+          "hidden": false
+        },
+        {
+          "word": "Please sit here.",
+          "ipa": "/pliːz sɪt hɪə/",
+          "meaning": "Xin vui lòng ngồi ở đây.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        }
       ],
       "commonMistakes": [
         "Kéo dài âm giống như /i:/.",
@@ -51,9 +151,30 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "pen", "ipa": "/pen/", "meaning": "cái bút", "audioUrl": "", "partOfSpeech": "noun" },
-        { "word": "bed", "ipa": "/bed/", "meaning": "cái giường", "audioUrl": "", "partOfSpeech": "noun" },
-        { "word": "met", "ipa": "/met/", "meaning": "đã gặp", "audioUrl": "", "partOfSpeech": "verb" }
+        {
+          "word": "pen",
+          "ipa": "/pen/",
+          "meaning": "cái bút",
+          "audioUrl": "",
+          "partOfSpeech": "noun",
+          "hidden": false
+        },
+        {
+          "word": "bed",
+          "ipa": "/bed/",
+          "meaning": "cái giường",
+          "audioUrl": "",
+          "partOfSpeech": "noun",
+          "hidden": false
+        },
+        {
+          "word": "met",
+          "ipa": "/met/",
+          "meaning": "đã gặp",
+          "audioUrl": "",
+          "partOfSpeech": "verb",
+          "hidden": false
+        }
       ],
       "commonMistakes": [
         "Phát âm thành âm 'ê' trong tiếng Việt."
@@ -67,9 +188,30 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "man", "ipa": "/mæn/", "meaning": "người đàn ông", "audioUrl": "", "partOfSpeech": "noun" },
-        { "word": "cat", "ipa": "/kæt/", "meaning": "con mèo", "audioUrl": "", "partOfSpeech": "noun" },
-        { "word": "bad", "ipa": "/bæd/", "meaning": "tệ hại", "audioUrl": "", "partOfSpeech": "adj" }
+        {
+          "word": "man",
+          "ipa": "/mæn/",
+          "meaning": "người đàn ông",
+          "audioUrl": "",
+          "partOfSpeech": "noun",
+          "hidden": false
+        },
+        {
+          "word": "cat",
+          "ipa": "/kæt/",
+          "meaning": "con mèo",
+          "audioUrl": "",
+          "partOfSpeech": "noun",
+          "hidden": false
+        },
+        {
+          "word": "bad",
+          "ipa": "/bæd/",
+          "meaning": "tệ hại",
+          "audioUrl": "",
+          "partOfSpeech": "adj",
+          "hidden": false
+        }
       ],
       "commonMistakes": [
         "Phát âm thành âm 'e' hoặc âm 'a' thuần tiếng Việt.",
@@ -84,44 +226,200 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "father", "ipa": "/ˈfɑːðə/", "meaning": "cha", "audioUrl": "", "partOfSpeech": "noun" },
-        { "word": "car", "ipa": "/kɑː/", "meaning": "ô tô", "audioUrl": "", "partOfSpeech": "noun" },
-        { "word": "start", "ipa": "/stɑːt/", "meaning": "bắt đầu", "audioUrl": "", "partOfSpeech": "verb" }
+        {
+          "word": "father",
+          "ipa": "/ˈfɑːðə/",
+          "meaning": "cha",
+          "audioUrl": "https://pub-dcf4526057d04afcaf586bbb45cdf76a.r2.dev/tts/en-us/female/normal/father_ee1860dc.mp3",
+          "partOfSpeech": "noun",
+          "hidden": false
+        },
+        {
+          "word": "spa",
+          "ipa": "/spɑː/",
+          "meaning": "suối khoáng / spa",
+          "audioUrl": ""
+        },
+        {
+          "word": "calm",
+          "ipa": "/kɑːm/",
+          "meaning": "bình tĩnh",
+          "audioUrl": ""
+        }
       ],
       "commonMistakes": [
         "Phát âm ngắn và bẹt như âm 'a' tiếng Việt."
       ]
     },
     {
-      "ipa": "ɒ",
-      "name": "o ngắn",
-      "type": "monophthong_short",
-      "description": "Môi hơi tròn, mở rộng vừa phải. Lưỡi thụt về phía sau. Phát âm dứt khoát.",
+      "ipa": "ɑ:r",
+      "name": "a dài uốn lưỡi",
+      "type": "monophthong_long",
+      "description": "Mở miệng rộng theo chiều dọc như âm /ɑ:/, sau đó uốn cong đầu lưỡi về phía sau nhưng không chạm vào ngạc cứng để tạo âm /r/ chuẩn Anh-Mỹ.",
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "hot", "ipa": "/hɒt/", "meaning": "nóng", "audioUrl": "", "partOfSpeech": "adj" },
-        { "word": "on", "ipa": "/ɒn/", "meaning": "trên", "audioUrl": "", "partOfSpeech": "prep" },
-        { "word": "box", "ipa": "/bɒks/", "meaning": "cái hộp", "audioUrl": "", "partOfSpeech": "noun" }
+        {
+          "word": "car",
+          "ipa": "/kɑːr/",
+          "meaning": "ô tô",
+          "audioUrl": "",
+          "partOfSpeech": "noun",
+          "hidden": false
+        },
+        {
+          "word": "start",
+          "ipa": "/stɑːrt/",
+          "meaning": "bắt đầu",
+          "audioUrl": "",
+          "partOfSpeech": "verb",
+          "hidden": false
+        },
+        {
+          "word": "far",
+          "ipa": "/fɑːr/",
+          "meaning": "xa",
+          "audioUrl": "",
+          "partOfSpeech": "adj"
+        },
+        {
+          "word": "large",
+          "ipa": "/lɑːrdʒ/",
+          "meaning": "rộng lớn",
+          "audioUrl": "",
+          "partOfSpeech": "adj"
+        },
+        {
+          "word": "part",
+          "ipa": "/pɑːrt/",
+          "meaning": "phần",
+          "audioUrl": "",
+          "partOfSpeech": "noun"
+        },
+        {
+          "word": "card",
+          "ipa": "/kɑːrd/",
+          "meaning": "thẻ",
+          "audioUrl": "",
+          "partOfSpeech": "noun"
+        }
       ],
       "commonMistakes": [
-        "Phát âm thành âm 'o' kéo dài hoặc phát âm giống âm 'ô'."
+        "Không uốn lưỡi âm /r/ ở cuối làm âm bị dẹt và cụt."
       ]
     },
     {
       "ipa": "ɔ:",
-      "name": "o dài",
+      "name": "o ngắn & o dài không r",
       "type": "monophthong_long",
-      "description": "Tròn môi hết cỡ và đẩy ra phía trước. Lưỡi thụt sâu về phía sau và hơi cong lên. Phát âm kéo dài.",
+      "description": "Trong tiếng Anh-Mỹ (GA), hai nhóm âm phân biệt trong tiếng Anh-Anh (RP) đã được gộp lại thành một và phát âm giống hệt âm /ɑ:/ (âm a dài dẹt miệng, hạ hàm):\n\n• Nhóm O ngắn (Anh-Anh là /ɒ/): ví dụ hot, box, on...\n• Nhóm O dài không R (Anh-Anh là /ɔ:/): ví dụ law, caught, talk...\n\nHọc viên không cần tròn môi như khi đọc chữ 'o' trong tiếng Việt hoặc tiếng Anh-Anh. Hãy mở miệng rộng theo chiều dọc, hạ hàm dưới sâu xuống để phát âm giống như âm /ɑ:/.",
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "law", "ipa": "/lɔː/", "meaning": "luật pháp", "audioUrl": "" },
-        { "word": "sport", "ipa": "/spɔːt/", "meaning": "thể thao", "audioUrl": "" },
-        { "word": "four", "ipa": "/fɔː/", "meaning": "số bốn", "audioUrl": "" }
+        {
+          "word": "hot",
+          "ipa": "/hɑːt/",
+          "meaning": "nóng",
+          "audioUrl": "",
+          "partOfSpeech": "adj",
+          "type": "word",
+          "hidden": false
+        },
+        {
+          "word": "box",
+          "ipa": "/bɑːks/",
+          "meaning": "cái hộp",
+          "audioUrl": "",
+          "partOfSpeech": "noun",
+          "type": "word",
+          "hidden": false
+        },
+        {
+          "word": "on",
+          "ipa": "/ɑːn/",
+          "meaning": "trên",
+          "audioUrl": "",
+          "partOfSpeech": "prep",
+          "type": "word",
+          "hidden": false
+        },
+        {
+          "word": "law",
+          "ipa": "/lɑː/",
+          "meaning": "luật pháp",
+          "audioUrl": "",
+          "type": "word",
+          "hidden": false
+        },
+        {
+          "word": "caught",
+          "ipa": "/kɑːt/",
+          "meaning": "đã bắt",
+          "audioUrl": "",
+          "type": "word"
+        },
+        {
+          "word": "talk",
+          "ipa": "/tɑːk/",
+          "meaning": "nói chuyện",
+          "audioUrl": "",
+          "type": "word"
+        }
       ],
       "commonMistakes": [
-        "Không tròn môi và chu môi ra phía trước."
+        "Tròn môi quá mức giống chữ 'o' Việt Nam.",
+        "Không mở miệng đủ rộng và hạ hàm dưới."
+      ]
+    },
+    {
+      "ipa": "ɔ:r",
+      "name": "o dài uốn lưỡi",
+      "type": "monophthong_long",
+      "description": "Tròn môi và đưa ra trước giống như âm /ɔ:/, sau đó uốn cong đầu lưỡi về phía sau nhưng không chạm vào ngạc cứng để phát âm /r/ chuẩn Anh-Mỹ.",
+      "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+      "audioUrl": "",
+      "examples": [
+        {
+          "word": "sport",
+          "ipa": "/spɔːrt/",
+          "meaning": "thể thao",
+          "audioUrl": "",
+          "hidden": false
+        },
+        {
+          "word": "four",
+          "ipa": "/fɔːr/",
+          "meaning": "số bốn",
+          "audioUrl": "",
+          "hidden": false
+        },
+        {
+          "word": "door",
+          "ipa": "/dɔːr/",
+          "meaning": "cửa ra vào",
+          "audioUrl": ""
+        },
+        {
+          "word": "horse",
+          "ipa": "/hɔːrs/",
+          "meaning": "con ngựa",
+          "audioUrl": ""
+        },
+        {
+          "word": "board",
+          "ipa": "/bɔːrd/",
+          "meaning": "cái bảng",
+          "audioUrl": ""
+        },
+        {
+          "word": "more",
+          "ipa": "/mɔːr/",
+          "meaning": "nhiều hơn",
+          "audioUrl": ""
+        }
+      ],
+      "commonMistakes": [
+        "Không uốn lưỡi phát âm /r/ ở cuối."
       ]
     },
     {
@@ -132,9 +430,27 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "book", "ipa": "/bʊk/", "meaning": "cuốn sách", "audioUrl": "" },
-        { "word": "put", "ipa": "/pʊt/", "meaning": "đặt", "audioUrl": "" },
-        { "word": "good", "ipa": "/ɡʊd/", "meaning": "tốt", "audioUrl": "" }
+        {
+          "word": "book",
+          "ipa": "/bʊk/",
+          "meaning": "cuốn sách",
+          "audioUrl": "",
+          "hidden": false
+        },
+        {
+          "word": "put",
+          "ipa": "/pʊt/",
+          "meaning": "đặt",
+          "audioUrl": "",
+          "hidden": false
+        },
+        {
+          "word": "good",
+          "ipa": "/ɡʊd/",
+          "meaning": "tốt",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
       "commonMistakes": [
         "Phát âm thành chữ 'u' tiếng Việt kéo dài hoặc quá rõ."
@@ -148,9 +464,27 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "shoot", "ipa": "/ʃuːt/", "meaning": "bắn", "audioUrl": "" },
-        { "word": "blue", "ipa": "/bluː/", "meaning": "màu xanh dương", "audioUrl": "" },
-        { "word": "food", "ipa": "/fuːd/", "meaning": "thức ăn", "audioUrl": "" }
+        {
+          "word": "shoot",
+          "ipa": "/ʃuːt/",
+          "meaning": "bắn",
+          "audioUrl": "",
+          "hidden": false
+        },
+        {
+          "word": "blue",
+          "ipa": "/bluː/",
+          "meaning": "màu xanh dương",
+          "audioUrl": "",
+          "hidden": false
+        },
+        {
+          "word": "food",
+          "ipa": "/fuːd/",
+          "meaning": "thức ăn",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
       "commonMistakes": [
         "Không chu môi hết cỡ làm âm bị ngắn và loãng."
@@ -164,29 +498,83 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "cup", "ipa": "/kʌp/", "meaning": "cái cốc", "audioUrl": "" },
-        { "word": "love", "ipa": "/lʌv/", "meaning": "yêu", "audioUrl": "" },
-        { "word": "bus", "ipa": "/bʌs/", "meaning": "xe buýt", "audioUrl": "" }
+        {
+          "word": "cup",
+          "ipa": "/kʌp/",
+          "meaning": "cái cốc",
+          "audioUrl": "",
+          "hidden": false
+        },
+        {
+          "word": "love",
+          "ipa": "/lʌv/",
+          "meaning": "yêu",
+          "audioUrl": "",
+          "hidden": false
+        },
+        {
+          "word": "bus",
+          "ipa": "/bʌs/",
+          "meaning": "xe buýt",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
       "commonMistakes": [
         "Phát âm thành âm 'u' hoặc quá rõ thành 'a' Việt."
       ]
     },
     {
-      "ipa": "ɜ:",
-      "name": "ơ dài",
+      "ipa": "ɜ:r",
+      "name": "ơ dài uốn lưỡi",
       "type": "monophthong_long",
-      "description": "Môi mở hờ, lưỡi để tự nhiên và hơi cong lên một chút. Phát âm giống âm 'ơ' nhưng kéo dài và uốn lưỡi nhẹ.",
+      "description": "Môi mở hờ, lưỡi để tự nhiên và uốn cong đầu lưỡi về phía sau nhưng không chạm vào ngạc cứng để phát âm /r/ chuẩn Anh-Mỹ.",
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "girl", "ipa": "/ɡɜːl/", "meaning": "cô gái", "audioUrl": "" },
-        { "word": "bird", "ipa": "/bɜːd/", "meaning": "con chim", "audioUrl": "" },
-        { "word": "learn", "ipa": "/lɜːn/", "meaning": "học tập", "audioUrl": "" }
+        {
+          "word": "girl",
+          "ipa": "/ɡɜːrl/",
+          "meaning": "cô gái",
+          "audioUrl": "",
+          "hidden": false
+        },
+        {
+          "word": "bird",
+          "ipa": "/bɜːrd/",
+          "meaning": "con chim",
+          "audioUrl": "",
+          "hidden": false
+        },
+        {
+          "word": "learn",
+          "ipa": "/lɜːrn/",
+          "meaning": "học tập",
+          "audioUrl": "",
+          "hidden": false
+        },
+        {
+          "word": "work",
+          "ipa": "/wɜːrk/",
+          "meaning": "làm việc",
+          "audioUrl": ""
+        },
+        {
+          "word": "first",
+          "ipa": "/fɜːrst/",
+          "meaning": "đầu tiên",
+          "audioUrl": ""
+        },
+        {
+          "word": "nurse",
+          "ipa": "/nɜːrs/",
+          "meaning": "y tá",
+          "audioUrl": ""
+        }
       ],
       "commonMistakes": [
-        "Quên uốn lưỡi ở cuối âm trong tiếng Anh-Mỹ.",
-        "Phát âm quá ngắn."
+        "Quên uốn lưỡi phát âm /r/.",
+        "Phát âm ngắn giống âm /ə/."
       ]
     },
     {
@@ -197,9 +585,27 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "about", "ipa": "/əˈbaʊt/", "meaning": "về", "audioUrl": "" },
-        { "word": "teacher", "ipa": "/ˈtiːtʃə/", "meaning": "giáo viên", "audioUrl": "" },
-        { "word": "ago", "ipa": "/əˈɡəʊ/", "meaning": "cách đây", "audioUrl": "" }
+        {
+          "word": "about",
+          "ipa": "/əˈbaʊt/",
+          "meaning": "về",
+          "audioUrl": "",
+          "hidden": false
+        },
+        {
+          "word": "teacher",
+          "ipa": "/ˈtiːtʃə/",
+          "meaning": "giáo viên",
+          "audioUrl": "",
+          "hidden": false
+        },
+        {
+          "word": "ago",
+          "ipa": "/əˈɡəʊ/",
+          "meaning": "cách đây",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
       "commonMistakes": [
         "Nhấn trọng âm vào âm này (âm schwa không bao giờ nhận trọng âm)."
@@ -213,10 +619,24 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "face", "ipa": "/feɪs/", "meaning": "khuôn mặt", "audioUrl": "" },
-        { "word": "say", "ipa": "/seɪ/", "meaning": "nói", "audioUrl": "" }
+        {
+          "word": "face",
+          "ipa": "/feɪs/",
+          "meaning": "khuôn mặt",
+          "audioUrl": "",
+          "hidden": false
+        },
+        {
+          "word": "say",
+          "ipa": "/seɪ/",
+          "meaning": "nói",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
-      "commonMistakes": ["Đọc giống chữ 'ê' trong tiếng Việt."]
+      "commonMistakes": [
+        "Đọc giống chữ 'ê' trong tiếng Việt."
+      ]
     },
     {
       "ipa": "aɪ",
@@ -226,10 +646,24 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "my", "ipa": "/maɪ/", "meaning": "của tôi", "audioUrl": "" },
-        { "word": "price", "ipa": "/praɪs/", "meaning": "giá cả", "audioUrl": "" }
+        {
+          "word": "my",
+          "ipa": "/maɪ/",
+          "meaning": "của tôi",
+          "audioUrl": "",
+          "hidden": false
+        },
+        {
+          "word": "price",
+          "ipa": "/praɪs/",
+          "meaning": "giá cả",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
-      "commonMistakes": ["Đọc thành chữ 'ai' Việt Nam quá cụt."]
+      "commonMistakes": [
+        "Đọc thành chữ 'ai' Việt Nam quá cụt."
+      ]
     },
     {
       "ipa": "ɔɪ",
@@ -239,10 +673,24 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "boy", "ipa": "/bɔɪ/", "meaning": "cậu bé", "audioUrl": "" },
-        { "word": "choice", "ipa": "/tʃɔɪs/", "meaning": "sự lựa chọn", "audioUrl": "" }
+        {
+          "word": "boy",
+          "ipa": "/bɔɪ/",
+          "meaning": "cậu bé",
+          "audioUrl": "",
+          "hidden": false
+        },
+        {
+          "word": "choice",
+          "ipa": "/tʃɔɪs/",
+          "meaning": "sự lựa chọn",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
-      "commonMistakes": ["Đọc thành 'oi' Việt Nam."]
+      "commonMistakes": [
+        "Đọc thành 'oi' Việt Nam."
+      ]
     },
     {
       "ipa": "aʊ",
@@ -252,10 +700,24 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "mouth", "ipa": "/maʊθ/", "meaning": "cái miệng", "audioUrl": "" },
-        { "word": "now", "ipa": "/naʊ/", "meaning": "bây giờ", "audioUrl": "" }
+        {
+          "word": "mouth",
+          "ipa": "/maʊθ/",
+          "meaning": "cái miệng",
+          "audioUrl": "",
+          "hidden": false
+        },
+        {
+          "word": "now",
+          "ipa": "/naʊ/",
+          "meaning": "bây giờ",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
-      "commonMistakes": ["Đọc thành chữ 'ao' tiếng Việt."]
+      "commonMistakes": [
+        "Đọc thành chữ 'ao' tiếng Việt."
+      ]
     },
     {
       "ipa": "əʊ",
@@ -265,10 +727,24 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "go", "ipa": "/ɡəʊ/", "meaning": "đi", "audioUrl": "" },
-        { "word": "show", "ipa": "/ʃəʊ/", "meaning": "chỉ ra", "audioUrl": "" }
+        {
+          "word": "go",
+          "ipa": "/ɡəʊ/",
+          "meaning": "đi",
+          "audioUrl": "",
+          "hidden": false
+        },
+        {
+          "word": "show",
+          "ipa": "/ʃəʊ/",
+          "meaning": "chỉ ra",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
-      "commonMistakes": ["Đọc thành âm 'ô' hoặc 'âu' tiếng Việt."]
+      "commonMistakes": [
+        "Đọc thành âm 'ô' hoặc 'âu' tiếng Việt."
+      ]
     },
     {
       "ipa": "ɪə",
@@ -278,10 +754,24 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "near", "ipa": "/nɪə/", "meaning": "gần", "audioUrl": "" },
-        { "word": "here", "ipa": "/hɪə/", "meaning": "ở đây", "audioUrl": "" }
+        {
+          "word": "near",
+          "ipa": "/nɪə/",
+          "meaning": "gần",
+          "audioUrl": "",
+          "hidden": false
+        },
+        {
+          "word": "here",
+          "ipa": "/hɪə/",
+          "meaning": "ở đây",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
-      "commonMistakes": ["Đọc giống chữ 'ia' tiếng Việt."]
+      "commonMistakes": [
+        "Đọc giống chữ 'ia' tiếng Việt."
+      ]
     },
     {
       "ipa": "eə",
@@ -291,10 +781,24 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "hair", "ipa": "/heə/", "meaning": "tóc", "audioUrl": "" },
-        { "word": "there", "ipa": "/ðeə/", "meaning": "ở đó", "audioUrl": "" }
+        {
+          "word": "hair",
+          "ipa": "/heə/",
+          "meaning": "tóc",
+          "audioUrl": "",
+          "hidden": false
+        },
+        {
+          "word": "there",
+          "ipa": "/ðeə/",
+          "meaning": "ở đó",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
-      "commonMistakes": ["Đọc thành chữ 'e' Việt Nam."]
+      "commonMistakes": [
+        "Đọc thành chữ 'e' Việt Nam."
+      ]
     },
     {
       "ipa": "ʊə",
@@ -304,10 +808,24 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        { "word": "tour", "ipa": "/tʊə/", "meaning": "chuyến du lịch", "audioUrl": "" },
-        { "word": "cure", "ipa": "/kjʊə/", "meaning": "chữa trị", "audioUrl": "" }
+        {
+          "word": "tour",
+          "ipa": "/tʊə/",
+          "meaning": "chuyến du lịch",
+          "audioUrl": "",
+          "hidden": false
+        },
+        {
+          "word": "cure",
+          "ipa": "/kjʊə/",
+          "meaning": "chữa trị",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
-      "commonMistakes": ["Đọc thành chữ 'ua' Việt Nam."]
+      "commonMistakes": [
+        "Đọc thành chữ 'ua' Việt Nam."
+      ]
     },
     {
       "ipa": "p",
@@ -317,9 +835,17 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "pen", "ipa": "/pen/", "meaning": "cái bút", "audioUrl": "" }
+        {
+          "word": "pen",
+          "ipa": "/pen/",
+          "meaning": "cái bút",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
-      "commonMistakes": ["Rung dây thanh âm làm biến thành âm /b/."]
+      "commonMistakes": [
+        "Rung dây thanh âm làm biến thành âm /b/."
+      ]
     },
     {
       "ipa": "b",
@@ -329,7 +855,13 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "bad", "ipa": "/bæd/", "meaning": "tệ hại", "audioUrl": "" }
+        {
+          "word": "bad",
+          "ipa": "/bæd/",
+          "meaning": "tệ hại",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
       "commonMistakes": []
     },
@@ -341,9 +873,17 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "tea", "ipa": "/tiː/", "meaning": "trà", "audioUrl": "" }
+        {
+          "word": "tea",
+          "ipa": "/tiː/",
+          "meaning": "trà",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
-      "commonMistakes": ["Đọc giống chữ 't' trong tiếng Việt (hãy bật hơi mạnh hơn)."]
+      "commonMistakes": [
+        "Đọc giống chữ 't' trong tiếng Việt (hãy bật hơi mạnh hơn)."
+      ]
     },
     {
       "ipa": "d",
@@ -353,9 +893,17 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "did", "ipa": "/dɪd/", "meaning": "đã làm", "audioUrl": "" }
+        {
+          "word": "did",
+          "ipa": "/dɪd/",
+          "meaning": "đã làm",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
-      "commonMistakes": ["Đọc giống chữ 'đ' tiếng Việt."]
+      "commonMistakes": [
+        "Đọc giống chữ 'đ' tiếng Việt."
+      ]
     },
     {
       "ipa": "k",
@@ -365,9 +913,17 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "cat", "ipa": "/kæt/", "meaning": "con mèo", "audioUrl": "" }
+        {
+          "word": "cat",
+          "ipa": "/kæt/",
+          "meaning": "con mèo",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
-      "commonMistakes": ["Đọc giống chữ 'c/k' tiếng Việt mà không bật hơi."]
+      "commonMistakes": [
+        "Đọc giống chữ 'c/k' tiếng Việt mà không bật hơi."
+      ]
     },
     {
       "ipa": "g",
@@ -377,7 +933,13 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "got", "ipa": "/ɡɒt/", "meaning": "đã có", "audioUrl": "" }
+        {
+          "word": "got",
+          "ipa": "/ɡɒt/",
+          "meaning": "đã có",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
       "commonMistakes": []
     },
@@ -389,9 +951,17 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "fall", "ipa": "/fɔːl/", "meaning": "mùa thu / ngã", "audioUrl": "" }
+        {
+          "word": "fall",
+          "ipa": "/fɔːl/",
+          "meaning": "mùa thu / ngã",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
-      "commonMistakes": ["Phát âm giống âm 'ph' tiếng Việt (hơi lỏng răng)."]
+      "commonMistakes": [
+        "Phát âm giống âm 'ph' tiếng Việt (hơi lỏng răng)."
+      ]
     },
     {
       "ipa": "v",
@@ -401,7 +971,13 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "voice", "ipa": "/vɔɪs/", "meaning": "giọng nói", "audioUrl": "" }
+        {
+          "word": "voice",
+          "ipa": "/vɔɪs/",
+          "meaning": "giọng nói",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
       "commonMistakes": []
     },
@@ -413,9 +989,17 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "thin", "ipa": "/θɪn/", "meaning": "mỏng", "audioUrl": "" }
+        {
+          "word": "thin",
+          "ipa": "/θɪn/",
+          "meaning": "mỏng",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
-      "commonMistakes": ["Đọc thành chữ 't' hoặc 'th' tiếng Việt."]
+      "commonMistakes": [
+        "Đọc thành chữ 't' hoặc 'th' tiếng Việt."
+      ]
     },
     {
       "ipa": "ð",
@@ -425,9 +1009,17 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "this", "ipa": "/ðɪs/", "meaning": "cái này", "audioUrl": "" }
+        {
+          "word": "this",
+          "ipa": "/ðɪs/",
+          "meaning": "cái này",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
-      "commonMistakes": ["Đọc thành chữ 'đ' hoặc 'd' tiếng Việt."]
+      "commonMistakes": [
+        "Đọc thành chữ 'đ' hoặc 'd' tiếng Việt."
+      ]
     },
     {
       "ipa": "s",
@@ -437,9 +1029,17 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "so", "ipa": "/səʊ/", "meaning": "như vậy", "audioUrl": "" }
+        {
+          "word": "so",
+          "ipa": "/səʊ/",
+          "meaning": "như vậy",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
-      "commonMistakes": ["Nuốt âm 's' ở cuối từ."]
+      "commonMistakes": [
+        "Nuốt âm 's' ở cuối từ."
+      ]
     },
     {
       "ipa": "z",
@@ -449,9 +1049,17 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "zoo", "ipa": "/zuː/", "meaning": "vườn bách thú", "audioUrl": "" }
+        {
+          "word": "zoo",
+          "ipa": "/zuː/",
+          "meaning": "vườn bách thú",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
-      "commonMistakes": ["Phát âm giống âm 'd' hay 'gi' tiếng Việt."]
+      "commonMistakes": [
+        "Phát âm giống âm 'd' hay 'gi' tiếng Việt."
+      ]
     },
     {
       "ipa": "ʃ",
@@ -461,9 +1069,17 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "she", "ipa": "/ʃiː/", "meaning": "cô ấy", "audioUrl": "" }
+        {
+          "word": "she",
+          "ipa": "/ʃiː/",
+          "meaning": "cô ấy",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
-      "commonMistakes": ["Phát âm nhẹ giống âm /s/ mà không chu môi."]
+      "commonMistakes": [
+        "Phát âm nhẹ giống âm /s/ mà không chu môi."
+      ]
     },
     {
       "ipa": "ʒ",
@@ -473,7 +1089,13 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "vision", "ipa": "/ˈvɪʒn/", "meaning": "tầm nhìn", "audioUrl": "" }
+        {
+          "word": "vision",
+          "ipa": "/ˈvɪʒn/",
+          "meaning": "tầm nhìn",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
       "commonMistakes": []
     },
@@ -485,9 +1107,17 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "church", "ipa": "/tʃɜːtʃ/", "meaning": "nhà thờ", "audioUrl": "" }
+        {
+          "word": "church",
+          "ipa": "/tʃɜːtʃ/",
+          "meaning": "nhà thờ",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
-      "commonMistakes": ["Đọc giống chữ 'ch' Việt Nam (chữ 'ch' Việt Nam không bật hơi)."]
+      "commonMistakes": [
+        "Đọc giống chữ 'ch' Việt Nam (chữ 'ch' Việt Nam không bật hơi)."
+      ]
     },
     {
       "ipa": "dʒ",
@@ -497,7 +1127,13 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "judge", "ipa": "/dʒʌdʒ/", "meaning": "thẩm phán", "audioUrl": "" }
+        {
+          "word": "judge",
+          "ipa": "/dʒʌdʒ/",
+          "meaning": "thẩm phán",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
       "commonMistakes": []
     },
@@ -509,7 +1145,13 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "how", "ipa": "/haʊ/", "meaning": "như thế nào", "audioUrl": "" }
+        {
+          "word": "how",
+          "ipa": "/haʊ/",
+          "meaning": "như thế nào",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
       "commonMistakes": []
     },
@@ -521,7 +1163,13 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "man", "ipa": "/mæn/", "meaning": "người đàn ông", "audioUrl": "" }
+        {
+          "word": "man",
+          "ipa": "/mæn/",
+          "meaning": "người đàn ông",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
       "commonMistakes": []
     },
@@ -533,7 +1181,13 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "no", "ipa": "/nəʊ/", "meaning": "không", "audioUrl": "" }
+        {
+          "word": "no",
+          "ipa": "/nəʊ/",
+          "meaning": "không",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
       "commonMistakes": []
     },
@@ -545,7 +1199,13 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "sing", "ipa": "/sɪŋ/", "meaning": "hát", "audioUrl": "" }
+        {
+          "word": "sing",
+          "ipa": "/sɪŋ/",
+          "meaning": "hát",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
       "commonMistakes": []
     },
@@ -557,9 +1217,17 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "leg", "ipa": "/leɡ/", "meaning": "chân", "audioUrl": "" }
+        {
+          "word": "leg",
+          "ipa": "/leɡ/",
+          "meaning": "chân",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
-      "commonMistakes": ["Quên nâng đầu lưỡi chạm chân răng khi âm /l/ đứng cuối từ (Dark L)."]
+      "commonMistakes": [
+        "Quên nâng đầu lưỡi chạm chân răng khi âm /l/ đứng cuối từ (Dark L)."
+      ]
     },
     {
       "ipa": "r",
@@ -569,9 +1237,17 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "red", "ipa": "/red/", "meaning": "màu đỏ", "audioUrl": "" }
+        {
+          "word": "red",
+          "ipa": "/red/",
+          "meaning": "màu đỏ",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
-      "commonMistakes": ["Phát âm quá cứng giống âm 'r' uốn rung mạnh của tiếng Việt."]
+      "commonMistakes": [
+        "Phát âm quá cứng giống âm 'r' uốn rung mạnh của tiếng Việt."
+      ]
     },
     {
       "ipa": "w",
@@ -581,7 +1257,13 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "wet", "ipa": "/wet/", "meaning": "ẩm ướt", "audioUrl": "" }
+        {
+          "word": "wet",
+          "ipa": "/wet/",
+          "meaning": "ẩm ướt",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
       "commonMistakes": []
     },
@@ -593,7 +1275,13 @@
       "mouthShapeImage": "",
       "audioUrl": "",
       "examples": [
-        { "word": "yes", "ipa": "/jes/", "meaning": "vâng/có", "audioUrl": "" }
+        {
+          "word": "yes",
+          "ipa": "/jes/",
+          "meaning": "vâng/có",
+          "audioUrl": "",
+          "hidden": false
+        }
       ],
       "commonMistakes": []
     }

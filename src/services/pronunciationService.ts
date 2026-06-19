@@ -11,7 +11,7 @@ export async function fetchIPASyllabus(): Promise<IPASound[]> {
   try {
     const fileRef = ref(storage, "syllabuses/pronunciation_ipa.json");
     const downloadUrl = await getDownloadURL(fileRef);
-    const res = await fetch(downloadUrl, { cache: "no-store" });
+    const res = await fetch(downloadUrl);
     const rawData = await res.json();
     
     // Validate dữ liệu bằng Zod Schema để tránh app crash khi schema thay đổi đột ngột
@@ -56,7 +56,7 @@ export async function publishIPASyllabus(sounds: IPASound[]): Promise<void> {
   const jsonString = JSON.stringify(syllabus, null, 2);
   const blob = new Blob([jsonString], { type: "application/json" });
   const fileRef = ref(storage, "syllabuses/pronunciation_ipa.json");
-  await uploadBytes(fileRef, blob);
+  await uploadBytes(fileRef, blob, { cacheControl: "no-cache" });
 }
 
 /**

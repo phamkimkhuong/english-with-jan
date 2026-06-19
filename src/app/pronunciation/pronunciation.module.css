@@ -322,6 +322,7 @@
   font-size: 0.92rem;
   color: rgb(var(--secondary-rgb));
   line-height: 1.5;
+  white-space: pre-wrap;
 }
 
 .mistakesCard {
@@ -749,6 +750,94 @@
   object-fit: cover;
 }
 
+/* Carousel/Slider styles for multiple mouth shape media */
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: rgb(var(--foreground-rgb) / 0.03);
+}
+
+.carouselMedia {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.carouselNavBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid rgb(var(--card-border-rgb));
+  background: rgb(255 255 255 / 0.75);
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(var(--foreground-rgb));
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
+  box-shadow: var(--shadow-sm);
+}
+
+.carouselNavBtn:hover {
+  background: #fff;
+  transform: translateY(-50%) scale(1.08);
+  box-shadow: var(--shadow-md);
+  border-color: rgb(var(--primary-rgb) / 0.3);
+}
+
+.carouselNavBtn:active {
+  transform: translateY(-50%) scale(0.96);
+}
+
+.carouselNavBtnLeft {
+  left: 8px;
+}
+
+.carouselNavBtnRight {
+  right: 8px;
+}
+
+.carouselDots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.carouselDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgb(var(--foreground-rgb) / 0.15);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.carouselDot:hover {
+  background: rgb(var(--foreground-rgb) / 0.3);
+}
+
+.carouselDotActive {
+  background: rgb(var(--primary-rgb));
+  width: 14px;
+  border-radius: 99px;
+}
+
 .soundSymbolTitle {
   font-size: 2.2rem;
   font-weight: 900;
@@ -953,6 +1042,38 @@
     padding-top: 16px;
     margin-top: 4px;
     justify-content: flex-start;
+  }
+}
+
+@media (width <= 576px) {
+  .longExampleCard .wordHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .sentenceCard .wordText {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 1.05rem;
+  }
+
+  .sentenceCard .ipaText {
+    display: block;
+    margin-left: 0 !important;
+    margin-bottom: 6px;
+    font-size: 0.85rem;
+  }
+
+  .longExampleCard .actionBtnGroup {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+    border-top: 1px dashed rgb(var(--card-border-rgb));
+    padding-top: 10px;
+    margin-top: 4px;
   }
 }
 
