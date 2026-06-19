@@ -8,29 +8,101 @@ service cloud.firestore {
 
     // Hàm kiểm tra xem người dùng hiện tại có phải là Admin trong Firestore hay không
     function isAdmin() {
-      return isSuperAdmin() || 
-        (request.auth != null && 
-         exists(/databases/$(database)/documents/users/$(request.auth.uid)) && 
+      return isSuperAdmin() ||
+        (request.auth != null &&
+         exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
          get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin');
     }
-    
+
     // Hàm kiểm tra xem người dùng hiện tại có phải là Giáo viên hay không
     function isTeacher() {
-      return isAdmin() || 
-        (request.auth != null && 
-         exists(/databases/$(database)/documents/users/$(request.auth.uid)) && 
+      return isAdmin() ||
+        (request.auth != null &&
+         exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
          get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'teacher');
+    }
+
+    function changedAccessCodeKeys() {
+      return request.resource.data.diff(resource.data).affectedKeys();
+    }
+
+    function requestRedemptionSnapshot() {
+      return request.resource.data.redemptionsByUid[request.auth.uid];
+    }
+
+    function changedOnlyRequesterRedemptionSnapshot() {
+      return request.resource.data.redemptionsByUid is map &&
+        (
+          (!resource.data.keys().hasAny(['redemptionsByUid']) &&
+            request.resource.data.redemptionsByUid.keys().hasOnly([request.auth.uid])) ||
+          (resource.data.keys().hasAny(['redemptionsByUid']) &&
+            request.resource.data.redemptionsByUid.diff(resource.data.redemptionsByUid).affectedKeys().hasOnly([request.auth.uid]))
+        );
+    }
+
+    function validRequesterRedemptionSnapshot() {
+      return request.resource.data.redemptionsByUid.keys().hasAny([request.auth.uid]) &&
+        requestRedemptionSnapshot() is map &&
+        requestRedemptionSnapshot().keys().hasAll(['uid', 'displayName', 'email', 'photoURL', 'redeemedAt']) &&
+        requestRedemptionSnapshot().keys().hasOnly(['uid', 'displayName', 'email', 'photoURL', 'redeemedAt']) &&
+        requestRedemptionSnapshot().uid == request.auth.uid &&
+        requestRedemptionSnapshot().displayName is string &&
+        requestRedemptionSnapshot().photoURL is string &&
+        requestRedemptionSnapshot().email is string &&
+        requestRedemptionSnapshot().redeemedAt == request.time &&
+        (
+          (request.auth.token.email is string && requestRedemptionSnapshot().email == request.auth.token.email) ||
+          (!(request.auth.token.email is string) && requestRedemptionSnapshot().email == '')
+        );
+    }
+
+    function validRedeemUsageCounters() {
+      return resource.data.currentUses < resource.data.maxUses &&
+        request.resource.data.currentUses == resource.data.currentUses + 1 &&
+        request.resource.data.usedBy is list &&
+        request.resource.data.usedBy.hasAll(resource.data.usedBy) &&
+        request.resource.data.usedBy.size() == resource.data.usedBy.size() + 1 &&
+        request.resource.data.usedBy.hasAny([request.auth.uid]);
+    }
+
+    function validRedeemFinalStatus() {
+      return (
+          resource.data.type == 'single' &&
+          resource.data.currentUses == 0 &&
+          resource.data.maxUses == 1 &&
+          request.resource.data.currentUses == 1 &&
+          request.resource.data.status == 'used' &&
+          request.resource.data.usedAt == request.time
+        ) ||
+        (
+          resource.data.type == 'multi' &&
+          (
+            (request.resource.data.currentUses < resource.data.maxUses && request.resource.data.status == 'active') ||
+            (request.resource.data.currentUses == resource.data.maxUses && request.resource.data.status == 'used')
+          )
+        );
+    }
+
+    function canRedeemAccessCode() {
+      return request.auth != null &&
+        resource.data.status == 'active' &&
+        !resource.data.usedBy.hasAny([request.auth.uid]) &&
+        changedAccessCodeKeys().hasOnly(['status', 'usedBy', 'currentUses', 'usedAt', 'redemptionsByUid']) &&
+        validRedeemUsageCounters() &&
+        validRedeemFinalStatus() &&
+        changedOnlyRequesterRedemptionSnapshot() &&
+        validRequesterRedemptionSnapshot();
     }
 
     // Quy tắc cho bộ sưu tập users
     match /users/{userId} {
       // Bất kỳ ai đã đăng nhập đều có thể đọc thông tin người dùng
       allow read: if request.auth != null;
-      
+
       // Cho phép đăng ký ban đầu (nếu ghi đè lên tài khoản của chính mình và để mặc định role là student)
       // Hoặc cho phép Admin chỉnh sửa quyền bất kỳ ai
       allow write: if request.auth != null && (
-        (request.auth.uid == userId && (!exists(/databases/$(database)/documents/users/$(userId)) || request.resource.data.role == 'student')) || 
+        (request.auth.uid == userId && (!exists(/databases/$(database)/documents/users/$(userId)) || request.resource.data.role == 'student')) ||
         isAdmin()
       );
     }
@@ -46,14 +118,14 @@ service cloud.firestore {
       allow get: if request.auth != null;
       allow list: if isTeacher();
       allow create, delete: if isTeacher();
-      allow update: if request.auth != null;
+      allow update: if isTeacher() || canRedeemAccessCode();
     }
 
     // Quy tắc cho bộ sưu tập courses (khóa học) và lessons (bài học)
     match /courses/{courseId} {
       allow read: if true; // Ai cũng xem được danh sách khóa học
       allow write: if isTeacher(); // Chỉ Giáo viên và Admin mới được viết
-      
+
       match /lessons/{lessonId} {
         allow read: if request.auth != null; // Chỉ học sinh đã đăng nhập mới được xem chi tiết bài học
         allow write: if isTeacher();

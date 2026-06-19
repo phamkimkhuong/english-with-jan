@@ -11,7 +11,8 @@
     "lint:fix": "eslint . --fix && stylelint \"src/**/*.css\" --fix",
     "type-check": "tsc --noEmit",
     "validate": "npm run lint && npm run type-check",
-    "deploy": "npm run build && npx firebase-tools deploy --only hosting"
+    "deploy": "npm run build && npx firebase-tools deploy --only hosting",
+    "deploy-rules": "npx -y firebase-tools@15.22.0 deploy --only firestore:rules"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.101.0",
