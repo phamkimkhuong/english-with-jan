@@ -1,0 +1,20 @@
+[Unit]
+Description=English with Jan STT Service
+After=network.target
+
+[Service]
+Type=simple
+User=stt
+Group=stt
+WorkingDirectory=/opt/english-with-jan-stt
+EnvironmentFile=/opt/english-with-jan-stt/.env
+ExecStart=/opt/english-with-jan-stt/.venv/bin/python -m uvicorn app.main:app --host 127.0.0.1 --port 8010
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ReadWritePaths=/opt/english-with-jan-stt
+
+[Install]
+WantedBy=multi-user.target

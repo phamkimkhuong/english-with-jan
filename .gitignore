@@ -35,6 +35,8 @@ gcp-key.json
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
+!**/.env.example
 
 # vercel
 .vercel
@@ -42,3 +44,17 @@ gcp-key.json
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# python
+__pycache__/
+*.py[cod]
+
+# local STT assets
+stt-service/.venv/
+stt-service/models/
+stt-service/samples/
+stt-service/*.mp3
+stt-service/*.wav
+stt-service/*.m4a
+stt-service/*.webm
+stt-service/*.ogg

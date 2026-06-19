@@ -1,0 +1,15 @@
+stt.example.com {
+    encode zstd gzip
+
+    @stt path /v1/stt
+    handle @stt {
+        reverse_proxy 127.0.0.1:8010
+    }
+
+    @health path /health
+    handle @health {
+        reverse_proxy 127.0.0.1:8010
+    }
+
+    respond 404
+}
