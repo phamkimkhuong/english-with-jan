@@ -19,13 +19,13 @@ jobs:
           username: ${{ secrets.STT_VPS_USERNAME }}
           key: ${{ secrets.STT_VPS_SSH_KEY }}
           port: ${{ secrets.STT_VPS_PORT || 22 }}
+          script_stop: true
           script: |
+            set -e
             echo "Starting deploy of English with Jan STT Service..."
             if [ -f /usr/local/bin/update-english-with-jan-stt-git ]; then
               sudo /usr/local/bin/update-english-with-jan-stt-git
             else
-              # Bootstrap if the symlink doesn't exist yet
-              echo "Symlink not found, running bootstrap update..."
+              echo "Symlink not found, running bootstrap update from source..."
               sudo /opt/english-with-jan-stt/deploy/oracle/update-from-git.sh
             fi
-            echo "Deploy completed successfully."
