@@ -208,3 +208,34 @@ sudo update-english-with-jan-stt
 
 The updater preserves `.env`, `.venv`, `models`, and previous code backups.
 See `deploy/oracle/README.md` for first-time updater installation and rollback.
+
+## DevOps & CI/CD Notes (Cập nhật tháng 06/2026)
+
+Để vận hành hệ thống ổn định lâu dài và phòng ngừa các sự cố thực tế, chúng ta đã thiết lập quy trình tự động hóa CI/CD thông qua **GitHub Actions** với các cơ chế phòng ngừa lỗi sau:
+
+### 1. Phân Tách 4 Lớp Dữ Liệu
+Quy trình deploy qua Git ([update-from-git.sh](file:///c:/doan/english-with-jan/stt-service/deploy/oracle/update-from-git.sh)) hoặc Zip ([update-from-zip.sh](file:///c:/doan/english-with-jan/stt-service/deploy/oracle/update-from-zip.sh)) được cấu hình bằng `rsync --exclude` để **bảo vệ tuyệt đối** 3 thành phần không bao giờ bị xóa:
+- Cấu hình môi trường (`.env`).
+- Môi trường ảo chứa thư viện (`.venv`).
+- Thư mục chứa các model nhận diện Vosk nặng hàng trăm MB (`models/`).
+
+### 2. Tự Động Hóa CI/CD (GitHub Actions)
+- File cấu hình: `.github/workflows/deploy-stt.yml`.
+- Tự động SSH vào VPS và chạy lệnh cập nhật nguồn khi có thay đổi trong thư mục `stt-service` được push lên nhánh `main`.
+- Đã được tích hợp cấu hình `set -e` và `script_stop: true` để tránh tình trạng "báo xanh thành công giả" (false-positive) khi lệnh deploy thực tế bị lỗi giữa chừng.
+
+### 3. Phòng Ngừa & Xử Lý Sự Cố (Rollback)
+- **Tự động Rollback (Auto-rollback)**: Khi deploy bản mới, script sẽ tự động tạo file backup nén dạng `code-*.tar.gz` trong thư mục `releases/` (giữ tối đa 5 bản). Sau khi khởi động lại dịch vụ, script sẽ liên tục gọi thử API `/health` nội bộ trong 20 giây. Nếu app bị sập (lỗi cú pháp, thiếu/xung đột thư viện trong `.venv`), script sẽ tự động khôi phục bản cũ và restart dịch vụ.
+- **Rollback Thủ Công (Manual rollback)**: Nếu deploy thành công về mặt kỹ thuật nhưng phát hiện lỗi logic nghiệp vụ khi chạy thực tế, bạn chỉ cần SSH vào VPS và chạy lệnh nhanh:
+  ```bash
+  sudo rollback-english-with-jan-stt
+  ```
+  Hệ thống sẽ ngay lập tức khôi phục về bản backup gần nhất chỉ trong 2 giây.
+
+### 4. Xử Lý Khi Xung Đột Thư Viện (.venv)
+- Nếu môi trường ảo của bạn bị rối loạn sau nhiều lần cập nhật, chỉ cần SSH vào VPS và chạy:
+  ```bash
+  sudo rm -rf /opt/english-with-jan-stt/.venv
+  ```
+  Lần deploy tiếp theo từ GitHub Actions sẽ phát hiện thiếu `.venv` và tự động khởi tạo lại một môi trường sạch hoàn toàn từ đầu.
+
