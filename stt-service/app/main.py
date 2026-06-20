@@ -74,12 +74,15 @@ def _enforce_rate_limit(request: Request, user: AuthenticatedUser | None) -> Non
 def health() -> dict[str, object]:
     model_name = settings.model_path
     download_root = settings.download_root
-    cache_dir_name = f"models--systran--faster-whisper-{model_name}"
-    model_exists = (
-        (download_root / cache_dir_name).exists()
-        or (download_root / model_name).exists()
-        or Path(model_name).exists()
-    )
+    model_exists = False
+    if download_root.exists():
+        expected_name = f"models--systran--faster-whisper-{model_name}".lower()
+        for child in download_root.iterdir():
+            if child.name.lower() == expected_name:
+                model_exists = True
+                break
+    if not model_exists:
+        model_exists = (download_root / model_name).exists() or Path(model_name).exists()
     return {
         "ok": True,
         "engine": "whisper",
