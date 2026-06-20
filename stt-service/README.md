@@ -108,7 +108,7 @@ Response:
 
 ## Notes
 
-- Keep uploads short. The default limit is 5 MB and 8 seconds.
+- Keep uploads short. The default limit is 5 MB and 18 seconds.
 - Do not deploy this publicly without authentication and rate limiting.
 - Later app integration should use Firebase Auth verification, not a public
   client API key.
@@ -184,5 +184,27 @@ Oracle deployment templates live in:
 stt-service\deploy\oracle
 ```
 
-Use them for the production env file, systemd service, and Caddy HTTPS reverse
-proxy.
+Use them for the production env file, systemd service, Caddy HTTPS reverse
+proxy, and incremental zip-based deployment.
+
+Package a release zip from Windows:
+
+```powershell
+cd C:\doan\english-with-jan
+.\stt-service\scripts\package-stt-service.ps1
+```
+
+Upload the generated zip to:
+
+```text
+/home/ubuntu/english-with-jan-stt-service.zip
+```
+
+Then deploy on the VPS:
+
+```bash
+sudo update-english-with-jan-stt
+```
+
+The updater preserves `.env`, `.venv`, `models`, and previous code backups.
+See `deploy/oracle/README.md` for first-time updater installation and rollback.

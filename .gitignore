@@ -58,3 +58,4 @@ stt-service/*.wav
 stt-service/*.m4a
 stt-service/*.webm
 stt-service/*.ogg
+stt-service/*.zip

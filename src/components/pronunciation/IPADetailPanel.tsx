@@ -21,6 +21,10 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
   const [activeMainTab, setActiveMainTab] = React.useState<"theory" | "practice">("theory");
   const [activeMediaIndex, setActiveMediaIndex] = React.useState(0);
   const { user } = useAuth();
+  const getSpeechPracticeIdToken = React.useCallback(async () => {
+    if (!user) return null;
+    return user.getIdToken();
+  }, [user]);
 
   // Tạo danh sách các media khẩu hình miệng, hỗ trợ tương thích ngược với mouthShapeImage cũ
   const mediaList = React.useMemo(() => {
@@ -48,9 +52,15 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
     practiceResult,
     recognitionError,
     savedPracticeKey,
+    isSelfHostedSttMode,
+    isProcessingRecording,
+    canStopMobileRecording,
+    mobileRecordingMaxMs,
+    mobileRecordingRemainingMs,
     startSpeechPractice,
+    stopSpeechPractice,
     setPracticeResult,
-  } = useSpeechRecognition();
+  } = useSpeechRecognition({ getIdToken: getSpeechPracticeIdToken });
 
   // Tích hợp hook đồng bộ hóa tiến trình ghi âm lên Cloud
   usePracticeSync(
@@ -324,7 +334,13 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
                       setPracticeResult={setPracticeResult}
                       playSoundAudio={playSoundAudio}
                       startSpeechPractice={startSpeechPractice}
+                      stopSpeechPractice={stopSpeechPractice}
                       isSupported={isSupported}
+                      isSelfHostedSttMode={isSelfHostedSttMode}
+                      isProcessingRecording={isProcessingRecording}
+                      canStopMobileRecording={canStopMobileRecording}
+                      mobileRecordingMaxMs={mobileRecordingMaxMs}
+                      mobileRecordingRemainingMs={mobileRecordingRemainingMs}
                     />
                   ))
                 ) : (
@@ -348,7 +364,13 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
                       setPracticeResult={setPracticeResult}
                       playSoundAudio={playSoundAudio}
                       startSpeechPractice={startSpeechPractice}
+                      stopSpeechPractice={stopSpeechPractice}
                       isSupported={isSupported}
+                      isSelfHostedSttMode={isSelfHostedSttMode}
+                      isProcessingRecording={isProcessingRecording}
+                      canStopMobileRecording={canStopMobileRecording}
+                      mobileRecordingMaxMs={mobileRecordingMaxMs}
+                      mobileRecordingRemainingMs={mobileRecordingRemainingMs}
                     />
                   ))
                 ) : (
@@ -372,7 +394,13 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
                       setPracticeResult={setPracticeResult}
                       playSoundAudio={playSoundAudio}
                       startSpeechPractice={startSpeechPractice}
+                      stopSpeechPractice={stopSpeechPractice}
                       isSupported={isSupported}
+                      isSelfHostedSttMode={isSelfHostedSttMode}
+                      isProcessingRecording={isProcessingRecording}
+                      canStopMobileRecording={canStopMobileRecording}
+                      mobileRecordingMaxMs={mobileRecordingMaxMs}
+                      mobileRecordingRemainingMs={mobileRecordingRemainingMs}
                     />
                   ))
                 ) : (

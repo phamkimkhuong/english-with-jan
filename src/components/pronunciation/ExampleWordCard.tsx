@@ -23,8 +23,14 @@ interface ExampleWordCardProps {
   } | null;
   setPracticeResult: (result: null) => void;
   playSoundAudio: (textToSpeak: string, customAudioUrl: string, isWord: boolean) => void;
-  startSpeechPractice: (word: string, soundIpa: string, exampleType: string) => void;
+  startSpeechPractice: (word: string, soundIpa: string, exampleType: string) => void | Promise<void>;
+  stopSpeechPractice: () => void;
   isSupported?: boolean;
+  isSelfHostedSttMode?: boolean;
+  isProcessingRecording?: boolean;
+  canStopMobileRecording?: boolean;
+  mobileRecordingMaxMs?: number | null;
+  mobileRecordingRemainingMs?: number | null;
 }
 
 export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
@@ -37,10 +43,23 @@ export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
   setPracticeResult,
   playSoundAudio,
   startSpeechPractice,
+  stopSpeechPractice,
   isSupported = true,
+  isSelfHostedSttMode = false,
+  isProcessingRecording = false,
+  canStopMobileRecording = false,
+  mobileRecordingMaxMs = null,
+  mobileRecordingRemainingMs = null,
 }) => {
   const isWordListening = listeningWord === ex.word;
   const hasResult = practiceResult && practiceResult.word === ex.word;
+  const isMobileSttRecording = isSelfHostedSttMode && isWordListening;
+  const remainingSeconds = mobileRecordingRemainingMs !== null
+    ? Math.max(0, Math.ceil(mobileRecordingRemainingMs / 1000))
+    : null;
+  const recordingProgressPercent = mobileRecordingMaxMs && mobileRecordingRemainingMs !== null
+    ? Math.min(100, Math.max(0, ((mobileRecordingMaxMs - mobileRecordingRemainingMs) / mobileRecordingMaxMs) * 100))
+    : 0;
 
   const [userAudioUrl, setUserAudioUrl] = useState<string | null>(null);
   const [isPlayingUserAudio, setIsPlayingUserAudio] = useState(false);
@@ -93,6 +112,25 @@ export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
     audio.onerror = () => setIsPlayingUserAudio(false);
     audio.play().catch(() => setIsPlayingUserAudio(false));
   };
+
+  const handlePracticeButtonClick = () => {
+    if (isMobileSttRecording) {
+      stopSpeechPractice();
+      return;
+    }
+
+    void startSpeechPractice(ex.word, soundIpa, ex.type || "word");
+  };
+
+  const isPracticeButtonDisabled = !isSupported
+    || (isMobileSttRecording && (!canStopMobileRecording || isProcessingRecording));
+  const practiceButtonTitle = !isSupported
+    ? "Trình duyệt không hỗ trợ micro luyện đọc"
+    : isMobileSttRecording
+      ? canStopMobileRecording && !isProcessingRecording
+        ? "Dừng và chấm điểm"
+        : "Đang chuẩn bị bản thu"
+      : "Bấm để bắt đầu luyện đọc với micro";
 
   const isLongExample = ex.type === "phrase" || ex.type === "sentence";
   const isSentence = ex.type === "sentence";
@@ -170,20 +208,33 @@ export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
             </button>
           )}
 
-          {/* Nút Micro thu âm */}
+          {/* Nút Micro thu âm / Dừng thu trên mobile */}
           <button
             type="button"
-            onClick={() => startSpeechPractice(ex.word, soundIpa, ex.type || "word")}
-            className={`${styles.actionBtn} ${isWordListening ? styles.micListening : ""} ${!isSupported ? styles.actionBtnDisabled : ""}`}
-            disabled={!isSupported}
-            title={!isSupported ? "Trình duyệt không hỗ trợ micro luyện đọc" : "Bấm để bắt đầu luyện đọc với micro"}
+            onClick={handlePracticeButtonClick}
+            className={`${styles.actionBtn} ${isMobileSttRecording ? styles.mobileStopBtn : ""} ${isWordListening ? styles.micListening : ""} ${isPracticeButtonDisabled ? styles.actionBtnDisabled : ""}`}
+            disabled={isPracticeButtonDisabled}
+            title={practiceButtonTitle}
           >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
-              <path d="M19 10v1a7 7 0 0 1-14 0v-1" />
-              <line x1="12" y1="19" x2="12" y2="23" />
-              <line x1="8" y1="23" x2="16" y2="23" />
-            </svg>
+            {isMobileSttRecording ? (
+              isProcessingRecording ? (
+                <div className="skeleton skeleton-circle" style={{ width: "14px", height: "14px" }} />
+              ) : (
+                <>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4">
+                    <rect x="6" y="6" width="12" height="12" rx="2" />
+                  </svg>
+                  <span>Dừng</span>
+                </>
+              )
+            ) : (
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
+                <path d="M19 10v1a7 7 0 0 1-14 0v-1" />
+                <line x1="12" y1="19" x2="12" y2="23" />
+                <line x1="8" y1="23" x2="16" y2="23" />
+              </svg>
+            )}
           </button>
         </div>
       </div>
@@ -191,8 +242,28 @@ export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
       {/* Recording status */}
       {isWordListening && (
         <div className={styles.recordingStatus}>
-          <span className={styles.pulseDot} />
-          Đang thu âm... Hãy nói từ &quot;{ex.word}&quot;
+          <div className={styles.recordingStatusLine}>
+            <span className={styles.pulseDot} />
+            {isMobileSttRecording ? (
+              isProcessingRecording ? (
+                <span>Đang chấm điểm bản thu...</span>
+              ) : (
+                <span>
+                  Đang thu âm... {remainingSeconds !== null && `Còn ${remainingSeconds}s.`} Bấm Dừng khi nói xong.
+                </span>
+              )
+            ) : (
+              <span>Đang thu âm... Hãy nói từ &quot;{ex.word}&quot;</span>
+            )}
+          </div>
+          {isMobileSttRecording && !isProcessingRecording && mobileRecordingMaxMs && (
+            <div className={styles.recordingProgressTrack} aria-hidden="true">
+              <span
+                className={styles.recordingProgressBar}
+                style={{ width: `${recordingProgressPercent}%` }}
+              />
+            </div>
+          )}
         </div>
       )}
 
@@ -255,4 +326,3 @@ export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
     </div>
   );
 };
-

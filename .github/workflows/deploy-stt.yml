@@ -1,0 +1,31 @@
+name: Deploy STT Service to VPS
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'stt-service/**'
+      - '.github/workflows/deploy-stt.yml'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.STT_VPS_HOST }}
+          username: ${{ secrets.STT_VPS_USERNAME }}
+          key: ${{ secrets.STT_VPS_SSH_KEY }}
+          port: ${{ secrets.STT_VPS_PORT || 22 }}
+          script: |
+            echo "Starting deploy of English with Jan STT Service..."
+            if [ -f /usr/local/bin/update-english-with-jan-stt-git ]; then
+              sudo /usr/local/bin/update-english-with-jan-stt-git
+            else
+              # Bootstrap if the symlink doesn't exist yet
+              echo "Symlink not found, running bootstrap update..."
+              sudo /opt/english-with-jan-stt/deploy/oracle/update-from-git.sh
+            fi
+            echo "Deploy completed successfully."

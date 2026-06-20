@@ -23,7 +23,7 @@ On Ubuntu ARM64:
 
 ```bash
 sudo apt update
-sudo apt install -y python3.11 python3.11-venv python3-pip ffmpeg unzip curl
+sudo apt install -y python3 python3-venv python3-pip ffmpeg unzip curl caddy rsync
 sudo useradd --system --create-home --shell /usr/sbin/nologin stt
 sudo mkdir -p /opt/english-with-jan-stt
 sudo chown -R stt:stt /opt/english-with-jan-stt
@@ -33,7 +33,7 @@ Copy this `stt-service` folder to `/opt/english-with-jan-stt`.
 
 ```bash
 cd /opt/english-with-jan-stt
-sudo -u stt python3.11 -m venv .venv
+sudo -u stt python3 -m venv .venv
 sudo -u stt ./.venv/bin/python -m pip install --upgrade pip
 sudo -u stt ./.venv/bin/python -m pip install -r requirements.txt
 ```
@@ -87,6 +87,67 @@ Local VM check:
 curl http://127.0.0.1:8010/health
 ```
 
+## Routine Code Updates
+
+The production update flow is incremental. It preserves these server-local assets:
+
+```text
+/opt/english-with-jan-stt/.env
+/opt/english-with-jan-stt/.venv
+/opt/english-with-jan-stt/models
+/opt/english-with-jan-stt/releases
+```
+
+On the Windows development machine, package a clean release zip:
+
+```powershell
+cd C:\doan\english-with-jan
+.\stt-service\scripts\package-stt-service.ps1
+```
+
+Upload the generated file to the VPS:
+
+```text
+C:\tmp\english-with-jan-stt-service.zip
+-> /home/ubuntu/english-with-jan-stt-service.zip
+```
+
+Bootstrap the deploy command once on the VPS from the uploaded zip:
+
+```bash
+unzip -p /home/ubuntu/english-with-jan-stt-service.zip deploy/oracle/update-from-zip.sh | sudo tee /usr/local/bin/update-english-with-jan-stt >/dev/null
+sudo chmod +x /usr/local/bin/update-english-with-jan-stt
+```
+
+Deploy the uploaded release:
+
+```bash
+sudo update-english-with-jan-stt /home/ubuntu/english-with-jan-stt-service.zip
+```
+
+During the first successful deploy, the script replaces this temporary command with symlinks to the managed scripts under `/opt/english-with-jan-stt/deploy/oracle`. After that, future updates are only:
+
+```powershell
+.\stt-service\scripts\package-stt-service.ps1
+```
+
+Then upload the zip and run:
+
+```bash
+sudo update-english-with-jan-stt
+```
+
+The deploy script creates a code backup, syncs the new release, installs Python
+packages only when `requirements.txt` changes, restarts `stt-service`, and checks
+`http://127.0.0.1:8010/health`. If the health check fails, it attempts to restore
+the backup automatically.
+
+Manual rollback to the latest backup:
+
+```bash
+sudo rollback-english-with-jan-stt
+```
+
 Expected production health shape:
 
 ```json
@@ -138,7 +199,7 @@ Default service limits:
 
 ```text
 Max audio size: 5 MB
-Max audio duration: 8 seconds
+Max audio duration: 18 seconds
 Rate limit: 30 requests/user/minute
 ```
 
