@@ -232,10 +232,45 @@ Quy trình deploy qua Git ([update-from-git.sh](file:///c:/doan/english-with-jan
   ```
   Hệ thống sẽ ngay lập tức khôi phục về bản backup gần nhất chỉ trong 2 giây.
 
-### 4. Xử Lý Khi Xung Đột Thư Viện (.venv)
-- Nếu môi trường ảo của bạn bị rối loạn sau nhiều lần cập nhật, chỉ cần SSH vào VPS và chạy:
-  ```bash
-  sudo rm -rf /opt/english-with-jan-stt/.venv
-  ```
-  Lần deploy tiếp theo từ GitHub Actions sẽ phát hiện thiếu `.venv` và tự động khởi tạo lại một môi trường sạch hoàn toàn từ đầu.
+### 4. Hướng Dẫn Vận Hành Theo Từng Tình Huống Thực Tế
+
+#### Tình huống A: Khi bạn cập nhật thư viện hoặc thêm Dependency mới
+Bạn không cần phải SSH vào VPS để cài đặt thủ công. Quy trình hoàn toàn tự động:
+1. **Ở máy local**: Bạn chỉ cần thêm thư viện mới vào file [requirements.txt](file:///c:/doan/english-with-jan/stt-service/requirements.txt) (ví dụ: thêm `scipy==1.10.1` hay nâng cấp phiên bản của một thư viện).
+2. **Push code**: Thực hiện `git push` lên GitHub.
+3. **Tự động cập nhật**: Khi GitHub Actions kích hoạt script deploy trên VPS, hệ thống sẽ tự động phát hiện mã SHA256 của file `requirements.txt` thay đổi và tự động chạy lệnh cài đặt thư viện mới vào môi trường ảo `.venv` hiện có:
+   ```bash
+   sudo -u stt .venv/bin/python -m pip install -r requirements.txt
+   ```
+4. **Trường hợp bị lỗi xung đột thư viện (Dependency Hell)**: Nếu sau nhiều lần cập nhật, các thư viện trong `.venv` bị rối hoặc lỗi xung đột, bạn chỉ cần SSH vào VPS và xóa hẳn thư mục `.venv` đi để làm sạch:
+   ```bash
+   sudo rm -rf /opt/english-with-jan-stt/.venv
+   ```
+   Trong lần deploy tiếp theo từ GitHub Actions, script phát hiện thiếu `.venv` sẽ tự động khởi tạo lại môi trường ảo hoàn toàn sạch và cài đặt lại toàn bộ thư viện từ đầu.
+
+#### Tình huống B: Khi bạn muốn thay đổi hoặc đổi sang Model STT khác
+Dữ liệu Model được tách biệt hoàn toàn khỏi mã nguồn của App, nên việc đổi Model diễn ra rất nhanh gọn mà không ảnh hưởng tới code:
+1. **Tải Model mới về VPS**: Dùng Termius kết nối SSH vào VPS, tải và giải nén model mới vào thư mục `models/` (ví dụ đổi sang model to hơn `vosk-model-en-us-0.22`):
+   ```bash
+   cd /opt/english-with-jan-stt/models/
+   sudo -u stt wget https://alphacephei.com/vosk/models/vosk-model-en-us-0.22.zip
+   sudo -u stt unzip vosk-model-en-us-0.22.zip
+   sudo rm vosk-model-en-us-0.22.zip
+   ```
+2. **Cập nhật cấu hình**: Mở file cấu hình `.env` trên VPS:
+   ```bash
+   sudo nano /opt/english-with-jan-stt/.env
+   ```
+   Sửa lại dòng đường dẫn trỏ tới thư mục model mới:
+   ```text
+   STT_MODEL_PATH=/opt/english-with-jan-stt/models/vosk-model-en-us-0.22
+   ```
+3. **Khởi động lại dịch vụ**:
+   ```bash
+   sudo systemctl restart stt-service
+   ```
+4. **Dọn dẹp**: Khi test thấy model mới đã nhận diện tốt (kiểm tra bằng lệnh `curl http://127.0.0.1:8010/health`), bạn có thể xóa thư mục model cũ để giải phóng dung lượng đĩa cứng VPS:
+   ```bash
+   sudo rm -rf /opt/english-with-jan-stt/models/vosk-model-small-en-us-0.15
+   ```
 
