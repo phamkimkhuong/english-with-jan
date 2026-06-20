@@ -282,25 +282,46 @@ export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
 
               {/* Hiển thị chi tiết từng từ để học sinh sửa lỗi (Word-by-word highlight) */}
               {practiceResult.wordResults && practiceResult.wordResults.length > 0 ? (
-                <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", margin: "8px 0" }}>
-                  {practiceResult.wordResults.map((res, idx) => (
-                    <span
-                      key={idx}
-                      style={{
-                        padding: "2px 6px",
-                        borderRadius: "4px",
-                        fontWeight: "600",
-                        fontSize: "0.9rem",
-                        backgroundColor: res.isCorrect ? "rgba(16, 185, 129, 0.1)" : "rgba(239, 68, 68, 0.1)",
-                        color: res.isCorrect ? "rgb(16, 185, 129)" : "rgb(239, 68, 68)",
-                        border: `1px solid ${res.isCorrect ? "rgba(16, 185, 129, 0.2)" : "rgba(239, 68, 68, 0.2)"}`,
-                      }}
-                      title={res.isCorrect ? "Đúng" : res.spoken ? `Bạn nói: "${res.spoken}"` : "Bỏ sót"}
-                    >
-                      {res.text}
-                    </span>
-                  ))}
-                </div>
+                <>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", margin: "8px 0" }}>
+                    {practiceResult.wordResults.map((res, idx) => (
+                      <span
+                        key={idx}
+                        style={{
+                          padding: "2px 8px",
+                          borderRadius: "4px",
+                          fontWeight: "600",
+                          fontSize: "0.9rem",
+                          backgroundColor: res.isCorrect ? "rgba(16, 185, 129, 0.1)" : "rgba(239, 68, 68, 0.1)",
+                          color: res.isCorrect ? "rgb(16, 185, 129)" : "rgb(239, 68, 68)",
+                          border: `1px solid ${res.isCorrect ? "rgba(16, 185, 129, 0.2)" : "rgba(239, 68, 68, 0.2)"}`,
+                          display: "inline-flex",
+                          alignItems: "center",
+                        }}
+                        title={res.isCorrect ? "Đúng" : res.spoken ? `Bạn nói: "${res.spoken}"` : "Bỏ sót"}
+                      >
+                        {res.text}
+                        {!res.isCorrect && (
+                          <span
+                            style={{
+                              fontSize: "0.75rem",
+                              fontWeight: "normal",
+                              opacity: 0.85,
+                              marginLeft: "6px",
+                              paddingLeft: "6px",
+                              borderLeft: "1px solid rgba(239, 68, 68, 0.3)",
+                            }}
+                          >
+                            {res.spoken ? `nói: "${res.spoken}"` : "bỏ sót"}
+                          </span>
+                        )}
+                      </span>
+                    ))}
+                  </div>
+                  <p style={{ margin: "6px 0 4px 0", fontSize: "0.85rem", color: "rgb(var(--secondary-rgb))" }}>
+                    Bạn phát âm: <strong>&quot;{practiceResult.spokenText}&quot;</strong>
+                  </p>
+                </>
               ) : (
                 <p style={{ margin: "4px 0 0 0", color: "rgb(var(--secondary-rgb))" }}>
                   Bạn phát âm: <strong>&quot;{practiceResult.spokenText}&quot;</strong>
