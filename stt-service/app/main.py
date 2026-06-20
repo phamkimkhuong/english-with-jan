@@ -4,6 +4,7 @@ import time
 from pathlib import Path
 
 from fastapi import Depends, FastAPI, File, HTTPException, Request, UploadFile
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.audio import AudioConversionError, convert_to_wav_16k_mono, is_ffmpeg_available
@@ -21,6 +22,7 @@ settings = get_settings()
 engine = WhisperEngine(settings.model_path, settings.download_root)
 auth_verifier = FirebaseTokenVerifier(settings.firebase_project_id)
 rate_limiter = RateLimiter(settings.rate_limit_per_minute)
+security = HTTPBearer(auto_error=False)
 
 app = FastAPI(title="English with Jan STT Service", version="0.1.0")
 
@@ -34,12 +36,30 @@ if settings.allowed_origins:
     )
 
 
-async def authenticate_request(request: Request) -> AuthenticatedUser | None:
+async def authenticate_request(
+    request: Request,
+    credentials: HTTPAuthorizationCredentials | None = Depends(security),
+) -> AuthenticatedUser | None:
     if not settings.auth_required:
         return None
 
+    token = None
+    if credentials:
+        token = credentials.credentials
+    else:
+        auth_header = request.headers.get("authorization")
+        if auth_header and auth_header.lower().startswith("bearer "):
+            token = auth_header[7:]
+
+    if not token:
+        raise HTTPException(
+            status_code=401,
+            detail="Authorization header is missing or invalid",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+
     try:
-        return auth_verifier.verify_authorization_header(request.headers.get("authorization"))
+        return auth_verifier.verify_token(token)
     except TokenVerificationUnavailable as exc:
         raise HTTPException(status_code=503, detail=str(exc)) from exc
     except TokenVerificationError as exc:
