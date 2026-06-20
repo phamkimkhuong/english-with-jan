@@ -46,7 +46,10 @@ def _read_origins() -> list[str]:
 
 
 def _read_model_path() -> str:
-    return os.getenv("STT_MODEL_PATH", "base.en").strip()
+    raw_value = os.getenv("STT_MODEL_PATH", "base.en").strip()
+    if "vosk" in raw_value.lower():
+        return "base.en"
+    return raw_value
 
 
 def _read_download_root() -> Path:
