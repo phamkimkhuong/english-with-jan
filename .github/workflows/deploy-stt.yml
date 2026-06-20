@@ -41,4 +41,7 @@ jobs:
           script: |
             echo "=== SYSTEMD STT-SERVICE LOGS ==="
             sudo journalctl -u stt-service -n 120 --no-pager
+            echo "=== MODELS DIRECTORY ==="
+            ls -la /opt/english-with-jan-stt/models
+
 
