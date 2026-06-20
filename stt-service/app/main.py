@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import time
+from pathlib import Path
 
 from fastapi import Depends, FastAPI, File, HTTPException, Request, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
@@ -14,10 +15,10 @@ from app.auth import (
 )
 from app.config import get_settings
 from app.rate_limit import RateLimiter
-from app.vosk_engine import VoskEngine, VoskEngineError
+from app.whisper_engine import WhisperEngine, WhisperEngineError
 
 settings = get_settings()
-engine = VoskEngine(settings.model_path)
+engine = WhisperEngine(settings.model_path, settings.download_root)
 auth_verifier = FirebaseTokenVerifier(settings.firebase_project_id)
 rate_limiter = RateLimiter(settings.rate_limit_per_minute)
 
@@ -71,11 +72,19 @@ def _enforce_rate_limit(request: Request, user: AuthenticatedUser | None) -> Non
 
 @app.get("/health")
 def health() -> dict[str, object]:
+    model_name = settings.model_path
+    download_root = settings.download_root
+    cache_dir_name = f"models--systran--faster-whisper-{model_name}"
+    model_exists = (
+        (download_root / cache_dir_name).exists()
+        or (download_root / model_name).exists()
+        or Path(model_name).exists()
+    )
     return {
         "ok": True,
-        "engine": "vosk",
-        "modelPath": str(settings.model_path),
-        "modelPathExists": settings.model_path.exists(),
+        "engine": "whisper",
+        "modelPath": model_name,
+        "modelPathExists": model_exists,
         "ffmpegAvailable": is_ffmpeg_available(),
         "authRequired": settings.auth_required,
         "authConfigured": (not settings.auth_required) or auth_verifier.is_configured,
@@ -112,14 +121,14 @@ async def transcribe(
         result = engine.transcribe_wav(converted_audio.wav_bytes)
     except AudioConversionError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
-    except VoskEngineError as exc:
+    except WhisperEngineError as exc:
         raise HTTPException(status_code=503, detail=str(exc)) from exc
 
     processing_ms = int((time.perf_counter() - started_at) * 1000)
 
     return {
-        "engine": "vosk",
-        "modelPath": str(settings.model_path),
+        "engine": "whisper",
+        "modelPath": settings.model_path,
         "transcript": result.transcript,
         "words": [word.__dict__ for word in result.words],
         "durationMs": converted_audio.duration_ms,

@@ -45,17 +45,22 @@ def _read_origins() -> list[str]:
     return [origin.strip() for origin in raw_value.split(",") if origin.strip()]
 
 
-def _read_model_path() -> Path:
-    raw_value = os.getenv("STT_MODEL_PATH", "./models/vosk-model-small-en-us-0.15")
-    model_path = Path(raw_value)
-    if model_path.is_absolute():
-        return model_path
-    return SERVICE_ROOT / model_path
+def _read_model_path() -> str:
+    return os.getenv("STT_MODEL_PATH", "base.en").strip()
+
+
+def _read_download_root() -> Path:
+    raw_value = os.getenv("STT_DOWNLOAD_ROOT", "./models")
+    download_root = Path(raw_value)
+    if download_root.is_absolute():
+        return download_root
+    return SERVICE_ROOT / download_root
 
 
 @dataclass(frozen=True)
 class Settings:
-    model_path: Path
+    model_path: str
+    download_root: Path
     allowed_origins: list[str]
     max_audio_bytes: int
     max_audio_seconds: int
@@ -68,6 +73,7 @@ class Settings:
 def get_settings() -> Settings:
     return Settings(
         model_path=_read_model_path(),
+        download_root=_read_download_root(),
         allowed_origins=_read_origins(),
         max_audio_bytes=_read_int("STT_MAX_AUDIO_BYTES", 5 * 1024 * 1024),
         max_audio_seconds=_read_int("STT_MAX_AUDIO_SECONDS", 18),
