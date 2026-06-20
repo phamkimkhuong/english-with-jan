@@ -8,6 +8,7 @@ from typing import Any
 
 import jwt
 import requests
+from cryptography.x509 import load_pem_x509_certificate
 
 FIREBASE_CERTS_URL = (
     "https://www.googleapis.com/robot/v1/metadata/x509/"
@@ -74,9 +75,15 @@ class FirebaseTokenVerifier:
         issuer = f"https://securetoken.google.com/{self._project_id}"
 
         try:
+            cert_obj = load_pem_x509_certificate(cert.encode("utf-8"))
+            public_key = cert_obj.public_key()
+        except Exception as exc:
+            raise TokenVerificationError("failed to parse Firebase public certificate") from exc
+
+        try:
             claims = jwt.decode(
                 token,
-                cert,
+                public_key,
                 algorithms=["RS256"],
                 audience=self._project_id,
                 issuer=issuer,

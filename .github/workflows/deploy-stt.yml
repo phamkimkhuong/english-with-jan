@@ -22,23 +22,13 @@ jobs:
           script_stop: true
           script: |
             set -e
-            echo "Running diagnostic script..."
-            sudo -u stt /opt/english-with-jan-stt/.venv/bin/python -c "
-            import jwt, cryptography, requests
-            print('JWT version:', jwt.__version__)
-            print('Cryptography version:', cryptography.__version__)
-            r = requests.get('https://www.googleapis.com/robot/v1/metadata/x509/securetoken@system.gserviceaccount.com')
-            certs = r.json()
-            first_key = list(certs.keys())[0]
-            cert = certs[first_key]
-            print('Cert start:', cert[:50])
-            try:
-                from cryptography.x509 import load_pem_x509_certificate
-                c = load_pem_x509_certificate(cert.encode('utf-8'))
-                print('Certificate parsed successfully!')
-            except Exception as e:
-                print('Failed to parse cert:', e)
-            "
+            echo "Starting deploy of English with Jan STT Service..."
+            if [ -f /usr/local/bin/update-english-with-jan-stt-git ]; then
+              sudo /usr/local/bin/update-english-with-jan-stt-git
+            else
+              echo "Symlink not found, running bootstrap update from source..."
+              sudo /opt/english-with-jan-stt/deploy/oracle/update-from-git.sh
+            fi
 
       - name: Fetch logs on failure
         if: failure()
@@ -53,8 +43,6 @@ jobs:
             sudo journalctl -u stt-service -n 120 --no-pager
             echo "=== MODELS DIRECTORY ==="
             ls -la /opt/english-with-jan-stt/models
-            echo "=== RUNNING PRE-DOWNLOAD MANUALLY TO SEE ERROR ==="
-            sudo -u stt /opt/english-with-jan-stt/.venv/bin/python -c "from faster_whisper import WhisperModel; WhisperModel('small.en', device='cpu', compute_type='int8', download_root='/opt/english-with-jan-stt/models')"
 
 
 
