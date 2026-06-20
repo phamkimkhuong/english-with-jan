@@ -29,3 +29,16 @@ jobs:
               echo "Symlink not found, running bootstrap update from source..."
               sudo /opt/english-with-jan-stt/deploy/oracle/update-from-git.sh
             fi
+
+      - name: Fetch logs on failure
+        if: failure()
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.STT_VPS_HOST }}
+          username: ${{ secrets.STT_VPS_USERNAME }}
+          key: ${{ secrets.STT_VPS_SSH_KEY }}
+          port: ${{ secrets.STT_VPS_PORT || 22 }}
+          script: |
+            echo "=== SYSTEMD STT-SERVICE LOGS ==="
+            sudo journalctl -u stt-service -n 120 --no-pager
+
