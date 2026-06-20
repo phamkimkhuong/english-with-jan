@@ -46,9 +46,9 @@ def _read_origins() -> list[str]:
 
 
 def _read_model_path() -> str:
-    raw_value = os.getenv("STT_MODEL_PATH", "base.en").strip()
+    raw_value = os.getenv("STT_MODEL_PATH", "small.en").strip()
     if "vosk" in raw_value.lower():
-        return "base.en"
+        return "small.en"
     return raw_value
 
 

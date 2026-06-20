@@ -138,7 +138,7 @@ ensure_venv_and_dependencies() {
   fi
 
   log "Ensuring Whisper model is cached..."
-  sudo -u "$SERVICE_USER" "$APP_DIR/.venv/bin/python" -c "from faster_whisper import WhisperModel; WhisperModel('base.en', device='cpu', compute_type='int8', download_root='$APP_DIR/models')"
+  sudo -u "$SERVICE_USER" "$APP_DIR/.venv/bin/python" -c "from faster_whisper import WhisperModel; WhisperModel('small.en', device='cpu', compute_type='int8', download_root='$APP_DIR/models')"
 }
 
 install_systemd_unit() {
