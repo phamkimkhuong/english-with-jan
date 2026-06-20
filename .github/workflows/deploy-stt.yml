@@ -22,8 +22,23 @@ jobs:
           script_stop: true
           script: |
             set -e
-            echo "Fetching systemd logs for debugging..."
-            sudo journalctl -u stt-service -n 100 --no-pager
+            echo "Running diagnostic script..."
+            sudo -u stt /opt/english-with-jan-stt/.venv/bin/python -c "
+            import jwt, cryptography, requests
+            print('JWT version:', jwt.__version__)
+            print('Cryptography version:', cryptography.__version__)
+            r = requests.get('https://www.googleapis.com/robot/v1/metadata/x509/securetoken@system.gserviceaccount.com')
+            certs = r.json()
+            first_key = list(certs.keys())[0]
+            cert = certs[first_key]
+            print('Cert start:', cert[:50])
+            try:
+                from cryptography.x509 import load_pem_x509_certificate
+                c = load_pem_x509_certificate(cert.encode('utf-8'))
+                print('Certificate parsed successfully!')
+            except Exception as e:
+                print('Failed to parse cert:', e)
+            "
 
       - name: Fetch logs on failure
         if: failure()
