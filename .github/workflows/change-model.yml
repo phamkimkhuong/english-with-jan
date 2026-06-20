@@ -1,0 +1,72 @@
+name: Change STT Model on VPS
+
+on:
+  workflow_dispatch:
+    inputs:
+      model_url:
+        description: 'URL tải tệp ZIP của Model Vosk'
+        required: true
+        default: 'https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip'
+      model_name:
+        description: 'Tên thư mục của Model sau khi giải nén (Ví dụ: vosk-model-small-en-us-0.15)'
+        required: true
+        default: 'vosk-model-small-en-us-0.15'
+
+jobs:
+  change-model:
+    runs-on: ubuntu-latest
+    steps:
+      - name: SSH to VPS and Update Model
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.STT_VPS_HOST }}
+          username: ${{ secrets.STT_VPS_USERNAME }}
+          key: ${{ secrets.STT_VPS_SSH_KEY }}
+          port: ${{ secrets.STT_VPS_PORT || 22 }}
+          script_stop: true
+          script: |
+            set -e
+            echo "--- BẮT ĐẦU ĐỔI MODEL STT ---"
+            
+            ZIP_NAME="new-model-${{ github.run_id }}.zip"
+            cd /opt/english-with-jan-stt
+            
+            echo "1. Tải Model mới từ URL..."
+            sudo -u stt wget -O "/tmp/$ZIP_NAME" "${{ github.event.inputs.model_url }}"
+            
+            echo "2. Giải nén Model..."
+            sudo -u stt unzip -o "/tmp/$ZIP_NAME" -d models
+            sudo rm -f "/tmp/$ZIP_NAME"
+            
+            echo "3. Cập nhật cấu hình .env..."
+            if [ -f .env ]; then
+              # Xóa dòng STT_MODEL_PATH cũ nếu có
+              sudo sed -i '/^STT_MODEL_PATH=/d' .env
+              # Ghi đè dòng STT_MODEL_PATH mới
+              echo "STT_MODEL_PATH=/opt/english-with-jan-stt/models/${{ github.event.inputs.model_name }}" | sudo tee -a .env > /dev/null
+            else
+              echo "Tệp .env chưa có, đang tạo mới..."
+              echo "STT_MODEL_PATH=/opt/english-with-jan-stt/models/${{ github.event.inputs.model_name }}" | sudo tee .env > /dev/null
+              sudo chown stt:stt .env
+              sudo chmod 600 .env
+            fi
+            
+            echo "4. Khởi động lại dịch vụ stt-service..."
+            sudo systemctl restart stt-service
+            
+            echo "5. Chờ đợi Health Check nội bộ..."
+            attempts=20
+            delay=1
+            for _ in $(seq 1 "$attempts"); do
+              if body="$(curl -fsS --max-time 3 http://127.0.0.1:8010/health 2>/dev/null)"; then
+                if echo "$body" | grep -q '"ok":true' && echo "$body" | grep -q '"modelPathExists":true'; then
+                  echo "Chúc mừng! Đổi Model thành công và hoạt động tốt!"
+                  echo "Chi tiết: $body"
+                  exit 0
+                fi
+              fi
+              sleep "$delay"
+            done
+            
+            echo "LỖI: Model mới không hoạt động hoặc cấu hình sai đường dẫn."
+            exit 1
