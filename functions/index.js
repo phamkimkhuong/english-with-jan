@@ -124,3 +124,120 @@ exports.generateTTS = onRequest({ cors: true }, async (req, res) => {
     });
   }
 });
+
+/**
+ * Firebase Cloud Function v2 HTTPS handler to generate confusing keyterms (minimal pairs) for a word or phrase using Gemini API.
+ */
+exports.generateKeyterms = onRequest({ cors: true }, async (req, res) => {
+  // Chỉ chấp nhận phương thức POST
+  if (req.method !== "POST") {
+    res.status(405).json({ error: "Method Not Allowed. Vui lòng dùng phương thức POST." });
+    return;
+  }
+
+  // Xác thực API Key bảo mật từ biến môi trường
+  const apiKey = req.headers["x-api-key"];
+  const expectedApiKey = process.env.TTS_API_KEY;
+
+  if (!expectedApiKey || apiKey !== expectedApiKey) {
+    res.status(401).json({ error: "Unauthorized. API Key không hợp lệ." });
+    return;
+  }
+
+  try {
+    const { text, ipa } = req.body || {};
+
+    if (!text || text.trim() === "") {
+      res.status(400).json({ error: "Thiếu tham số 'text'." });
+      return;
+    }
+
+    const geminiApiKey = process.env.GEMINI_API_KEY;
+    if (!geminiApiKey) {
+      res.status(500).json({ error: "GEMINI_API_KEY chưa được cấu hình trong môi trường." });
+      return;
+    }
+
+    const prompt = `You are a phonetic expert and English teacher.
+Given the English word/phrase: "${text.trim()}" ${ipa && ipa.trim() ? `(IPA pronunciation: ${ipa.trim()})` : ''}.
+Generate a list of 3 to 10 similar-sounding English words or common mispronunciations (minimal pairs or phonetically confusing words) that Vietnamese learners often confuse with this word/phrase.
+For example, for "ship", confusing words are "sheep", "sip", "chip", "shib".
+For "think", confusing words are "sink", "tink", "fink".
+
+Important requirements:
+- The first element of the list must be the original word/phrase: "${text.trim()}".
+- All words must be in English.
+- Return ONLY a valid JSON array of strings, for example: ["ship", "sheep", "sip", "chip"].
+- Do NOT include any markdown code blocks, explanations, or extra characters.
+- If you cannot generate any confusing words, return at least: ["${text.trim()}"].`;
+
+    // Ưu tiên các model theo thứ tự
+    const models = [
+      "gemini-2.5-flash",
+      "gemini-2.5-flash-lite",
+      "gemini-1.5-flash"
+    ];
+
+    let responseData = null;
+    let success = false;
+    let errorLog = [];
+
+    for (const model of models) {
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${geminiApiKey}`;
+      try {
+        const response = await fetch(url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            contents: [{ role: "user", parts: [{ text: prompt }] }],
+            generationConfig: {
+              responseMimeType: "application/json"
+            }
+          }),
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          const textResponse = data?.candidates?.[0]?.content?.parts?.[0]?.text;
+          if (textResponse) {
+            try {
+              const parsed = JSON.parse(textResponse.trim());
+              if (Array.isArray(parsed) && parsed.length > 0) {
+                responseData = parsed;
+                success = true;
+                break;
+              }
+            } catch (jsonErr) {
+              errorLog.push(`Model ${model} JSON parse error: ${jsonErr.message}. Response: ${textResponse}`);
+            }
+          }
+        } else {
+          const errText = await response.text();
+          errorLog.push(`Model ${model} HTTP error ${response.status}: ${errText}`);
+        }
+      } catch (fetchErr) {
+        errorLog.push(`Model ${model} fetch failed: ${fetchErr.message}`);
+      }
+    }
+
+    if (!success) {
+      console.error("Tất cả các model Gemini đều thất bại. Nhật ký lỗi:", errorLog);
+      responseData = [text.trim()];
+    }
+
+    res.status(200).json({
+      success: true,
+      keyterms: responseData
+    });
+
+  } catch (error) {
+    console.error("Lỗi xảy ra trong quá trình sinh keyterms:", error);
+    res.status(500).json({
+      error: "Internal Server Error",
+      message: error.message
+    });
+  }
+});
+
