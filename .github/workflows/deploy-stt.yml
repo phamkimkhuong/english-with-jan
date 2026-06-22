@@ -44,20 +44,7 @@ jobs:
             echo "=== MODELS DIRECTORY ==="
             ls -la /opt/english-with-jan-stt/models
             echo "=== RUNNING PRE-DOWNLOAD MANUALLY TO SEE OUTPUT ==="
-            cat << 'EOF' > /tmp/diag.py
-import os, sys
-print('Python:', sys.executable)
-print('Cwd:', os.getcwd())
-print('Env:', os.environ.get('HF_HOME'))
-from faster_whisper import WhisperModel
-try:
-    model = WhisperModel('base.en', device='cpu', compute_type='int8', download_root='/opt/english-with-jan-stt/models')
-    print('Success loading base.en!')
-except Exception as e:
-    print('Error loading base.en:', e)
-EOF
-            sudo -u stt /opt/english-with-jan-stt/.venv/bin/python /tmp/diag.py
-            rm -f /tmp/diag.py
+            sudo -u stt /opt/english-with-jan-stt/.venv/bin/python -c "import os, sys; print('Python:', sys.executable); print('Cwd:', os.getcwd()); print('Env:', os.environ.get('HF_HOME')); from faster_whisper import WhisperModel; model = WhisperModel('base.en', device='cpu', compute_type='int8', download_root='/opt/english-with-jan-stt/models'); print('Success loading base.en!')"
             echo "=== MODELS DIRECTORY AFTER ==="
             ls -la /opt/english-with-jan-stt/models
 
