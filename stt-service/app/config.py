@@ -86,6 +86,6 @@ def get_settings() -> Settings:
         auth_required=_read_bool("STT_AUTH_REQUIRED", True),
         firebase_project_id=_read_optional_string("STT_FIREBASE_PROJECT_ID"),
         rate_limit_per_minute=_read_int("STT_RATE_LIMIT_PER_MINUTE", 30),
-        whisper_beam_size=_read_int("STT_WHISPER_BEAM_SIZE", 2),
+        whisper_beam_size=_read_int("STT_WHISPER_BEAM_SIZE", 5),
         whisper_vad_filter=_read_bool("STT_WHISPER_VAD_FILTER", True),
     )
