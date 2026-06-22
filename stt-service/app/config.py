@@ -46,9 +46,9 @@ def _read_origins() -> list[str]:
 
 
 def _read_model_path() -> str:
-    raw_value = os.getenv("STT_MODEL_PATH", "small.en").strip()
+    raw_value = os.getenv("STT_MODEL_PATH", "base.en").strip()
     if "vosk" in raw_value.lower():
-        return "small.en"
+        return "base.en"
     return raw_value
 
 
@@ -71,6 +71,8 @@ class Settings:
     auth_required: bool
     firebase_project_id: str | None
     rate_limit_per_minute: int
+    whisper_beam_size: int
+    whisper_vad_filter: bool
 
 
 def get_settings() -> Settings:
@@ -84,4 +86,6 @@ def get_settings() -> Settings:
         auth_required=_read_bool("STT_AUTH_REQUIRED", True),
         firebase_project_id=_read_optional_string("STT_FIREBASE_PROJECT_ID"),
         rate_limit_per_minute=_read_int("STT_RATE_LIMIT_PER_MINUTE", 30),
+        whisper_beam_size=_read_int("STT_WHISPER_BEAM_SIZE", 2),
+        whisper_vad_filter=_read_bool("STT_WHISPER_VAD_FILTER", True),
     )

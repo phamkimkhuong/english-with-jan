@@ -26,9 +26,17 @@ class SttResult:
 
 
 class WhisperEngine:
-    def __init__(self, model_path_or_size: str | Path, download_root: Path | None = None) -> None:
+    def __init__(
+        self,
+        model_path_or_size: str | Path,
+        download_root: Path | None = None,
+        beam_size: int = 5,
+        vad_filter: bool = False,
+    ) -> None:
         self._model_path_or_size = model_path_or_size
         self._download_root = download_root
+        self._beam_size = beam_size
+        self._vad_filter = vad_filter
         self._model: Any | None = None
         self._model_lock = threading.Lock()
 
@@ -41,7 +49,8 @@ class WhisperEngine:
             segments, info = model.transcribe(
                 audio_file,
                 word_timestamps=True,
-                beam_size=5,
+                beam_size=self._beam_size,
+                vad_filter=self._vad_filter,
             )
             # Iterate through the generator to execute transcription
             segments_list = list(segments)

@@ -19,7 +19,12 @@ from app.rate_limit import RateLimiter
 from app.whisper_engine import WhisperEngine, WhisperEngineError
 
 settings = get_settings()
-engine = WhisperEngine(settings.model_path, settings.download_root)
+engine = WhisperEngine(
+    settings.model_path,
+    settings.download_root,
+    beam_size=settings.whisper_beam_size,
+    vad_filter=settings.whisper_vad_filter,
+)
 auth_verifier = FirebaseTokenVerifier(settings.firebase_project_id)
 rate_limiter = RateLimiter(settings.rate_limit_per_minute)
 security = HTTPBearer(auto_error=False)
