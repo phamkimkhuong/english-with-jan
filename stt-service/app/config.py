@@ -73,9 +73,12 @@ class Settings:
     rate_limit_per_minute: int
     whisper_beam_size: int
     whisper_vad_filter: bool
+    stt_active_engine: str
+    deepgram_api_key: str | None
 
 
 def get_settings() -> Settings:
+    active_engine = _read_optional_string("STT_ACTIVE_ENGINE") or "deepgram"
     return Settings(
         model_path=_read_model_path(),
         download_root=_read_download_root(),
@@ -88,4 +91,6 @@ def get_settings() -> Settings:
         rate_limit_per_minute=_read_int("STT_RATE_LIMIT_PER_MINUTE", 30),
         whisper_beam_size=_read_int("STT_WHISPER_BEAM_SIZE", 5),
         whisper_vad_filter=_read_bool("STT_WHISPER_VAD_FILTER", True),
+        stt_active_engine=active_engine.lower().strip(),
+        deepgram_api_key=_read_optional_string("STT_DEEPGRAM_API_KEY"),
     )

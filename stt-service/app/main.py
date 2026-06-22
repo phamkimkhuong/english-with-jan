@@ -16,15 +16,20 @@ from app.auth import (
 )
 from app.config import get_settings
 from app.rate_limit import RateLimiter
+import logging
 from app.whisper_engine import WhisperEngine, WhisperEngineError
+from app.deepgram_engine import DeepgramEngine, DeepgramEngineError
+
+logger = logging.getLogger("uvicorn.error")
 
 settings = get_settings()
-engine = WhisperEngine(
+whisper_engine = WhisperEngine(
     settings.model_path,
     settings.download_root,
     beam_size=settings.whisper_beam_size,
     vad_filter=settings.whisper_vad_filter,
 )
+deepgram_engine = DeepgramEngine(settings.deepgram_api_key)
 auth_verifier = FirebaseTokenVerifier(settings.firebase_project_id)
 rate_limiter = RateLimiter(settings.rate_limit_per_minute)
 security = HTTPBearer(auto_error=False)
@@ -110,13 +115,14 @@ def health() -> dict[str, object]:
         model_exists = (download_root / model_name).exists() or Path(model_name).exists()
     return {
         "ok": True,
-        "engine": "whisper",
+        "engine": settings.stt_active_engine,
         "modelPath": model_name,
         "modelPathExists": model_exists,
         "ffmpegAvailable": is_ffmpeg_available(),
         "authRequired": settings.auth_required,
         "authConfigured": (not settings.auth_required) or auth_verifier.is_configured,
         "rateLimitPerMinute": rate_limiter.requests_per_minute,
+        "deepgramConfigured": settings.deepgram_api_key is not None,
     }
 
 
@@ -146,17 +152,37 @@ async def transcribe(
             max_audio_seconds=settings.max_audio_seconds,
             timeout_seconds=settings.ffmpeg_timeout_seconds,
         )
-        result = engine.transcribe_wav(converted_audio.wav_bytes)
     except AudioConversionError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
-    except WhisperEngineError as exc:
-        raise HTTPException(status_code=503, detail=str(exc)) from exc
+
+    engine_used = "whisper"
+    model_used = settings.model_path
+    result = None
+
+    if settings.stt_active_engine == "deepgram":
+        if settings.deepgram_api_key:
+            try:
+                result = deepgram_engine.transcribe_wav(converted_audio.wav_bytes)
+                engine_used = "deepgram"
+                model_used = "nova-3"
+            except DeepgramEngineError as exc:
+                logger.warning("Deepgram STT failed (%s). Falling back to local Whisper.", exc)
+        else:
+            logger.warning("STT_ACTIVE_ENGINE is set to 'deepgram' but STT_DEEPGRAM_API_KEY is not configured. Falling back to local Whisper.")
+
+    if result is None:
+        try:
+            result = whisper_engine.transcribe_wav(converted_audio.wav_bytes)
+            engine_used = "whisper"
+            model_used = settings.model_path
+        except WhisperEngineError as exc:
+            raise HTTPException(status_code=503, detail=str(exc)) from exc
 
     processing_ms = int((time.perf_counter() - started_at) * 1000)
 
     return {
-        "engine": "whisper",
-        "modelPath": settings.model_path,
+        "engine": engine_used,
+        "modelPath": model_used,
         "transcript": result.transcript,
         "words": [word.__dict__ for word in result.words],
         "durationMs": converted_audio.duration_ms,
