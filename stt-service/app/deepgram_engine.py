@@ -1,7 +1,8 @@
-from __future__ import annotations
-
+import logging
 import requests
 from app.whisper_engine import SttResult, RecognizedWord
+
+logger = logging.getLogger("uvicorn.error")
 
 
 class DeepgramEngineError(RuntimeError):
@@ -12,7 +13,7 @@ class DeepgramEngine:
     def __init__(self, api_key: str | None) -> None:
         self._api_key = api_key
 
-    def transcribe_wav(self, wav_bytes: bytes) -> SttResult:
+    def transcribe_wav(self, wav_bytes: bytes, keyterms: list[str] | None = None) -> SttResult:
         if not self._api_key:
             raise DeepgramEngineError("STT_DEEPGRAM_API_KEY is not configured")
 
@@ -22,8 +23,13 @@ class DeepgramEngine:
             "Content-Type": "audio/wav",
         }
 
+        params = {}
+        if keyterms:
+            logger.info("Deepgram transcribing with keyterms: %s", keyterms)
+            params["keyterm"] = keyterms
+
         try:
-            response = requests.post(url, headers=headers, data=wav_bytes, timeout=8)
+            response = requests.post(url, headers=headers, data=wav_bytes, params=params, timeout=8)
             if response.status_code == 402:
                 raise DeepgramEngineError("Deepgram API credit exhausted (402 Payment Required)")
             response.raise_for_status()

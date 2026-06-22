@@ -3,7 +3,7 @@ from __future__ import annotations
 import time
 from pathlib import Path
 
-from fastapi import Depends, FastAPI, File, HTTPException, Request, UploadFile
+from fastapi import Depends, FastAPI, File, HTTPException, Request, UploadFile, Form
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -126,10 +126,41 @@ def health() -> dict[str, object]:
     }
 
 
+def _parse_keyterms(keyterms: list[str] | None) -> list[str] | None:
+    if not keyterms:
+        return None
+
+    parsed = []
+    for item in keyterms:
+        item = item.strip()
+        if not item:
+            continue
+        # Support JSON arrays (e.g. '["ship", "sheep"]')
+        if (item.startswith("[") and item.endswith("]")) or (item.startswith("{") and item.endswith("}")):
+            try:
+                import json
+                val = json.loads(item)
+                if isinstance(val, list):
+                    parsed.extend([str(v).strip() for v in val if str(v).strip()])
+                    continue
+            except json.JSONDecodeError:
+                pass
+        
+        # Support comma-separated strings (e.g. 'ship,sheep')
+        if "," in item:
+            parts = [p.strip() for p in item.split(",") if p.strip()]
+            parsed.extend(parts)
+        else:
+            parsed.append(item)
+
+    return parsed if parsed else None
+
+
 @app.post("/v1/stt")
 async def transcribe(
     request: Request,
     audio: UploadFile = File(...),
+    keyterms: list[str] | None = Form(None),
     user: AuthenticatedUser | None = Depends(authenticate_request),
 ) -> dict[str, object]:
     started_at = time.perf_counter()
@@ -162,7 +193,8 @@ async def transcribe(
     if settings.stt_active_engine == "deepgram":
         if settings.deepgram_api_key:
             try:
-                result = deepgram_engine.transcribe_wav(converted_audio.wav_bytes)
+                parsed_keyterms = _parse_keyterms(keyterms)
+                result = deepgram_engine.transcribe_wav(converted_audio.wav_bytes, keyterms=parsed_keyterms)
                 engine_used = "deepgram"
                 model_used = "nova-3"
             except DeepgramEngineError as exc:
