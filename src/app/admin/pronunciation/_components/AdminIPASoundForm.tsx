@@ -199,6 +199,62 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
     }
   };
 
+  const handleGenerateKeyterms = async (
+    text: string,
+    exampleIndex: number,
+    ipa?: string
+  ) => {
+    if (!text || text.trim() === "") {
+      toast.error("Vui lòng nhập Từ vựng / Câu mẫu trước khi sinh từ dễ đọc sai.");
+      return;
+    }
+
+    const ttsUrl = process.env.NEXT_PUBLIC_GCP_TTS_FUNCTION_URL || "";
+    const functionUrl = process.env.NEXT_PUBLIC_GCP_KEYTERMS_FUNCTION_URL || ttsUrl.replace("generatetts", "generatekeyterms");
+    const apiKey = process.env.NEXT_PUBLIC_TTS_API_KEY;
+
+    if (!functionUrl || functionUrl.trim() === "") {
+      toast.error("NEXT_PUBLIC_GCP_TTS_FUNCTION_URL chưa được thiết lập trong .env.local.");
+      return;
+    }
+
+    const key = `keyterms_${exampleIndex}`;
+    setGeneratingField(key);
+
+    try {
+      const response = await fetch(functionUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "x-api-key": apiKey || "",
+        },
+        body: JSON.stringify({
+          text: text.trim(),
+          ipa: ipa ? ipa.trim() : undefined,
+        }),
+      });
+
+      if (!response.ok) {
+        const errData = await response.json().catch(() => ({}));
+        throw new Error(errData.message || errData.error || `Lỗi HTTP ${response.status}`);
+      }
+
+      const data = await response.json();
+      if (data.success && data.keyterms) {
+        updateExample(exampleIndex, { keyterms: data.keyterms });
+        toast.success(`Đã tự động gợi ý từ dễ đọc sai thành công!`);
+      } else {
+        throw new Error("Không nhận được danh sách keyterms từ phản hồi.");
+      }
+    } catch (err: unknown) {
+      const errorMsg = err instanceof Error ? err.message : String(err);
+      logger.error("Lỗi sinh từ dễ đọc sai từ AI:", err);
+      toast.error(`Lỗi sinh gợi ý: ${errorMsg || "Không thể kết nối tới Cloud Function"}`);
+    } finally {
+      setGeneratingField(null);
+    }
+  };
+
   const playAudio = (url?: string) => {
     if (!url) return;
     const audio = new Audio(url);
@@ -524,6 +580,93 @@ export const AdminIPASoundForm: React.FC<AdminIPASoundFormProps> = ({
                     onChange={(e) => updateExample(originalIndex, { meaning: e.target.value })}
                     className={styles.exampleInput}
                   />
+                </div>
+
+                {/* Từ dễ đọc sai (Keyterms) */}
+                <div style={{ marginTop: "12px", display: "flex", flexDirection: "column", gap: "6px" }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <span style={{ fontSize: "0.8rem", fontWeight: "bold", color: "var(--foreground-rgb)" }}>
+                      Từ dễ đọc sai để so khớp (Keyterms):
+                    </span>
+                    {ex.word && ex.word.trim() !== "" && (
+                      <button
+                        type="button"
+                        disabled={generatingField === `keyterms_${originalIndex}`}
+                        onClick={() => handleGenerateKeyterms(ex.word, originalIndex, ex.ipa)}
+                        className="btn btn-outline"
+                        style={{ padding: "4px 8px", height: "28px", fontSize: "0.75rem", display: "flex", alignItems: "center", gap: "4px" }}
+                      >
+                        {generatingField === `keyterms_${originalIndex}` ? "⏳ Đang gợi ý..." : "💡 Gợi ý từ dễ đọc sai (AI)"}
+                      </button>
+                    )}
+                  </div>
+                  
+                  {ex.keyterms && ex.keyterms.length > 0 ? (
+                    <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", padding: "8px", background: "rgba(var(--foreground-rgb), 0.02)", borderRadius: "6px", border: "1px solid rgb(var(--card-border-rgb))" }}>
+                      {ex.keyterms.map((kt, ktIdx) => (
+                        <span
+                          key={ktIdx}
+                          style={{
+                            display: "inline-flex",
+                            alignItems: "center",
+                            gap: "4px",
+                            fontSize: "0.75rem",
+                            padding: "2px 8px",
+                            borderRadius: "4px",
+                            backgroundColor: ktIdx === 0 ? "rgba(var(--primary-rgb), 0.1)" : "rgba(var(--foreground-rgb), 0.05)",
+                            color: ktIdx === 0 ? "rgb(var(--primary-rgb))" : "var(--foreground-rgb)",
+                            fontWeight: ktIdx === 0 ? "bold" : "normal",
+                            border: "1px solid " + (ktIdx === 0 ? "rgba(var(--primary-rgb), 0.2)" : "rgba(var(--foreground-rgb), 0.1)")
+                          }}
+                        >
+                          {kt}
+                          {ktIdx > 0 && (
+                            <button
+                              type="button"
+                              onClick={() => {
+                                const newKts = ex.keyterms?.filter((_, i) => i !== ktIdx);
+                                updateExample(originalIndex, { keyterms: newKts });
+                              }}
+                              style={{ border: "none", background: "none", cursor: "pointer", padding: 0, display: "inline-flex", alignItems: "center", color: "rgb(239, 68, 68)" }}
+                            >
+                              ✕
+                            </button>
+                          )}
+                        </span>
+                      ))}
+                      {/* Thêm từ khóa thủ công */}
+                      <input
+                        type="text"
+                        placeholder="+ Thêm từ..."
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter") {
+                            e.preventDefault();
+                            const val = e.currentTarget.value.trim();
+                            if (val) {
+                              const currentKts = ex.keyterms || [];
+                              if (!currentKts.includes(val)) {
+                                updateExample(originalIndex, { keyterms: [...currentKts, val] });
+                              }
+                              e.currentTarget.value = "";
+                            }
+                          }
+                        }}
+                        style={{
+                          border: "none",
+                          background: "none",
+                          fontSize: "0.75rem",
+                          outline: "none",
+                          padding: "2px 4px",
+                          width: "80px",
+                          color: "var(--foreground-rgb)"
+                        }}
+                      />
+                    </div>
+                  ) : (
+                    <div style={{ fontSize: "0.75rem", color: "rgb(var(--secondary-rgb))", fontStyle: "italic" }}>
+                      Chưa cấu hình từ khóa so khớp. {ex.word ? "Bấm nút gợi ý ở trên để AI tự động tìm các từ dễ phát âm sai." : "Nhập câu mẫu để kích hoạt gợi ý."}
+                    </div>
+                  )}
                 </div>
 
                 {/* Giọng Nữ */}

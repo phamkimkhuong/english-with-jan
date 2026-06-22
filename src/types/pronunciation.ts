@@ -14,6 +14,7 @@ export const IPAExampleSchema = z.object({
   type: z.enum(["word", "phrase", "sentence"]).optional().default("word"),
   partOfSpeech: z.string().optional(),
   hidden: z.boolean().optional().default(false),
+  keyterms: z.array(z.string()).optional(),
 });
 
 export const IPASoundSchema = z.object({

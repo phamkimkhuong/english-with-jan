@@ -159,23 +159,26 @@ exports.generateKeyterms = onRequest({ cors: true }, async (req, res) => {
     }
 
     const prompt = `You are a phonetic expert and English teacher.
-Given the English word/phrase: "${text.trim()}" ${ipa && ipa.trim() ? `(IPA pronunciation: ${ipa.trim()})` : ''}.
-Generate a list of 3 to 10 similar-sounding English words or common mispronunciations (minimal pairs or phonetically confusing words) that Vietnamese learners often confuse with this word/phrase.
-For example, for "ship", confusing words are "sheep", "sip", "chip", "shib".
-For "think", confusing words are "sink", "tink", "fink".
+Given the English text: "${text.trim()}" ${ipa && ipa.trim() ? `(IPA pronunciation: ${ipa.trim()})` : ''}.
 
-Important requirements:
-- The first element of the list must be the original word/phrase: "${text.trim()}".
-- All words must be in English.
+Instructions:
+1. If the input is a single word: Generate 3 to 8 similar-sounding English words or minimal pairs that Vietnamese learners often confuse with it (e.g., "ship" -> "sheep", "sip", "chip").
+2. If the input is a phrase or sentence: Do NOT attempt to find confusing words for every single word. Instead, identify 1 to 3 core phonetic-heavy words (e.g., words with 'sh', 'ch', 'th', long/short vowels, or ending consonants) and generate similar-sounding words ONLY for those selected target words.
+3. Return a single flat JSON array of strings containing the original text/words and the generated confusing words. 
+
+Requirements:
+- The first element of the list must be the original text: "${text.trim()}".
 - Return ONLY a valid JSON array of strings, for example: ["ship", "sheep", "sip", "chip"].
-- Do NOT include any markdown code blocks, explanations, or extra characters.
-- If you cannot generate any confusing words, return at least: ["${text.trim()}"].`;
+- Do NOT include any markdown formatting, code blocks (such as \`\`\`json), or explanations.`;
+
 
     // Ưu tiên các model theo thứ tự
     const models = [
+      "gemini-3.5-flash",
+      "gemini-3-flash",
+      "gemini-3.1-flash-lite",
       "gemini-2.5-flash",
-      "gemini-2.5-flash-lite",
-      "gemini-1.5-flash"
+      "gemini-2.5-flash-lite"
     ];
 
     let responseData = null;
