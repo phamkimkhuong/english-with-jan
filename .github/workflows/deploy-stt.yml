@@ -31,7 +31,7 @@ jobs:
             fi
 
       - name: Fetch logs on failure
-        if: failure()
+        if: always()
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.STT_VPS_HOST }}
@@ -40,8 +40,25 @@ jobs:
           port: ${{ secrets.STT_VPS_PORT || 22 }}
           script: |
             echo "=== SYSTEMD STT-SERVICE LOGS ==="
-            sudo journalctl -u stt-service -n 120 --no-pager
+            sudo journalctl -u stt-service -n 50 --no-pager
             echo "=== MODELS DIRECTORY ==="
+            ls -la /opt/english-with-jan-stt/models
+            echo "=== RUNNING PRE-DOWNLOAD MANUALLY TO SEE OUTPUT ==="
+            cat << 'EOF' > /tmp/diag.py
+import os, sys
+print('Python:', sys.executable)
+print('Cwd:', os.getcwd())
+print('Env:', os.environ.get('HF_HOME'))
+from faster_whisper import WhisperModel
+try:
+    model = WhisperModel('base.en', device='cpu', compute_type='int8', download_root='/opt/english-with-jan-stt/models')
+    print('Success loading base.en!')
+except Exception as e:
+    print('Error loading base.en:', e)
+EOF
+            sudo -u stt /opt/english-with-jan-stt/.venv/bin/python /tmp/diag.py
+            rm -f /tmp/diag.py
+            echo "=== MODELS DIRECTORY AFTER ==="
             ls -la /opt/english-with-jan-stt/models
 
 
