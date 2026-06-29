@@ -32,7 +32,7 @@ yarn-error.log*
 .pnpm-debug.log*
 firebase-debug.log*
 gcp-key.json
-
+~$ sounds for web.docx
 # env files (can opt-in for committing if needed)
 .env*
 !.env.example

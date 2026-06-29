@@ -69,6 +69,42 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
     savedPracticeKey
   );
 
+  const wordExamples = React.useMemo(() => {
+    if (!selectedSound) return [];
+    return selectedSound.examples.filter((ex) => (!ex.type || ex.type === "word") && ex.hidden !== true);
+  }, [selectedSound]);
+
+  const phraseExamples = React.useMemo(() => {
+    if (!selectedSound) return [];
+    return selectedSound.examples.filter((ex) => ex.type === "phrase" && ex.hidden !== true);
+  }, [selectedSound]);
+
+  const sentenceExamples = React.useMemo(() => {
+    if (!selectedSound) return [];
+    return selectedSound.examples.filter((ex) => ex.type === "sentence" && ex.hidden !== true);
+  }, [selectedSound]);
+
+  // Gom nhóm từ vựng theo mẫu chính tả (spelling pattern) trích xuất từ displayWord
+  const groupedWords = React.useMemo(() => {
+    const groups: Record<string, typeof wordExamples> = {};
+    
+    wordExamples.forEach((ex) => {
+      let pattern = "KHÁC";
+      if (ex.displayWord) {
+        const match = ex.displayWord.match(/{(.+?)}/);
+        if (match) {
+          pattern = match[1].toUpperCase();
+        }
+      }
+      if (!groups[pattern]) {
+        groups[pattern] = [];
+      }
+      groups[pattern].push(ex);
+    });
+    
+    return groups;
+  }, [wordExamples]);
+
   if (!selectedSound) {
     return (
       <div className="card" style={{ padding: "40px 20px", textAlign: "center", color: "rgb(var(--secondary-rgb))" }}>
@@ -78,9 +114,6 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
   }
 
   const isConsonant = selectedSound.type.startsWith("consonant");
-  const wordExamples = selectedSound.examples.filter((ex) => (!ex.type || ex.type === "word") && ex.hidden !== true);
-  const phraseExamples = selectedSound.examples.filter((ex) => ex.type === "phrase" && ex.hidden !== true);
-  const sentenceExamples = selectedSound.examples.filter((ex) => ex.type === "sentence" && ex.hidden !== true);
 
   return (
     <div className={styles.detailsWorkspaceContainer}>
@@ -322,26 +355,48 @@ export const IPADetailPanel: React.FC<IPADetailPanelProps> = ({
             <div className={styles.practiceList}>
               {activeSubTab === "word" && (
                 wordExamples.length > 0 ? (
-                  wordExamples.map((ex, index) => (
-                    <ExampleWordCard
-                      key={`word-${index}`}
-                      ex={ex}
-                      soundIpa={selectedSound.ipa}
-                      savedPracticeKey={savedPracticeKey}
-                      playingWord={playingWord}
-                      listeningWord={listeningWord}
-                      practiceResult={practiceResult}
-                      setPracticeResult={setPracticeResult}
-                      playSoundAudio={playSoundAudio}
-                      startSpeechPractice={startSpeechPractice}
-                      stopSpeechPractice={stopSpeechPractice}
-                      isSupported={isSupported}
-                      isSelfHostedSttMode={isSelfHostedSttMode}
-                      isProcessingRecording={isProcessingRecording}
-                      canStopMobileRecording={canStopMobileRecording}
-                      mobileRecordingMaxMs={mobileRecordingMaxMs}
-                      mobileRecordingRemainingMs={mobileRecordingRemainingMs}
-                    />
+                  Object.entries(groupedWords).map(([pattern, examples]) => (
+                    <div key={`group-${pattern}`} style={{ width: "100%", marginBottom: "20px" }}>
+                      <h5 
+                        style={{ 
+                          fontSize: "0.95rem", 
+                          fontWeight: "700", 
+                          color: isConsonant ? "rgb(var(--accent-rgb))" : "rgb(var(--primary-rgb))", 
+                          marginBottom: "12px", 
+                          borderBottom: "1.5px solid rgb(var(--card-border-rgb))", 
+                          paddingBottom: "6px", 
+                          display: "flex", 
+                          alignItems: "center", 
+                          gap: "8px",
+                          letterSpacing: "0.5px"
+                        }}
+                      >
+                        <span>📦</span> Nhóm chữ &quot;{pattern}&quot; ({examples.length} từ)
+                      </h5>
+                      <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                        {examples.map((ex, index) => (
+                          <ExampleWordCard
+                            key={`word-${pattern}-${index}`}
+                            ex={ex}
+                            soundIpa={selectedSound.ipa}
+                            savedPracticeKey={savedPracticeKey}
+                            playingWord={playingWord}
+                            listeningWord={listeningWord}
+                            practiceResult={practiceResult}
+                            setPracticeResult={setPracticeResult}
+                            playSoundAudio={playSoundAudio}
+                            startSpeechPractice={startSpeechPractice}
+                            stopSpeechPractice={stopSpeechPractice}
+                            isSupported={isSupported}
+                            isSelfHostedSttMode={isSelfHostedSttMode}
+                            isProcessingRecording={isProcessingRecording}
+                            canStopMobileRecording={canStopMobileRecording}
+                            mobileRecordingMaxMs={mobileRecordingMaxMs}
+                            mobileRecordingRemainingMs={mobileRecordingRemainingMs}
+                          />
+                        ))}
+                      </div>
+                    </div>
                   ))
                 ) : (
                   <p className={styles.emptyText}>

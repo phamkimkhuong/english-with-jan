@@ -139,7 +139,21 @@ export const ExampleWordCard: React.FC<ExampleWordCardProps> = ({
     <div className={`${styles.wordCard} ${isLongExample ? styles.longExampleCard : ""} ${isSentence ? styles.sentenceCard : ""}`}>
       <div className={styles.wordHeader}>
         <div>
-          <span className={styles.wordText}>{ex.word}</span>
+          <span className={styles.wordText}>
+            {ex.displayWord ? (
+              ex.displayWord.split(/[{}]/).map((part, index) => 
+                index % 2 === 1 ? (
+                  <span key={index} style={{ color: "red", fontWeight: "bold" }}>
+                    {part}
+                  </span>
+                ) : (
+                  part
+                )
+              )
+            ) : (
+              ex.word
+            )}
+          </span>
           <span className={styles.ipaText}>{ex.ipa}</span>
           {ex.partOfSpeech && (
             <span className={styles.partOfSpeechText}>({ex.partOfSpeech})</span>

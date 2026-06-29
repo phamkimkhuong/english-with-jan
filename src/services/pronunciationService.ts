@@ -4,17 +4,34 @@ import { IPASound, IPASyllabusSchema } from "@/types/pronunciation";
 import { doc, setDoc } from "firebase/firestore";
 
 /**
- * Lấy danh sách 44 âm IPA từ Firebase Storage.
- * Nếu chưa có hoặc xảy ra lỗi, tải tệp mặc định từ `/data/default_ipa.json`.
+ * Lấy danh sách 44 âm IPA.
+ * Ưu tiên tải tệp mặc định từ `/data/default_ipa.json` cục bộ làm nguồn dữ liệu chính.
+ * Nếu thất bại mới tải từ Firebase Storage làm fallback.
  */
 export async function fetchIPASyllabus(): Promise<IPASound[]> {
+  // 1. Ưu tiên tải tệp cục bộ làm nguồn chính
+  try {
+    const res = await fetch("/data/default_ipa.json");
+    const rawData = await res.json();
+    
+    // Validate dữ liệu tệp cục bộ bằng Zod Schema
+    const parsed = IPASyllabusSchema.safeParse(rawData);
+    if (parsed.success) {
+      return parsed.data.sounds;
+    } else {
+      console.error("Lỗi cấu trúc dữ liệu syllabus mặc định (Zod validation failed):", parsed.error.format());
+    }
+  } catch (localError) {
+    console.error("Lỗi tải tệp IPA cục bộ (/data/default_ipa.json):", localError);
+  }
+
+  // 2. Fallback từ Firebase Storage nếu tải cục bộ thất bại hoặc sai cấu trúc
   try {
     const fileRef = ref(storage, "syllabuses/pronunciation_ipa.json");
     const downloadUrl = await getDownloadURL(fileRef);
     const res = await fetch(downloadUrl);
     const rawData = await res.json();
     
-    // Validate dữ liệu bằng Zod Schema để tránh app crash khi schema thay đổi đột ngột
     const parsed = IPASyllabusSchema.safeParse(rawData);
     if (parsed.success) {
       return parsed.data.sounds;
@@ -22,23 +39,7 @@ export async function fetchIPASyllabus(): Promise<IPASound[]> {
       console.error("Lỗi cấu trúc dữ liệu syllabus từ Firebase Storage:", parsed.error.format());
     }
   } catch (storageError) {
-    console.warn("Chưa có tệp trên Firebase Storage hoặc tải lỗi, đang tải tệp mặc định...", storageError);
-  }
-
-  // Fallback
-  try {
-    const res = await fetch("/data/default_ipa.json");
-    const rawData = await res.json();
-    
-    // Validate dữ liệu tệp mặc định
-    const parsed = IPASyllabusSchema.safeParse(rawData);
-    if (parsed.success) {
-      return parsed.data.sounds;
-    } else {
-      console.error("Lỗi cấu trúc dữ liệu syllabus mặc định:", parsed.error.format());
-    }
-  } catch (localError) {
-    console.error("Lỗi tải tệp IPA mặc định:", localError);
+    console.warn("Tải từ Firebase Storage thất bại (chưa có tệp hoặc lỗi mạng):", storageError);
   }
 
   return [];

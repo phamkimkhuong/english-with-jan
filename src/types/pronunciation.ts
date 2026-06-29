@@ -7,6 +7,7 @@ export const IPAMediaSchema = z.object({
 
 export const IPAExampleSchema = z.object({
   word: z.string(),
+  displayWord: z.string().optional(),
   ipa: z.string(),
   meaning: z.string(),
   audioUrl: z.string(),
