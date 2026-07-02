@@ -1,0 +1,20 @@
+{
+  "ipa": "d",
+  "name": "phụ âm hữu thanh /d/",
+  "type": "consonant_voiced",
+  "description": "Giống âm /t/ nhưng làm rung dây thanh quản ở cổ họng.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "did",
+      "ipa": "/dɪd/",
+      "meaning": "đã làm",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Đọc giống chữ 'đ' tiếng Việt."
+  ]
+}

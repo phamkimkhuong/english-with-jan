@@ -1,0 +1,319 @@
+{
+  "ipa": "ʊə",
+  "name": "nguyên âm đôi /ʊə/",
+  "type": "diphthong",
+  "description": "Bắt đầu từ âm /ʊ/ và lướt nhẹ sang âm /ə/. Âm thanh tương tự 'ua'.",
+  "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "Nghĩa",
+      "ipa": "/pʊə(r)/",
+      "meaning": "adj",
+      "partOfSpeech": "poor",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "poorly",
+      "ipa": "/ˈpʊrli/",
+      "meaning": "một cách tồi tệ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adverb",
+      "hidden": false
+    },
+    {
+      "word": "mooring",
+      "ipa": "/ˈmʊrɪŋ/",
+      "meaning": "chỗ neo tàu",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "tourist",
+      "ipa": "/ˈtʊrɪst/",
+      "meaning": "du khách",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "tourism",
+      "ipa": "/ˈtʊrɪzəm/",
+      "meaning": "du lịch",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "du lịch",
+      "ipa": "/tʊə(r)/",
+      "meaning": "n",
+      "partOfSpeech": "tour",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "tournament",
+      "ipa": "/ˈtʊrnəmənt/",
+      "meaning": "giải đấu",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "touring",
+      "ipa": "/ˈtʊrɪŋ/",
+      "meaning": "đi du lịch",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "tour guide",
+      "ipa": "/ˈtʊr ɡaɪd/",
+      "meaning": "hướng dẫn viên",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "hướng dẫn viên",
+      "ipa": "/ʃʊə(r)/",
+      "meaning": "adj",
+      "partOfSpeech": "sure",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "surely",
+      "ipa": "/ˈʃʊrli/",
+      "meaning": "chắc chắn là",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adverb",
+      "hidden": false
+    },
+    {
+      "word": "assure",
+      "ipa": "/əˈʃʊr/",
+      "meaning": "đảm bảo",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "insurance",
+      "ipa": "/ɪnˈʃʊrəns/",
+      "meaning": "bảo hiểm",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "insure",
+      "ipa": "/ɪnˈʃʊr/",
+      "meaning": "bảo hiểm (hành động)",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "assurance",
+      "ipa": "/əˈʃʊrəns/",
+      "meaning": "sự đảm bảo",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "mature",
+      "ipa": "/məˈtʃʊr/",
+      "meaning": "trưởng thành",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "ensure",
+      "ipa": "/ɪnˈʃʊr/",
+      "meaning": "đảm bảo",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "tour guide",
+      "ipa": "/ˈtʊr ɡaɪd/",
+      "meaning": "hướng dẫn viên",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "world tour",
+      "ipa": "/wɜːrld tʊr/",
+      "meaning": "chuyến lưu diễn thế giới",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "tourist area",
+      "ipa": "/ˈtʊrɪst ˈeriə/",
+      "meaning": "khu du lịch",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "tourist attraction",
+      "ipa": "/ˈtʊrɪst əˈtrækʃən/",
+      "meaning": "điểm du lịch",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "sure thing",
+      "ipa": "/ʃʊr θɪŋ/",
+      "meaning": "điều chắc chắn",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "make sure",
+      "ipa": "/meɪ ʃʊr/",
+      "meaning": "đảm bảo",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "travel insurance",
+      "ipa": "/ˈtrævl ɪnˈʃʊrəns/",
+      "meaning": "bảo hiểm du lịch",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "poor people",
+      "ipa": "/pʊr ˈpiːpl/",
+      "meaning": "người nghèo",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "world tour",
+      "ipa": "/wɜːrld tʊr/",
+      "meaning": "chuyến lưu diễn thế giới",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "insurance policy",
+      "ipa": "/ɪnˈʃʊrəns ˈpɑːləsi/",
+      "meaning": "hợp đồng bảo hiểm",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "They’re very poor.",
+      "ipa": "/ðer ˈveri pʊr/",
+      "meaning": "Họ rất nghèo.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "Buy health insurance.",
+      "ipa": "/baɪ helθ ɪnˈʃʊrəns/",
+      "meaning": "Mua bảo hiểm sức khỏe.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "Make sure first.",
+      "ipa": "/meɪ ʃʊr fɜːrst/",
+      "meaning": "Hãy chắc chắn trước.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "The tour starts soon.",
+      "ipa": "/ðə tʊr stɑːrts suːn/",
+      "meaning": "Chuyến du lịch sắp bắt đầu.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "She is mature.",
+      "ipa": "/ʃiː ɪz  məˈtʃʊr/",
+      "meaning": "Cô ấy trưởng thành.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "I ensure you will have a good tour.",
+      "ipa": "/aɪ ɪnˈʃʊr juː wɪl hæv ə ɡʊd tʊr/",
+      "meaning": "Tôi đảm bảo bạn sẽ có chuyến du lịch tốt.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "The poor tourist wasn’t sure about that.",
+      "ipa": "/ðə pʊr ˈtʊrɪst ˈwɑːzənt ʃʊr əˈbaʊt ðæt/",
+      "meaning": "Du khách nghèo không chắc về điều đó.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "I need a tour guide on my tour.",
+      "ipa": "/aɪ niːd ə tʊr ɡaɪd ɑːn maɪ tʊr/",
+      "meaning": "Tôi cần hướng dẫn viên trong chuyến đi.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "The poor tourist is not sure about his insurance during the tour.",
+      "ipa": "/ðə pʊr ˈtʊrɪst ɪz nɑːt ʃʊr əˈbaʊt hɪz ɪnˈʃʊrəns ˈdʊrɪŋ ðə tʊr/",
+      "meaning": "Du khách nghèo không chắc về bảo hiểm của mình trong chuyến du lịch.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Đọc thành chữ 'ua' Việt Nam."
+  ]
+}

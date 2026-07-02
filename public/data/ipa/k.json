@@ -1,0 +1,20 @@
+{
+  "ipa": "k",
+  "name": "phụ âm vô thanh /k/",
+  "type": "consonant_voiceless",
+  "description": "Nâng cuống lưỡi lên chạm vào ngạc mềm phía sau, chặn luồng khí, rồi hạ xuống để hơi bật mạnh ra. Không rung cổ.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "cat",
+      "ipa": "/kæt/",
+      "meaning": "con mèo",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Đọc giống chữ 'c/k' tiếng Việt mà không bật hơi."
+  ]
+}

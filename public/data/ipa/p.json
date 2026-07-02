@@ -1,0 +1,20 @@
+{
+  "ipa": "p",
+  "name": "phụ âm vô thanh /p/",
+  "type": "consonant_voiceless",
+  "description": "Mím chặt hai môi để chặn luồng hơi, sau đó bật mạnh hơi ra ngoài. Không rung dây thanh quản.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "pen",
+      "ipa": "/pen/",
+      "meaning": "cái bút",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Rung dây thanh âm làm biến thành âm /b/."
+  ]
+}

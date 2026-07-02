@@ -1,0 +1,463 @@
+{
+  "ipa": "əʊ",
+  "name": "nguyên âm đôi /əʊ/",
+  "type": "diphthong",
+  "description": "Bắt đầu từ âm /ə/ và trượt sang âm /ʊ/. Môi khép tròn nhẹ.",
+  "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "close",
+      "ipa": "/kloʊz/",
+      "meaning": "đóng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "đóng",
+      "ipa": "/hoʊm/",
+      "meaning": "n",
+      "partOfSpeech": "home",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "stone",
+      "ipa": "/stoʊn/",
+      "meaning": "đá",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "phone",
+      "ipa": "/foʊn/",
+      "meaning": "điện thoại",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "alone",
+      "ipa": "/əˈloʊn/",
+      "meaning": "một mình",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "broke",
+      "ipa": "/broʊk/",
+      "meaning": "vỡ / phá sản",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "vadj",
+      "hidden": false
+    },
+    {
+      "word": "smoke",
+      "ipa": "/smoʊk/",
+      "meaning": "khói / hút khói",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "nv",
+      "hidden": false
+    },
+    {
+      "word": "trò đùa",
+      "ipa": "/poʊst/",
+      "meaning": "n/v",
+      "partOfSpeech": "post",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "moment",
+      "ipa": "/ˈmoʊ.mənt/",
+      "meaning": "khoảnh khắc",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "notice",
+      "ipa": "/ˈnoʊ.tɪs/",
+      "meaning": "chú ý",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "vn",
+      "hidden": false
+    },
+    {
+      "word": "chú ý",
+      "ipa": "/ʃoʊ/",
+      "meaning": "v",
+      "partOfSpeech": "show",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "window",
+      "ipa": "/ˈwɪn.doʊ/",
+      "meaning": "cửa sổ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "pillow",
+      "ipa": "/ˈpɪl.oʊ/",
+      "meaning": "gối",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "yellow",
+      "ipa": "/ˈje.loʊ/",
+      "meaning": "màu vàng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "borrow",
+      "ipa": "/ˈbɑː.roʊ/",
+      "meaning": "mượn",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "follow",
+      "ipa": "/ˈfɑː.loʊ/",
+      "meaning": "theo dõi",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "smoke",
+      "ipa": "/smoʊk/",
+      "meaning": "khói / hút khói",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "nv",
+      "hidden": false
+    },
+    {
+      "word": "khói",
+      "ipa": "/moʊst/",
+      "meaning": "adj/adv",
+      "partOfSpeech": "most",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "nhiều nhất",
+      "ipa": "/poʊst/",
+      "meaning": "n/v",
+      "partOfSpeech": "post",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "bài đăng",
+      "ipa": "/dʒoʊk/",
+      "meaning": "n/v",
+      "partOfSpeech": "joke",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "trò đùa",
+      "ipa": "/hoʊp/",
+      "meaning": "v",
+      "partOfSpeech": "hope",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "hy vọng",
+      "ipa": "/roʊd/",
+      "meaning": "n",
+      "partOfSpeech": "road",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "con đường",
+      "ipa": "/boʊt/",
+      "meaning": "n",
+      "partOfSpeech": "boat",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "thuyền",
+      "ipa": "/ɡoʊl/",
+      "meaning": "n",
+      "partOfSpeech": "goal",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "mục tiêu",
+      "ipa": "/roʊd/",
+      "meaning": "n",
+      "partOfSpeech": "road",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "đường",
+      "ipa": "/koʊt/",
+      "meaning": "n",
+      "partOfSpeech": "coat",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "áo khoác",
+      "ipa": "/toʊz/",
+      "meaning": "n",
+      "partOfSpeech": "toes",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "potato",
+      "ipa": "/pəˈteɪ.toʊ/",
+      "meaning": "khoai tây",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "tomato",
+      "ipa": "/təˈmeɪ.toʊ/",
+      "meaning": "cà chua",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "cà chua",
+      "ipa": "/koʊld/",
+      "meaning": "adj",
+      "partOfSpeech": "cold",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "lạnh",
+      "ipa": "/oʊld/",
+      "meaning": "adj",
+      "partOfSpeech": "old",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "close home",
+      "ipa": "/kloʊz hoʊm/",
+      "meaning": "ngôi nhà gần",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "cold stone",
+      "ipa": "/koʊld stoʊn/",
+      "meaning": "đá lạnh",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "old phone",
+      "ipa": "/oʊld foʊn/",
+      "meaning": "điện thoại cũ",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "broken phone",
+      "ipa": "/ˈbroʊkən foʊn/",
+      "meaning": "điện thoại hỏng",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "smoke zone",
+      "ipa": "/smoʊk zoʊn/",
+      "meaning": "khu vực có khói",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "golden road",
+      "ipa": "/ˈɡoʊldən roʊd/",
+      "meaning": "con đường vàng",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "cold coast",
+      "ipa": "/koʊld koʊst/",
+      "meaning": "bờ biển lạnh",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "stone home",
+      "ipa": "/stoʊn hoʊm/",
+      "meaning": "ngôi nhà bằng đá",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "old note",
+      "ipa": "/oʊld noʊt/",
+      "meaning": "ghi chú cũ",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "open door",
+      "ipa": "/ˈoʊpən dɔːr/",
+      "meaning": "cửa mở",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "I close the door.",
+      "ipa": "/aɪ kloʊz ðə dɔːr/",
+      "meaning": "Tôi đóng cửa.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "I hope to go home before the show is over.",
+      "ipa": "/aɪ hoʊp tə ɡoʊ hoʊm bɪˈfɔːr ðə ʃoʊ ɪz ˈoʊvər/",
+      "meaning": "Tôi hy vọng về nhà trước khi buổi diễn kết thúc.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "They close the road near the old stone home.",
+      "ipa": "/ðeɪ kloʊz ðə roʊd nɪr ði oʊld stoʊn hoʊm/",
+      "meaning": "Họ đóng con đường gần ngôi nhà đá cũ.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "We hope it’s going to snow tomorrow.",
+      "ipa": "/wi hoʊp ɪts ˈɡoʊɪŋ tə snoʊ təˈmɑːroʊ/",
+      "meaning": "Chúng tôi hy vọng ngày mai trời sẽ có tuyết.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Oh no! Don’t open the window. It’s cold!",
+      "ipa": "/oʊ noʊ! doʊnt ˈoʊpən ðə ˈwɪndoʊ. ɪts koʊld!/",
+      "meaning": "Ôi không! Đừng mở cửa sổ. Trời lạnh đấy!",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "I’m sorry. I don’t know you’re joking.",
+      "ipa": "/aɪm ˈsɑːri. aɪ doʊnt noʊ jʊr ˈdʒoʊkɪŋ/",
+      "meaning": "Tôi xin lỗi. Tôi không biết bạn đang đùa.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Go slow so the snow won’t blow over the old stone home.",
+      "ipa": "/ɡoʊ sloʊ soʊ ðə snoʊ woʊnt bloʊ ˈoʊvər ði oʊld stoʊn hoʊm/",
+      "meaning": "Đi chậm để tuyết không thổi qua ngôi nhà đá cũ.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Joe goes home and shows cold snow on the road.",
+      "ipa": "/dʒoʊ ɡoʊz hoʊm ænd ʃoʊz koʊld snoʊ ɑːn ðə roʊd/",
+      "meaning": "Joe về nhà và cho thấy tuyết lạnh trên đường.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "No one knows how low the snow goes on the old road home.",
+      "ipa": "/noʊ wʌn noʊz haʊ loʊ ðə snoʊ ɡoʊz ɑːn ði oʊld roʊd hoʊm/",
+      "meaning": "Không ai biết tuyết thấp đến đâu trên con đường cũ về nhà.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Đọc thành âm 'ô' hoặc 'âu' tiếng Việt."
+  ]
+}

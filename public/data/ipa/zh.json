@@ -1,0 +1,18 @@
+{
+  "ipa": "ʒ",
+  "name": "phụ âm hữu thanh /ʒ/",
+  "type": "consonant_voiced",
+  "description": "Giống âm /ʃ/ nhưng làm rung dây thanh quản ở cổ họng.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "vision",
+      "ipa": "/ˈvɪʒn/",
+      "meaning": "tầm nhìn",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": []
+}

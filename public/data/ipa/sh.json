@@ -1,0 +1,20 @@
+{
+  "ipa": "ʃ",
+  "name": "phụ âm vô thanh /ʃ/",
+  "type": "consonant_voiceless",
+  "description": "Môi hơi chu và đưa ra trước. Lưỡi cong lên gần ngạc trên. Đẩy hơi thoát ra mạnh. Không rung cổ.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "she",
+      "ipa": "/ʃiː/",
+      "meaning": "cô ấy",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Phát âm nhẹ giống âm /s/ mà không chu môi."
+  ]
+}

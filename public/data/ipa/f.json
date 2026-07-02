@@ -1,0 +1,20 @@
+{
+  "ipa": "f",
+  "name": "phụ âm vô thanh /f/",
+  "type": "consonant_voiceless",
+  "description": "Đặt răng cửa hàm trên chạm nhẹ vào môi dưới, đẩy luồng khí đi qua khe hở giữa răng và môi.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "fall",
+      "ipa": "/fɔːl/",
+      "meaning": "mùa thu / ngã",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Phát âm giống âm 'ph' tiếng Việt (hơi lỏng răng)."
+  ]
+}

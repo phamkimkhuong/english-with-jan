@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-19T02:41:57.338Z",
-  "version": 1781836917339,
+  "lastUpdated": "2026-07-02T12:56:05.033Z",
+  "version": 1782996965033,
   "sounds": [
     {
       "ipa": "i:",
@@ -11,59 +11,49 @@
       "audioUrl": "",
       "examples": [
         {
-          "word": "meet",
+          "word": "NGHĨA",
           "ipa": "/miːt/",
-          "meaning": "gặp gỡ",
+          "meaning": "V",
+          "partOfSpeech": "meet",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "audioUrlMale": "https://dictionary.cambridge.org/media/english/us_pron/m/mea/meat_/meat.mp3",
           "hidden": false,
-          "displayWord": "m{ee}t"
+          "type": "word"
         },
         {
-          "word": "feel",
+          "word": "gặp gỡ",
           "ipa": "/fiːl/",
-          "meaning": "cảm thấy",
+          "meaning": "V",
+          "partOfSpeech": "feel",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "audioUrlMale": "",
           "hidden": false,
-          "displayWord": "f{ee}l"
+          "type": "word"
         },
         {
-          "word": "see",
+          "word": "cảm thấy",
           "ipa": "/siː/",
-          "meaning": "nhìn thấy",
+          "meaning": "V",
+          "partOfSpeech": "see",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "audioUrlMale": "https://dictionary.cambridge.org/media/english/us_pron/c/c__/c____/c.mp3",
           "hidden": false,
-          "displayWord": "s{ee}"
+          "type": "word"
         },
         {
-          "word": "free",
+          "word": "nhìn thấy",
           "ipa": "/friː/",
-          "meaning": "tự do",
+          "meaning": "ADJ",
+          "partOfSpeech": "free",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "audioUrlMale": "",
           "hidden": false,
-          "displayWord": "fr{ee}"
+          "type": "word"
         },
         {
-          "word": "team",
+          "word": "ea",
           "ipa": "/tiːm/",
-          "meaning": "đội nhóm",
+          "meaning": "N",
+          "partOfSpeech": "team",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "audioUrlMale": "",
           "hidden": false,
-          "displayWord": "t{ea}m"
+          "type": "word"
         },
         {
           "word": "reach",
@@ -77,26 +67,22 @@
           "displayWord": "r{ea}ch"
         },
         {
-          "word": "mean",
+          "word": "đạt tới",
           "ipa": "/miːn/",
-          "meaning": "có nghĩa là",
+          "meaning": "V",
+          "partOfSpeech": "mean",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "audioUrlMale": "",
           "hidden": false,
-          "displayWord": "m{ea}n"
+          "type": "word"
         },
         {
-          "word": "sea",
+          "word": "có nghĩa là",
           "ipa": "/siː/",
-          "meaning": "biển",
+          "meaning": "N",
+          "partOfSpeech": "sea",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "audioUrlMale": "",
           "hidden": false,
-          "displayWord": "s{ea}"
+          "type": "word"
         },
         {
           "word": "belief",
@@ -132,48 +118,40 @@
           "displayWord": "rec{ei}ve"
         },
         {
-          "word": "me",
+          "word": "final e",
           "ipa": "/miː/",
-          "meaning": "tôi",
+          "meaning": "PRON",
+          "partOfSpeech": "me",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "pronoun",
-          "audioUrlMale": "",
           "hidden": false,
-          "displayWord": "m{e}"
+          "type": "word"
         },
         {
-          "word": "we",
+          "word": "tôi",
           "ipa": "/wiː/",
-          "meaning": "chúng tôi",
+          "meaning": "PRON",
+          "partOfSpeech": "we",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "pronoun",
-          "audioUrlMale": "",
           "hidden": false,
-          "displayWord": "w{e}"
+          "type": "word"
         },
         {
-          "word": "she",
+          "word": "chúng tôi",
           "ipa": "/ʃiː/",
-          "meaning": "cô ấy",
+          "meaning": "PRON",
+          "partOfSpeech": "she",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "pronoun",
-          "audioUrlMale": "",
           "hidden": false,
-          "displayWord": "sh{e}"
+          "type": "word"
         },
         {
-          "word": "he",
+          "word": "cô ấy",
           "ipa": "/hiː/",
-          "meaning": "anh ấy",
+          "meaning": "PRON",
+          "partOfSpeech": "he",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "pronoun",
-          "audioUrlMale": "",
           "hidden": false,
-          "displayWord": "h{e}"
+          "type": "word"
         },
         {
           "word": "these",
@@ -209,26 +187,22 @@
           "displayWord": "P{e}ter"
         },
         {
-          "word": "city",
+          "word": "final y",
           "ipa": "/ˈsɪti/",
-          "meaning": "thành phố",
+          "meaning": "N",
+          "partOfSpeech": "city",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "audioUrlMale": "",
           "hidden": false,
-          "displayWord": "cit{y}"
+          "type": "word"
         },
         {
-          "word": "duty",
+          "word": "thành phố",
           "ipa": "/ˈdjuːti/",
-          "meaning": "nhiệm vụ",
+          "meaning": "N",
+          "partOfSpeech": "duty",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "audioUrlMale": "",
           "hidden": false,
-          "displayWord": "dut{y}"
+          "type": "word"
         },
         {
           "word": "country",
@@ -480,52 +454,31 @@
       "audioUrl": "",
       "examples": [
         {
-          "word": "ship",
-          "ipa": "/ʃɪp/",
-          "meaning": "tàu thủy",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "sit",
-          "ipa": "/sɪt/",
-          "meaning": "ngồi",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false,
-          "displayWord": "s{i}t"
-        },
-        {
-          "word": "pin",
-          "ipa": "/pɪn/",
-          "meaning": "cái ghim",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "sing",
+          "word": "NGHĨA",
           "ipa": "/sɪŋ/",
-          "meaning": "hát",
+          "meaning": "V",
+          "partOfSpeech": "sing",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
           "hidden": false,
-          "displayWord": "s{i}ng"
+          "type": "word"
         },
         {
-          "word": "give",
+          "word": "hát",
           "ipa": "/ɡɪv/",
-          "meaning": "đưa",
+          "meaning": "V",
+          "partOfSpeech": "give",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
           "hidden": false,
-          "displayWord": "g{i}ve"
+          "type": "word"
+        },
+        {
+          "word": "đưa",
+          "ipa": "/sɪt/",
+          "meaning": "V",
+          "partOfSpeech": "sit",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "river",
@@ -578,14 +531,13 @@
           "displayWord": "p{i}cn{i}c"
         },
         {
-          "word": "bill",
+          "word": "dã ngoại",
           "ipa": "/bɪl/",
-          "meaning": "hóa đơn",
+          "meaning": "N",
+          "partOfSpeech": "bill",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
           "hidden": false,
-          "displayWord": "b{i}ll"
+          "type": "word"
         },
         {
           "word": "sister",
@@ -698,14 +650,13 @@
           "displayWord": "b{i}sc{u}{i}t"
         },
         {
-          "word": "gym",
+          "word": "bánh quy",
           "ipa": "/dʒɪm/",
-          "meaning": "phòng gym",
+          "meaning": "N",
+          "partOfSpeech": "gym",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
           "hidden": false,
-          "displayWord": "g{y}m"
+          "type": "word"
         },
         {
           "word": "system",
@@ -828,16 +779,6 @@
           "displayWord": "w{i}nter w{i}nd"
         },
         {
-          "word": "It is difficult to live here.",
-          "ipa": "/ɪt ɪz ˈdɪfɪkəlt tə lɪv hɪər/",
-          "meaning": "Thật khó để sống ở đây.",
-          "audioUrl": "",
-          "type": "sentence",
-          "partOfSpeech": "",
-          "hidden": false,
-          "displayWord": "{I}t {i}s d{i}ff{i}cult to l{i}ve here."
-        },
-        {
           "word": "Jim will visit the kids for a few minutes.",
           "ipa": "/dʒɪm wɪl ˈvɪzɪt ðə kɪdz fə ə fjuː ˈmɪnɪts/",
           "meaning": "Jim sẽ đến thăm bọn trẻ trong vài phút.",
@@ -932,61 +873,31 @@
       "audioUrl": "",
       "examples": [
         {
-          "word": "pen",
-          "ipa": "/pen/",
-          "meaning": "cái bút",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "bed",
-          "ipa": "/bed/",
-          "meaning": "cái giường",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "met",
-          "ipa": "/met/",
-          "meaning": "đã gặp",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
-        },
-        {
-          "word": "send",
+          "word": "Nghĩa",
           "ipa": "/send/",
-          "meaning": "gửi",
+          "meaning": "v",
+          "partOfSpeech": "send",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
           "hidden": false,
-          "displayWord": "s{e}nd"
+          "type": "word"
         },
         {
-          "word": "tell",
+          "word": "gửi",
           "ipa": "/tel/",
-          "meaning": "kể, nói",
+          "meaning": "v",
+          "partOfSpeech": "tell",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
           "hidden": false,
-          "displayWord": "t{e}ll"
+          "type": "word"
         },
         {
-          "word": "left",
+          "word": "kể, nói",
           "ipa": "/left/",
-          "meaning": "bên trái",
+          "meaning": "n/adj",
+          "partOfSpeech": "left",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun/adjective",
           "hidden": false,
-          "displayWord": "l{e}ft"
+          "type": "word"
         },
         {
           "word": "never",
@@ -1029,24 +940,22 @@
           "displayWord": "dep{e}ndent"
         },
         {
-          "word": "get",
+          "word": "phụ thuộc",
           "ipa": "/ɡet/",
-          "meaning": "lấy, trở nên",
+          "meaning": "v",
+          "partOfSpeech": "get",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
           "hidden": false,
-          "displayWord": "g{e}t"
+          "type": "word"
         },
         {
-          "word": "wet",
+          "word": "lấy, trở nên",
           "ipa": "/wet/",
-          "meaning": "ướt",
+          "meaning": "adj",
+          "partOfSpeech": "wet",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
           "hidden": false,
-          "displayWord": "w{e}t"
+          "type": "word"
         },
         {
           "word": "dress",
@@ -1069,14 +978,22 @@
           "displayWord": "{e}ffort"
         },
         {
-          "word": "egg",
-          "ipa": "/eɡ/",
-          "meaning": "quả trứng",
+          "word": "nỗ lực",
+          "ipa": "/bed/",
+          "meaning": "n",
+          "partOfSpeech": "bed",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
           "hidden": false,
-          "displayWord": "{e}gg"
+          "type": "word"
+        },
+        {
+          "word": "giường",
+          "ipa": "/eɡ/",
+          "meaning": "n",
+          "partOfSpeech": "egg",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "every",
@@ -1129,14 +1046,13 @@
           "displayWord": "b{e}tter"
         },
         {
-          "word": "head",
+          "word": "tốt hơn",
           "ipa": "/hed/",
-          "meaning": "đầu",
+          "meaning": "n",
+          "partOfSpeech": "head",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
           "hidden": false,
-          "displayWord": "h{ea}d"
+          "type": "word"
         },
         {
           "word": "health",
@@ -1229,44 +1145,40 @@
           "displayWord": "br{ea}kfast"
         },
         {
-          "word": "any",
+          "word": "bữa sáng",
           "ipa": "/ˈeni/",
-          "meaning": "bất kỳ",
+          "meaning": "determiner",
+          "partOfSpeech": "any",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "determiner",
           "hidden": false,
-          "displayWord": "{a}ny"
+          "type": "word"
         },
         {
-          "word": "many",
+          "word": "bất kỳ",
           "ipa": "/ˈmeni/",
-          "meaning": "nhiều",
+          "meaning": "determiner",
+          "partOfSpeech": "many",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "determiner",
           "hidden": false,
-          "displayWord": "m{a}ny"
+          "type": "word"
         },
         {
-          "word": "says",
+          "word": "nhiều",
           "ipa": "/sez/",
-          "meaning": "nói",
+          "meaning": "v",
+          "partOfSpeech": "says",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
           "hidden": false,
-          "displayWord": "s{ay}s"
+          "type": "word"
         },
         {
-          "word": "said",
+          "word": "nói",
           "ipa": "/sed/",
-          "meaning": "đã nói",
+          "meaning": "v",
+          "partOfSpeech": "said",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
           "hidden": false,
-          "displayWord": "s{ai}d"
+          "type": "word"
         },
         {
           "word": "again",
@@ -1511,6 +1423,16 @@
       "audioUrl": "",
       "examples": [
         {
+          "word": "hat",
+          "ipa": "/hæt/",
+          "meaning": "cái mũ",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "noun",
+          "hidden": false,
+          "displayWord": "h{a}t"
+        },
+        {
           "word": "man",
           "ipa": "/mæn/",
           "meaning": "người đàn ông",
@@ -1521,15 +1443,6 @@
           "displayWord": "m{a}n"
         },
         {
-          "word": "cat",
-          "ipa": "/kæt/",
-          "meaning": "con mèo",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
           "word": "bad",
           "ipa": "/bæd/",
           "meaning": "tệ hại",
@@ -1538,16 +1451,6 @@
           "partOfSpeech": "adjective",
           "hidden": false,
           "displayWord": "b{a}d"
-        },
-        {
-          "word": "hat",
-          "ipa": "/hæt/",
-          "meaning": "cái mũ",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false,
-          "displayWord": "h{a}t"
         },
         {
           "word": "back",
@@ -1932,105 +1835,6 @@
           "audioUrl": "",
           "type": "sentence",
           "hidden": false
-        },
-        {
-          "word": "những ng đàn ông",
-          "ipa": "men",
-          "meaning": "người đàn ông",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "man",
-          "hidden": false
-        },
-        {
-          "word": "giường",
-          "ipa": "bed",
-          "meaning": "xấu, tồi",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "bad",
-          "hidden": false
-        },
-        {
-          "word": "nói",
-          "ipa": "said",
-          "meaning": "buồn",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "sad",
-          "hidden": false
-        },
-        {
-          "word": "đặt, để",
-          "ipa": "set",
-          "meaning": "đã ngồi",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "sat",
-          "hidden": false
-        },
-        {
-          "word": "gửi",
-          "ipa": "send",
-          "meaning": "cát",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "sand",
-          "hidden": false
-        },
-        {
-          "word": "bút",
-          "ipa": "pen",
-          "meaning": "cái chảo",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "pan",
-          "hidden": false
-        },
-        {
-          "word": "đầu",
-          "ipa": "head",
-          "meaning": "đã có",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "had",
-          "hidden": false
-        },
-        {
-          "word": "mười",
-          "ipa": "ten",
-          "meaning": "rám nắng",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "tan",
-          "hidden": false
-        },
-        {
-          "word": "đã gặp",
-          "ipa": "met",
-          "meaning": "tấm thảm",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "mat",
-          "hidden": false
-        },
-        {
-          "word": "cho mượn",
-          "ipa": "lend",
-          "meaning": "mảnh đất",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "land",
-          "hidden": false
-        },
-        {
-          "word": "đoán",
-          "ipa": "guess",
-          "meaning": "khí ga",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "gas",
-          "hidden": false
         }
       ],
       "commonMistakes": [
@@ -2056,40 +1860,40 @@
           "hidden": false
         },
         {
-          "word": "spa",
-          "ipa": "/spɑː/",
-          "meaning": "khu spa",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "calm",
+          "word": "bố",
           "ipa": "/kɑːm/",
-          "meaning": "bình tĩnh",
+          "meaning": "adj",
+          "partOfSpeech": "calm",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "hot",
+          "word": "bình tĩnh",
+          "ipa": "/spɑː/",
+          "meaning": "n",
+          "partOfSpeech": "spa",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
+        },
+        {
+          "word": "khu spa",
           "ipa": "/hɑːt/",
-          "meaning": "nóng",
+          "meaning": "adj",
+          "partOfSpeech": "hot",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "stop",
+          "word": "nóng",
           "ipa": "/stɑːp/",
-          "meaning": "dừng lại",
+          "meaning": "v",
+          "partOfSpeech": "stop",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "modern",
@@ -2101,13 +1905,13 @@
           "hidden": false
         },
         {
-          "word": "job",
+          "word": "hiện đại",
           "ipa": "/dʒɑːb/",
-          "meaning": "công việc",
+          "meaning": "n",
+          "partOfSpeech": "job",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "watch",
@@ -2116,15 +1920,6 @@
           "audioUrl": "",
           "type": "word",
           "partOfSpeech": "verb/noun",
-          "hidden": false
-        },
-        {
-          "word": "want",
-          "ipa": "/wɑːnt/",
-          "meaning": "muốn",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
           "hidden": false
         },
         {
@@ -2146,22 +1941,22 @@
           "hidden": false
         },
         {
-          "word": "body",
-          "ipa": "/ˈbɑːdi/",
-          "meaning": "cơ thể",
+          "word": "vấn đề",
+          "ipa": "/ˈbɑː.di/",
+          "meaning": "n",
+          "partOfSpeech": "body",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "shop",
+          "word": "cơ thể",
           "ipa": "/ʃɑːp/",
-          "meaning": "cửa hàng",
+          "meaning": "n",
+          "partOfSpeech": "shop",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "office",
@@ -2425,31 +2220,13 @@
       "audioUrl": "",
       "examples": [
         {
-          "word": "car",
-          "ipa": "/kɑːr/",
-          "meaning": "xe hơi",
+          "word": "Nghĩa",
+          "ipa": "/dɑ:rk/",
+          "meaning": "adj",
+          "partOfSpeech": "dark",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "start",
-          "ipa": "/stɑːrt/",
-          "meaning": "bắt đầu",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
-        },
-        {
-          "word": "far",
-          "ipa": "/fɑːr/",
-          "meaning": "xa",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adverb",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "large",
@@ -2461,30 +2238,12 @@
           "hidden": false
         },
         {
-          "word": "part",
-          "ipa": "/pɑːrt/",
-          "meaning": "phần",
+          "word": "car",
+          "ipa": "/kɑːr/",
+          "meaning": "xe hơi",
           "audioUrl": "",
           "type": "word",
           "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "card",
-          "ipa": "/kɑːrd/",
-          "meaning": "tấm thẻ",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "dark",
-          "ipa": "/dɑːrk/",
-          "meaning": "tối",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
           "hidden": false
         },
         {
@@ -2542,40 +2301,49 @@
           "hidden": false
         },
         {
-          "word": "are",
-          "ipa": "/ɑːr/",
-          "meaning": "là, thì, ở",
+          "word": "thảm",
+          "ipa": "/ɑ:r/",
+          "meaning": "v",
+          "partOfSpeech": "are",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "art",
-          "ipa": "/ɑːrt/",
-          "meaning": "nghệ thuật",
+          "word": "là, thì, ở",
+          "ipa": "/ɑ:rt/",
+          "meaning": "n",
+          "partOfSpeech": "art",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "hard",
-          "ipa": "/hɑːrd/",
-          "meaning": "khó, cứng",
+          "word": "nghệ thuật",
+          "ipa": "/hɑ:rd/",
+          "meaning": "adj",
+          "partOfSpeech": "hard",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "park",
-          "ipa": "/pɑːrk/",
-          "meaning": "công viên / đỗ xe",
+          "word": "khó, cứng",
+          "ipa": "/kɑ:rd/",
+          "meaning": "n",
+          "partOfSpeech": "card",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun/verb",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
+        },
+        {
+          "word": "tấm thẻ",
+          "ipa": "/pɑ:rk/",
+          "meaning": "n / v",
+          "partOfSpeech": "park",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "party",
@@ -2596,22 +2364,40 @@
           "hidden": false
         },
         {
-          "word": "star",
-          "ipa": "/stɑːr/",
-          "meaning": "ngôi sao",
+          "word": "start",
+          "ipa": "/stɑːrt/",
+          "meaning": "bắt đầu",
           "audioUrl": "",
           "type": "word",
-          "partOfSpeech": "noun",
+          "partOfSpeech": "verb",
           "hidden": false
         },
         {
-          "word": "farm",
-          "ipa": "/fɑːrm/",
-          "meaning": "nông trại",
+          "word": "bắt đầu",
+          "ipa": "/stɑ:r/",
+          "meaning": "n",
+          "partOfSpeech": "star",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
+        },
+        {
+          "word": "ngôi sao",
+          "ipa": "/fɑ:r/",
+          "meaning": "adv",
+          "partOfSpeech": "far",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
+        },
+        {
+          "word": "xa",
+          "ipa": "/fɑ:rm/",
+          "meaning": "n",
+          "partOfSpeech": "farm",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "scarf",
@@ -2840,85 +2626,22 @@
       "audioUrl": "",
       "examples": [
         {
-          "word": "hot",
-          "ipa": "/hɑːt/",
-          "meaning": "nóng",
+          "word": "Nghĩa",
+          "ipa": "/bɔːl/",
+          "meaning": "/bɑːl/",
+          "partOfSpeech": "ball",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "box",
-          "ipa": "/bɑːks/",
-          "meaning": "cái hộp",
+          "word": "quả bóng",
+          "ipa": "/fɔːl/",
+          "meaning": "/fɑːl/",
+          "partOfSpeech": "fall",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "on",
-          "ipa": "/ɑːn/",
-          "meaning": "trên",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "preposition",
-          "hidden": false
-        },
-        {
-          "word": "law",
-          "ipa": "/lɑː/",
-          "meaning": "luật pháp",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "caught",
-          "ipa": "/kɑːt/",
-          "meaning": "đã bắt",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
-        },
-        {
-          "word": "talk",
-          "ipa": "/tɑːk/",
-          "meaning": "nói chuyện",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb/noun",
-          "hidden": false
-        },
-        {
-          "word": "ball",
-          "ipa": "/bɑːl/",
-          "meaning": "quả bóng",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "fall",
-          "ipa": "/fɑːl/",
-          "meaning": "rơi / mùa thu",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb/noun",
-          "hidden": false
-        },
-        {
-          "word": "tall",
-          "ipa": "/tɑːl/",
-          "meaning": "cao",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "small",
@@ -2930,22 +2653,31 @@
           "hidden": false
         },
         {
-          "word": "saw",
-          "ipa": "/sɑː/",
-          "meaning": "đã thấy / cái cưa",
+          "word": "nhỏ",
+          "ipa": "/lɔː/",
+          "meaning": "/lɑː/",
+          "partOfSpeech": "law",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb/noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "walk",
-          "ipa": "/wɑːk/",
-          "meaning": "đi bộ",
+          "word": "luật",
+          "ipa": "/sɔː/",
+          "meaning": "/sɑː/",
+          "partOfSpeech": "saw",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb/noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
+        },
+        {
+          "word": "đi bộ",
+          "ipa": "/tɔːk/",
+          "meaning": "/tɑːk/",
+          "partOfSpeech": "talk",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "bought",
@@ -2993,22 +2725,31 @@
           "hidden": false
         },
         {
-          "word": "not",
-          "ipa": "/nɑːt/",
-          "meaning": "không",
+          "word": "Nghĩa",
+          "ipa": "/hɒt/",
+          "meaning": "/hɑːt/",
+          "partOfSpeech": "hot",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adverb",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "lot",
-          "ipa": "/lɑːt/",
-          "meaning": "nhiều",
+          "word": "nóng",
+          "ipa": "/nɒt/",
+          "meaning": "/nɑːt/",
+          "partOfSpeech": "not",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
+        },
+        {
+          "word": "không",
+          "ipa": "/lɒt/",
+          "meaning": "/lɑːt/",
+          "partOfSpeech": "lot",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "bottle",
@@ -3118,132 +2859,6 @@
           "audioUrl": "",
           "type": "phrase",
           "hidden": false
-        },
-        {
-          "word": "call",
-          "ipa": "/kɔːl/",
-          "meaning": "gọi",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "clock",
-          "ipa": "/klɒk/",
-          "meaning": "đồng hồ",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "wall",
-          "ipa": "/wɔːl/",
-          "meaning": "bức tường",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "watch",
-          "ipa": "/wɒtʃ/",
-          "meaning": "đồng hồ / xem",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "dog",
-          "ipa": "/dɒɡ/",
-          "meaning": "con chó",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "top",
-          "ipa": "/tɒp/",
-          "meaning": "đỉnh",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "not at all",
-          "ipa": "/nɒt ət ɔːl/",
-          "meaning": "không hề, không chút nào",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "nɑːt ət ɑːl",
-          "hidden": false
-        },
-        {
-          "word": "a lot of water",
-          "ipa": "/ə lɒt əv ˈwɔː.tə/",
-          "meaning": "nhiều nước",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "ə lɑːt əv ˈwɑː.t̬ər",
-          "hidden": false
-        },
-        {
-          "word": "bottle of water",
-          "ipa": "/ˈbɒt.əl əv ˈwɔː.tə/",
-          "meaning": "chai nước",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "ˈbɑː.t̬əl əv ˈwɑː.t̬ər",
-          "hidden": false
-        },
-        {
-          "word": "a small ball",
-          "ipa": "/ə smɔːl bɔːl/",
-          "meaning": "một quả bóng nhỏ",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "ə smɑːl bɑːl",
-          "hidden": false
-        },
-        {
-          "word": "walk and talk",
-          "ipa": "/wɔːk ənd tɔːk/",
-          "meaning": "đi bộ và nói chuyện",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "wɑːk ənd tɑːk",
-          "hidden": false
-        },
-        {
-          "word": "all the walls",
-          "ipa": "/ɔːl ðə wɔːlz/",
-          "meaning": "tất cả các bức tường",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "ɑːl ðə wɑːlz",
-          "hidden": false
-        },
-        {
-          "word": "bought some water",
-          "ipa": "/bɔːt səm ˈwɔː.tə/",
-          "meaning": "đã mua một ít nước",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "bɑːt səm ˈwɑː.t̬ər",
-          "hidden": false
-        },
-        {
-          "word": "caught the ball",
-          "ipa": "/kɔːt ðə bɔːl/",
-          "meaning": "đã bắt được quả bóng",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "kɑːt ðə bɑːl",
-          "hidden": false
         }
       ],
       "commonMistakes": [
@@ -3260,36 +2875,18 @@
       "audioUrl": "",
       "examples": [
         {
-          "word": "sport",
-          "ipa": "/spɔːrt/",
-          "meaning": "thể thao",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "four",
-          "ipa": "/fɔːr/",
-          "meaning": "bốn",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "number",
-          "hidden": false
-        },
-        {
-          "word": "door",
+          "word": "Nghĩa",
           "ipa": "/dɔːr/",
-          "meaning": "cửa",
+          "meaning": "n",
+          "partOfSpeech": "door",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "horse",
-          "ipa": "/hɔːrs/",
-          "meaning": "ngựa",
+          "word": "floor",
+          "ipa": "/flɔːr/",
+          "meaning": "sàn nhà",
           "audioUrl": "",
           "type": "word",
           "partOfSpeech": "noun",
@@ -3305,36 +2902,36 @@
           "hidden": false
         },
         {
-          "word": "more",
-          "ipa": "/mɔːr/",
-          "meaning": "nhiều hơn",
+          "word": "bảng",
+          "ipa": "/bɔːrn/",
+          "meaning": "v",
+          "partOfSpeech": "born",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "determiner/adverb",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "floor",
-          "ipa": "/flɔːr/",
-          "meaning": "sàn nhà",
+          "word": "được sinh ra",
+          "ipa": "/fɔːr/",
+          "meaning": "num",
+          "partOfSpeech": "four",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
+        },
+        {
+          "word": "course",
+          "ipa": "/kɔːrs/",
+          "meaning": "khóa học",
           "audioUrl": "",
           "type": "word",
           "partOfSpeech": "noun",
           "hidden": false
         },
         {
-          "word": "born",
-          "ipa": "/bɔːrn/",
-          "meaning": "được sinh ra",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
-        },
-        {
-          "word": "course",
-          "ipa": "/kɔːrs/",
-          "meaning": "khóa học",
+          "word": "horse",
+          "ipa": "/hɔːrs/",
+          "meaning": "ngựa",
           "audioUrl": "",
           "type": "word",
           "partOfSpeech": "noun",
@@ -3692,25 +3289,6 @@
       "audioUrl": "",
       "examples": [
         {
-          "word": "book",
-          "ipa": "/bʊk/",
-          "meaning": "cuốn sách",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "put",
-          "ipa": "/pʊt/",
-          "meaning": "đặt",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false,
-          "displayWord": "p{u}t"
-        },
-        {
           "word": "good",
           "ipa": "/ɡʊd/",
           "meaning": "tốt",
@@ -3721,24 +3299,22 @@
           "displayWord": "g{oo}d"
         },
         {
-          "word": "cook",
+          "word": "tốt",
           "ipa": "/kʊk/",
-          "meaning": "nấu ăn",
+          "meaning": "v",
+          "partOfSpeech": "cook",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
           "hidden": false,
-          "displayWord": "c{oo}k"
+          "type": "word"
         },
         {
-          "word": "took",
+          "word": "nấu ăn",
           "ipa": "/tʊk/",
-          "meaning": "lấy",
+          "meaning": "v (quá khứ)",
+          "partOfSpeech": "took",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
           "hidden": false,
-          "displayWord": "t{oo}k"
+          "type": "word"
         },
         {
           "word": "foot",
@@ -3761,14 +3337,13 @@
           "displayWord": "st{oo}d"
         },
         {
-          "word": "wood",
+          "word": "đứng",
           "ipa": "/wʊd/",
-          "meaning": "gỗ",
+          "meaning": "n",
+          "partOfSpeech": "wood",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
           "hidden": false,
-          "displayWord": "w{oo}d"
+          "type": "word"
         },
         {
           "word": "facebook",
@@ -3791,44 +3366,49 @@
           "displayWord": "f{oo}tball"
         },
         {
-          "word": "bull",
+          "word": "bóng đá",
           "ipa": "/bʊl/",
-          "meaning": "bò đực",
+          "meaning": "n",
+          "partOfSpeech": "bull",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
           "hidden": false,
-          "displayWord": "b{u}ll"
+          "type": "word"
         },
         {
-          "word": "full",
+          "word": "bò đực",
           "ipa": "/fʊl/",
-          "meaning": "đầy",
+          "meaning": "adj",
+          "partOfSpeech": "full",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
           "hidden": false,
-          "displayWord": "f{u}ll"
+          "type": "word"
         },
         {
-          "word": "pull",
+          "word": "đầy",
           "ipa": "/pʊl/",
-          "meaning": "kéo",
+          "meaning": "v",
+          "partOfSpeech": "pull",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
           "hidden": false,
-          "displayWord": "p{u}ll"
+          "type": "word"
         },
         {
-          "word": "push",
-          "ipa": "/pʊʃ/",
-          "meaning": "đẩy",
+          "word": "kéo",
+          "ipa": "/pʊt/",
+          "meaning": "v",
+          "partOfSpeech": "put",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
           "hidden": false,
-          "displayWord": "p{u}sh"
+          "type": "word"
+        },
+        {
+          "word": "đặt",
+          "ipa": "/pʊʃ/",
+          "meaning": "v",
+          "partOfSpeech": "push",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "sugar",
@@ -3926,16 +3506,6 @@
           "displayWord": "g{oo}d-l{oo}king w{o}man"
         },
         {
-          "word": "This woman is a good cook.",
-          "ipa": "/ðɪs ˈwʊmən ɪz ə ɡʊd kʊk/",
-          "meaning": "Người phụ nữ này là một đầu bếp giỏi.",
-          "audioUrl": "",
-          "type": "sentence",
-          "partOfSpeech": "",
-          "hidden": false,
-          "displayWord": "This w{o}man is a g{oo}d c{oo}k."
-        },
-        {
           "word": "I understood the book but he couldn’t.",
           "ipa": "/aɪ ˌʌndərˈstʊd ðə bʊk bʌt hiː ˈkʊd.ənt/",
           "meaning": "Tôi đã hiểu cuốn sách nhưng anh ta không thể.",
@@ -3994,60 +3564,6 @@
           "partOfSpeech": "",
           "hidden": false,
           "displayWord": "Luke c{ou}ld c{oo}k g{oo}d c{oo}kies if Luke w{ou}ld c{oo}k g{oo}d c{oo}kies."
-        },
-        {
-          "word": "thức ăn",
-          "ipa": "food /fuːd/",
-          "meaning": "bàn chân",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "foot fʊt",
-          "hidden": false
-        },
-        {
-          "word": "kẻ ngốc",
-          "ipa": "fool /fuːl/",
-          "meaning": "đầy",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "full fʊl",
-          "hidden": false
-        },
-        {
-          "word": "hồ bơi",
-          "ipa": "pool /puːl/",
-          "meaning": "kéo",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "pull pʊl",
-          "hidden": false
-        },
-        {
-          "word": "tên Luke",
-          "ipa": "Luke /luːk/",
-          "meaning": "nhìn",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "look lʊk",
-          "hidden": false
-        },
-        {
-          "word": "giày ống",
-          "ipa": "boot /buːt/",
-          "meaning": "sách",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "book bʊk",
-          "hidden": false
-        },
-        {
-          "word": "bắn",
-          "ipa": "shoot /ʃuːt/",
-          "meaning": "rung / đã lắc",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "shook ʃʊk",
-          "hidden": false
         },
         {
           "word": "Put the blue shoes on your good foot.",
@@ -4113,35 +3629,6 @@
       "audioUrl": "",
       "examples": [
         {
-          "word": "shoot",
-          "ipa": "/ʃuːt/",
-          "meaning": "bắn",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
-        },
-        {
-          "word": "blue",
-          "ipa": "/bluː/",
-          "meaning": "màu xanh da trời",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false,
-          "displayWord": "bl{ue}"
-        },
-        {
-          "word": "food",
-          "ipa": "/fuːd/",
-          "meaning": "thức ăn",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false,
-          "displayWord": "f{oo}d"
-        },
-        {
           "word": "school",
           "ipa": "/skuːl/",
           "meaning": "trường học",
@@ -4162,34 +3649,40 @@
           "displayWord": "cart{oo}n"
         },
         {
-          "word": "soon",
+          "word": "phim hoạt hình",
           "ipa": "/suːn/",
-          "meaning": "sớm",
+          "meaning": "adv",
+          "partOfSpeech": "soon",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adverb",
           "hidden": false,
-          "displayWord": "s{oo}n"
+          "type": "word"
         },
         {
-          "word": "tool",
+          "word": "sớm",
           "ipa": "/tuːl/",
-          "meaning": "dụng cụ",
+          "meaning": "n",
+          "partOfSpeech": "tool",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
           "hidden": false,
-          "displayWord": "t{oo}l"
+          "type": "word"
         },
         {
-          "word": "boot",
-          "ipa": "/buːt/",
-          "meaning": "giày ống",
+          "word": "dụng cụ",
+          "ipa": "/fuːd/",
+          "meaning": "n",
+          "partOfSpeech": "food",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
           "hidden": false,
-          "displayWord": "b{oo}t"
+          "type": "word"
+        },
+        {
+          "word": "thức ăn",
+          "ipa": "/buːt/",
+          "meaning": "n",
+          "partOfSpeech": "boot",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "afternoon",
@@ -4202,34 +3695,31 @@
           "displayWord": "aftern{oo}n"
         },
         {
-          "word": "rude",
+          "word": "buổi chiều",
           "ipa": "/ruːd/",
-          "meaning": "thô lỗ",
+          "meaning": "adj",
+          "partOfSpeech": "rude",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
           "hidden": false,
-          "displayWord": "r{u}de"
+          "type": "word"
         },
         {
-          "word": "rule",
+          "word": "thô lỗ",
           "ipa": "/ruːl/",
-          "meaning": "quy tắc",
+          "meaning": "n",
+          "partOfSpeech": "rule",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
           "hidden": false,
-          "displayWord": "r{u}le"
+          "type": "word"
         },
         {
-          "word": "June",
+          "word": "quy tắc",
           "ipa": "/dʒuːn/",
-          "meaning": "tháng 6",
+          "meaning": "n",
+          "partOfSpeech": "June",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
           "hidden": false,
-          "displayWord": "J{u}ne"
+          "type": "word"
         },
         {
           "word": "truth",
@@ -4252,44 +3742,40 @@
           "displayWord": "incl{u}de"
         },
         {
-          "word": "flew",
+          "word": "bao gồm",
           "ipa": "/fluː/",
-          "meaning": "bay",
+          "meaning": "v",
+          "partOfSpeech": "flew",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
           "hidden": false,
-          "displayWord": "fl{ew}"
+          "type": "word"
         },
         {
-          "word": "blew",
+          "word": "bay",
           "ipa": "/bluː/",
-          "meaning": "thổi",
+          "meaning": "v",
+          "partOfSpeech": "blew",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
           "hidden": false,
-          "displayWord": "bl{ew}"
+          "type": "word"
         },
         {
-          "word": "drew",
+          "word": "thổi",
           "ipa": "/druː/",
-          "meaning": "vẽ",
+          "meaning": "v",
+          "partOfSpeech": "drew",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
           "hidden": false,
-          "displayWord": "dr{ew}"
+          "type": "word"
         },
         {
-          "word": "do",
+          "word": "vẽ",
           "ipa": "/duː/",
-          "meaning": "làm",
+          "meaning": "v",
+          "partOfSpeech": "do",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
           "hidden": false,
-          "displayWord": "d{o}"
+          "type": "word"
         },
         {
           "word": "whose",
@@ -4302,14 +3788,13 @@
           "displayWord": "wh{o}se"
         },
         {
-          "word": "lose",
+          "word": "của ai",
           "ipa": "/luːz/",
-          "meaning": "đánh mất",
+          "meaning": "v",
+          "partOfSpeech": "lose",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
           "hidden": false,
-          "displayWord": "l{o}se"
+          "type": "word"
         },
         {
           "word": "prove",
@@ -4332,24 +3817,31 @@
           "displayWord": "impr{o}ve"
         },
         {
-          "word": "true",
+          "word": "cải thiện",
           "ipa": "/truː/",
-          "meaning": "đúng, thật",
+          "meaning": "adj",
+          "partOfSpeech": "true",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
           "hidden": false,
-          "displayWord": "tr{ue}"
+          "type": "word"
         },
         {
-          "word": "glue",
+          "word": "đúng, thật",
           "ipa": "/ɡluː/",
-          "meaning": "keo",
+          "meaning": "n",
+          "partOfSpeech": "glue",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
           "hidden": false,
-          "displayWord": "gl{ue}"
+          "type": "word"
+        },
+        {
+          "word": "keo",
+          "ipa": "/bluː/",
+          "meaning": "n",
+          "partOfSpeech": "blue",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "group",
@@ -4362,14 +3854,13 @@
           "displayWord": "gr{ou}p"
         },
         {
-          "word": "soup",
+          "word": "nhóm",
           "ipa": "/suːp/",
-          "meaning": "canh",
+          "meaning": "n",
+          "partOfSpeech": "soup",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
           "hidden": false,
-          "displayWord": "s{ou}p"
+          "type": "word"
         },
         {
           "word": "routine",
@@ -4412,24 +3903,22 @@
           "displayWord": "recr{ui}t"
         },
         {
-          "word": "two",
+          "word": "tuyển dụng",
           "ipa": "/tuː/",
-          "meaning": "hai",
+          "meaning": "number",
+          "partOfSpeech": "two",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "number",
           "hidden": false,
-          "displayWord": "tw{o}"
+          "type": "word"
         },
         {
-          "word": "shoe",
+          "word": "hai",
           "ipa": "/ʃuː/",
-          "meaning": "giày",
+          "meaning": "n",
+          "partOfSpeech": "shoe",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
           "hidden": false,
-          "displayWord": "sh{oe}"
+          "type": "word"
         },
         {
           "word": "choose a spoon",
@@ -4581,455 +4070,6 @@
       ]
     },
     {
-      "ipa": "ʌ",
-      "name": "á (a ngắn)",
-      "type": "monophthong_short",
-      "description": "Miệng mở vừa phải bằng một nửa âm /ɑ:/. Lưỡi hạ thấp nhẹ. Phát âm nhanh giống âm 'á' hay 'ớ' tiếng Việt.",
-      "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
-      "audioUrl": "",
-      "examples": [
-        {
-          "word": "cup",
-          "ipa": "/kʌp/",
-          "meaning": "cái cốc",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "love",
-          "ipa": "/lʌv/",
-          "meaning": "yêu",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
-        },
-        {
-          "word": "bus",
-          "ipa": "/bʌs/",
-          "meaning": "xe buýt",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "sun",
-          "ipa": "/sʌn/",
-          "meaning": "mặt trời",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "cut",
-          "ipa": "/kʌt/",
-          "meaning": "cắt",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
-        },
-        {
-          "word": "jump",
-          "ipa": "/dʒʌmp/",
-          "meaning": "nhảy",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
-        },
-        {
-          "word": "just",
-          "ipa": "/dʒʌst/",
-          "meaning": "vừa mới / chỉ",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adverb",
-          "hidden": false
-        },
-        {
-          "word": "Sunday",
-          "ipa": "/ˈsʌndeɪ/",
-          "meaning": "Chủ nhật",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "lucky",
-          "ipa": "/ˈlʌki/",
-          "meaning": "may mắn",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
-        },
-        {
-          "word": "uncle",
-          "ipa": "/ˈʌŋkəl/",
-          "meaning": "chú, bác",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "ugly",
-          "ipa": "/ˈʌɡli/",
-          "meaning": "xấu xí",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
-        },
-        {
-          "word": "study",
-          "ipa": "/ˈstʌdi/",
-          "meaning": "học",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
-        },
-        {
-          "word": "umbrella",
-          "ipa": "/ʌmˈbrelə/",
-          "meaning": "cái ô",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "come",
-          "ipa": "/kʌm/",
-          "meaning": "đến",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
-        },
-        {
-          "word": "son",
-          "ipa": "/sʌn/",
-          "meaning": "con trai",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "done",
-          "ipa": "/dʌn/",
-          "meaning": "hoàn thành",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
-        },
-        {
-          "word": "money",
-          "ipa": "/ˈmʌni/",
-          "meaning": "tiền",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "brother",
-          "ipa": "/ˈbrʌðər/",
-          "meaning": "anh/em trai",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "nothing",
-          "ipa": "/ˈnʌθɪŋ/",
-          "meaning": "không có gì",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "London",
-          "ipa": "/ˈlʌndən/",
-          "meaning": "Luân Đôn",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "Monday",
-          "ipa": "/ˈmʌndeɪ/",
-          "meaning": "thứ Hai",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "sometimes",
-          "ipa": "/ˈsʌmtaɪmz/",
-          "meaning": "thỉnh thoảng",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adverb",
-          "hidden": false
-        },
-        {
-          "word": "touch",
-          "ipa": "/tʌtʃ/",
-          "meaning": "chạm vào",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
-        },
-        {
-          "word": "rough",
-          "ipa": "/rʌf/",
-          "meaning": "gồ ghề, khó khăn",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
-        },
-        {
-          "word": "young",
-          "ipa": "/jʌŋ/",
-          "meaning": "trẻ",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
-        },
-        {
-          "word": "trouble",
-          "ipa": "/ˈtrʌbəl/",
-          "meaning": "rắc rối",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "jump up",
-          "ipa": "/dʒʌmp ʌp/",
-          "meaning": "nhảy lên",
-          "audioUrl": "",
-          "type": "phrase",
-          "hidden": false
-        },
-        {
-          "word": "lucky company",
-          "ipa": "/ˈlʌki ˈkʌmpəni/",
-          "meaning": "công ty may mắn",
-          "audioUrl": "",
-          "type": "phrase",
-          "hidden": false
-        },
-        {
-          "word": "some monkeys",
-          "ipa": "/sʌm ˈmʌŋkiz/",
-          "meaning": "một vài con khỉ",
-          "audioUrl": "",
-          "type": "phrase",
-          "hidden": false
-        },
-        {
-          "word": "enough honey",
-          "ipa": "/ɪˈnʌf ˈhʌni/",
-          "meaning": "đủ mật ong",
-          "audioUrl": "",
-          "type": "phrase",
-          "hidden": false
-        },
-        {
-          "word": "wonderful summer",
-          "ipa": "/ˈwʌndərfəl ˈsʌmər/",
-          "meaning": "mùa hè kỳ diệu",
-          "audioUrl": "",
-          "type": "phrase",
-          "hidden": false
-        },
-        {
-          "word": "a sunny Monday",
-          "ipa": "/ə ˈsʌni ˈmʌndeɪ/",
-          "meaning": "một ngày thứ Hai nắng",
-          "audioUrl": "",
-          "type": "phrase",
-          "hidden": false
-        },
-        {
-          "word": "a lucky number",
-          "ipa": "/ə ˈlʌki ˈnumbər/",
-          "meaning": "một con số may mắn",
-          "audioUrl": "",
-          "type": "phrase",
-          "hidden": false
-        },
-        {
-          "word": "much money",
-          "ipa": "/mʌtʃ ˈmʌni/",
-          "meaning": "nhiều tiền",
-          "audioUrl": "",
-          "type": "phrase",
-          "hidden": false
-        },
-        {
-          "word": "a funny uncle",
-          "ipa": "/ə ˈfʌni ˈʌŋkəl/",
-          "meaning": "một người chú vui tính",
-          "audioUrl": "",
-          "type": "phrase",
-          "hidden": false
-        },
-        {
-          "word": "a young brother",
-          "ipa": "/ə jʌŋ ˈbrʌðər/",
-          "meaning": "một người em trai trẻ",
-          "audioUrl": "",
-          "type": "phrase",
-          "hidden": false
-        },
-        {
-          "word": "a cup of honey",
-          "ipa": "/ə kʌp əv ˈhʌni/",
-          "meaning": "một cốc mật ong",
-          "audioUrl": "",
-          "type": "phrase",
-          "hidden": false
-        },
-        {
-          "word": "a lovely summer",
-          "ipa": "/ə ˈlʌvli ˈsʌmər/",
-          "meaning": "một mùa hè đáng yêu",
-          "audioUrl": "",
-          "type": "phrase",
-          "hidden": false
-        },
-        {
-          "word": "enough money",
-          "ipa": "/ɪˈnʌf ˈmʌni/",
-          "meaning": "đủ tiền",
-          "audioUrl": "",
-          "type": "phrase",
-          "hidden": false
-        },
-        {
-          "word": "a wonderful lunch",
-          "ipa": "/ə ˈwʌndərfəl lʌntʃ/",
-          "meaning": "một bữa trưa tuyệt vời",
-          "audioUrl": "",
-          "type": "phrase",
-          "hidden": false
-        },
-        {
-          "word": "The flood comes in summer.",
-          "ipa": "/ðə flʌd kʌmz ɪn ˈsʌmər/",
-          "meaning": "Lũ lụt đến vào mùa hè.",
-          "audioUrl": "",
-          "type": "sentence",
-          "partOfSpeech": "",
-          "hidden": false
-        },
-        {
-          "word": "He studies nothing on Sunday.",
-          "ipa": "/hi ˈstʌdiz ˈnʌθɪŋ ɑːn ˈsʌndeɪ/",
-          "meaning": "Cậu ta không học gì vào ngày Chủ nhật.",
-          "audioUrl": "",
-          "type": "sentence",
-          "partOfSpeech": "",
-          "hidden": false
-        },
-        {
-          "word": "My cousin will come on Sunday if it’s sunny.",
-          "ipa": "/maɪ ˈkʌzən wɪl kʌm ɑːn ˈsʌndeɪ ɪf ɪts ˈsʌni/",
-          "meaning": "Anh họ tôi sẽ đến vào Chủ nhật nếu trời nắng.",
-          "audioUrl": "",
-          "type": "sentence",
-          "partOfSpeech": "",
-          "hidden": false
-        },
-        {
-          "word": "My uncle has enough money.",
-          "ipa": "/maɪ ˈʌŋkəl hæz ɪˈnʌf ˈmʌni/",
-          "meaning": "Chú của tôi có đủ tiền.",
-          "audioUrl": "",
-          "type": "sentence",
-          "partOfSpeech": "",
-          "hidden": false
-        },
-        {
-          "word": "I love sunny summer days.",
-          "ipa": "/aɪ lʌv ˈsʌni ˈsʌmər deɪz/",
-          "meaning": "Tôi yêu những ngày hè đầy nắng.",
-          "audioUrl": "",
-          "type": "sentence",
-          "partOfSpeech": "",
-          "hidden": false
-        },
-        {
-          "word": "The hungry son wants some lunch.",
-          "ipa": "/ðə ˈhʌŋɡri sʌn wɑːnts sʌm lʌntʃ/",
-          "meaning": "Cậu con trai đói bụng muốn ăn trưa.",
-          "audioUrl": "",
-          "type": "sentence",
-          "partOfSpeech": "",
-          "hidden": false
-        },
-        {
-          "word": "She has a lovely cup of honey.",
-          "ipa": "/ʃi hæz ə ˈlʌvli kʌp əv ˈhʌni/",
-          "meaning": "Cô ấy có một cốc mật ong đáng yêu.",
-          "audioUrl": "",
-          "type": "sentence",
-          "partOfSpeech": "",
-          "hidden": false
-        },
-        {
-          "word": "My cousin studies in London.",
-          "ipa": "/maɪ ˈkʌzən ˈstʌdiz ɪn London/",
-          "meaning": "Anh/chị/em họ của tôi học ở Luân Đôn.",
-          "audioUrl": "",
-          "type": "sentence",
-          "partOfSpeech": "",
-          "hidden": false
-        },
-        {
-          "word": "My funny uncle runs under the sunny sun.",
-          "ipa": "/maɪ ˈfʌni ˈʌŋkəl rʌnz ˈʌndər ðə ˈsʌni sʌn/",
-          "meaning": "Người chú vui tính của tôi chạy dưới ánh mặt trời nắng.",
-          "audioUrl": "",
-          "type": "sentence",
-          "partOfSpeech": "",
-          "hidden": false
-        },
-        {
-          "word": "The young monkey jumps up for some honey.",
-          "ipa": "/ðə jʌŋ ˈmʌŋki dʒʌmps ʌp fər sʌm ˈhʌni/",
-          "meaning": "Con khỉ trẻ nhảy lên để lấy một ít mật ong.",
-          "audioUrl": "",
-          "type": "sentence",
-          "partOfSpeech": "",
-          "hidden": false
-        }
-      ],
-      "commonMistakes": [
-        "Phát âm thành âm 'u' hoặc quá rõ thành 'a' Việt."
-      ]
-    },
-    {
       "ipa": "ɜ:r",
       "name": "ơ dài uốn lưỡi",
       "type": "monophthong_long",
@@ -5037,60 +4077,6 @@
       "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
       "audioUrl": "",
       "examples": [
-        {
-          "word": "girl",
-          "ipa": "/ɡɜːrl/",
-          "meaning": "cô gái",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "bird",
-          "ipa": "/bɜːrd/",
-          "meaning": "con chim",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "learn",
-          "ipa": "/lɜːrn/",
-          "meaning": "học tập",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
-        },
-        {
-          "word": "work",
-          "ipa": "/wɜːrk/",
-          "meaning": "làm việc",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb/noun",
-          "hidden": false
-        },
-        {
-          "word": "first",
-          "ipa": "/fɜːrst/",
-          "meaning": "đầu tiên",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective/adverb",
-          "hidden": false
-        },
-        {
-          "word": "nurse",
-          "ipa": "/nɜːrs/",
-          "meaning": "y tá",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
         {
           "word": "serve",
           "ipa": "/sɜːrv/",
@@ -5155,9 +4141,18 @@
           "hidden": false
         },
         {
-          "word": "earn",
-          "ipa": "/ɜːrn/",
-          "meaning": "kiếm tiền",
+          "word": "nghe thấy",
+          "ipa": "/ɜːn/",
+          "meaning": "v",
+          "partOfSpeech": "earn",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
+        },
+        {
+          "word": "learn",
+          "ipa": "/lɜːrn/",
+          "meaning": "học tập",
           "audioUrl": "",
           "type": "word",
           "partOfSpeech": "verb",
@@ -5182,13 +4177,31 @@
           "hidden": false
         },
         {
-          "word": "dirt",
-          "ipa": "/dɜːrt/",
-          "meaning": "chất bẩn",
+          "word": "first",
+          "ipa": "/fɜːrst/",
+          "meaning": "đầu tiên",
           "audioUrl": "",
           "type": "word",
-          "partOfSpeech": "noun",
+          "partOfSpeech": "adjective/adverb",
           "hidden": false
+        },
+        {
+          "word": "đầu tiên",
+          "ipa": "/ɡɜːl/",
+          "meaning": "n",
+          "partOfSpeech": "girl",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
+        },
+        {
+          "word": "cô gái",
+          "ipa": "/dɜːt/",
+          "meaning": "n",
+          "partOfSpeech": "dirt",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "shirt",
@@ -5218,27 +4231,36 @@
           "hidden": false
         },
         {
-          "word": "turn",
-          "ipa": "/tɜːrn/",
-          "meaning": "quay",
+          "word": "khát",
+          "ipa": "/tɜːn/",
+          "meaning": "v",
+          "partOfSpeech": "turn",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb/noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "burn",
-          "ipa": "/bɜːrn/",
-          "meaning": "cháy",
+          "word": "quay",
+          "ipa": "/bɜːn/",
+          "meaning": "v",
+          "partOfSpeech": "burn",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb/noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "church",
           "ipa": "/tʃɜːrtʃ/",
           "meaning": "nhà thờ",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "noun",
+          "hidden": false
+        },
+        {
+          "word": "nurse",
+          "ipa": "/nɜːrs/",
+          "meaning": "y tá",
           "audioUrl": "",
           "type": "word",
           "partOfSpeech": "noun",
@@ -5270,6 +4292,15 @@
           "type": "word",
           "partOfSpeech": "noun",
           "hidden": false
+        },
+        {
+          "word": "Thổ Nhĩ Kỳ",
+          "ipa": "/wɜːk/",
+          "meaning": "v",
+          "partOfSpeech": "work",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "world",
@@ -5507,24 +4538,6 @@
           "audioUrl": "",
           "type": "word",
           "partOfSpeech": "preposition",
-          "hidden": false
-        },
-        {
-          "word": "teacher",
-          "ipa": "/ˈtiːtʃə/",
-          "meaning": "giáo viên",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "ago",
-          "ipa": "/əˈɡəʊ/",
-          "meaning": "cách đây",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adverb",
           "hidden": false
         },
         {
@@ -6020,6 +5033,428 @@
       ]
     },
     {
+      "ipa": "ʌ",
+      "name": "á (a ngắn)",
+      "type": "monophthong_short",
+      "description": "Miệng mở vừa phải bằng một nửa âm /ɑ:/. Lưỡi hạ thấp nhẹ. Phát âm nhanh giống âm 'á' hay 'ớ' tiếng Việt.",
+      "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+      "audioUrl": "",
+      "examples": [
+        {
+          "word": "sun",
+          "ipa": "/sʌn/",
+          "meaning": "mặt trời",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "noun",
+          "hidden": false
+        },
+        {
+          "word": "cut",
+          "ipa": "/kʌt/",
+          "meaning": "cắt",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "verb",
+          "hidden": false
+        },
+        {
+          "word": "jump",
+          "ipa": "/dʒʌmp/",
+          "meaning": "nhảy",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "verb",
+          "hidden": false
+        },
+        {
+          "word": "just",
+          "ipa": "/dʒʌst/",
+          "meaning": "vừa mới / chỉ",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "adverb",
+          "hidden": false
+        },
+        {
+          "word": "Sunday",
+          "ipa": "/ˈsʌndeɪ/",
+          "meaning": "Chủ nhật",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "noun",
+          "hidden": false
+        },
+        {
+          "word": "lucky",
+          "ipa": "/ˈlʌki/",
+          "meaning": "may mắn",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "adjective",
+          "hidden": false
+        },
+        {
+          "word": "uncle",
+          "ipa": "/ˈʌŋkəl/",
+          "meaning": "chú, bác",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "noun",
+          "hidden": false
+        },
+        {
+          "word": "ugly",
+          "ipa": "/ˈʌɡli/",
+          "meaning": "xấu xí",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "adjective",
+          "hidden": false
+        },
+        {
+          "word": "study",
+          "ipa": "/ˈstʌdi/",
+          "meaning": "học",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "verb",
+          "hidden": false
+        },
+        {
+          "word": "umbrella",
+          "ipa": "/ʌmˈbrelə/",
+          "meaning": "cái ô",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "noun",
+          "hidden": false
+        },
+        {
+          "word": "come",
+          "ipa": "/kʌm/",
+          "meaning": "đến",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "verb",
+          "hidden": false
+        },
+        {
+          "word": "son",
+          "ipa": "/sʌn/",
+          "meaning": "con trai",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "noun",
+          "hidden": false
+        },
+        {
+          "word": "done",
+          "ipa": "/dʌn/",
+          "meaning": "hoàn thành",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "adjective",
+          "hidden": false
+        },
+        {
+          "word": "money",
+          "ipa": "/ˈmʌni/",
+          "meaning": "tiền",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "noun",
+          "hidden": false
+        },
+        {
+          "word": "brother",
+          "ipa": "/ˈbrʌðər/",
+          "meaning": "anh/em trai",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "noun",
+          "hidden": false
+        },
+        {
+          "word": "nothing",
+          "ipa": "/ˈnʌθɪŋ/",
+          "meaning": "không có gì",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "noun",
+          "hidden": false
+        },
+        {
+          "word": "London",
+          "ipa": "/ˈlʌndən/",
+          "meaning": "Luân Đôn",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "noun",
+          "hidden": false
+        },
+        {
+          "word": "Monday",
+          "ipa": "/ˈmʌndeɪ/",
+          "meaning": "thứ Hai",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "noun",
+          "hidden": false
+        },
+        {
+          "word": "sometimes",
+          "ipa": "/ˈsʌmtaɪmz/",
+          "meaning": "thỉnh thoảng",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "adverb",
+          "hidden": false
+        },
+        {
+          "word": "touch",
+          "ipa": "/tʌtʃ/",
+          "meaning": "chạm vào",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "verb",
+          "hidden": false
+        },
+        {
+          "word": "rough",
+          "ipa": "/rʌf/",
+          "meaning": "gồ ghề, khó khăn",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "adjective",
+          "hidden": false
+        },
+        {
+          "word": "young",
+          "ipa": "/jʌŋ/",
+          "meaning": "trẻ",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "adjective",
+          "hidden": false
+        },
+        {
+          "word": "trouble",
+          "ipa": "/ˈtrʌbəl/",
+          "meaning": "rắc rối",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "noun",
+          "hidden": false
+        },
+        {
+          "word": "jump up",
+          "ipa": "/dʒʌmp ʌp/",
+          "meaning": "nhảy lên",
+          "audioUrl": "",
+          "type": "phrase",
+          "hidden": false
+        },
+        {
+          "word": "lucky company",
+          "ipa": "/ˈlʌki ˈkʌmpəni/",
+          "meaning": "công ty may mắn",
+          "audioUrl": "",
+          "type": "phrase",
+          "hidden": false
+        },
+        {
+          "word": "some monkeys",
+          "ipa": "/sʌm ˈmʌŋkiz/",
+          "meaning": "một vài con khỉ",
+          "audioUrl": "",
+          "type": "phrase",
+          "hidden": false
+        },
+        {
+          "word": "enough honey",
+          "ipa": "/ɪˈnʌf ˈhʌni/",
+          "meaning": "đủ mật ong",
+          "audioUrl": "",
+          "type": "phrase",
+          "hidden": false
+        },
+        {
+          "word": "wonderful summer",
+          "ipa": "/ˈwʌndərfəl ˈsʌmər/",
+          "meaning": "mùa hè kỳ diệu",
+          "audioUrl": "",
+          "type": "phrase",
+          "hidden": false
+        },
+        {
+          "word": "a sunny Monday",
+          "ipa": "/ə ˈsʌni ˈmʌndeɪ/",
+          "meaning": "một ngày thứ Hai nắng",
+          "audioUrl": "",
+          "type": "phrase",
+          "hidden": false
+        },
+        {
+          "word": "a lucky number",
+          "ipa": "/ə ˈlʌki ˈnumbər/",
+          "meaning": "một con số may mắn",
+          "audioUrl": "",
+          "type": "phrase",
+          "hidden": false
+        },
+        {
+          "word": "much money",
+          "ipa": "/mʌtʃ ˈmʌni/",
+          "meaning": "nhiều tiền",
+          "audioUrl": "",
+          "type": "phrase",
+          "hidden": false
+        },
+        {
+          "word": "a funny uncle",
+          "ipa": "/ə ˈfʌni ˈʌŋkəl/",
+          "meaning": "một người chú vui tính",
+          "audioUrl": "",
+          "type": "phrase",
+          "hidden": false
+        },
+        {
+          "word": "a young brother",
+          "ipa": "/ə jʌŋ ˈbrʌðər/",
+          "meaning": "một người em trai trẻ",
+          "audioUrl": "",
+          "type": "phrase",
+          "hidden": false
+        },
+        {
+          "word": "a cup of honey",
+          "ipa": "/ə kʌp əv ˈhʌni/",
+          "meaning": "một cốc mật ong",
+          "audioUrl": "",
+          "type": "phrase",
+          "hidden": false
+        },
+        {
+          "word": "a lovely summer",
+          "ipa": "/ə ˈlʌvli ˈsʌmər/",
+          "meaning": "một mùa hè đáng yêu",
+          "audioUrl": "",
+          "type": "phrase",
+          "hidden": false
+        },
+        {
+          "word": "enough money",
+          "ipa": "/ɪˈnʌf ˈmʌni/",
+          "meaning": "đủ tiền",
+          "audioUrl": "",
+          "type": "phrase",
+          "hidden": false
+        },
+        {
+          "word": "a wonderful lunch",
+          "ipa": "/ə ˈwʌndərfəl lʌntʃ/",
+          "meaning": "một bữa trưa tuyệt vời",
+          "audioUrl": "",
+          "type": "phrase",
+          "hidden": false
+        },
+        {
+          "word": "The flood comes in summer.",
+          "ipa": "/ðə flʌd kʌmz ɪn ˈsʌmər/",
+          "meaning": "Lũ lụt đến vào mùa hè.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "He studies nothing on Sunday.",
+          "ipa": "/hi ˈstʌdiz ˈnʌθɪŋ ɑːn ˈsʌndeɪ/",
+          "meaning": "Cậu ta không học gì vào ngày Chủ nhật.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "My cousin will come on Sunday if it’s sunny.",
+          "ipa": "/maɪ ˈkʌzən wɪl kʌm ɑːn ˈsʌndeɪ ɪf ɪts ˈsʌni/",
+          "meaning": "Anh họ tôi sẽ đến vào Chủ nhật nếu trời nắng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "My uncle has enough money.",
+          "ipa": "/maɪ ˈʌŋkəl hæz ɪˈnʌf ˈmʌni/",
+          "meaning": "Chú của tôi có đủ tiền.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I love sunny summer days.",
+          "ipa": "/aɪ lʌv ˈsʌni ˈsʌmər deɪz/",
+          "meaning": "Tôi yêu những ngày hè đầy nắng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The hungry son wants some lunch.",
+          "ipa": "/ðə ˈhʌŋɡri sʌn wɑːnts sʌm lʌntʃ/",
+          "meaning": "Cậu con trai đói bụng muốn ăn trưa.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "She has a lovely cup of honey.",
+          "ipa": "/ʃi hæz ə ˈlʌvli kʌp əv ˈhʌni/",
+          "meaning": "Cô ấy có một cốc mật ong đáng yêu.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "My cousin studies in London.",
+          "ipa": "/maɪ ˈkʌzən ˈstʌdiz ɪn London/",
+          "meaning": "Anh/chị/em họ của tôi học ở Luân Đôn.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "My funny uncle runs under the sunny sun.",
+          "ipa": "/maɪ ˈfʌni ˈʌŋkəl rʌnz ˈʌndər ðə ˈsʌni sʌn/",
+          "meaning": "Người chú vui tính của tôi chạy dưới ánh mặt trời nắng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The young monkey jumps up for some honey.",
+          "ipa": "/ðə jʌŋ ˈmʌŋki dʒʌmps ʌp fər sʌm ˈhʌni/",
+          "meaning": "Con khỉ trẻ nhảy lên để lấy một ít mật ong.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        }
+      ],
+      "commonMistakes": [
+        "Phát âm thành âm 'u' hoặc quá rõ thành 'a' Việt."
+      ]
+    },
+    {
       "ipa": "eɪ",
       "name": "nguyên âm đôi /eɪ/",
       "type": "diphthong",
@@ -6028,27 +5463,13 @@
       "audioUrl": "",
       "examples": [
         {
-          "word": "face",
-          "ipa": "/feɪs/",
-          "meaning": "khuôn mặt",
-          "audioUrl": "",
-          "hidden": false
-        },
-        {
-          "word": "say",
-          "ipa": "/seɪ/",
-          "meaning": "nói",
-          "audioUrl": "",
-          "hidden": false
-        },
-        {
-          "word": "Stay",
+          "word": "Nghĩa",
           "ipa": "/steɪ/",
-          "meaning": "ở lại",
+          "meaning": "v",
+          "partOfSpeech": "Stay",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "Monday",
@@ -6060,40 +5481,49 @@
           "hidden": false
         },
         {
-          "word": "Play",
+          "word": "thứ Hai",
           "ipa": "/pleɪ/",
-          "meaning": "chơi",
+          "meaning": "v",
+          "partOfSpeech": "Play",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "Day",
+          "word": "chơi",
+          "ipa": "/seɪ/",
+          "meaning": "v",
+          "partOfSpeech": "Say",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
+        },
+        {
+          "word": "nói",
           "ipa": "/deɪ/",
-          "meaning": "ngày",
+          "meaning": "n",
+          "partOfSpeech": "Day",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "Way",
+          "word": "ngày",
           "ipa": "/weɪ/",
-          "meaning": "cách, con đường",
+          "meaning": "n",
+          "partOfSpeech": "Way",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "Pay",
+          "word": "cách, con đường",
           "ipa": "/peɪ/",
-          "meaning": "trả tiền",
+          "meaning": "v",
+          "partOfSpeech": "Pay",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "Snake",
@@ -6114,67 +5544,67 @@
           "hidden": false
         },
         {
-          "word": "Name",
+          "word": "tuyệt vời",
           "ipa": "/neɪm/",
-          "meaning": "tên",
+          "meaning": "n",
+          "partOfSpeech": "Name",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "Cake",
+          "word": "tên",
           "ipa": "/keɪk/",
-          "meaning": "bánh kem",
+          "meaning": "n",
+          "partOfSpeech": "Cake",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "Game",
+          "word": "bánh kem",
           "ipa": "/ɡeɪm/",
-          "meaning": "trò chơi",
+          "meaning": "n",
+          "partOfSpeech": "Game",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "Late",
+          "word": "trò chơi",
           "ipa": "/leɪt/",
-          "meaning": "muộn",
+          "meaning": "adj",
+          "partOfSpeech": "Late",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "Make",
+          "word": "muộn",
           "ipa": "/meɪk/",
-          "meaning": "làm",
+          "meaning": "v",
+          "partOfSpeech": "Make",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "Take",
+          "word": "làm",
           "ipa": "/teɪk/",
-          "meaning": "lấy",
+          "meaning": "v",
+          "partOfSpeech": "Take",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "Rain",
+          "word": "lấy",
           "ipa": "/reɪn/",
-          "meaning": "mưa",
+          "meaning": "n",
+          "partOfSpeech": "Rain",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "Complain",
@@ -6195,22 +5625,22 @@
           "hidden": false
         },
         {
-          "word": "Pain",
+          "word": "tàu hỏa",
           "ipa": "/peɪn/",
-          "meaning": "đau",
+          "meaning": "n",
+          "partOfSpeech": "Pain",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "Main",
+          "word": "đau",
           "ipa": "/meɪn/",
-          "meaning": "chính",
+          "meaning": "adj",
+          "partOfSpeech": "Main",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "Paint",
@@ -6240,22 +5670,22 @@
           "hidden": false
         },
         {
-          "word": "Lazy",
+          "word": "điên",
           "ipa": "/ˈleɪ.zi/",
-          "meaning": "lười",
+          "meaning": "adj",
+          "partOfSpeech": "Lazy",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "Baby",
+          "word": "lười",
           "ipa": "/ˈbeɪ.bi/",
-          "meaning": "em bé",
+          "meaning": "n",
+          "partOfSpeech": "Baby",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "Table",
@@ -6487,20 +5917,6 @@
       "audioUrl": "",
       "examples": [
         {
-          "word": "my",
-          "ipa": "/maɪ/",
-          "meaning": "của tôi",
-          "audioUrl": "",
-          "hidden": false
-        },
-        {
-          "word": "price",
-          "ipa": "/praɪs/",
-          "meaning": "giá cả",
-          "audioUrl": "",
-          "hidden": false
-        },
-        {
           "word": "Light",
           "ipa": "/laɪt/",
           "meaning": "ánh sáng / nhẹ",
@@ -6555,31 +5971,13 @@
           "hidden": false
         },
         {
-          "word": "Tie",
+          "word": "dòng thời gian",
           "ipa": "/taɪ/",
-          "meaning": "cà vạt / buộc",
+          "meaning": "n/v",
+          "partOfSpeech": "Tie",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "nv",
-          "hidden": false
-        },
-        {
-          "word": "Lie",
-          "ipa": "/laɪ/",
-          "meaning": "nói dối / nằm",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
-        },
-        {
-          "word": "Try",
-          "ipa": "/traɪ/",
-          "meaning": "cố gắng",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "Crying",
@@ -6609,13 +6007,13 @@
           "hidden": false
         },
         {
-          "word": "High",
+          "word": "chiến đấu",
           "ipa": "/haɪ/",
-          "meaning": "cao",
+          "meaning": "adj/adv",
+          "partOfSpeech": "High",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjadv",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "Bright",
@@ -6627,13 +6025,22 @@
           "hidden": false
         },
         {
-          "word": "Nice",
-          "ipa": "/naɪs/",
-          "meaning": "tốt, đẹp",
+          "word": "Price",
+          "ipa": "/praɪs/",
+          "meaning": "giá",
+          "partOfSpeech": "noun",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
+        },
+        {
+          "word": "giá",
+          "ipa": "/naɪs/",
+          "meaning": "adj",
+          "partOfSpeech": "Nice",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "Drive",
@@ -6645,13 +6052,13 @@
           "hidden": false
         },
         {
-          "word": "Bike",
+          "word": "lái xe",
           "ipa": "/baɪk/",
-          "meaning": "xe đạp",
+          "meaning": "n",
+          "partOfSpeech": "Bike",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "Child",
@@ -6663,31 +6070,31 @@
           "hidden": false
         },
         {
-          "word": "Fly",
+          "word": "đứa trẻ",
           "ipa": "/flaɪ/",
-          "meaning": "bay",
+          "meaning": "v",
+          "partOfSpeech": "Fly",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "Sky",
+          "word": "bay",
           "ipa": "/skaɪ/",
-          "meaning": "bầu trời",
+          "meaning": "n",
+          "partOfSpeech": "Sky",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "Shy",
+          "word": "bầu trời",
           "ipa": "/ʃaɪ/",
-          "meaning": "nhút nhát",
+          "meaning": "adj",
+          "partOfSpeech": "Shy",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "Style",
@@ -6699,12 +6106,21 @@
           "hidden": false
         },
         {
-          "word": "Fire",
+          "word": "phong cách",
           "ipa": "/ˈfaɪər/",
-          "meaning": "lửa",
+          "meaning": "n",
+          "partOfSpeech": "Fire",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
+        },
+        {
+          "word": "Smile",
+          "ipa": "/smaɪl/",
+          "meaning": "mỉm cười",
           "audioUrl": "",
           "type": "word",
-          "partOfSpeech": "noun",
+          "partOfSpeech": "vn",
           "hidden": false
         },
         {
@@ -6955,36 +6371,22 @@
       "audioUrl": "",
       "examples": [
         {
-          "word": "boy",
-          "ipa": "/bɔɪ/",
-          "meaning": "cậu bé",
-          "audioUrl": "",
-          "hidden": false
-        },
-        {
-          "word": "choice",
-          "ipa": "/tʃɔɪs/",
-          "meaning": "sự lựa chọn",
-          "audioUrl": "",
-          "hidden": false
-        },
-        {
-          "word": "Oil",
+          "word": "Nghĩa",
           "ipa": "/ɔɪl/",
-          "meaning": "dầu",
+          "meaning": "n",
+          "partOfSpeech": "Oil",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "Boil",
+          "word": "dầu",
           "ipa": "/bɔɪl/",
-          "meaning": "đun sôi",
+          "meaning": "v",
+          "partOfSpeech": "Boil",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "Toilet",
@@ -7023,13 +6425,22 @@
           "hidden": false
         },
         {
-          "word": "Joy",
-          "ipa": "/dʒɔɪ/",
-          "meaning": "niềm vui",
-          "audioUrl": "",
-          "type": "word",
+          "word": "Boy",
+          "ipa": "/bɔɪ/",
+          "meaning": "cậu bé",
           "partOfSpeech": "noun",
-          "hidden": false
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
+        },
+        {
+          "word": "cậu bé",
+          "ipa": "/dʒɔɪ/",
+          "meaning": "n",
+          "partOfSpeech": "Joy",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "Toy",
@@ -7068,13 +6479,13 @@
           "hidden": false
         },
         {
-          "word": "Coin",
+          "word": "phá hủy",
           "ipa": "/kɔɪn/",
-          "meaning": "đồng xu",
+          "meaning": "n",
+          "partOfSpeech": "Coin",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "Voice",
@@ -7086,21 +6497,21 @@
           "hidden": false
         },
         {
+          "word": "Choice",
+          "ipa": "/tʃɔɪs/",
+          "meaning": "sự lựa chọn",
+          "partOfSpeech": "noun",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
+        },
+        {
           "word": "Point",
           "ipa": "/pɔɪnt/",
           "meaning": "điểm / chỉ ra",
           "audioUrl": "",
           "type": "word",
           "partOfSpeech": "nv",
-          "hidden": false
-        },
-        {
-          "word": "Join",
-          "ipa": "/dʒɔɪn/",
-          "meaning": "tham gia",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
           "hidden": false
         },
         {
@@ -7194,6 +6605,15 @@
           "hidden": false
         },
         {
+          "word": "Appointment",
+          "ipa": "/əˈpɔɪnt.mənt/",
+          "meaning": "cuộc hẹn",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "noun",
+          "hidden": false
+        },
+        {
           "word": "Annoying",
           "ipa": "/əˈnɔɪ.ɪŋ/",
           "meaning": "gây khó chịu",
@@ -7248,13 +6668,13 @@
           "hidden": false
         },
         {
-          "word": "Oily",
+          "word": "đang sôi",
           "ipa": "/ˈɔɪ.li/",
-          "meaning": "nhiều dầu",
+          "meaning": "adj",
+          "partOfSpeech": "Oily",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "Moisture",
@@ -7504,20 +6924,6 @@
       "audioUrl": "",
       "examples": [
         {
-          "word": "mouth",
-          "ipa": "/maʊθ/",
-          "meaning": "cái miệng",
-          "audioUrl": "",
-          "hidden": false
-        },
-        {
-          "word": "now",
-          "ipa": "/naʊ/",
-          "meaning": "bây giờ",
-          "audioUrl": "",
-          "hidden": false
-        },
-        {
           "word": "How",
           "ipa": "/haʊ/",
           "meaning": "như thế nào",
@@ -7563,13 +6969,22 @@
           "hidden": false
         },
         {
-          "word": "Our",
+          "word": "bên ngoài",
           "ipa": "/aʊr/",
-          "meaning": "của chúng tôi",
+          "meaning": "det",
+          "partOfSpeech": "Our",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "determiner",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
+        },
+        {
+          "word": "Mouth",
+          "ipa": "/maʊθ/",
+          "meaning": "miệng",
+          "partOfSpeech": "noun",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "Ground",
@@ -7608,13 +7023,13 @@
           "hidden": false
         },
         {
-          "word": "Loud",
+          "word": "xung quanh",
           "ipa": "/laʊd/",
-          "meaning": "to, ồn ào",
+          "meaning": "adj",
+          "partOfSpeech": "Loud",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "Count",
@@ -7662,22 +7077,22 @@
           "hidden": false
         },
         {
-          "word": "Down",
+          "word": "chú hề",
           "ipa": "/daʊn/",
-          "meaning": "xuống",
+          "meaning": "adv",
+          "partOfSpeech": "Down",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adverb",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "Town",
+          "word": "xuống",
           "ipa": "/taʊn/",
-          "meaning": "thị trấn",
+          "meaning": "n",
+          "partOfSpeech": "Town",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "Allow",
@@ -7743,13 +7158,13 @@
           "hidden": false
         },
         {
-          "word": "Sour",
+          "word": "một nghìn",
           "ipa": "/ˈsaʊər/",
-          "meaning": "chua",
+          "meaning": "adj",
+          "partOfSpeech": "Sour",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "Mountain",
@@ -7963,20 +7378,6 @@
       "audioUrl": "",
       "examples": [
         {
-          "word": "go",
-          "ipa": "/ɡəʊ/",
-          "meaning": "đi",
-          "audioUrl": "",
-          "hidden": false
-        },
-        {
-          "word": "show",
-          "ipa": "/ʃəʊ/",
-          "meaning": "chỉ ra",
-          "audioUrl": "",
-          "hidden": false
-        },
-        {
           "word": "close",
           "ipa": "/kloʊz/",
           "meaning": "đóng",
@@ -7986,13 +7387,13 @@
           "hidden": false
         },
         {
-          "word": "home",
+          "word": "đóng",
           "ipa": "/hoʊm/",
-          "meaning": "nhà",
+          "meaning": "n",
+          "partOfSpeech": "home",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "stone",
@@ -8040,31 +7441,13 @@
           "hidden": false
         },
         {
-          "word": "joke",
-          "ipa": "/dʒoʊk/",
-          "meaning": "trò đùa",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "nv",
-          "hidden": false
-        },
-        {
-          "word": "post",
+          "word": "trò đùa",
           "ipa": "/poʊst/",
-          "meaning": "bưu điện / đăng",
+          "meaning": "n/v",
+          "partOfSpeech": "post",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "nv",
-          "hidden": false
-        },
-        {
-          "word": "most",
-          "ipa": "/moʊst/",
-          "meaning": "nhiều nhất",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjadv",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "moment",
@@ -8083,6 +7466,15 @@
           "type": "word",
           "partOfSpeech": "vn",
           "hidden": false
+        },
+        {
+          "word": "chú ý",
+          "ipa": "/ʃoʊ/",
+          "meaning": "v",
+          "partOfSpeech": "show",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "window",
@@ -8130,58 +7522,103 @@
           "hidden": false
         },
         {
-          "word": "hope",
+          "word": "smoke",
+          "ipa": "/smoʊk/",
+          "meaning": "khói / hút khói",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "nv",
+          "hidden": false
+        },
+        {
+          "word": "khói",
+          "ipa": "/moʊst/",
+          "meaning": "adj/adv",
+          "partOfSpeech": "most",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
+        },
+        {
+          "word": "nhiều nhất",
+          "ipa": "/poʊst/",
+          "meaning": "n/v",
+          "partOfSpeech": "post",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
+        },
+        {
+          "word": "bài đăng",
+          "ipa": "/dʒoʊk/",
+          "meaning": "n/v",
+          "partOfSpeech": "joke",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
+        },
+        {
+          "word": "trò đùa",
           "ipa": "/hoʊp/",
-          "meaning": "hy vọng",
+          "meaning": "v",
+          "partOfSpeech": "hope",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "road",
+          "word": "hy vọng",
           "ipa": "/roʊd/",
-          "meaning": "con đường",
+          "meaning": "n",
+          "partOfSpeech": "road",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "boat",
+          "word": "con đường",
           "ipa": "/boʊt/",
-          "meaning": "thuyền",
+          "meaning": "n",
+          "partOfSpeech": "boat",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "goal",
+          "word": "thuyền",
           "ipa": "/ɡoʊl/",
-          "meaning": "mục tiêu",
+          "meaning": "n",
+          "partOfSpeech": "goal",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "coat",
+          "word": "mục tiêu",
+          "ipa": "/roʊd/",
+          "meaning": "n",
+          "partOfSpeech": "road",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
+        },
+        {
+          "word": "đường",
           "ipa": "/koʊt/",
-          "meaning": "áo khoác",
+          "meaning": "n",
+          "partOfSpeech": "coat",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "toes",
+          "word": "áo khoác",
           "ipa": "/toʊz/",
-          "meaning": "ngón chân",
+          "meaning": "n",
+          "partOfSpeech": "toes",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "potato",
@@ -8202,22 +7639,22 @@
           "hidden": false
         },
         {
-          "word": "cold",
+          "word": "cà chua",
           "ipa": "/koʊld/",
-          "meaning": "lạnh",
+          "meaning": "adj",
+          "partOfSpeech": "cold",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "old",
+          "word": "lạnh",
           "ipa": "/oʊld/",
-          "meaning": "cũ / già",
+          "meaning": "adj",
+          "partOfSpeech": "old",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "close home",
@@ -8404,72 +7841,67 @@
       "audioUrl": "",
       "examples": [
         {
-          "word": "near",
-          "ipa": "/nɪə/",
-          "meaning": "gần",
-          "audioUrl": "",
-          "hidden": false
-        },
-        {
-          "word": "here",
-          "ipa": "/hɪə/",
-          "meaning": "ở đây",
-          "audioUrl": "",
-          "hidden": false
-        },
-        {
-          "word": "ear",
+          "word": "Nghĩa",
           "ipa": "/ɪər/",
-          "meaning": "tai",
+          "meaning": "n",
+          "partOfSpeech": "ear",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "hear",
+          "word": "tai",
           "ipa": "/hɪər/",
-          "meaning": "nghe thấy",
+          "meaning": "v",
+          "partOfSpeech": "hear",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "dear",
+          "word": "nghe thấy",
           "ipa": "/dɪər/",
-          "meaning": "thân mến",
+          "meaning": "adj",
+          "partOfSpeech": "dear",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "tear",
+          "word": "thân mến",
           "ipa": "/tɪər/",
-          "meaning": "nước mắt",
+          "meaning": "n",
+          "partOfSpeech": "tear",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "fear",
+          "word": "nước mắt",
           "ipa": "/fɪər/",
-          "meaning": "sợ hãi",
+          "meaning": "n/v",
+          "partOfSpeech": "fear",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "nv",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "year",
+          "word": "sợ hãi",
           "ipa": "/jɪər/",
-          "meaning": "năm",
+          "meaning": "n",
+          "partOfSpeech": "year",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
+        },
+        {
+          "word": "năm",
+          "ipa": "/nɪər/",
+          "meaning": "adj/adv",
+          "partOfSpeech": "near",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "clear",
@@ -8499,13 +7931,13 @@
           "hidden": false
         },
         {
-          "word": "beer",
+          "word": "râu",
           "ipa": "/bɪər/",
-          "meaning": "bia",
+          "meaning": "n",
+          "partOfSpeech": "beer",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "cheers",
@@ -8517,22 +7949,22 @@
           "hidden": false
         },
         {
-          "word": "deer",
+          "word": "chúc sức khoẻ, cổ vũ",
           "ipa": "/dɪər/",
-          "meaning": "con hươu",
+          "meaning": "n",
+          "partOfSpeech": "deer",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "peer",
+          "word": "con hươu",
           "ipa": "/pɪər/",
-          "meaning": "bạn cùng tuổi",
+          "meaning": "n",
+          "partOfSpeech": "peer",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "career",
@@ -8560,6 +7992,15 @@
           "type": "word",
           "partOfSpeech": "noun",
           "hidden": false
+        },
+        {
+          "word": "kỹ sư",
+          "ipa": "/hɪər/",
+          "meaning": "adv",
+          "partOfSpeech": "here",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "we’re",
@@ -8670,15 +8111,6 @@
           "hidden": false
         },
         {
-          "word": "go to the theatre",
-          "ipa": "/ɡoʊ tə ðə ˈθiːətər / ˈmuvi/",
-          "meaning": "đi nhà hát / đi xem phim",
-          "audioUrl": "",
-          "type": "phrase",
-          "partOfSpeech": "",
-          "hidden": false
-        },
-        {
           "word": "It’s nearly 5pm",
           "ipa": "/ɪts ˈnɪrli faɪv piː em/",
           "meaning": "sắp 5 giờ chiều",
@@ -8782,63 +8214,49 @@
       "audioUrl": "",
       "examples": [
         {
-          "word": "hair",
-          "ipa": "/heə/",
-          "meaning": "tóc",
-          "audioUrl": "",
-          "hidden": false
-        },
-        {
-          "word": "there",
-          "ipa": "/ðeə/",
-          "meaning": "ở đó",
-          "audioUrl": "",
-          "hidden": false
-        },
-        {
-          "word": "care",
+          "word": "Nghĩa",
           "ipa": "/keə(r)/",
-          "meaning": "quan tâm",
+          "meaning": "v",
+          "partOfSpeech": "care",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "dare",
+          "word": "quan tâm",
           "ipa": "/deə(r)/",
-          "meaning": "dám",
+          "meaning": "v",
+          "partOfSpeech": "dare",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "rare",
+          "word": "dám",
           "ipa": "/reə(r)/",
-          "meaning": "hiếm",
+          "meaning": "adj",
+          "partOfSpeech": "rare",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "bare",
+          "word": "hiếm",
           "ipa": "/beə(r)/",
-          "meaning": "trống, trơ",
+          "meaning": "adj",
+          "partOfSpeech": "bare",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "fare",
+          "word": "trống, trơ",
           "ipa": "/feə(r)/",
-          "meaning": "tiền vé",
+          "meaning": "n",
+          "partOfSpeech": "fare",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "scare",
@@ -8904,31 +8322,40 @@
           "hidden": false
         },
         {
-          "word": "air",
+          "word": "sửa chữa",
           "ipa": "/eə(r)/",
-          "meaning": "không khí",
+          "meaning": "n",
+          "partOfSpeech": "air",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "fair",
+          "word": "không khí",
+          "ipa": "/heə(r)/",
+          "meaning": "n",
+          "partOfSpeech": "hair",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
+        },
+        {
+          "word": "tóc",
           "ipa": "/feə(r)/",
-          "meaning": "công bằng",
+          "meaning": "adj",
+          "partOfSpeech": "fair",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "pair",
+          "word": "công bằng",
           "ipa": "/peə(r)/",
-          "meaning": "cặp đôi",
+          "meaning": "n",
+          "partOfSpeech": "pair",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "chair",
@@ -8967,31 +8394,31 @@
           "hidden": false
         },
         {
-          "word": "wear",
+          "word": "nàng tiên",
           "ipa": "/weə(r)/",
-          "meaning": "mặc",
+          "meaning": "v",
+          "partOfSpeech": "wear",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "verb",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "bear",
+          "word": "mặc",
           "ipa": "/beə(r)/",
-          "meaning": "con gấu",
+          "meaning": "n",
+          "partOfSpeech": "bear",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
-          "word": "pear",
+          "word": "con gấu",
           "ipa": "/peə(r)/",
-          "meaning": "quả lê",
+          "meaning": "n",
+          "partOfSpeech": "pear",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "swear",
@@ -9012,13 +8439,22 @@
           "hidden": false
         },
         {
-          "word": "tear",
+          "word": "ở đâu",
           "ipa": "/teə(r)/",
-          "meaning": "xé / nước mắt",
+          "meaning": "v/n",
+          "partOfSpeech": "tear",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "vn",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
+        },
+        {
+          "word": "there",
+          "ipa": "/ðeə(r)/",
+          "meaning": "ở đó",
+          "partOfSpeech": "adverb",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "their",
@@ -9304,22 +8740,13 @@
       "audioUrl": "",
       "examples": [
         {
-          "word": "tour",
-          "ipa": "/tʊr/",
-          "meaning": "chuyến du lịch",
+          "word": "Nghĩa",
+          "ipa": "/pʊə(r)/",
+          "meaning": "adj",
+          "partOfSpeech": "poor",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "noun",
-          "hidden": false
-        },
-        {
-          "word": "poor",
-          "ipa": "/pʊr/",
-          "meaning": "nghèo",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "poorly",
@@ -9358,6 +8785,15 @@
           "hidden": false
         },
         {
+          "word": "du lịch",
+          "ipa": "/tʊə(r)/",
+          "meaning": "n",
+          "partOfSpeech": "tour",
+          "audioUrl": "",
+          "hidden": false,
+          "type": "word"
+        },
+        {
           "word": "tournament",
           "ipa": "/ˈtʊrnəmənt/",
           "meaning": "giải đấu",
@@ -9385,13 +8821,13 @@
           "hidden": false
         },
         {
-          "word": "sure",
-          "ipa": "/ʃʊr/",
-          "meaning": "chắc chắn",
+          "word": "hướng dẫn viên",
+          "ipa": "/ʃʊə(r)/",
+          "meaning": "adj",
+          "partOfSpeech": "sure",
           "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "adjective",
-          "hidden": false
+          "hidden": false,
+          "type": "word"
         },
         {
           "word": "surely",
@@ -9457,6 +8893,15 @@
           "hidden": false
         },
         {
+          "word": "tour guide",
+          "ipa": "/ˈtʊr ɡaɪd/",
+          "meaning": "hướng dẫn viên",
+          "audioUrl": "",
+          "type": "phrase",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
           "word": "world tour",
           "ipa": "/wɜːrld tʊr/",
           "meaning": "chuyến lưu diễn thế giới",
@@ -9508,6 +8953,14 @@
           "word": "poor people",
           "ipa": "/pʊr ˈpiːpl/",
           "meaning": "người nghèo",
+          "audioUrl": "",
+          "type": "phrase",
+          "hidden": false
+        },
+        {
+          "word": "world tour",
+          "ipa": "/wɜːrld tʊr/",
+          "meaning": "chuyến lưu diễn thế giới",
           "audioUrl": "",
           "type": "phrase",
           "hidden": false
@@ -9590,15 +9043,6 @@
           "meaning": "Du khách nghèo không chắc về bảo hiểm của mình trong chuyến du lịch.",
           "audioUrl": "",
           "type": "sentence",
-          "hidden": false
-        },
-        {
-          "word": "tour guide",
-          "ipa": "/ˈtʊr ɡaɪd/",
-          "meaning": "hướng dẫn viên",
-          "audioUrl": "",
-          "type": "phrase",
-          "partOfSpeech": "",
           "hidden": false
         }
       ],
@@ -9683,6 +9127,44 @@
       "commonMistakes": [
         "Đọc giống chữ 'đ' tiếng Việt."
       ]
+    },
+    {
+      "ipa": "tʃ",
+      "name": "phụ âm vô thanh /tʃ/",
+      "type": "consonant_voiceless",
+      "description": "Bắt đầu từ vị trí âm /t/, sau đó chu môi và bật hơi nhanh sang âm /ʃ/. Không rung cổ.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        {
+          "word": "church",
+          "ipa": "/tʃɜːtʃ/",
+          "meaning": "nhà thờ",
+          "audioUrl": "",
+          "hidden": false
+        }
+      ],
+      "commonMistakes": [
+        "Đọc giống chữ 'ch' Việt Nam (chữ 'ch' Việt Nam không bật hơi)."
+      ]
+    },
+    {
+      "ipa": "dʒ",
+      "name": "phụ âm hữu thanh /dʒ/",
+      "type": "consonant_voiced",
+      "description": "Giống âm /tʃ/ nhưng làm rung dây thanh quản ở cổ họng.",
+      "mouthShapeImage": "",
+      "audioUrl": "",
+      "examples": [
+        {
+          "word": "judge",
+          "ipa": "/dʒʌdʒ/",
+          "meaning": "thẩm phán",
+          "audioUrl": "",
+          "hidden": false
+        }
+      ],
+      "commonMistakes": []
     },
     {
       "ipa": "k",
@@ -9872,44 +9354,6 @@
           "word": "vision",
           "ipa": "/ˈvɪʒn/",
           "meaning": "tầm nhìn",
-          "audioUrl": "",
-          "hidden": false
-        }
-      ],
-      "commonMistakes": []
-    },
-    {
-      "ipa": "tʃ",
-      "name": "phụ âm vô thanh /tʃ/",
-      "type": "consonant_voiceless",
-      "description": "Bắt đầu từ vị trí âm /t/, sau đó chu môi và bật hơi nhanh sang âm /ʃ/. Không rung cổ.",
-      "mouthShapeImage": "",
-      "audioUrl": "",
-      "examples": [
-        {
-          "word": "church",
-          "ipa": "/tʃɜːtʃ/",
-          "meaning": "nhà thờ",
-          "audioUrl": "",
-          "hidden": false
-        }
-      ],
-      "commonMistakes": [
-        "Đọc giống chữ 'ch' Việt Nam (chữ 'ch' Việt Nam không bật hơi)."
-      ]
-    },
-    {
-      "ipa": "dʒ",
-      "name": "phụ âm hữu thanh /dʒ/",
-      "type": "consonant_voiced",
-      "description": "Giống âm /tʃ/ nhưng làm rung dây thanh quản ở cổ họng.",
-      "mouthShapeImage": "",
-      "audioUrl": "",
-      "examples": [
-        {
-          "word": "judge",
-          "ipa": "/dʒʌdʒ/",
-          "meaning": "thẩm phán",
           "audioUrl": "",
           "hidden": false
         }

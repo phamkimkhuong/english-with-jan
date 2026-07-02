@@ -1,0 +1,553 @@
+{
+  "ipa": "ɔɪ",
+  "name": "nguyên âm đôi /ɔɪ/",
+  "type": "diphthong",
+  "description": "Bắt đầu từ âm /ɔ:/ và trượt nhanh sang âm /ɪ/. Môi từ tròn dẹt mở dần sang hai bên.",
+  "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "Nghĩa",
+      "ipa": "/ɔɪl/",
+      "meaning": "n",
+      "partOfSpeech": "Oil",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "dầu",
+      "ipa": "/bɔɪl/",
+      "meaning": "v",
+      "partOfSpeech": "Boil",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "Toilet",
+      "ipa": "/ˈtɔɪ.lət/",
+      "meaning": "nhà vệ sinh",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Moist",
+      "ipa": "/mɔɪst/",
+      "meaning": "ẩm",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "Avoid",
+      "ipa": "/əˈvɔɪd/",
+      "meaning": "tránh",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "Poison",
+      "ipa": "/ˈpɔɪ.zən/",
+      "meaning": "chất độc",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "nv",
+      "hidden": false
+    },
+    {
+      "word": "Boy",
+      "ipa": "/bɔɪ/",
+      "meaning": "cậu bé",
+      "partOfSpeech": "noun",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "cậu bé",
+      "ipa": "/dʒɔɪ/",
+      "meaning": "n",
+      "partOfSpeech": "Joy",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "Toy",
+      "ipa": "/tɔɪ/",
+      "meaning": "đồ chơi",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Annoy",
+      "ipa": "/əˈnɔɪ/",
+      "meaning": "làm phiền",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "Enjoy",
+      "ipa": "/ɪnˈdʒɔɪ/",
+      "meaning": "tận hưởng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "Destroy",
+      "ipa": "/dɪˈstrɔɪ/",
+      "meaning": "phá hủy",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "phá hủy",
+      "ipa": "/kɔɪn/",
+      "meaning": "n",
+      "partOfSpeech": "Coin",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "Voice",
+      "ipa": "/vɔɪs/",
+      "meaning": "giọng nói",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Choice",
+      "ipa": "/tʃɔɪs/",
+      "meaning": "sự lựa chọn",
+      "partOfSpeech": "noun",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "Point",
+      "ipa": "/pɔɪnt/",
+      "meaning": "điểm / chỉ ra",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "nv",
+      "hidden": false
+    },
+    {
+      "word": "Noise",
+      "ipa": "/nɔɪz/",
+      "meaning": "tiếng ồn",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Royal",
+      "ipa": "/ˈrɔɪ.əl/",
+      "meaning": "hoàng gia",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "Loyal",
+      "ipa": "/ˈlɔɪ.əl/",
+      "meaning": "trung thành",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "Employer",
+      "ipa": "/ɪmˈplɔɪ.ər/",
+      "meaning": "người sử dụng lao động",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Employment",
+      "ipa": "/ɪmˈplɔɪ.mənt/",
+      "meaning": "việc làm",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Appointment",
+      "ipa": "/əˈpɔɪnt.mənt/",
+      "meaning": "cuộc hẹn",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Disappoint",
+      "ipa": "/ˌdɪs.əˈpɔɪnt/",
+      "meaning": "làm thất vọng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "Voyage",
+      "ipa": "/ˈvɔɪ.ɪdʒ/",
+      "meaning": "chuyến đi xa",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Employee",
+      "ipa": "/ɪmˈplɔɪ.iː/",
+      "meaning": "nhân viên",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Loyalist",
+      "ipa": "/ˈlɔɪ.ə.lɪst/",
+      "meaning": "người trung thành",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Appointment",
+      "ipa": "/əˈpɔɪnt.mənt/",
+      "meaning": "cuộc hẹn",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Annoying",
+      "ipa": "/əˈnɔɪ.ɪŋ/",
+      "meaning": "gây khó chịu",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "Destroyer",
+      "ipa": "/dɪˈstrɔɪ.ər/",
+      "meaning": "kẻ phá hủy / tàu khu trục",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Royalty",
+      "ipa": "/ˈrɔɪ.əl.ti/",
+      "meaning": "hoàng tộc",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Enjoyable",
+      "ipa": "/ɪnˈdʒɔɪ.ə.bəl/",
+      "meaning": "thú vị, dễ chịu",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "Poisonous",
+      "ipa": "/ˈpɔɪ.zə.nəs/",
+      "meaning": "có độc",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "Boiling",
+      "ipa": "/ˈbɔɪ.lɪŋ/",
+      "meaning": "đang sôi",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjv",
+      "hidden": false
+    },
+    {
+      "word": "đang sôi",
+      "ipa": "/ˈɔɪ.li/",
+      "meaning": "adj",
+      "partOfSpeech": "Oily",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "Moisture",
+      "ipa": "/ˈmɔɪs.tʃər/",
+      "meaning": "độ ẩm",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Boyfriend",
+      "ipa": "/ˈbɔɪ.frend/",
+      "meaning": "bạn trai",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Joyful",
+      "ipa": "/ˈdʒɔɪ.fəl/",
+      "meaning": "vui vẻ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "boil the oil",
+      "ipa": "/bɔɪl ðə ɔɪl/",
+      "meaning": "đun sôi dầu",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "avoid the noise",
+      "ipa": "/əˈvɔɪd ðə nɔɪz/",
+      "meaning": "tránh tiếng ồn",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "enjoy the toy",
+      "ipa": "/ɪnˈdʒɔɪ ðə tɔɪ/",
+      "meaning": "chơi đồ chơi vui vẻ",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "destroy the coin",
+      "ipa": "/dɪˈstrɔɪ ðə kɔɪn/",
+      "meaning": "phá hủy đồng xu",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "join the boys",
+      "ipa": "/dʒɔɪn ðə bɔɪz/",
+      "meaning": "tham gia với các cậu bé",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "voice the choice",
+      "ipa": "/vɔɪs ðə tʃɔɪs/",
+      "meaning": "nói ra lựa chọn",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "avoid the poison",
+      "ipa": "/əˈvɔɪd ðə ˈpɔɪzən/",
+      "meaning": "tránh chất độc",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "enjoy the voyage",
+      "ipa": "/ɪnˈdʒɔɪ ðə ˈvɔɪɪdʒ/",
+      "meaning": "tận hưởng chuyến đi",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "spoil the joy",
+      "ipa": "/spɔɪl ðə dʒɔɪ/",
+      "meaning": "phá hỏng niềm vui",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "join the point",
+      "ipa": "/dʒɔɪn ðə pɔɪnt/",
+      "meaning": "tham gia điểm (ngữ cảnh học)",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "enjoy the noise",
+      "ipa": "/ɪnˈdʒɔɪ ðə nɔɪz/",
+      "meaning": "tận hưởng tiếng ồn",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "avoid the oil",
+      "ipa": "/əˈvɔɪd ðə ɔɪl/",
+      "meaning": "tránh dầu",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "boil the toy",
+      "ipa": "/bɔɪl ðə tɔɪ/",
+      "meaning": "đun đồ chơi (ngữ cảnh luyện âm)",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "enjoy the voice",
+      "ipa": "/ɪnˈdʒɔɪ ðə vɔɪs/",
+      "meaning": "tận hưởng giọng nói",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "The boy has a toy.",
+      "ipa": "/ðə bɔɪ hæz ə tɔɪ/",
+      "meaning": "Cậu bé có một món đồ chơi.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "I enjoy the noise.",
+      "ipa": "/aɪ ɪnˈdʒɔɪ ðə nɔɪz/",
+      "meaning": "Tôi thích tiếng ồn.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Please avoid the poison.",
+      "ipa": "/pliːz əˈvɔɪd ðə ˈpɔɪzən/",
+      "meaning": "Hãy tránh chất độc.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "The noisy boy enjoys a toy.",
+      "ipa": "/ðə ˈnɔɪzi bɔɪ ɪnˈdʒɔɪz ə tɔɪ/",
+      "meaning": "Cậu bé ồn ào thích một món đồ chơi.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Do not avoid it. It’s your choice.",
+      "ipa": "/duː nɒt əˈvɔɪd ɪt. ɪts jʊər tʃɔɪs/",
+      "meaning": "Đừng tránh nó. Đó là lựa chọn của bạn.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "I can’t enjoy this movie because of the annoying noise from that boy.",
+      "ipa": "/aɪ kænt ɪnˈdʒɔɪ ðɪs ˈmuːvi bɪˈkɔːz əv ði əˈnɔɪɪŋ nɔɪz frəm ðæt bɔɪ/",
+      "meaning": "Tôi không thể tận hưởng bộ phim này vì tiếng ồn khó chịu từ cậu bé đó.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Don’t destroy yourself by being disappointed so much.",
+      "ipa": "/doʊnt dɪˈstrɔɪ jɔːrˈsɛlf baɪ ˈbiːɪŋ ˌdɪsəˈpɔɪntɪd soʊ mʌtʃ/",
+      "meaning": "Đừng tự hủy hoại bản thân vì thất vọng quá nhiều.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "I have an appointment with an employee who works in a very enjoyable company.",
+      "ipa": "/aɪ hæv ən əˈpɔɪntmənt wɪð ən ɪmˈplɔɪiː huː wɜːrks ɪn ə ˈenʤɔɪəbəl ˈkʌmpəni/",
+      "meaning": "Tôi có một cuộc hẹn với một nhân viên làm việc trong một công ty rất thú vị.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Don’t disappoint your team when you join the meeting, because every point is important.",
+      "ipa": "/doʊnt ˌdɪsəˈpɔɪnt jɔːr tiːm wen ju dʒɔɪn ðə ˈmiːtɪŋ bɪˈkɒz ˈevri pɔɪnt ɪz ɪmˈpɔːrtənt/",
+      "meaning": "Đừng làm đội của bạn thất vọng khi tham gia cuộc họp, vì mọi điểm đều quan trọng.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Đọc thành 'oi' Việt Nam."
+  ]
+}

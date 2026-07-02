@@ -1,0 +1,419 @@
+{
+  "ipa": "ɪ",
+  "name": "i ngắn",
+  "type": "monophthong_short",
+  "description": "Môi hơi mở rộng, lưỡi hạ thấp hơn so với âm /i:/. Phát âm ngắn, nhanh, dứt khoát, lai giữa âm 'i' và 'ê' tiếng Việt.",
+  "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "NGHĨA",
+      "ipa": "/sɪŋ/",
+      "meaning": "V",
+      "partOfSpeech": "sing",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "hát",
+      "ipa": "/ɡɪv/",
+      "meaning": "V",
+      "partOfSpeech": "give",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "đưa",
+      "ipa": "/sɪt/",
+      "meaning": "V",
+      "partOfSpeech": "sit",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "river",
+      "ipa": "/ˈrɪvər/",
+      "meaning": "sông",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "r{i}ver"
+    },
+    {
+      "word": "winter",
+      "ipa": "/ˈwɪntər/",
+      "meaning": "mùa đông",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "w{i}nter"
+    },
+    {
+      "word": "listen",
+      "ipa": "/ˈlɪsən/",
+      "meaning": "nghe",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false,
+      "displayWord": "l{i}sten"
+    },
+    {
+      "word": "missing",
+      "ipa": "/ˈmɪsɪŋ/",
+      "meaning": "thiếu",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false,
+      "displayWord": "m{i}ss{i}ng"
+    },
+    {
+      "word": "picnic",
+      "ipa": "/ˈpɪknɪk/",
+      "meaning": "dã ngoại",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "p{i}cn{i}c"
+    },
+    {
+      "word": "dã ngoại",
+      "ipa": "/bɪl/",
+      "meaning": "N",
+      "partOfSpeech": "bill",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "sister",
+      "ipa": "/ˈsɪstər/",
+      "meaning": "chị em",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "s{i}ster"
+    },
+    {
+      "word": "middle",
+      "ipa": "/ˈmɪdəl/",
+      "meaning": "giữa",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "m{i}ddle"
+    },
+    {
+      "word": "little",
+      "ipa": "/ˈlɪtl/",
+      "meaning": "nhỏ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false,
+      "displayWord": "l{i}ttle"
+    },
+    {
+      "word": "mirror",
+      "ipa": "/ˈmɪrər/",
+      "meaning": "gương",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "m{i}rror"
+    },
+    {
+      "word": "killer",
+      "ipa": "/ˈkɪlər/",
+      "meaning": "kẻ sát nhân",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "k{i}ller"
+    },
+    {
+      "word": "simplest",
+      "ipa": "/ˈsɪmplɪst/",
+      "meaning": "đơn giản nhất",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false,
+      "displayWord": "s{i}mpl{e}st"
+    },
+    {
+      "word": "biggest",
+      "ipa": "/ˈbɪɡɪst/",
+      "meaning": "to nhất",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false,
+      "displayWord": "b{i}gg{e}st"
+    },
+    {
+      "word": "fastest",
+      "ipa": "/ˈfæstɪst/",
+      "meaning": "nhanh nhất",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adverb",
+      "hidden": false,
+      "displayWord": "fast{e}st"
+    },
+    {
+      "word": "build",
+      "ipa": "/bɪld/",
+      "meaning": "xây dựng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false,
+      "displayWord": "b{u}ild"
+    },
+    {
+      "word": "guilt",
+      "ipa": "/ɡɪlt/",
+      "meaning": "tội lỗi",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "g{u}{i}lt"
+    },
+    {
+      "word": "biscuit",
+      "ipa": "/ˈbɪskɪt/",
+      "meaning": "bánh quy",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "b{i}sc{u}{i}t"
+    },
+    {
+      "word": "bánh quy",
+      "ipa": "/dʒɪm/",
+      "meaning": "N",
+      "partOfSpeech": "gym",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "system",
+      "ipa": "/ˈsɪstəm/",
+      "meaning": "hệ thống",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "s{y}stem"
+    },
+    {
+      "word": "symbol",
+      "ipa": "/ˈsɪmbəl/",
+      "meaning": "biểu tượng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "s{y}mbol"
+    },
+    {
+      "word": "minute",
+      "ipa": "/ˈmɪnɪt/",
+      "meaning": "phút",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "m{i}n{u}te"
+    },
+    {
+      "word": "big city",
+      "ipa": "/bɪɡ ˈsɪti/",
+      "meaning": "thành phố lớn",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "b{i}g c{i}ty"
+    },
+    {
+      "word": "innocent victim",
+      "ipa": "/ˈɪnəsənt ˈvɪktɪm/",
+      "meaning": "nạn nhân vô tội",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "{i}nnocent v{i}ct{i}m"
+    },
+    {
+      "word": "drink milk",
+      "ipa": "/drɪŋk mɪlk/",
+      "meaning": "uống sữa",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "dr{i}nk m{i}lk"
+    },
+    {
+      "word": "children's film",
+      "ipa": "/ˈtʃɪldrənz fɪlm/",
+      "meaning": "phim thiếu nhi",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "ch{i}ldren's f{i}lm"
+    },
+    {
+      "word": "simple living",
+      "ipa": "/ˈsɪmpəl ˈlɪvɪŋ/",
+      "meaning": "cuộc sống đơn giản",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "s{i}mple l{i}v{i}ng"
+    },
+    {
+      "word": "fish and chips",
+      "ipa": "/fɪʃ ænd tʃɪps/",
+      "meaning": "cá và khoai tây",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "f{i}sh and ch{i}ps"
+    },
+    {
+      "word": "trip to Italy",
+      "ipa": "/trɪp tə ˈɪtəli/",
+      "meaning": "chuyến đi đến Ý",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "tr{i}p to {I}taly"
+    },
+    {
+      "word": "spring picnic",
+      "ipa": "/sprɪŋ ˈpɪknɪk/",
+      "meaning": "dã ngoại mùa xuân",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "spr{i}ng p{i}cn{i}c"
+    },
+    {
+      "word": "this thing",
+      "ipa": "/ðɪs θɪŋ/",
+      "meaning": "cái này",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "th{i}s th{i}ng"
+    },
+    {
+      "word": "winter wind",
+      "ipa": "/ˈwɪntər wɪnd/",
+      "meaning": "gió mùa đông",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "w{i}nter w{i}nd"
+    },
+    {
+      "word": "Jim will visit the kids for a few minutes.",
+      "ipa": "/dʒɪm wɪl ˈvɪzɪt ðə kɪdz fə ə fjuː ˈmɪnɪts/",
+      "meaning": "Jim sẽ đến thăm bọn trẻ trong vài phút.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "J{i}m w{i}ll v{i}s{i}t the k{i}ds for a few m{i}n{u}tes."
+    },
+    {
+      "word": "My eldest sister often listens to guitar music.",
+      "ipa": "/maɪ ˈeldɪst ˈsɪstər ˈɒfən ˈlɪsənz tə ɡɪˈtɑːr ˈmjuːzɪk/",
+      "meaning": "Chị cả của tôi thường nghe nhạc ghi ta.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "My eld{e}st s{i}ster often l{i}stens to g{ui}tar mus{i}c."
+    },
+    {
+      "word": "Kim will visit her big sister Linda in Virginia.",
+      "ipa": "/kɪm wɪl ˈvɪzɪt hɜːr bɪɡ ˈsɪstər ˈlɪndə ɪn vərˈdʒɪniə/",
+      "meaning": "Kim sẽ đến thăm chị gái Linda của cô ấy ở Virginia.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "K{i}m w{i}ll v{i}s{i}t her b{i}g s{i}ster L{i}nda {i}n Virg{i}nia."
+    },
+    {
+      "word": "Bill Clinton visited the Middle East.",
+      "ipa": "/bɪl ˈklɪntən ˈvɪzɪtɪd ðə ˈmɪdəl iːst/",
+      "meaning": "Bill Clinton đã đến thăm Trung Đông.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "B{i}ll Cl{i}nton v{i}s{i}ted the M{i}ddle East."
+    },
+    {
+      "word": "The Smiths invited him to an informal dinner.",
+      "ipa": "/ðə smɪθs ɪnˈvaɪtɪd hɪm tuː ən ɪnˈfɔːrməl ˈdɪnər/",
+      "meaning": "Gia đình Smith đã mời anh ấy đến một bữa tối thân mật.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "The Sm{i}ths {i}nvit{e}d h{i}m to an {i}nformal d{i}nner."
+    },
+    {
+      "word": "This city has an interesting history.",
+      "ipa": "/ðɪs ˈsɪti hæz ən ˈɪntrəstɪŋ ˈhɪstəri/",
+      "meaning": "Thành phố này có một lịch sử thú vị.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "Th{i}s c{i}ty has an {i}nterest{i}ng h{i}story."
+    },
+    {
+      "word": "When did Bill Clinton visit the Middle East?",
+      "ipa": "/wen dɪd bɪl ˈklɪntən ˈvɪzɪt ðə ˈmɪdəl iːst/",
+      "meaning": "Bill Clinton đã đến thăm Trung Đông khi nào?",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "When d{i}d B{i}ll Cl{i}nton v{i}s{i}t the M{i}ddle East?"
+    },
+    {
+      "word": "In the beginning it was difficult for Jim.",
+      "ipa": "/ɪn ðə bɪˈɡɪnɪŋ ɪt wəz ˈdɪfɪkəlt fər dʒɪm/",
+      "meaning": "Ban đầu, điều đó rất khó đối với Jim.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "{I}n the beg{i}nn{i}ng {i}t was d{i}ff{i}cult for J{i}m."
+    }
+  ],
+  "commonMistakes": [
+    "Kéo dài âm giống như /i:/.",
+    "Phát âm quá rõ thành chữ 'i' hoặc chữ 'ê' hoàn toàn."
+  ]
+}

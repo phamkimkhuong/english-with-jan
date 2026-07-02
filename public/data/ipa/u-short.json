@@ -1,0 +1,340 @@
+{
+  "ipa": "ʊ",
+  "name": "u ngắn",
+  "type": "monophthong_short",
+  "description": "Môi hơi tròn và đẩy nhẹ ra trước. Lưỡi thụt nhẹ về sau. Phát âm ngắn, hơi lai giữa 'u' và 'ư'.",
+  "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "good",
+      "ipa": "/ɡʊd/",
+      "meaning": "tốt",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false,
+      "displayWord": "g{oo}d"
+    },
+    {
+      "word": "tốt",
+      "ipa": "/kʊk/",
+      "meaning": "v",
+      "partOfSpeech": "cook",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "nấu ăn",
+      "ipa": "/tʊk/",
+      "meaning": "v (quá khứ)",
+      "partOfSpeech": "took",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "foot",
+      "ipa": "/fʊt/",
+      "meaning": "bàn chân",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "f{oo}t"
+    },
+    {
+      "word": "stood",
+      "ipa": "/stʊd/",
+      "meaning": "đứng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false,
+      "displayWord": "st{oo}d"
+    },
+    {
+      "word": "đứng",
+      "ipa": "/wʊd/",
+      "meaning": "n",
+      "partOfSpeech": "wood",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "facebook",
+      "ipa": "/ˈfeɪs.bʊk/",
+      "meaning": "Facebook",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "faceb{oo}k"
+    },
+    {
+      "word": "football",
+      "ipa": "/ˈfʊt.bɔːl/",
+      "meaning": "bóng đá",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "f{oo}tball"
+    },
+    {
+      "word": "bóng đá",
+      "ipa": "/bʊl/",
+      "meaning": "n",
+      "partOfSpeech": "bull",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "bò đực",
+      "ipa": "/fʊl/",
+      "meaning": "adj",
+      "partOfSpeech": "full",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "đầy",
+      "ipa": "/pʊl/",
+      "meaning": "v",
+      "partOfSpeech": "pull",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "kéo",
+      "ipa": "/pʊt/",
+      "meaning": "v",
+      "partOfSpeech": "put",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "đặt",
+      "ipa": "/pʊʃ/",
+      "meaning": "v",
+      "partOfSpeech": "push",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "sugar",
+      "ipa": "/ˈʃʊɡ.ər/",
+      "meaning": "đường",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "s{u}gar"
+    },
+    {
+      "word": "butcher",
+      "ipa": "/ˈbʊtʃ.ər/",
+      "meaning": "người bán thịt",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "b{u}tcher"
+    },
+    {
+      "word": "could",
+      "ipa": "/kʊd/",
+      "meaning": "có thể",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "modal verb",
+      "hidden": false,
+      "displayWord": "c{ou}ld"
+    },
+    {
+      "word": "would",
+      "ipa": "/wʊd/",
+      "meaning": "sẽ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "modal verb",
+      "hidden": false,
+      "displayWord": "w{ou}ld"
+    },
+    {
+      "word": "should",
+      "ipa": "/ʃʊd/",
+      "meaning": "nên",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "modal verb",
+      "hidden": false,
+      "displayWord": "sh{ou}ld"
+    },
+    {
+      "word": "took a look",
+      "ipa": "/tʊk ə lʊk/",
+      "meaning": "đã nhìn",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "t{oo}k a l{oo}k"
+    },
+    {
+      "word": "push and pull",
+      "ipa": "/pʊʃ ənd pʊl/",
+      "meaning": "đẩy và kéo",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "p{u}sh and p{u}ll"
+    },
+    {
+      "word": "full of sugar",
+      "ipa": "/fʊl əv ˈʃʊɡ.ər/",
+      "meaning": "đầy đường",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "f{u}ll of s{u}gar"
+    },
+    {
+      "word": "cookery book",
+      "ipa": "/ˈkʊk.ər.i bʊk/",
+      "meaning": "sách nấu ăn",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "c{oo}kery b{oo}k"
+    },
+    {
+      "word": "good-looking woman",
+      "ipa": "/ˌɡʊd ˈlʊkɪŋ ˈwʊmən/",
+      "meaning": "người phụ nữ ưa nhìn",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "g{oo}d-l{oo}king w{o}man"
+    },
+    {
+      "word": "I understood the book but he couldn’t.",
+      "ipa": "/aɪ ˌʌndərˈstʊd ðə bʊk bʌt hiː ˈkʊd.ənt/",
+      "meaning": "Tôi đã hiểu cuốn sách nhưng anh ta không thể.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "I underst{oo}d the b{oo}k but he c{ou}ldn’t."
+    },
+    {
+      "word": "I took a look at the wool pullover.",
+      "ipa": "/aɪ tʊk ə lʊk æt ðə wʊl ˈpʊlˌoʊvər/",
+      "meaning": "Tôi đã nhìn cái áo len chui cổ.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "I t{oo}k a l{oo}k at the w{oo}l p{u}llover."
+    },
+    {
+      "word": "You should push the door, not pull it.",
+      "ipa": "/juː ʃʊd pʊʃ ðə dɔːr, nɑːt pʊl ɪt/",
+      "meaning": "Bạn nên đẩy cửa, không phải kéo nó.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "You sh{ou}ld p{u}sh the door, not pull it."
+    },
+    {
+      "word": "The cook made a delicious pudding with sugar.",
+      "ipa": "/ðə kʊk meɪd ə dɪˈlɪʃəs ˈpʊdɪŋ wɪð ˈʃʊɡ.ər/",
+      "meaning": "Người đầu bếp đã làm món pudding rất ngon với đường.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "The c{oo}k made a delicious p{u}dding with s{u}gar."
+    },
+    {
+      "word": "You should read this cookery book if you could.",
+      "ipa": "/juː ʃʊd riːd ðɪs ˈkʊk.ər.i bʊk ɪf juː kʊd/",
+      "meaning": "Bạn nên đọc cuốn sách nấu ăn này nếu bạn có thể.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "You sh{ou}ld read this c{oo}kery b{oo}k if you c{ou}ld."
+    },
+    {
+      "word": "Luke could cook good cookies if Luke would cook good cookies.",
+      "ipa": "/luːk kʊd kʊk ɡʊd ˈkʊkiz ɪf luːk wʊd kʊk ɡʊd ˈkʊkiz/",
+      "meaning": "Luke có thể nấu bánh quy ngon nếu Luke muốn nấu bánh quy ngon.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "Luke c{ou}ld c{oo}k g{oo}d c{oo}kies if Luke w{ou}ld c{oo}k g{oo}d c{oo}kies."
+    },
+    {
+      "word": "Put the blue shoes on your good foot.",
+      "ipa": "/pʊt ðə bluː ʃuːz ɑːn jɔːr ɡʊd fʊt/",
+      "meaning": "Đặt đôi giày xanh lên bàn chân tốt của bạn.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "P{u}t the bl{ue} sh{oe}s on your g{oo}d f{oo}t."
+    },
+    {
+      "word": "Luke could cook good food in a cool room.",
+      "ipa": "/luːk kʊd kʊk ɡʊd fuːd ɪn ə kuːl ruːm/",
+      "meaning": "Luke có thể nấu món ăn ngon trong một căn phòng mát.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "L{u}ke c{ou}ld c{oo}k g{oo}d f{oo}d in a c{oo}l r{oo}m."
+    },
+    {
+      "word": "Luke would cook good cookies, but could not look at the food in the cool room.",
+      "ipa": "/luːk wʊd kʊk ɡʊd ˈkʊkiz bʌt kʊd nɑːt lʊk æt ðə fuːd ɪn ðə kuːl ruːm/",
+      "meaning": "Luke sẽ nấu bánh quy ngon, nhưng không thể nhìn thức ăn trong căn phòng mát.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "L{u}ke w{ou}ld c{oo}k g{oo}d c{oo}kies, but c{ou}ld not l{oo}k at the f{oo}d in the c{oo}l r{oo}m."
+    },
+    {
+      "word": "If you choose to look at Luke's good flute, you should move it soon.",
+      "ipa": "/ɪf juː tʃuːz tə lʊk æt luːks ɡʊd fluːt, juː ʃʊd muːv ɪt suːn/",
+      "meaning": "Nếu bạn chọn nhìn cây sáo tốt của Luke, bạn nên di chuyển nó sớm.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "If you ch{oo}se to l{oo}k at L{u}ke's good fl{u}te, you sh{ou}ld m{o}ve it s{oo}n."
+    },
+    {
+      "word": "Ruth put her blue boots into a full wooden room.",
+      "ipa": "/ruːθ pʊt hɚ bluː buːts ˈɪntuː ə fʊl ˈwʊdn ruːm/",
+      "meaning": "Ruth đặt đôi bốt xanh của cô ấy vào một căn phòng gỗ đầy.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "R{u}th p{u}t her bl{ue} b{oo}ts into a f{u}ll w{oo}den r{oo}m."
+    }
+  ],
+  "commonMistakes": [
+    "Phát âm thành chữ 'u' tiếng Việt kéo dài hoặc quá rõ."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "ipa": "l",
+  "name": "phụ âm hữu thanh /l/",
+  "type": "consonant_voiced",
+  "description": "Đặt đầu lưỡi vào phần chân răng trên. Luồng hơi thoát ra hai bên cạnh lưỡi.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "leg",
+      "ipa": "/leɡ/",
+      "meaning": "chân",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Quên nâng đầu lưỡi chạm chân răng khi âm /l/ đứng cuối từ (Dark L)."
+  ]
+}

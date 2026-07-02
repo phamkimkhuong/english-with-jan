@@ -1,0 +1,20 @@
+{
+  "ipa": "r",
+  "name": "phụ âm hữu thanh /r/",
+  "type": "consonant_voiced",
+  "description": "Môi hơi mở tròn. Đầu lưỡi hơi cong ngược về phía sau ngạc mềm nhưng không chạm vào ngạc.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "red",
+      "ipa": "/red/",
+      "meaning": "màu đỏ",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Phát âm quá cứng giống âm 'r' uốn rung mạnh của tiếng Việt."
+  ]
+}

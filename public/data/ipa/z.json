@@ -1,0 +1,20 @@
+{
+  "ipa": "z",
+  "name": "phụ âm hữu thanh /z/",
+  "type": "consonant_voiced",
+  "description": "Giống âm /s/ nhưng làm rung dây thanh quản ở cổ họng.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "zoo",
+      "ipa": "/zuː/",
+      "meaning": "vườn bách thú",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Phát âm giống âm 'd' hay 'gi' tiếng Việt."
+  ]
+}

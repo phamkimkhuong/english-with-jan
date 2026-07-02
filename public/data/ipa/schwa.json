@@ -1,0 +1,509 @@
+{
+  "ipa": "ə",
+  "name": "ơ ngắn (Schwa)",
+  "type": "monophthong_short",
+  "description": "Môi và lưỡi ở trạng thái thả lỏng hoàn toàn. Là âm phổ biến nhất trong tiếng Anh, phát âm rất ngắn và nhẹ.",
+  "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "about",
+      "ipa": "/əˈbaʊt/",
+      "meaning": "về",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "preposition",
+      "hidden": false
+    },
+    {
+      "word": "America",
+      "ipa": "/əˈmerɪkə/",
+      "meaning": "Châu Mỹ / nước Mỹ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "banana",
+      "ipa": "/bəˈnænə/",
+      "meaning": "quả chuối",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "amazing",
+      "ipa": "/əˈmeɪzɪŋ/",
+      "meaning": "đáng ngạc nhiên",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "apartment",
+      "ipa": "/əˈpɑːrtmənt/",
+      "meaning": "căn hộ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "agree",
+      "ipa": "/əˈɡriː/",
+      "meaning": "đồng ý",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "hundred",
+      "ipa": "/ˈhʌndrəd/",
+      "meaning": "một trăm",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "number",
+      "hidden": false
+    },
+    {
+      "word": "different",
+      "ipa": "/ˈdɪfərənt/",
+      "meaning": "khác",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "sentence",
+      "ipa": "/ˈsentəns/",
+      "meaning": "câu",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "punishment",
+      "ipa": "/ˈpʌnɪʃmənt/",
+      "meaning": "sự trừng phạt",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "accident",
+      "ipa": "/ˈæksədənt/",
+      "meaning": "tai nạn",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "dependent",
+      "ipa": "/dɪˈpendənt/",
+      "meaning": "phụ thuộc",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "mother",
+      "ipa": "/ˈmʌðər/",
+      "meaning": "mẹ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "answer",
+      "ipa": "/ˈænsər/",
+      "meaning": "trả lời",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "complete",
+      "ipa": "/kəmˈpliːt/",
+      "meaning": "hoàn thành",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "continue",
+      "ipa": "/kənˈtɪnjuː/",
+      "meaning": "tiếp tục",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "freedom",
+      "ipa": "/ˈfriːdəm/",
+      "meaning": "tự do",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "handsome",
+      "ipa": "/ˈhænsəm/",
+      "meaning": "đẹp trai",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "tonight",
+      "ipa": "/təˈnaɪt/",
+      "meaning": "tối nay",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun/adverb",
+      "hidden": false
+    },
+    {
+      "word": "actor",
+      "ipa": "/ˈæktər/",
+      "meaning": "nam diễn viên",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "effort",
+      "ipa": "/ˈefərt/",
+      "meaning": "nỗ lực",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "correct",
+      "ipa": "/kəˈrekt/",
+      "meaning": "đúng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "museum",
+      "ipa": "/mjuːˈziːəm/",
+      "meaning": "bảo tàng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "picture",
+      "ipa": "/ˈpɪktʃər/",
+      "meaning": "bức tranh",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "future",
+      "ipa": "/ˈfjuːtʃər/",
+      "meaning": "tương lai",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "famous",
+      "ipa": "/ˈfeɪməs/",
+      "meaning": "nổi tiếng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "dangerous",
+      "ipa": "/ˈdeɪndʒərəs/",
+      "meaning": "nguy hiểm",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "generous",
+      "ipa": "/ˈdʒenərəs/",
+      "meaning": "hào phóng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "possible",
+      "ipa": "/ˈpɑːsəbəl/",
+      "meaning": "có thể",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "responsible",
+      "ipa": "/rɪˈspɑːnsəbəl/",
+      "meaning": "có trách nhiệm",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "equal effort",
+      "ipa": "/ˈiːkwəl ˈefərt/",
+      "meaning": "nỗ lực ngang nhau",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "responsible woman",
+      "ipa": "/rɪˈspɑːnsəbəl ˈwʊmən/",
+      "meaning": "người phụ nữ có trách nhiệm",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "dangerous tiger",
+      "ipa": "/ˈdeɪndʒərəs ˈtaɪɡər/",
+      "meaning": "con hổ nguy hiểm",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "complete the answer",
+      "ipa": "/kəmˈpliːt ði ˈænsər/",
+      "meaning": "hoàn thành câu trả lời",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "different problems",
+      "ipa": "/ˈdɪfərənt ˈprɑːbləmz/",
+      "meaning": "những vấn đề khác nhau",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "about America",
+      "ipa": "/əˈbaʊt əˈmerɪkə/",
+      "meaning": "về nước Mỹ",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "an amazing apartment",
+      "ipa": "/ən əˈmeɪzɪŋ əˈpɑːrtmənt/",
+      "meaning": "một căn hộ tuyệt vời",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "agree about it",
+      "ipa": "/əˈɡriː əˈbaʊt ɪt/",
+      "meaning": "đồng ý về điều đó",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "different answers",
+      "ipa": "/ˈdɪfərənt ˈænsərz/",
+      "meaning": "những câu trả lời khác nhau",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a correct answer",
+      "ipa": "/ə kəˈrekt ˈænsər/",
+      "meaning": "một câu trả lời đúng",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "continue the lesson",
+      "ipa": "/kənˈtɪnjuː ðə ˈlesən/",
+      "meaning": "tiếp tục bài học",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a handsome actor",
+      "ipa": "/ə ˈhænsəm ˈæktər/",
+      "meaning": "một nam diễn viên đẹp trai",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a picture of mother",
+      "ipa": "/ə ˈpɪktʃər əv ˈmʌðər/",
+      "meaning": "một bức ảnh của mẹ",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a future plan",
+      "ipa": "/ə ˈfjuːtʃər plæn/",
+      "meaning": "một kế hoạch tương lai",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a famous person",
+      "ipa": "/ə ˈfeɪməs ˈpɜːrsən/",
+      "meaning": "một người nổi tiếng",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a responsible student",
+      "ipa": "/ə rɪˈspɑːnsəbəl ˈstuːdənt/",
+      "meaning": "một học sinh có trách nhiệm",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a sensible decision",
+      "ipa": "/ə ˈsensəbəl dɪˈsɪʒən/",
+      "meaning": "một quyết định sáng suốt",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "The answer is correct.",
+      "ipa": "/ði ˈænsər ɪz kəˈrekt/",
+      "meaning": "Câu trả lời đúng.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "He has a problem.",
+      "ipa": "/hi hæz ə ˈprɑːbləm/",
+      "meaning": "Anh ấy có một vấn đề.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "My mother is here.",
+      "ipa": "/maɪ ˈmʌðər ɪz hɪr/",
+      "meaning": "Mẹ tôi ở đây.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "This is a sofa.",
+      "ipa": "/ðɪs ɪz ə ˈsoʊfə/",
+      "meaning": "Đây là một cái ghế sofa.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "The lesson is easy.",
+      "ipa": "/ðə ˈlesən ɪz ˈiːzi/",
+      "meaning": "Bài học này dễ.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "My father is handsome and generous.",
+      "ipa": "/maɪ ˈfɑːðər ɪz ˈhænsəm ənd ˈdʒenərəs/",
+      "meaning": "Bố tôi đẹp trai và hào phóng.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Somebody must be responsible for this accident.",
+      "ipa": "/ˈsʌmbədi mʌst bi rɪˈspɑːnsəbəl fər ðɪs ˈæksədənt/",
+      "meaning": "Ai đó phải chịu trách nhiệm cho vụ tai nạn này.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "The woman had some problems in her apartment.",
+      "ipa": "/ðə ˈwʊmən hæd sʌm ˈprɑːbləmz ɪn hər əˈpɑːrtmənt/",
+      "meaning": "Người phụ nữ đã gặp một số vấn đề trong căn hộ của cô ta.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "A sensible student suggested another answer.",
+      "ipa": "/ə ˈsensəbəl ˈstuːdənt səˈdʒestɪd əˈnʌðər ˈænsər/",
+      "meaning": "Một học sinh sáng suốt đã gợi ý một câu trả lời khác.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Different singers gathered at the museum.",
+      "ipa": "/ˈdɪfərənt ˈsɪŋərz ˈɡæðərd æt ðə mjuːˈziːəm/",
+      "meaning": "Những ca sĩ khác nhau đã tụ họp ở bảo tàng.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Nhấn trọng âm vào âm này (âm schwa không bao giờ nhận trọng âm)."
+  ]
+}

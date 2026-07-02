@@ -1,0 +1,18 @@
+{
+  "ipa": "m",
+  "name": "phụ âm mũi /m/",
+  "type": "consonant_voiced",
+  "description": "Mím chặt môi, luồng hơi đi lên và thoát ra ngoài bằng đường mũi. Rung dây thanh quản.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "man",
+      "ipa": "/mæn/",
+      "meaning": "người đàn ông",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": []
+}

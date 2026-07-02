@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "node scripts/combine_ipa.js",
     "dev": "next dev",
+    "prebuild": "node scripts/combine_ipa.js",
     "build": "next build",
+    "split": "node scripts/split_ipa.js",
+    "combine": "node scripts/combine_ipa.js",
     "start": "next start",
     "lint": "eslint . && npm run lint:css",
     "lint:css": "stylelint \"src/**/*.css\"",

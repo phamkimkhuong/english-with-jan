@@ -1,0 +1,454 @@
+{
+  "ipa": "ɜ:r",
+  "name": "ơ dài uốn lưỡi",
+  "type": "monophthong_long",
+  "description": "Môi mở hờ, lưỡi để tự nhiên và uốn cong đầu lưỡi về phía sau nhưng không chạm vào ngạc cứng để phát âm /r/ chuẩn Anh-Mỹ.",
+  "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "serve",
+      "ipa": "/sɜːrv/",
+      "meaning": "phục vụ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "person",
+      "ipa": "/ˈpɜːrsən/",
+      "meaning": "người",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "service",
+      "ipa": "/ˈsɜːrvɪs/",
+      "meaning": "dịch vụ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "nervous",
+      "ipa": "/ˈnɜːrvəs/",
+      "meaning": "lo lắng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "Germany",
+      "ipa": "/ˈdʒɜːrməni/",
+      "meaning": "nước Đức",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "university",
+      "ipa": "/ˌjuːnɪˈvɜːrsəti/",
+      "meaning": "trường đại học",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "heard",
+      "ipa": "/hɜːrd/",
+      "meaning": "nghe thấy",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb (quá khứ)",
+      "hidden": false
+    },
+    {
+      "word": "nghe thấy",
+      "ipa": "/ɜːn/",
+      "meaning": "v",
+      "partOfSpeech": "earn",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "learn",
+      "ipa": "/lɜːrn/",
+      "meaning": "học tập",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "search",
+      "ipa": "/sɜːrtʃ/",
+      "meaning": "tìm kiếm",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb/noun",
+      "hidden": false
+    },
+    {
+      "word": "early",
+      "ipa": "/ˈɜːrli/",
+      "meaning": "sớm",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adverb/adjective",
+      "hidden": false
+    },
+    {
+      "word": "first",
+      "ipa": "/fɜːrst/",
+      "meaning": "đầu tiên",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective/adverb",
+      "hidden": false
+    },
+    {
+      "word": "đầu tiên",
+      "ipa": "/ɡɜːl/",
+      "meaning": "n",
+      "partOfSpeech": "girl",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "cô gái",
+      "ipa": "/dɜːt/",
+      "meaning": "n",
+      "partOfSpeech": "dirt",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "shirt",
+      "ipa": "/ʃɜːrt/",
+      "meaning": "áo sơ mi",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "circle",
+      "ipa": "/ˈsɜːrkl/",
+      "meaning": "vòng tròn",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "thirsty",
+      "ipa": "/ˈθɜːrsti/",
+      "meaning": "khát",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "khát",
+      "ipa": "/tɜːn/",
+      "meaning": "v",
+      "partOfSpeech": "turn",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "quay",
+      "ipa": "/bɜːn/",
+      "meaning": "v",
+      "partOfSpeech": "burn",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "church",
+      "ipa": "/tʃɜːrtʃ/",
+      "meaning": "nhà thờ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "nurse",
+      "ipa": "/nɜːrs/",
+      "meaning": "y tá",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Thursday",
+      "ipa": "/ˈθɜːrzdeɪ/",
+      "meaning": "thứ Năm",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "purple",
+      "ipa": "/ˈpɜːrpl/",
+      "meaning": "màu tím",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun/adjective",
+      "hidden": false
+    },
+    {
+      "word": "Turkey",
+      "ipa": "/ˈtɜːrki/",
+      "meaning": "Thổ Nhĩ Kỳ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Thổ Nhĩ Kỳ",
+      "ipa": "/wɜːk/",
+      "meaning": "v",
+      "partOfSpeech": "work",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "world",
+      "ipa": "/wɜːrld/",
+      "meaning": "thế giới",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "worse",
+      "ipa": "/wɜːrs/",
+      "meaning": "tệ hơn",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective/adverb",
+      "hidden": false
+    },
+    {
+      "word": "worship",
+      "ipa": "/ˈwɜːrʃɪp/",
+      "meaning": "tôn thờ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb/noun",
+      "hidden": false
+    },
+    {
+      "word": "journey",
+      "ipa": "/ˈdʒɜːrni/",
+      "meaning": "hành trình",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "journalist",
+      "ipa": "/ˈdʒɜːrnəlɪst/",
+      "meaning": "nhà báo",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "first person",
+      "ipa": "/fɜːrst ˈpɜːrsən/",
+      "meaning": "người đầu tiên",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "third birthday",
+      "ipa": "/θɜːrd ˈbɜːrθdeɪ/",
+      "meaning": "sinh nhật lần thứ 3",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "German word",
+      "ipa": "/ˈdʒɜːrmən wɜːrd/",
+      "meaning": "từ tiếng Đức",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "nervous girl",
+      "ipa": "/ˈnɜːrvəs ɡɜːrl/",
+      "meaning": "cô gái lo lắng",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "early bird",
+      "ipa": "/ˈɜːrli bɜːrd/",
+      "meaning": "người dậy sớm",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "work hard",
+      "ipa": "/wɜːrk hɑːrd/",
+      "meaning": "làm việc chăm chỉ",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "world tour",
+      "ipa": "/wɜːrld tʊr/",
+      "meaning": "chuyến lưu diễn thế giới",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "first time",
+      "ipa": "/fɜːrst taɪm/",
+      "meaning": "lần đầu tiên",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "nurse station",
+      "ipa": "/nɜːrs ˈsteɪʃən/",
+      "meaning": "trạm y tá",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "turn around",
+      "ipa": "/tɜːrn əˈraʊnd/",
+      "meaning": "quay lại",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "The girl is early.",
+      "ipa": "/ðə ɡɜːrl ɪz ˈɜːrli/",
+      "meaning": "Cô gái đến sớm.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "I learn English.",
+      "ipa": "/aɪ lɜːrn ˈɪŋɡlɪʃ/",
+      "meaning": "Tôi học tiếng Anh.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "The nurse works here.",
+      "ipa": "/ðə nɜːrs wɜːrks hɪr/",
+      "meaning": "Y tá làm việc ở đây.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Turn right here.",
+      "ipa": "/tɜːrn raɪt hɪr/",
+      "meaning": "Rẽ phải ở đây.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "I heard that word in the church.",
+      "ipa": "/aɪ hɜːrd ðæt wɜːrd ɪn ðə tʃɜːrtʃ/",
+      "meaning": "Tôi nghe thấy từ đó ở nhà thờ.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "This is his first journey to Turkey.",
+      "ipa": "/ðɪs ɪz hɪz fɜːrst ˈdʒɜːrni tə ˈtɜːrki/",
+      "meaning": "Đây là chuyến đi đầu tiên tới Thổ Nhĩ Kỳ của anh ấy.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "I learnt it from a person at the university.",
+      "ipa": "/aɪ lɜːrnt ɪt frəm ə ˈpɜːrsən ət ðə ˌjuːnɪˈvɜːrsəti/",
+      "meaning": "Tôi học được điều đó từ một người ở trường đại học.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "The nurse prefers working on Thursday.",
+      "ipa": "/ðə nɜːrs prɪˈfɜːrz ˈwɜːrkɪŋ ɑːn ˈθɜːrzdeɪ/",
+      "meaning": "Cô y tá thích làm việc vào thứ Năm.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "A nervous girl celebrated her third birthday at her workplace.",
+      "ipa": "/ə ˈnɜːrvəs ɡɜːrl ˈseləbreɪtɪd hər θɜːrd ˈbɜːrθdeɪ ət hər ˈwɜːrkpleɪs/",
+      "meaning": "Cô gái lo lắng đã tổ chức sinh nhật lần thứ ba tại nơi làm việc.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "A nervous person may search for the right word before speaking in public.",
+      "ipa": "/ə ˈnɜːrvəs ˈpɜːrsən meɪ sɜːrtʃ fər ðə raɪt wɜːrd bɪˈfɔːr ˈspiːkɪŋ ɪn ˈpʌblɪk/",
+      "meaning": "Người lo lắng có thể tìm từ đúng trước khi nói trước đám đông.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Quên uốn lưỡi phát âm /r/.",
+    "Phát âm ngắn giống âm /ə/."
+  ]
+}

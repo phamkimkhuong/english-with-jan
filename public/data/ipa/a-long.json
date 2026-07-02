@@ -1,0 +1,369 @@
+{
+  "ipa": "ɑ:",
+  "name": "a dài",
+  "type": "monophthong_long",
+  "description": "Miệng mở rộng theo chiều dọc như đang ngáp. Lưỡi hạ thấp và thụt về phía sau. Âm phát ra sâu trong cổ họng.",
+  "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "father",
+      "ipa": "/ˈfɑːðər/",
+      "meaning": "bố",
+      "audioUrl": "https://pub-dcf4526057d04afcaf586bbb45cdf76a.r2.dev/tts/en-us/female/normal/father_ee1860dc.mp3",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "bố",
+      "ipa": "/kɑːm/",
+      "meaning": "adj",
+      "partOfSpeech": "calm",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "bình tĩnh",
+      "ipa": "/spɑː/",
+      "meaning": "n",
+      "partOfSpeech": "spa",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "khu spa",
+      "ipa": "/hɑːt/",
+      "meaning": "adj",
+      "partOfSpeech": "hot",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "nóng",
+      "ipa": "/stɑːp/",
+      "meaning": "v",
+      "partOfSpeech": "stop",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "modern",
+      "ipa": "/ˈmɑːdərn/",
+      "meaning": "hiện đại",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "hiện đại",
+      "ipa": "/dʒɑːb/",
+      "meaning": "n",
+      "partOfSpeech": "job",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "watch",
+      "ipa": "/wɑːtʃ/",
+      "meaning": "xem / đồng hồ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb/noun",
+      "hidden": false
+    },
+    {
+      "word": "common",
+      "ipa": "/ˈkɑːmən/",
+      "meaning": "phổ biến, chung",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "problem",
+      "ipa": "/ˈprɑːbləm/",
+      "meaning": "vấn đề",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "vấn đề",
+      "ipa": "/ˈbɑː.di/",
+      "meaning": "n",
+      "partOfSpeech": "body",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "cơ thể",
+      "ipa": "/ʃɑːp/",
+      "meaning": "n",
+      "partOfSpeech": "shop",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "office",
+      "ipa": "/ˈɑːfɪs/",
+      "meaning": "văn phòng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "bottom",
+      "ipa": "/ˈbɑːt̬əm/",
+      "meaning": "đáy, phần dưới",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "response",
+      "ipa": "/rɪˈspɑːns/",
+      "meaning": "phản hồi",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "topic",
+      "ipa": "/ˈtɑːpɪk/",
+      "meaning": "chủ đề",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "hospital",
+      "ipa": "/ˈhɑːspɪt̬əl/",
+      "meaning": "bệnh viện",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "nonstop",
+      "ipa": "/ˌnɑːnˈstɑːp/",
+      "meaning": "không ngừng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective/adverb",
+      "hidden": false
+    },
+    {
+      "word": "follow",
+      "ipa": "/ˈfɑːloʊ/",
+      "meaning": "đi theo, theo dõi",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "shopping",
+      "ipa": "/ˈʃɑːpɪŋ/",
+      "meaning": "việc mua sắm",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "college",
+      "ipa": "/ˈkɑːlɪdʒ/",
+      "meaning": "trường cao đẳng / đại học",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "bottle",
+      "ipa": "/ˈbɑːt̬əl/",
+      "meaning": "cái chai",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "water",
+      "ipa": "/ˈwɑːt̬ər/",
+      "meaning": "nước",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "a calm father",
+      "ipa": "/ə kɑːm ˈfɑːðər/",
+      "meaning": "một người bố bình tĩnh",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a small spa",
+      "ipa": "/ə smɔːl spɑː/",
+      "meaning": "một spa nhỏ",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "bottle of water",
+      "ipa": "/ˈbɑːt̬əl əv ˈwɑːt̬ər/",
+      "meaning": "chai nước",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a hot coffee",
+      "ipa": "/ə hɑːt ˈkɑːfi/",
+      "meaning": "một ly cà phê nóng",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a modern hospital",
+      "ipa": "/ə ˈmɑːdərn ˈhɑːspɪt̬əl/",
+      "meaning": "một bệnh viện hiện đại",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a common topic",
+      "ipa": "/ˈkɑːmən ˈtɑːpɪk/",
+      "meaning": "một chủ đề phổ biến",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "hot topic",
+      "ipa": "/hɑːt ˈtɑːpɪk/",
+      "meaning": "một chủ đề nóng",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "go shopping",
+      "ipa": "/ɡoʊ ˈʃɑːpɪŋ/",
+      "meaning": "đi mua sắm",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a college student",
+      "ipa": "/ə ˈkɑːlɪdʒ ˈstuːdənt/",
+      "meaning": "một sinh viên đại học/cao đẳng",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "follow me",
+      "ipa": "/ˈfɑːloʊ miː/",
+      "meaning": "đi theo tôi",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "office politics",
+      "ipa": "/ˈɑːfɪs ˈpɑːlətɪks/",
+      "meaning": "chính trị nơi công sở",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "top to bottom",
+      "ipa": "/tɑːp tə ˈbɑːt̬əm/",
+      "meaning": "từ trên xuống dưới",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a lot of problems",
+      "ipa": "/ə lɑːt əv ˈprɑːbləmz/",
+      "meaning": "nhiều vấn đề",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "My father drinks hot coffee.",
+      "ipa": "/maɪ ˈfɑːðər drɪŋks hɑːt ˈkɑːfi/",
+      "meaning": "Bố tôi uống cà phê nóng.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "I need a bottle of water.",
+      "ipa": "/aɪ niːd ə ˈbɑːt̬əl əv ˈwɑːt̬ər/",
+      "meaning": "Tôi cần một chai nước.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Tom got a college job.",
+      "ipa": "/tɑːm ɡɑːt ə ˈkɑːlɪdʒ dʒɑːb/",
+      "meaning": "Tom đã có một công việc ở trường đại học/cao đẳng.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "The doctor works in the office.",
+      "ipa": "/ðə ˈdɑːktər wɜːrks ɪn ði ˈɑːfɪs/",
+      "meaning": "Bác sĩ làm việc trong văn phòng.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Mom goes shopping a lot and often stops for hot coffee.",
+      "ipa": "/mɑːm ɡoʊz ˈʃɑːpɪŋ ə lɑːt ənd ˈɑːfən stɑːps fər hɑːt ˈkɑːfi/",
+      "meaning": "Mẹ đi mua sắm rất nhiều và thường dừng lại để mua cà phê nóng.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Phát âm ngắn và bẹt như âm 'a' tiếng Việt."
+  ]
+}

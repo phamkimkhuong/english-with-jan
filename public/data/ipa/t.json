@@ -1,0 +1,20 @@
+{
+  "ipa": "t",
+  "name": "phụ âm vô thanh /t/",
+  "type": "consonant_voiceless",
+  "description": "Đặt đầu lưỡi ở chân răng trên, chặn luồng khí, sau đó bật hơi mạnh ra ngoài. Không rung cổ họng.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "tea",
+      "ipa": "/tiː/",
+      "meaning": "trà",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Đọc giống chữ 't' trong tiếng Việt (hãy bật hơi mạnh hơn)."
+  ]
+}

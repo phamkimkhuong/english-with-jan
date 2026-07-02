@@ -1,0 +1,454 @@
+{
+  "ipa": "aɪ",
+  "name": "nguyên âm đôi /aɪ/",
+  "type": "diphthong",
+  "description": "Bắt đầu từ âm /ɑ:/ và trượt nhanh lên âm /ɪ/. Tương tự âm 'ai' tiếng Việt nhưng rộng miệng hơn.",
+  "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "Light",
+      "ipa": "/laɪt/",
+      "meaning": "ánh sáng / nhẹ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "nadj",
+      "hidden": false
+    },
+    {
+      "word": "Right",
+      "ipa": "/raɪt/",
+      "meaning": "đúng / bên phải",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjnadv",
+      "hidden": false
+    },
+    {
+      "word": "Climate",
+      "ipa": "/ˈklaɪ.mət/",
+      "meaning": "khí hậu",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Spider",
+      "ipa": "/ˈspaɪ.dər/",
+      "meaning": "con nhện",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Smile",
+      "ipa": "/smaɪl/",
+      "meaning": "mỉm cười",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "vn",
+      "hidden": false
+    },
+    {
+      "word": "Timeline",
+      "ipa": "/ˈtaɪm.laɪn/",
+      "meaning": "dòng thời gian",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "dòng thời gian",
+      "ipa": "/taɪ/",
+      "meaning": "n/v",
+      "partOfSpeech": "Tie",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "Crying",
+      "ipa": "/ˈkraɪ.ɪŋ/",
+      "meaning": "đang khóc",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "Night",
+      "ipa": "/naɪt/",
+      "meaning": "ban đêm",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Fight",
+      "ipa": "/faɪt/",
+      "meaning": "chiến đấu",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "vn",
+      "hidden": false
+    },
+    {
+      "word": "chiến đấu",
+      "ipa": "/haɪ/",
+      "meaning": "adj/adv",
+      "partOfSpeech": "High",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "Bright",
+      "ipa": "/braɪt/",
+      "meaning": "sáng, thông minh",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "Price",
+      "ipa": "/praɪs/",
+      "meaning": "giá",
+      "partOfSpeech": "noun",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "giá",
+      "ipa": "/naɪs/",
+      "meaning": "adj",
+      "partOfSpeech": "Nice",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "Drive",
+      "ipa": "/draɪv/",
+      "meaning": "lái xe",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "lái xe",
+      "ipa": "/baɪk/",
+      "meaning": "n",
+      "partOfSpeech": "Bike",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "Child",
+      "ipa": "/tʃaɪld/",
+      "meaning": "đứa trẻ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "đứa trẻ",
+      "ipa": "/flaɪ/",
+      "meaning": "v",
+      "partOfSpeech": "Fly",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "bay",
+      "ipa": "/skaɪ/",
+      "meaning": "n",
+      "partOfSpeech": "Sky",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "bầu trời",
+      "ipa": "/ʃaɪ/",
+      "meaning": "adj",
+      "partOfSpeech": "Shy",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "Style",
+      "ipa": "/staɪl/",
+      "meaning": "phong cách",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "phong cách",
+      "ipa": "/ˈfaɪər/",
+      "meaning": "n",
+      "partOfSpeech": "Fire",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "Smile",
+      "ipa": "/smaɪl/",
+      "meaning": "mỉm cười",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "vn",
+      "hidden": false
+    },
+    {
+      "word": "Private",
+      "ipa": "/ˈpraɪ.vət/",
+      "meaning": "riêng tư",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "Silence",
+      "ipa": "/ˈsaɪ.ləns/",
+      "meaning": "im lặng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "my nice bike",
+      "ipa": "/maɪ naɪs baɪk/",
+      "meaning": "chiếc xe đạp đẹp của tôi",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "a bright light",
+      "ipa": "/ə braɪt laɪt/",
+      "meaning": "một ánh sáng sáng",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "the right time",
+      "ipa": "/ðə raɪt taɪm/",
+      "meaning": "thời điểm đúng",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "a white sky",
+      "ipa": "/ə waɪt skaɪ/",
+      "meaning": "bầu trời trắng",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "a high price",
+      "ipa": "/ə haɪ praɪs/",
+      "meaning": "giá cao",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "my shy child",
+      "ipa": "/maɪ ʃaɪ tʃaɪld/",
+      "meaning": "đứa trẻ nhút nhát của tôi",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "a quiet night",
+      "ipa": "/ə ˈkwaɪət naɪt/",
+      "meaning": "một đêm yên tĩnh",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "try new ideas",
+      "ipa": "/traɪ nuː aɪˈdɪəz/",
+      "meaning": "thử ý tưởng mới",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "a bright smile",
+      "ipa": "/ə braɪt smaɪl/",
+      "meaning": "nụ cười rạng rỡ",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "my flying kite",
+      "ipa": "/maɪ ˈflaɪɪŋ kaɪt/",
+      "meaning": "con diều đang bay của tôi",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "write my name",
+      "ipa": "/raɪt maɪ neɪm/",
+      "meaning": "viết tên tôi",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "find the light",
+      "ipa": "/faɪnd ðə laɪt/",
+      "meaning": "tìm ánh sáng",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "climb the high",
+      "ipa": "/klaɪm ðə haɪ/",
+      "meaning": "leo lên cao",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "ride my bike",
+      "ipa": "/raɪd maɪ baɪk/",
+      "meaning": "đi xe đạp của tôi",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "hide my file",
+      "ipa": "/haɪd maɪ faɪl/",
+      "meaning": "giấu tài liệu của tôi",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "I like my bike.",
+      "ipa": "/aɪ laɪk maɪ baɪk/",
+      "meaning": "Tôi thích xe đạp của tôi.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "The sky is bright.",
+      "ipa": "/ðə skaɪ ɪz braɪt/",
+      "meaning": "Bầu trời sáng.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "My child is shy.",
+      "ipa": "/maɪ tʃaɪld ɪz ʃaɪ/",
+      "meaning": "Con tôi nhút nhát.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "5I try to find the right light in the night sky.",
+      "ipa": "/aɪ traɪ tə faɪnd ðə raɪt laɪt ɪn ðə naɪt skaɪ/",
+      "meaning": "Tôi cố tìm ánh sáng đúng trong bầu trời đêm.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Why is the price so high for that design?",
+      "ipa": "/waɪ ɪz ðə praɪs soʊ haɪ fər ðæt dɪˈzaɪn/",
+      "meaning": "Tại sao giá lại cao cho thiết kế đó?",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "After crying for hours, my brother smiles.",
+      "ipa": "/ˈæftər ˈkraɪɪŋ fər ˈaʊərz, maɪ ˈbrʌðər smaɪlz/",
+      "meaning": "Sau khi khóc hàng giờ, anh trai tôi mỉm cười.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "It’s ninety-nine-hour drive to Hawaii.",
+      "ipa": "/ɪts ˈnaɪnti naɪn ˈaʊər draɪv tə həˈwaɪi/",
+      "meaning": "Đó là chuyến lái xe 99 giờ đến Hawaii.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "A shy child tries to fly a high white kite in the sky.",
+      "ipa": "/ə ʃaɪ tʃaɪld traɪz tə flaɪ ə haɪ waɪt kaɪt ɪn ðə skaɪ/",
+      "meaning": "Một đứa trẻ nhút nhát cố thả diều trắng cao trên bầu trời.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "I try to write right lines at night by bright light.",
+      "ipa": "/aɪ traɪ tə raɪt raɪt laɪnz æt naɪt baɪ braɪt laɪt/",
+      "meaning": "Tôi cố viết những dòng đúng vào ban đêm dưới ánh sáng sáng.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Đọc thành chữ 'ai' Việt Nam quá cụt."
+  ]
+}

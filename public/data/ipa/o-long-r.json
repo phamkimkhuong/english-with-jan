@@ -1,0 +1,414 @@
+{
+  "ipa": "ɔ:r",
+  "name": "o dài uốn lưỡi",
+  "type": "monophthong_long",
+  "description": "Tròn môi và đưa ra trước giống như âm /ɔ:/, sau đó uốn cong đầu lưỡi về phía sau nhưng không chạm vào ngạc cứng để phát âm /r/ chuẩn Anh-Mỹ.",
+  "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "Nghĩa",
+      "ipa": "/dɔːr/",
+      "meaning": "n",
+      "partOfSpeech": "door",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "floor",
+      "ipa": "/flɔːr/",
+      "meaning": "sàn nhà",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "board",
+      "ipa": "/bɔːrd/",
+      "meaning": "bảng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "bảng",
+      "ipa": "/bɔːrn/",
+      "meaning": "v",
+      "partOfSpeech": "born",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "được sinh ra",
+      "ipa": "/fɔːr/",
+      "meaning": "num",
+      "partOfSpeech": "four",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "course",
+      "ipa": "/kɔːrs/",
+      "meaning": "khóa học",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "horse",
+      "ipa": "/hɔːrs/",
+      "meaning": "ngựa",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "short",
+      "ipa": "/ʃɔːrt/",
+      "meaning": "ngắn",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "morning",
+      "ipa": "/ˈmɔːrnɪŋ/",
+      "meaning": "buổi sáng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "forty",
+      "ipa": "/ˈfɔːrti/",
+      "meaning": "bốn mươi",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "number",
+      "hidden": false
+    },
+    {
+      "word": "story",
+      "ipa": "/ˈstɔːri/",
+      "meaning": "câu chuyện",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "sword",
+      "ipa": "/sɔːrd/",
+      "meaning": "thanh kiếm",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "force",
+      "ipa": "/fɔːrs/",
+      "meaning": "sức mạnh; ép buộc",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun/verb",
+      "hidden": false
+    },
+    {
+      "word": "report",
+      "ipa": "/rɪˈpɔːrt/",
+      "meaning": "báo cáo",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun/verb",
+      "hidden": false
+    },
+    {
+      "word": "support",
+      "ipa": "/səˈpɔːrt/",
+      "meaning": "hỗ trợ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb/noun",
+      "hidden": false
+    },
+    {
+      "word": "airport",
+      "ipa": "/ˈerpɔːrt/",
+      "meaning": "sân bay",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "important",
+      "ipa": "/ɪmˈpɔːrtənt/",
+      "meaning": "quan trọng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "organize",
+      "ipa": "/ˈɔːrɡənaɪz/",
+      "meaning": "tổ chức",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "corner",
+      "ipa": "/ˈcɔːrnər/",
+      "meaning": "góc",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "forest",
+      "ipa": "/ˈfɔːrɪst/",
+      "meaning": "rừng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "foreign",
+      "ipa": "/ˈfɔːrən/",
+      "meaning": "nước ngoài",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "gorgeous",
+      "ipa": "/ˈɡɔːrdʒəs/",
+      "meaning": "tuyệt đẹp",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "fortune",
+      "ipa": "/ˈfɔːrtʃən/",
+      "meaning": "vận may",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "of course",
+      "ipa": "/əv kɔːrs/",
+      "meaning": "tất nhiên",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "on the floor",
+      "ipa": "/ɑːn ðə flɔːr/",
+      "meaning": "trên sàn",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "play sports",
+      "ipa": "/pleɪ spɔːrts/",
+      "meaning": "chơi thể thao",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "in the morning",
+      "ipa": "/ɪn ðə ˈmɔːrnɪŋ/",
+      "meaning": "vào buổi sáng",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "at the airport",
+      "ipa": "/æt ði ˈerpɔːrt/",
+      "meaning": "ở sân bay",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "support each other",
+      "ipa": "/səˈpɔːrt iːtʃ ˈʌðər/",
+      "meaning": "hỗ trợ lẫn nhau",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "tell a story",
+      "ipa": "/tel ə ˈstɔːri/",
+      "meaning": "kể chuyện",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "in the forest",
+      "ipa": "/ɪn ðə ˈfɔːrɪst/",
+      "meaning": "trong rừng",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "foreign language",
+      "ipa": "/ˈfɔːrən ˈlæŋɡwɪdʒ/",
+      "meaning": "ngoại ngữ",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "around the corner",
+      "ipa": "/əˈraʊnd ðə ˈcɔːrnər/",
+      "meaning": "ở ngay góc phố",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "good fortune",
+      "ipa": "/ɡʊd ˈfɔːrtʃən/",
+      "meaning": "vận may",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a short story",
+      "ipa": "/ə ʃɔːrt ˈstɔːri/",
+      "meaning": "truyện ngắn",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "north of Vietnam",
+      "ipa": "/nɔːrθ əv ˌviːetˈnɑːm/",
+      "meaning": "miền Bắc Việt Nam",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "Can you open the door, please?",
+      "ipa": "/kæn juː ˈoʊpən ðə dɔːr pliːz/",
+      "meaning": "Bạn có thể mở cửa giúp tôi được không?",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Do you like it? Of course!",
+      "ipa": "/duː juː laɪk ɪt? əv kɔːrs/",
+      "meaning": "Bạn thích nó chứ? Tất nhiên rồi!",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "More forks are on the floor.",
+      "ipa": "/mɔːr fɔːrks ɑːr ɑːn ðə flɔːr/",
+      "meaning": "Nhiều cái nĩa ở trên sàn.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "The horse is near the store door.",
+      "ipa": "/ðə hɔːrs ɪz nɪr ðə stɔːr dɔːr/",
+      "meaning": "Con ngựa ở gần cửa hàng.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "I was born and raised in the north of Vietnam.",
+      "ipa": "/aɪ wəz bɔːrn ənd reɪzd ɪn ðə nɔːrθ əv ˌviːetˈnɑːm/",
+      "meaning": "Tôi sinh ra và lớn lên ở miền Bắc Việt Nam.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "More and more horses ran across the floor.",
+      "ipa": "/mɔːr ænd mɔːr ˈhɔːrsɪz ræn əˈkrɔːs ðə flɔːr/",
+      "meaning": "Ngày càng nhiều con ngựa chạy qua sàn.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "The short horse wore more orange shorts.",
+      "ipa": "/ðə ʃɔːrt hɔːrs wɔːr mɔːr ˈɔːrɪndʒ ʃɔːrts/",
+      "meaning": "Con ngựa thấp mặc thêm quần short màu cam.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Of course, learning a foreign language requires time and effort.",
+      "ipa": "/əv kɔːrs ˈlɜːrnɪŋ ə ˈfɔːrən ˈlæŋɡwɪdʒ rɪˈkwaɪərz taɪm ənd ˈefərt/",
+      "meaning": "Tất nhiên, học một ngoại ngữ đòi hỏi thời gian và nỗ lực.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Four short horses snored on the floor near the store door.",
+      "ipa": "/fɔːr ʃɔːrt ˈhɔːrsɪz snɔːrd ɑːn ðə flɔːr nɪr ðə stɔːr dɔːr/",
+      "meaning": "Bốn con ngựa thấp ngáy trên sàn gần cửa hàng.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Although the course was difficult, it was worth every hour of hard work.",
+      "ipa": "/ɔːlˈðoʊ ðə kɔːrs wəz ˈdɪfɪkəlt ɪt wəz wɜːrθ ˈevri ˈaʊər əv hɑːrd wɜːrk/",
+      "meaning": "Mặc dù khóa học khó, nhưng nó xứng đáng với từng giờ làm việc chăm chỉ.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Không uốn lưỡi phát âm /r/ ở cuối."
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "ipa": "aʊ",
+  "name": "nguyên âm đôi /aʊ/",
+  "type": "diphthong",
+  "description": "Bắt đầu từ âm /ɑ:/ và trượt nhanh sang âm /ʊ/. Môi khép tròn dần.",
+  "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "How",
+      "ipa": "/haʊ/",
+      "meaning": "như thế nào",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adverb",
+      "hidden": false
+    },
+    {
+      "word": "Power",
+      "ipa": "/ˈpaʊ.ər/",
+      "meaning": "sức mạnh",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Downtown",
+      "ipa": "/ˌdaʊnˈtaʊn/",
+      "meaning": "trung tâm thành phố",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "nadv",
+      "hidden": false
+    },
+    {
+      "word": "Crowd",
+      "ipa": "/kraʊd/",
+      "meaning": "đám đông",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Outside",
+      "ipa": "/ˌaʊtˈsaɪd/",
+      "meaning": "bên ngoài",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "advprep",
+      "hidden": false
+    },
+    {
+      "word": "bên ngoài",
+      "ipa": "/aʊr/",
+      "meaning": "det",
+      "partOfSpeech": "Our",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "Mouth",
+      "ipa": "/maʊθ/",
+      "meaning": "miệng",
+      "partOfSpeech": "noun",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "Ground",
+      "ipa": "/ɡraʊnd/",
+      "meaning": "mặt đất",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "About",
+      "ipa": "/əˈbaʊt/",
+      "meaning": "về, khoảng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "prepadv",
+      "hidden": false
+    },
+    {
+      "word": "House",
+      "ipa": "/haʊs/",
+      "meaning": "ngôi nhà",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Around",
+      "ipa": "/əˈraʊnd/",
+      "meaning": "xung quanh",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "prepadv",
+      "hidden": false
+    },
+    {
+      "word": "xung quanh",
+      "ipa": "/laʊd/",
+      "meaning": "adj",
+      "partOfSpeech": "Loud",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "Count",
+      "ipa": "/kaʊnt/",
+      "meaning": "đếm",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "Mouse",
+      "ipa": "/maʊs/",
+      "meaning": "con chuột",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Found",
+      "ipa": "/faʊnd/",
+      "meaning": "tìm thấy",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "Brown",
+      "ipa": "/braʊn/",
+      "meaning": "màu nâu",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "Clown",
+      "ipa": "/klaʊn/",
+      "meaning": "chú hề",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "chú hề",
+      "ipa": "/daʊn/",
+      "meaning": "adv",
+      "partOfSpeech": "Down",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "xuống",
+      "ipa": "/taʊn/",
+      "meaning": "n",
+      "partOfSpeech": "Town",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "Allow",
+      "ipa": "/əˈlaʊ/",
+      "meaning": "cho phép",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "Shout",
+      "ipa": "/ʃaʊt/",
+      "meaning": "hét lên",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "Flower",
+      "ipa": "/ˈflaʊ.ər/",
+      "meaning": "bông hoa",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Tower",
+      "ipa": "/ˈtaʊ.ər/",
+      "meaning": "tòa tháp",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Cloud",
+      "ipa": "/klaʊd/",
+      "meaning": "đám mây",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Proud",
+      "ipa": "/praʊd/",
+      "meaning": "tự hào",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "Thousand",
+      "ipa": "/ˈθaʊ.zənd/",
+      "meaning": "một nghìn",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "number",
+      "hidden": false
+    },
+    {
+      "word": "một nghìn",
+      "ipa": "/ˈsaʊər/",
+      "meaning": "adj",
+      "partOfSpeech": "Sour",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "Mountain",
+      "ipa": "/ˈmaʊn.tɪn/",
+      "meaning": "núi",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Fountain",
+      "ipa": "/ˈfaʊn.tɪn/",
+      "meaning": "đài phun nước",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Round",
+      "ipa": "/raʊnd/",
+      "meaning": "tròn / vòng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjn",
+      "hidden": false
+    },
+    {
+      "word": "a loud crowd",
+      "ipa": "/ə laʊd kraʊd/",
+      "meaning": "một đám đông ồn ào",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "brown house",
+      "ipa": "/braʊn haʊs/",
+      "meaning": "ngôi nhà màu nâu",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "downtown town",
+      "ipa": "/ˌdaʊnˈtaʊn taʊn/",
+      "meaning": "khu trung tâm thị trấn",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "around the town",
+      "ipa": "/əˈraʊnd ðə taʊn/",
+      "meaning": "quanh thị trấn",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "a proud clown",
+      "ipa": "/ə praʊd klaʊn/",
+      "meaning": "một chú hề tự hào",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "shout out loud",
+      "ipa": "/ʃaʊt aʊt laʊd/",
+      "meaning": "hét to lên",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "cloudy mountain",
+      "ipa": "/ˈklaʊdi ˈmaʊntɪn/",
+      "meaning": "ngọn núi nhiều mây",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "sound around",
+      "ipa": "/saʊnd əˈraʊnd/",
+      "meaning": "âm thanh xung quanh",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "found in the ground",
+      "ipa": "/faʊnd ɪn ðə ɡraʊnd/",
+      "meaning": "tìm thấy trong đất",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "a round cloud",
+      "ipa": "/ə raʊnd klaʊd/",
+      "meaning": "đám mây tròn",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "There are flowers all around the house.",
+      "ipa": "/ðer ɑːr ˈflaʊ.ərz ɔːl əˈraʊnd ðə haʊs/",
+      "meaning": "Có những bông hoa khắp xung quanh ngôi nhà.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Let’s countdown: 3, 2, 1, Happy New Year.",
+      "ipa": "/lets ˈkaʊnt.daʊn θriː tuː wʌn ˈhæpi nuː jɪr/",
+      "meaning": "Hãy đếm ngược: 3, 2, 1, Chúc mừng năm mới.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "I go around the mountain for about an hour.",
+      "ipa": "/aɪ ɡoʊ əˈraʊnd ðə ˈmaʊn.tən fər əˈbaʊt ən ˈaʊər/",
+      "meaning": "Tôi đi quanh ngọn núi khoảng một giờ.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Playing outside is better.",
+      "ipa": "/ˈpleɪɪŋ ˌaʊtˈsaɪd ɪz ˈbetər/",
+      "meaning": "Chơi ở bên ngoài thì tốt hơn.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "The loud sound comes from downtown.",
+      "ipa": "/ðə laʊd saʊnd kʌmz frəm ˌdaʊnˈtaʊn/",
+      "meaning": "Âm thanh lớn phát ra từ khu trung tâm thành phố.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "I found my mouse outside the house.",
+      "ipa": "/aɪ faʊnd maɪ maʊs ˌaʊtˈsaɪd ðə haʊs/",
+      "meaning": "Tôi tìm thấy con chuột của mình ở bên ngoài ngôi nhà.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "A loud crowd shouted around the town.",
+      "ipa": "/ə laʊd kraʊd ˈʃaʊtɪd əˈraʊnd ðə taʊn/",
+      "meaning": "Một đám đông ồn ào hét lên quanh thị trấn.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Brown clouds around the mountain sound loud.",
+      "ipa": "/braʊn klaʊdz əˈraʊnd ðə ˈmaʊntɪn saʊnd laʊd/",
+      "meaning": "Những đám mây nâu quanh núi nghe rất ồn ào.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Count the clouds around the proud clown.",
+      "ipa": "/kaʊnt ðə klaʊdz əˈraʊnd ðə praʊd klaʊn/",
+      "meaning": "Đếm những đám mây quanh chú hề tự hào.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Đọc thành chữ 'ao' tiếng Việt."
+  ]
+}

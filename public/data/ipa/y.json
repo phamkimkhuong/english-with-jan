@@ -1,0 +1,18 @@
+{
+  "ipa": "j",
+  "name": "bán nguyên âm /j/",
+  "type": "consonant_voiced",
+  "description": "Môi mở rộng vừa phải. Đầu lưỡi hạ thấp, phần giữa lưỡi nâng cao lên gần ngạc trên như phát âm /i:/ rồi lướt nhanh.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "yes",
+      "ipa": "/jes/",
+      "meaning": "vâng/có",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": []
+}

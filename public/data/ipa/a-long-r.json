@@ -1,0 +1,406 @@
+{
+  "ipa": "ɑ:r",
+  "name": "a dài uốn lưỡi",
+  "type": "monophthong_long",
+  "description": "Mở miệng rộng theo chiều dọc như âm /ɑ:/, sau đó uốn cong đầu lưỡi về phía sau nhưng không chạm vào ngạc cứng để tạo âm /r/ chuẩn Anh-Mỹ.",
+  "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "Nghĩa",
+      "ipa": "/dɑ:rk/",
+      "meaning": "adj",
+      "partOfSpeech": "dark",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "large",
+      "ipa": "/lɑːrdʒ/",
+      "meaning": "lớn",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "car",
+      "ipa": "/kɑːr/",
+      "meaning": "xe hơi",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "garden",
+      "ipa": "/ˈɡɑːrdən/",
+      "meaning": "khu vườn",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "artist",
+      "ipa": "/ˈɑːrtɪst/",
+      "meaning": "nghệ sĩ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "smart",
+      "ipa": "/smɑːrt/",
+      "meaning": "thông minh",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "apartment",
+      "ipa": "/əˈpɑːrtmənt/",
+      "meaning": "căn hộ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "farmer",
+      "ipa": "/ˈfɑːrmər/",
+      "meaning": "nông dân",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "carpet",
+      "ipa": "/ˈkɑːrpət/",
+      "meaning": "thảm",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "thảm",
+      "ipa": "/ɑ:r/",
+      "meaning": "v",
+      "partOfSpeech": "are",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "là, thì, ở",
+      "ipa": "/ɑ:rt/",
+      "meaning": "n",
+      "partOfSpeech": "art",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "nghệ thuật",
+      "ipa": "/hɑ:rd/",
+      "meaning": "adj",
+      "partOfSpeech": "hard",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "khó, cứng",
+      "ipa": "/kɑ:rd/",
+      "meaning": "n",
+      "partOfSpeech": "card",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "tấm thẻ",
+      "ipa": "/pɑ:rk/",
+      "meaning": "n / v",
+      "partOfSpeech": "park",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "party",
+      "ipa": "/ˈpɑːrti/",
+      "meaning": "bữa tiệc",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "market",
+      "ipa": "/ˈmɑːrkɪt/",
+      "meaning": "chợ, thị trường",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "start",
+      "ipa": "/stɑːrt/",
+      "meaning": "bắt đầu",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "bắt đầu",
+      "ipa": "/stɑ:r/",
+      "meaning": "n",
+      "partOfSpeech": "star",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "ngôi sao",
+      "ipa": "/fɑ:r/",
+      "meaning": "adv",
+      "partOfSpeech": "far",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "xa",
+      "ipa": "/fɑ:rm/",
+      "meaning": "n",
+      "partOfSpeech": "farm",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "scarf",
+      "ipa": "/skɑːrf/",
+      "meaning": "khăn choàng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "heart",
+      "ipa": "/hɑːrt/",
+      "meaning": "trái tim",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "target",
+      "ipa": "/ˈtɑːrɡət/",
+      "meaning": "mục tiêu",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "partner",
+      "ipa": "/ˈpɑːrtnər/",
+      "meaning": "đối tác, bạn đồng hành",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "guitar",
+      "ipa": "/ɡɪˈtɑːr/",
+      "meaning": "đàn ghi-ta",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "a dark garden",
+      "ipa": "/ə dɑːrk ˈɡɑːrdən/",
+      "meaning": "một khu vườn tối",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a smart artist",
+      "ipa": "/ə smɑːrt ˈɑːrtɪst/",
+      "meaning": "một nghệ sĩ thông minh",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a small apartment",
+      "ipa": "/ə smɔːl əˈpɑːrtmənt/",
+      "meaning": "một căn hộ nhỏ",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a hard part",
+      "ipa": "/hɑːrd pɑːrt/",
+      "meaning": "một phần khó",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a birthday party",
+      "ipa": "/ə ˈbɜːrθdeɪ ˈpɑːrti/",
+      "meaning": "một bữa tiệc sinh nhật",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a parking card",
+      "ipa": "/ə ˈpɑːrkɪŋ kɑːrd/",
+      "meaning": "thẻ đỗ xe",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a cartoon star",
+      "ipa": "/ə kɑːrˈtuːn stɑːr/",
+      "meaning": "một ngôi sao hoạt hình",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "start the car",
+      "ipa": "/stɑːrt ðə kɑːr/",
+      "meaning": "khởi động xe",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "park the car",
+      "ipa": "/pɑːrk ðə kɑːr/",
+      "meaning": "đỗ xe",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "work hard",
+      "ipa": "/wɜːrk hɑːrd/",
+      "meaning": "làm việc chăm chỉ",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "far from the park",
+      "ipa": "/fɑːr frəm ðə pɑːrk/",
+      "meaning": "xa công viên",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "art department",
+      "ipa": "/ɑːrt dɪˈpɑːrtmənt/",
+      "meaning": "khoa/phòng nghệ thuật",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "The star is far.",
+      "ipa": "/ðə stɑːr ɪz fɑːr/",
+      "meaning": "Ngôi sao ở xa.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "The car is dark.",
+      "ipa": "/ðə kɑːr ɪz dɑːrk/",
+      "meaning": "Chiếc xe màu tối.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "The garden is large.",
+      "ipa": "/ðə ˈɡɑːrdən ɪz lɑːrdʒ/",
+      "meaning": "Khu vườn rất lớn.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "The farmer has a farm.",
+      "ipa": "/ðə ˈfɑːrmər hæz ə fɑːrm/",
+      "meaning": "Người nông dân có một nông trại.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "The artist works hard.",
+      "ipa": "/ði ˈɑːrtɪst wɜːrks hɑːrd/",
+      "meaning": "Người nghệ sĩ làm việc chăm chỉ.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "Are you ready? Let’s get started.",
+      "ipa": "/ɑːr ju ˈredi lets ɡet ˈstɑːrtɪd/",
+      "meaning": "Bạn sẵn sàng chưa? Chúng ta bắt đầu thôi.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "Mark starts the car and drives far from the park.",
+      "ipa": "/mɑːrk stɑːrts ðə kɑːr ənd draɪvz fɑːr frəm ðə pɑːrk/",
+      "meaning": "Mark khởi động xe và lái đi xa khỏi công viên.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "My family goes to the park and walks in the large garden.",
+      "ipa": "/maɪ ˈfæməli ɡoʊz tə ðə pɑːrk ənd wɔːks ɪn ðə lɑːrdʒ ˈɡɑːrdən/",
+      "meaning": "Gia đình tôi đi đến công viên và đi dạo trong khu vườn lớn.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "At the party, the artist plays guitar for a cartoon star.",
+      "ipa": "/æt ðə ˈpɑːti ði ˈɑːrtɪst pleɪz ɡɪˈtɑːr fər ə kɑːrˈtuːn stɑːr/",
+      "meaning": "Tại bữa tiệc, người nghệ sĩ chơi ghi-ta cho một ngôi sao hoạt hình.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Không uốn lưỡi âm /r/ ở cuối làm âm bị dẹt và cụt."
+  ]
+}

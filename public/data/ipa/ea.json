@@ -1,0 +1,526 @@
+{
+  "ipa": "eə",
+  "name": "nguyên âm đôi /eə/",
+  "type": "diphthong",
+  "description": "Bắt đầu từ âm /e/ và lướt nhẹ sang âm /ə/. Tránh uốn lưỡi quá sớm.",
+  "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "Nghĩa",
+      "ipa": "/keə(r)/",
+      "meaning": "v",
+      "partOfSpeech": "care",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "quan tâm",
+      "ipa": "/deə(r)/",
+      "meaning": "v",
+      "partOfSpeech": "dare",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "dám",
+      "ipa": "/reə(r)/",
+      "meaning": "adj",
+      "partOfSpeech": "rare",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "hiếm",
+      "ipa": "/beə(r)/",
+      "meaning": "adj",
+      "partOfSpeech": "bare",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "trống, trơ",
+      "ipa": "/feə(r)/",
+      "meaning": "n",
+      "partOfSpeech": "fare",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "scare",
+      "ipa": "/skeə(r)/",
+      "meaning": "làm sợ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "spare",
+      "ipa": "/speə(r)/",
+      "meaning": "dự phòng / dành ra",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjv",
+      "hidden": false
+    },
+    {
+      "word": "stare",
+      "ipa": "/steə(r)/",
+      "meaning": "nhìn chằm chằm",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "prepare",
+      "ipa": "/prɪˈpeə(r)/",
+      "meaning": "chuẩn bị",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "compare",
+      "ipa": "/kəmˈpeə(r)/",
+      "meaning": "so sánh",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "declare",
+      "ipa": "/dɪˈkleə(r)/",
+      "meaning": "tuyên bố",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "repair",
+      "ipa": "/rɪˈpeə(r)/",
+      "meaning": "sửa chữa",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "sửa chữa",
+      "ipa": "/eə(r)/",
+      "meaning": "n",
+      "partOfSpeech": "air",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "không khí",
+      "ipa": "/heə(r)/",
+      "meaning": "n",
+      "partOfSpeech": "hair",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "tóc",
+      "ipa": "/feə(r)/",
+      "meaning": "adj",
+      "partOfSpeech": "fair",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "công bằng",
+      "ipa": "/peə(r)/",
+      "meaning": "n",
+      "partOfSpeech": "pair",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "chair",
+      "ipa": "/tʃeə(r)/",
+      "meaning": "ghế",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "stairs",
+      "ipa": "/steə(r)z/",
+      "meaning": "cầu thang",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "airport",
+      "ipa": "/ˈeəpɔːt/",
+      "meaning": "sân bay",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "fairy",
+      "ipa": "/ˈfeə.ri/",
+      "meaning": "nàng tiên",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "nàng tiên",
+      "ipa": "/weə(r)/",
+      "meaning": "v",
+      "partOfSpeech": "wear",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "mặc",
+      "ipa": "/beə(r)/",
+      "meaning": "n",
+      "partOfSpeech": "bear",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "con gấu",
+      "ipa": "/peə(r)/",
+      "meaning": "n",
+      "partOfSpeech": "pear",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "swear",
+      "ipa": "/sweə(r)/",
+      "meaning": "thề",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "where",
+      "ipa": "/weə(r)/",
+      "meaning": "ở đâu",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adverb",
+      "hidden": false
+    },
+    {
+      "word": "ở đâu",
+      "ipa": "/teə(r)/",
+      "meaning": "v/n",
+      "partOfSpeech": "tear",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "there",
+      "ipa": "/ðeə(r)/",
+      "meaning": "ở đó",
+      "partOfSpeech": "adverb",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "their",
+      "ipa": "/ðeə(r)/",
+      "meaning": "của họ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "determiner",
+      "hidden": false
+    },
+    {
+      "word": "they’re",
+      "ipa": "/ðeə(r)/",
+      "meaning": "họ là",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "contraction",
+      "hidden": false
+    },
+    {
+      "word": "everywhere",
+      "ipa": "/ˈevriweə(r)/",
+      "meaning": "khắp nơi",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adverb",
+      "hidden": false
+    },
+    {
+      "word": "anywhere",
+      "ipa": "/ˈeniweə(r)/",
+      "meaning": "bất cứ đâu",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adverb",
+      "hidden": false
+    },
+    {
+      "word": "various",
+      "ipa": "/ˈveə.ri.əs/",
+      "meaning": "nhiều loại",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "librarian",
+      "ipa": "/laɪˈbreə.ri.ən/",
+      "meaning": "thủ thư",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "carefully",
+      "ipa": "/ˈkeə.fə.li/",
+      "meaning": "cẩn thận",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adverb",
+      "hidden": false
+    },
+    {
+      "word": "take care of",
+      "ipa": "/teɪk ker əv/",
+      "meaning": "chăm sóc",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "don’t care about",
+      "ipa": "/doʊnt ker əˈbaʊt/",
+      "meaning": "không quan tâm",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "prepare for exam",
+      "ipa": "/prɪˈper fər ɪɡˈzæm/",
+      "meaning": "chuẩn bị cho kỳ thi",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "prepare food",
+      "ipa": "/prɪˈper fuːd/",
+      "meaning": "chuẩn bị đồ ăn",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "compare with",
+      "ipa": "/kəmˈper wɪð/",
+      "meaning": "so sánh với",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "repair the car",
+      "ipa": "/rɪˈper ðə kɑːr/",
+      "meaning": "sửa xe",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "fresh air",
+      "ipa": "/freʃ er/",
+      "meaning": "không khí trong lành",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "pair of shoes",
+      "ipa": "/per əv ʃuːz/",
+      "meaning": "một đôi giày",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "hair style",
+      "ipa": "/her staɪl/",
+      "meaning": "kiểu tóc",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "fair price",
+      "ipa": "/fer praɪs/",
+      "meaning": "giá hợp lý",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "in the air",
+      "ipa": "/ɪn ði er/",
+      "meaning": "trong không khí",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "over there",
+      "ipa": "/ˈoʊvər ðer/",
+      "meaning": "ở đằng kia",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "their house",
+      "ipa": "/ðer haʊs/",
+      "meaning": "nhà của họ",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "anywhere else",
+      "ipa": "/ˈeniwer els/",
+      "meaning": "nơi nào khác",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": ".I don’t care.",
+      "ipa": "/aɪ doʊnt ker/",
+      "meaning": "Tôi không quan tâm.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "The air is fresh.",
+      "ipa": "/ðə er ɪz freʃ/",
+      "meaning": "Không khí rất trong lành.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "She has fair hair.",
+      "ipa": "/ʃi hæz fer her/",
+      "meaning": "Cô ấy có mái tóc vàng nhạt.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "I prepare for the exam with care.",
+      "ipa": "/aɪ prɪˈper fər ði ɪɡˈzæm wɪð ker/",
+      "meaning": "Tôi chuẩn bị cho kỳ thi một cách cẩn thận.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "They compare their answers over there.",
+      "ipa": "/ðeɪ kəmˈper ðer ˈænsərz ˈoʊvər ðer/",
+      "meaning": "Họ so sánh câu trả lời của họ ở đằng kia.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "We repair the car in the fresh air.",
+      "ipa": "/wi rɪˈper ðə kɑːr ɪn ðə freʃ er/",
+      "meaning": "Chúng tôi sửa xe trong không khí trong lành.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Rare pairs of fair-haired bears share care in the air.",
+      "ipa": "/rer perz əv fer herd berz ʃer ker ɪn ði er/",
+      "meaning": "Những cặp gấu lông vàng hiếm chia sẻ sự chăm sóc trong không khí.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Careless Claire compares fair pairs near the stairs.",
+      "ipa": "/ˈkerləs kler kəmˈperz fer perz nɪr ðə sterz/",
+      "meaning": "Claire bất cẩn so sánh những đôi công bằng gần cầu thang.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Peter prepares rare repair parts near the airport fair.",
+      "ipa": "/ˈpiːtər prɪˈperz rer rɪˈper pɑrts nɪr ði ˈerˌpɔːrt fer/",
+      "meaning": "Peter chuẩn bị các linh kiện sửa chữa hiếm gần hội chợ sân bay.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Đọc thành chữ 'e' Việt Nam."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "ipa": "h",
+  "name": "phụ âm vô thanh /h/",
+  "type": "consonant_voiceless",
+  "description": "Mở miệng hờ, đẩy luồng hơi từ trong cổ họng ra ngoài nhẹ nhàng như đang thở dài.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "how",
+      "ipa": "/haʊ/",
+      "meaning": "như thế nào",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": []
+}

@@ -1,0 +1,422 @@
+{
+  "ipa": "ʌ",
+  "name": "á (a ngắn)",
+  "type": "monophthong_short",
+  "description": "Miệng mở vừa phải bằng một nửa âm /ɑ:/. Lưỡi hạ thấp nhẹ. Phát âm nhanh giống âm 'á' hay 'ớ' tiếng Việt.",
+  "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "sun",
+      "ipa": "/sʌn/",
+      "meaning": "mặt trời",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "cut",
+      "ipa": "/kʌt/",
+      "meaning": "cắt",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "jump",
+      "ipa": "/dʒʌmp/",
+      "meaning": "nhảy",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "just",
+      "ipa": "/dʒʌst/",
+      "meaning": "vừa mới / chỉ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adverb",
+      "hidden": false
+    },
+    {
+      "word": "Sunday",
+      "ipa": "/ˈsʌndeɪ/",
+      "meaning": "Chủ nhật",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "lucky",
+      "ipa": "/ˈlʌki/",
+      "meaning": "may mắn",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "uncle",
+      "ipa": "/ˈʌŋkəl/",
+      "meaning": "chú, bác",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "ugly",
+      "ipa": "/ˈʌɡli/",
+      "meaning": "xấu xí",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "study",
+      "ipa": "/ˈstʌdi/",
+      "meaning": "học",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "umbrella",
+      "ipa": "/ʌmˈbrelə/",
+      "meaning": "cái ô",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "come",
+      "ipa": "/kʌm/",
+      "meaning": "đến",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "son",
+      "ipa": "/sʌn/",
+      "meaning": "con trai",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "done",
+      "ipa": "/dʌn/",
+      "meaning": "hoàn thành",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "money",
+      "ipa": "/ˈmʌni/",
+      "meaning": "tiền",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "brother",
+      "ipa": "/ˈbrʌðər/",
+      "meaning": "anh/em trai",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "nothing",
+      "ipa": "/ˈnʌθɪŋ/",
+      "meaning": "không có gì",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "London",
+      "ipa": "/ˈlʌndən/",
+      "meaning": "Luân Đôn",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Monday",
+      "ipa": "/ˈmʌndeɪ/",
+      "meaning": "thứ Hai",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "sometimes",
+      "ipa": "/ˈsʌmtaɪmz/",
+      "meaning": "thỉnh thoảng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adverb",
+      "hidden": false
+    },
+    {
+      "word": "touch",
+      "ipa": "/tʌtʃ/",
+      "meaning": "chạm vào",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "rough",
+      "ipa": "/rʌf/",
+      "meaning": "gồ ghề, khó khăn",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "young",
+      "ipa": "/jʌŋ/",
+      "meaning": "trẻ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "trouble",
+      "ipa": "/ˈtrʌbəl/",
+      "meaning": "rắc rối",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "jump up",
+      "ipa": "/dʒʌmp ʌp/",
+      "meaning": "nhảy lên",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "lucky company",
+      "ipa": "/ˈlʌki ˈkʌmpəni/",
+      "meaning": "công ty may mắn",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "some monkeys",
+      "ipa": "/sʌm ˈmʌŋkiz/",
+      "meaning": "một vài con khỉ",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "enough honey",
+      "ipa": "/ɪˈnʌf ˈhʌni/",
+      "meaning": "đủ mật ong",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "wonderful summer",
+      "ipa": "/ˈwʌndərfəl ˈsʌmər/",
+      "meaning": "mùa hè kỳ diệu",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a sunny Monday",
+      "ipa": "/ə ˈsʌni ˈmʌndeɪ/",
+      "meaning": "một ngày thứ Hai nắng",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a lucky number",
+      "ipa": "/ə ˈlʌki ˈnumbər/",
+      "meaning": "một con số may mắn",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "much money",
+      "ipa": "/mʌtʃ ˈmʌni/",
+      "meaning": "nhiều tiền",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a funny uncle",
+      "ipa": "/ə ˈfʌni ˈʌŋkəl/",
+      "meaning": "một người chú vui tính",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a young brother",
+      "ipa": "/ə jʌŋ ˈbrʌðər/",
+      "meaning": "một người em trai trẻ",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a cup of honey",
+      "ipa": "/ə kʌp əv ˈhʌni/",
+      "meaning": "một cốc mật ong",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a lovely summer",
+      "ipa": "/ə ˈlʌvli ˈsʌmər/",
+      "meaning": "một mùa hè đáng yêu",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "enough money",
+      "ipa": "/ɪˈnʌf ˈmʌni/",
+      "meaning": "đủ tiền",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a wonderful lunch",
+      "ipa": "/ə ˈwʌndərfəl lʌntʃ/",
+      "meaning": "một bữa trưa tuyệt vời",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "The flood comes in summer.",
+      "ipa": "/ðə flʌd kʌmz ɪn ˈsʌmər/",
+      "meaning": "Lũ lụt đến vào mùa hè.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "He studies nothing on Sunday.",
+      "ipa": "/hi ˈstʌdiz ˈnʌθɪŋ ɑːn ˈsʌndeɪ/",
+      "meaning": "Cậu ta không học gì vào ngày Chủ nhật.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "My cousin will come on Sunday if it’s sunny.",
+      "ipa": "/maɪ ˈkʌzən wɪl kʌm ɑːn ˈsʌndeɪ ɪf ɪts ˈsʌni/",
+      "meaning": "Anh họ tôi sẽ đến vào Chủ nhật nếu trời nắng.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "My uncle has enough money.",
+      "ipa": "/maɪ ˈʌŋkəl hæz ɪˈnʌf ˈmʌni/",
+      "meaning": "Chú của tôi có đủ tiền.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "I love sunny summer days.",
+      "ipa": "/aɪ lʌv ˈsʌni ˈsʌmər deɪz/",
+      "meaning": "Tôi yêu những ngày hè đầy nắng.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "The hungry son wants some lunch.",
+      "ipa": "/ðə ˈhʌŋɡri sʌn wɑːnts sʌm lʌntʃ/",
+      "meaning": "Cậu con trai đói bụng muốn ăn trưa.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "She has a lovely cup of honey.",
+      "ipa": "/ʃi hæz ə ˈlʌvli kʌp əv ˈhʌni/",
+      "meaning": "Cô ấy có một cốc mật ong đáng yêu.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "My cousin studies in London.",
+      "ipa": "/maɪ ˈkʌzən ˈstʌdiz ɪn London/",
+      "meaning": "Anh/chị/em họ của tôi học ở Luân Đôn.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "My funny uncle runs under the sunny sun.",
+      "ipa": "/maɪ ˈfʌni ˈʌŋkəl rʌnz ˈʌndər ðə ˈsʌni sʌn/",
+      "meaning": "Người chú vui tính của tôi chạy dưới ánh mặt trời nắng.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "The young monkey jumps up for some honey.",
+      "ipa": "/ðə jʌŋ ˈmʌŋki dʒʌmps ʌp fər sʌm ˈhʌni/",
+      "meaning": "Con khỉ trẻ nhảy lên để lấy một ít mật ong.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Phát âm thành âm 'u' hoặc quá rõ thành 'a' Việt."
+  ]
+}

@@ -1,0 +1,428 @@
+{
+  "ipa": "æ",
+  "name": "e bẹt (a bẹt)",
+  "type": "monophthong_short",
+  "description": "Miệng mở rộng hết cỡ sang hai bên và xuống dưới. Đầu lưỡi chạm vào chân răng dưới. Phát âm lai giữa 'a' và 'e'.",
+  "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "hat",
+      "ipa": "/hæt/",
+      "meaning": "cái mũ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "h{a}t"
+    },
+    {
+      "word": "man",
+      "ipa": "/mæn/",
+      "meaning": "người đàn ông",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "m{a}n"
+    },
+    {
+      "word": "bad",
+      "ipa": "/bæd/",
+      "meaning": "tệ hại",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false,
+      "displayWord": "b{a}d"
+    },
+    {
+      "word": "back",
+      "ipa": "/bæk/",
+      "meaning": "trở lại, phía sau",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adverb",
+      "hidden": false,
+      "displayWord": "b{a}ck"
+    },
+    {
+      "word": "plan",
+      "ipa": "/plæn/",
+      "meaning": "kế hoạch",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "pl{a}n"
+    },
+    {
+      "word": "sad",
+      "ipa": "/sæd/",
+      "meaning": "buồn",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false,
+      "displayWord": "s{a}d"
+    },
+    {
+      "word": "land",
+      "ipa": "/lænd/",
+      "meaning": "mảnh đất",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "l{a}nd"
+    },
+    {
+      "word": "camera",
+      "ipa": "/ˈkæmrə/",
+      "meaning": "máy ảnh",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "c{a}mera"
+    },
+    {
+      "word": "bat",
+      "ipa": "/bæt/",
+      "meaning": "con dơi",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "b{a}t"
+    },
+    {
+      "word": "acting",
+      "ipa": "/ˈæktɪŋ/",
+      "meaning": "diễn xuất",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "{a}cting"
+    },
+    {
+      "word": "candle",
+      "ipa": "/ˈkændəl/",
+      "meaning": "nến",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "c{a}ndle"
+    },
+    {
+      "word": "unhappy",
+      "ipa": "/ʌnˈhæpi/",
+      "meaning": "không hạnh phúc",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false,
+      "displayWord": "unh{a}ppy"
+    },
+    {
+      "word": "Saturday",
+      "ipa": "/ˈsætərdeɪ/",
+      "meaning": "thứ Bảy",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "S{a}turday"
+    },
+    {
+      "word": "accurate",
+      "ipa": "/ˈækjərət/",
+      "meaning": "chính xác",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false,
+      "displayWord": "{a}ccurate"
+    },
+    {
+      "word": "national",
+      "ipa": "/ˈnæʃənəl/",
+      "meaning": "thuộc quốc gia",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false,
+      "displayWord": "n{a}tional"
+    },
+    {
+      "word": "academy",
+      "ipa": "/əˈkædəmi/",
+      "meaning": "học viện",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "ac{a}demy"
+    },
+    {
+      "word": "apple",
+      "ipa": "/ˈæpəl/",
+      "meaning": "quả táo",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "{a}pple"
+    },
+    {
+      "word": "map",
+      "ipa": "/mæp/",
+      "meaning": "bản đồ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "m{a}p"
+    },
+    {
+      "word": "black",
+      "ipa": "/blæk/",
+      "meaning": "màu đen",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false,
+      "displayWord": "bl{a}ck"
+    },
+    {
+      "word": "a black cat",
+      "ipa": "/ə blæk kæt/",
+      "meaning": "một con mèo đen",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "a bl{a}ck c{a}t"
+    },
+    {
+      "word": "a fat apple",
+      "ipa": "/ə fæt ˈæpəl/",
+      "meaning": "một quả táo to béo",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "a f{a}t {a}pple"
+    },
+    {
+      "word": "a handsome man",
+      "ipa": "/ə ˈhænsəm mæn/",
+      "meaning": "một người đàn ông đẹp trai",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "a h{a}ndsome m{a}n"
+    },
+    {
+      "word": "on my hand",
+      "ipa": "/ɒn maɪ hænd/",
+      "meaning": "trên tay tôi",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "on my h{a}nd"
+    },
+    {
+      "word": "black jacket",
+      "ipa": "/blæk ˈdʒækɪt/",
+      "meaning": "áo khoác màu đen",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "bl{a}ck j{a}cket"
+    },
+    {
+      "word": "happy man",
+      "ipa": "/ˈhæpi mæn/",
+      "meaning": "người đàn ông hạnh phúc",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "h{a}ppy m{a}n"
+    },
+    {
+      "word": "salad and sandwich",
+      "ipa": "/ˈsæləd ænd ˈsænwɪtʃ/",
+      "meaning": "salad và bánh sandwich",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "s{a}lad {a}nd s{a}ndwich"
+    },
+    {
+      "word": "practical plan",
+      "ipa": "/ˈpræktɪkəl plæn/",
+      "meaning": "kế hoạch thực tế",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "pr{a}ctical pl{a}n"
+    },
+    {
+      "word": "traffic jam",
+      "ipa": "/ˈtræfɪk dʒæm/",
+      "meaning": "tắc nghẽn giao thông",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "tr{a}ffic j{a}m"
+    },
+    {
+      "word": "Academy of Banking",
+      "ipa": "/əˈkædəmi əv ˈbæŋkɪŋ/",
+      "meaning": "Học viện Ngân hàng",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "Ac{a}demy of B{a}nking"
+    },
+    {
+      "word": "bad example",
+      "ipa": "/bæd ɪɡˈzæmpəl/",
+      "meaning": "ví dụ xấu",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "b{a}d ex{a}mple"
+    },
+    {
+      "word": "national anthem",
+      "ipa": "/ˈnæʃənəl ˈænθəm/",
+      "meaning": "quốc ca",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "n{a}tional {a}nthem"
+    },
+    {
+      "word": "accurate answer",
+      "ipa": "/ˈækjərət ˈænsər/",
+      "meaning": "câu trả lời chính xác",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "{a}ccurate {a}nswer"
+    },
+    {
+      "word": "bad habit",
+      "ipa": "/bæd ˈhæbɪt/",
+      "meaning": "thói quen xấu",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "b{a}d h{a}bit"
+    },
+    {
+      "word": "annual gathering",
+      "ipa": "/ˈænjuəl ˈɡæðərɪŋ/",
+      "meaning": "buổi họp mặt thường niên",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "{a}nnual g{a}thering"
+    },
+    {
+      "word": "last chance",
+      "ipa": "/læst tʃæns/",
+      "meaning": "cơ hội cuối cùng",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "l{a}st ch{a}nce"
+    },
+    {
+      "word": "The cat sat on the mat.",
+      "ipa": "/ðə kæt sæt ɒn ðə mæt/",
+      "meaning": "Con mèo ngồi trên tấm thảm.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "I have a black bag.",
+      "ipa": "/aɪ hæv ə blæk bæg/",
+      "meaning": "Tôi có một chiếc túi màu đen.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "Thanks for the cash.",
+      "ipa": "/θæŋks fɔːr ðə kæʃ/",
+      "meaning": "Cảm ơn vì số tiền mặt.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "Sam is at the annual gathering.",
+      "ipa": "/sæm ɪz æt ði ˈænjuəl ˈɡæðərɪŋ/",
+      "meaning": "Sam đang ở buổi họp mặt thường niên.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "The handsome man had a bad habit.",
+      "ipa": "/ðə ˈhænsəm mæn hæd ə bæd ˈhæbɪt/",
+      "meaning": "Người đàn ông đẹp trai đó từng có một thói quen xấu.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "This is your last chance to give me an accurate answer.",
+      "ipa": "/ðɪs ɪz jʊr læst tʃæns tə ɡɪv mi ən ˈækjərət ˈænsər/",
+      "meaning": "Đây là cơ hội cuối cùng để bạn cho tôi một câu trả lời chính xác.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "Danny had a salad and a sandwich in the cafeteria.",
+      "ipa": "/ˈdæni hæd ə ˈsæləd ænd ə ˈsænwɪtʃ ɪn ðə ˌkæfəˈtɪriə/",
+      "meaning": "Danny đã ăn salad và bánh sandwich ở căng tin.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "Nancy has a bad attitude in her Spanish class.",
+      "ipa": "/ˈnænsi hæz ə bæd ˈætɪtuːd ɪn hər ˈspænɪʃ klæs/",
+      "meaning": "Nancy có thái độ không tốt trong lớp tiếng Tây Ban Nha.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "Can you can a can as a canner can can a can?",
+      "ipa": "/kæn ju kæn ə kæn æz ə ˈkænər kæn kæn ə kæn/",
+      "meaning": "Bạn có thể đóng hộp một cái lon như một người đóng hộp có thể làm không?",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    },
+    {
+      "word": "Harry the happy hamster sat on his handsome hat and mashed a fat apple.",
+      "ipa": "/ˈhæri ðə ˈhæpi ˈhæmstər sæt ɒn hɪz ˈhænsəm hat ænd mæʃt ə fæt ˈæpəl/",
+      "meaning": "Harry, chú chuột hamster vui vẻ, ngồi lên chiếc mũ đẹp của mình và nghiền một quả táo béo.",
+      "audioUrl": "",
+      "type": "sentence",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Phát âm thành âm 'e' hoặc âm 'a' thuần tiếng Việt.",
+    "Không mở rộng miệng đủ rộng."
+  ]
+}

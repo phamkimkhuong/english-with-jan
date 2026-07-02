@@ -1,0 +1,20 @@
+{
+  "ipa": "tʃ",
+  "name": "phụ âm vô thanh /tʃ/",
+  "type": "consonant_voiceless",
+  "description": "Bắt đầu từ vị trí âm /t/, sau đó chu môi và bật hơi nhanh sang âm /ʃ/. Không rung cổ.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "church",
+      "ipa": "/tʃɜːtʃ/",
+      "meaning": "nhà thờ",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Đọc giống chữ 'ch' Việt Nam (chữ 'ch' Việt Nam không bật hơi)."
+  ]
+}

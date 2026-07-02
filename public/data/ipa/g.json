@@ -1,0 +1,18 @@
+{
+  "ipa": "g",
+  "name": "phụ âm hữu thanh /g/",
+  "type": "consonant_voiced",
+  "description": "Giống âm /k/ nhưng làm rung dây thanh quản ở cổ họng.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "got",
+      "ipa": "/ɡɒt/",
+      "meaning": "đã có",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": []
+}

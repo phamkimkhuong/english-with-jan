@@ -1,0 +1,18 @@
+{
+  "ipa": "ŋ",
+  "name": "phụ âm mũi /ŋ/",
+  "type": "consonant_voiced",
+  "description": "Cuống lưỡi nâng lên chạm ngạc mềm phía sau, luồng khí đi ra bằng mũi. Rung dây thanh quản.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "sing",
+      "ipa": "/sɪŋ/",
+      "meaning": "hát",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": []
+}

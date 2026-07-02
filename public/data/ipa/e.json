@@ -1,0 +1,550 @@
+{
+  "ipa": "e",
+  "name": "e ngắn",
+  "type": "monophthong_short",
+  "description": "Môi mở rộng vừa phải sang hai bên. Lưỡi hạ thấp hơn so với âm /ɪ/. Phát âm ngắn và dứt khoát.",
+  "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "Nghĩa",
+      "ipa": "/send/",
+      "meaning": "v",
+      "partOfSpeech": "send",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "gửi",
+      "ipa": "/tel/",
+      "meaning": "v",
+      "partOfSpeech": "tell",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "kể, nói",
+      "ipa": "/left/",
+      "meaning": "n/adj",
+      "partOfSpeech": "left",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "never",
+      "ipa": "/ˈnevər/",
+      "meaning": "không bao giờ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adverb",
+      "hidden": false,
+      "displayWord": "n{e}ver"
+    },
+    {
+      "word": "empty",
+      "ipa": "/ˈempti/",
+      "meaning": "trống, rỗng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false,
+      "displayWord": "{e}mpty"
+    },
+    {
+      "word": "sensitive",
+      "ipa": "/ˈsensətɪv/",
+      "meaning": "nhạy cảm",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false,
+      "displayWord": "s{e}nsitive"
+    },
+    {
+      "word": "dependent",
+      "ipa": "/dɪˈpendənt/",
+      "meaning": "phụ thuộc",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false,
+      "displayWord": "dep{e}ndent"
+    },
+    {
+      "word": "phụ thuộc",
+      "ipa": "/ɡet/",
+      "meaning": "v",
+      "partOfSpeech": "get",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "lấy, trở nên",
+      "ipa": "/wet/",
+      "meaning": "adj",
+      "partOfSpeech": "wet",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "dress",
+      "ipa": "/dres/",
+      "meaning": "váy",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "dr{e}ss"
+    },
+    {
+      "word": "effort",
+      "ipa": "/ˈefərt/",
+      "meaning": "nỗ lực",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "{e}ffort"
+    },
+    {
+      "word": "nỗ lực",
+      "ipa": "/bed/",
+      "meaning": "n",
+      "partOfSpeech": "bed",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "giường",
+      "ipa": "/eɡ/",
+      "meaning": "n",
+      "partOfSpeech": "egg",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "every",
+      "ipa": "/ˈevri/",
+      "meaning": "mỗi, mọi",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "determiner",
+      "hidden": false,
+      "displayWord": "{e}very"
+    },
+    {
+      "word": "plenty",
+      "ipa": "/ˈplenti/",
+      "meaning": "nhiều",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun/pronoun",
+      "hidden": false,
+      "displayWord": "pl{e}nty"
+    },
+    {
+      "word": "energy",
+      "ipa": "/ˈenərdʒi/",
+      "meaning": "năng lượng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "{e}nergy"
+    },
+    {
+      "word": "remember",
+      "ipa": "/rɪˈmembər/",
+      "meaning": "nhớ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false,
+      "displayWord": "rem{e}mber"
+    },
+    {
+      "word": "better",
+      "ipa": "/ˈbetər/",
+      "meaning": "tốt hơn",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective/adverb",
+      "hidden": false,
+      "displayWord": "b{e}tter"
+    },
+    {
+      "word": "tốt hơn",
+      "ipa": "/hed/",
+      "meaning": "n",
+      "partOfSpeech": "head",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "health",
+      "ipa": "/helθ/",
+      "meaning": "sức khỏe",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "h{ea}lth"
+    },
+    {
+      "word": "healthy",
+      "ipa": "/ˈhelθi/",
+      "meaning": "khỏe mạnh",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false,
+      "displayWord": "h{ea}lthy"
+    },
+    {
+      "word": "ready",
+      "ipa": "/ˈredi/",
+      "meaning": "sẵn sàng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false,
+      "displayWord": "r{ea}dy"
+    },
+    {
+      "word": "steady",
+      "ipa": "/ˈstedi/",
+      "meaning": "vững chắc",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false,
+      "displayWord": "st{ea}dy"
+    },
+    {
+      "word": "headache",
+      "ipa": "/ˈhedeɪk/",
+      "meaning": "cơn đau đầu",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "h{ea}dache"
+    },
+    {
+      "word": "weather",
+      "ipa": "/ˈweðər/",
+      "meaning": "thời tiết",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "w{ea}ther"
+    },
+    {
+      "word": "heavy",
+      "ipa": "/ˈhevi/",
+      "meaning": "nặng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false,
+      "displayWord": "h{ea}vy"
+    },
+    {
+      "word": "bread",
+      "ipa": "/bred/",
+      "meaning": "bánh mì",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "br{ea}d"
+    },
+    {
+      "word": "breakfast",
+      "ipa": "/ˈbrekfəst/",
+      "meaning": "bữa sáng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "br{ea}kfast"
+    },
+    {
+      "word": "bữa sáng",
+      "ipa": "/ˈeni/",
+      "meaning": "determiner",
+      "partOfSpeech": "any",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "bất kỳ",
+      "ipa": "/ˈmeni/",
+      "meaning": "determiner",
+      "partOfSpeech": "many",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "nhiều",
+      "ipa": "/sez/",
+      "meaning": "v",
+      "partOfSpeech": "says",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "nói",
+      "ipa": "/sed/",
+      "meaning": "v",
+      "partOfSpeech": "said",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "again",
+      "ipa": "/əˈɡen/",
+      "meaning": "lại, lần nữa",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adverb",
+      "hidden": false,
+      "displayWord": "ag{ai}n"
+    },
+    {
+      "word": "against",
+      "ipa": "/əˈɡenst/",
+      "meaning": "chống lại",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "preposition",
+      "hidden": false,
+      "displayWord": "ag{ai}nst"
+    },
+    {
+      "word": "friend",
+      "ipa": "/frend/",
+      "meaning": "bạn bè",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "fr{ie}nd"
+    },
+    {
+      "word": "get wet",
+      "ipa": "/ɡet wet/",
+      "meaning": "bị ướt",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "g{e}t w{e}t"
+    },
+    {
+      "word": "red dress",
+      "ipa": "/red dres/",
+      "meaning": "váy màu đỏ",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "r{e}d dr{e}ss"
+    },
+    {
+      "word": "extra effort",
+      "ipa": "/ˈekstrə ˈefərt/",
+      "meaning": "nỗ lực thêm",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "{e}xtra {e}ffort"
+    },
+    {
+      "word": "seven pens",
+      "ipa": "/ˈsevən penz/",
+      "meaning": "bảy cái bút",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "s{e}ven p{e}ns"
+    },
+    {
+      "word": "weather in February",
+      "ipa": "/ˈweðər ɪn ˈfebrueri/",
+      "meaning": "thời tiết tháng Hai",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "w{ea}ther in F{e}bru{a}ry"
+    },
+    {
+      "word": "presidential election",
+      "ipa": "/ˌprezɪˈdenʃəl ɪˈlekʃən/",
+      "meaning": "cuộc bầu cử tổng thống",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "pr{e}sidential el{e}ction"
+    },
+    {
+      "word": "bend your legs",
+      "ipa": "/bend jɔːr leɡz/",
+      "meaning": "gập chân của bạn",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "b{e}nd your l{e}gs"
+    },
+    {
+      "word": "plenty of energy",
+      "ipa": "/ˈplenti əv ˈenərdʒi/",
+      "meaning": "nhiều năng lượng",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "pl{e}nty of {e}nergy"
+    },
+    {
+      "word": "get better",
+      "ipa": "/ɡet ˈbetər/",
+      "meaning": "trở nên tốt hơn",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "g{e}t better"
+    },
+    {
+      "word": "next Wednesday",
+      "ipa": "/nekst ˈwenzdeɪ/",
+      "meaning": "thứ Tư tuần sau",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "n{e}xt W{e}dnesday"
+    },
+    {
+      "word": "red pen",
+      "ipa": "/red pen/",
+      "meaning": "bút đỏ",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "r{e}d p{e}n"
+    },
+    {
+      "word": "I never tell anyone.",
+      "ipa": "/aɪ ˈnevər tel ˈeniwʌn/",
+      "meaning": "Tôi chẳng bao giờ kể với ai cả.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "I n{e}ver t{e}ll {a}nyone."
+    },
+    {
+      "word": "I have got a headache.",
+      "ipa": "/aɪ hæv ɡɑːt ə ˈhedeɪk/",
+      "meaning": "Tôi bị đau đầu.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "I have got a h{ea}dache."
+    },
+    {
+      "word": "He slept on the best bed.",
+      "ipa": "/hi slept ɑːn ðə best bed/",
+      "meaning": "Anh ta ngủ trên chiếc giường tốt nhất.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "He sl{e}pt on the b{e}st b{e}d."
+    },
+    {
+      "word": "The wet dress is very heavy.",
+      "ipa": "/ðə wet dres ɪz ˈveri ˈhevi/",
+      "meaning": "Chiếc váy ướt rất nặng.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "The w{e}t dr{e}ss is v{e}ry h{ea}vy."
+    },
+    {
+      "word": "My friend has bread and eggs for breakfast.",
+      "ipa": "/maɪ frend hæz bred ənd eɡz fər ˈbrekfəst/",
+      "meaning": "Bạn tôi ăn bánh mì và trứng cho bữa sáng.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "My fr{ie}nd has br{ea}d and {e}ggs for br{ea}kfast."
+    },
+    {
+      "word": "I expect this session to end at ten.",
+      "ipa": "/aɪ ɪkˈspekt ðɪs ˈseʃən tu end ət ten/",
+      "meaning": "Tôi mong buổi học này kết thúc lúc mười giờ.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "I exp{e}ct this s{e}ssion to {e}nd at t{e}n."
+    },
+    {
+      "word": "I see my best friend Fred every seven days.",
+      "ipa": "/aɪ siː maɪ best frend fred ˈevri ˈsevən deɪz/",
+      "meaning": "Tôi gặp người bạn thân nhất Fred mỗi bảy ngày.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "I see my b{e}st fr{ie}nd Fr{e}d {e}very s{e}ven d{ay}s."
+    },
+    {
+      "word": "The red pen is on the bed.",
+      "ipa": "/ðə red pen ɪz ɑːn ðə bed/",
+      "meaning": "Cái bút đỏ nằm trên giường.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "The r{e}d p{e}n is on the b{e}d."
+    },
+    {
+      "word": "He gets ten eggs every week.",
+      "ipa": "/hi ɡets ten eɡz ˈevri wiːk/",
+      "meaning": "Anh ấy lấy mười quả trứng mỗi tuần.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "He g{e}ts t{e}n {e}ggs {e}very week."
+    },
+    {
+      "word": "Seven selfish shellfish selling seven shells.",
+      "ipa": "/ˈsevən ˈselfɪʃ ˈʃelfɪʃ ˈselɪŋ ˈsevən ʃelz/",
+      "meaning": "Bảy con động vật có vỏ ích kỷ bán bảy cái vỏ",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "S{e}ven s{e}lfish sh{e}llfish s{e}lling s{e}ven shells."
+    }
+  ],
+  "commonMistakes": [
+    "Phát âm thành âm 'ê' trong tiếng Việt."
+  ]
+}

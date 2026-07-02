@@ -1,0 +1,20 @@
+{
+  "ipa": "θ",
+  "name": "phụ âm vô thanh /θ/",
+  "type": "consonant_voiceless",
+  "description": "Đặt đầu lưỡi giữa răng cửa trên và răng dưới, đẩy luồng hơi đi ra ngoài qua khe răng. Không rung cổ.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "thin",
+      "ipa": "/θɪn/",
+      "meaning": "mỏng",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Đọc thành chữ 't' hoặc 'th' tiếng Việt."
+  ]
+}

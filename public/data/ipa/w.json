@@ -1,0 +1,18 @@
+{
+  "ipa": "w",
+  "name": "bán nguyên âm /w/",
+  "type": "consonant_voiced",
+  "description": "Môi tròn và chu ra trước như âm /u:/ rồi lướt nhanh sang âm tiếp theo.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "wet",
+      "ipa": "/wet/",
+      "meaning": "ẩm ướt",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": []
+}

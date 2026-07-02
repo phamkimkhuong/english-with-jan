@@ -1,0 +1,20 @@
+{
+  "ipa": "ð",
+  "name": "phụ âm hữu thanh /ð/",
+  "type": "consonant_voiced",
+  "description": "Giống âm /θ/ nhưng làm rung dây thanh quản ở cổ họng.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "this",
+      "ipa": "/ðɪs/",
+      "meaning": "cái này",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Đọc thành chữ 'đ' hoặc 'd' tiếng Việt."
+  ]
+}

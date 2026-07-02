@@ -1,0 +1,20 @@
+{
+  "ipa": "s",
+  "name": "phụ âm vô thanh /s/",
+  "type": "consonant_voiceless",
+  "description": "Hai răng khép hờ, lưỡi để tự nhiên chạm chân răng dưới, đẩy luồng hơi thoát ra qua khe giữa hai hàm răng.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "so",
+      "ipa": "/səʊ/",
+      "meaning": "như vậy",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Nuốt âm 's' ở cuối từ."
+  ]
+}

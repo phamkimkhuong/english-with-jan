@@ -1,0 +1,18 @@
+{
+  "ipa": "v",
+  "name": "phụ âm hữu thanh /v/",
+  "type": "consonant_voiced",
+  "description": "Giống âm /f/ nhưng làm rung dây thanh quản ở cổ họng.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "voice",
+      "ipa": "/vɔɪs/",
+      "meaning": "giọng nói",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": []
+}

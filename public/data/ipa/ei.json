@@ -1,0 +1,454 @@
+{
+  "ipa": "eɪ",
+  "name": "nguyên âm đôi /eɪ/",
+  "type": "diphthong",
+  "description": "Bắt đầu bằng âm /e/ và trượt dần sang âm /ɪ/. Môi mở rộng dần sang hai bên.",
+  "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "Nghĩa",
+      "ipa": "/steɪ/",
+      "meaning": "v",
+      "partOfSpeech": "Stay",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "Monday",
+      "ipa": "/ˈmʌn.deɪ/",
+      "meaning": "thứ Hai",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "thứ Hai",
+      "ipa": "/pleɪ/",
+      "meaning": "v",
+      "partOfSpeech": "Play",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "chơi",
+      "ipa": "/seɪ/",
+      "meaning": "v",
+      "partOfSpeech": "Say",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "nói",
+      "ipa": "/deɪ/",
+      "meaning": "n",
+      "partOfSpeech": "Day",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "ngày",
+      "ipa": "/weɪ/",
+      "meaning": "n",
+      "partOfSpeech": "Way",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "cách, con đường",
+      "ipa": "/peɪ/",
+      "meaning": "v",
+      "partOfSpeech": "Pay",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "Snake",
+      "ipa": "/sneɪk/",
+      "meaning": "con rắn",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Amazing",
+      "ipa": "/əˈmeɪ.zɪŋ/",
+      "meaning": "tuyệt vời",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "tuyệt vời",
+      "ipa": "/neɪm/",
+      "meaning": "n",
+      "partOfSpeech": "Name",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "tên",
+      "ipa": "/keɪk/",
+      "meaning": "n",
+      "partOfSpeech": "Cake",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "bánh kem",
+      "ipa": "/ɡeɪm/",
+      "meaning": "n",
+      "partOfSpeech": "Game",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "trò chơi",
+      "ipa": "/leɪt/",
+      "meaning": "adj",
+      "partOfSpeech": "Late",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "muộn",
+      "ipa": "/meɪk/",
+      "meaning": "v",
+      "partOfSpeech": "Make",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "làm",
+      "ipa": "/teɪk/",
+      "meaning": "v",
+      "partOfSpeech": "Take",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "lấy",
+      "ipa": "/reɪn/",
+      "meaning": "n",
+      "partOfSpeech": "Rain",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "Complain",
+      "ipa": "/kəmˈpleɪn/",
+      "meaning": "phàn nàn",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "Train",
+      "ipa": "/treɪn/",
+      "meaning": "tàu hỏa",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "tàu hỏa",
+      "ipa": "/peɪn/",
+      "meaning": "n",
+      "partOfSpeech": "Pain",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "đau",
+      "ipa": "/meɪn/",
+      "meaning": "adj",
+      "partOfSpeech": "Main",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "Paint",
+      "ipa": "/peɪnt/",
+      "meaning": "sơn",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "Plain",
+      "ipa": "/pleɪn/",
+      "meaning": "đơn giản",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "Crazy",
+      "ipa": "/ˈkreɪ.zi/",
+      "meaning": "điên",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "điên",
+      "ipa": "/ˈleɪ.zi/",
+      "meaning": "adj",
+      "partOfSpeech": "Lazy",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "lười",
+      "ipa": "/ˈbeɪ.bi/",
+      "meaning": "n",
+      "partOfSpeech": "Baby",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "Table",
+      "ipa": "/ˈteɪ.bəl/",
+      "meaning": "cái bàn",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Paper",
+      "ipa": "/ˈpeɪ.pər/",
+      "meaning": "giấy",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Angel",
+      "ipa": "/ˈeɪn.dʒəl/",
+      "meaning": "thiên thần",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Great",
+      "ipa": "/ɡreɪt/",
+      "meaning": "tuyệt vời",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "Break",
+      "ipa": "/breɪk/",
+      "meaning": "phá / nghỉ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "stay at home",
+      "ipa": "/steɪ æt hoʊm/",
+      "meaning": "ở nhà",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "make a cake",
+      "ipa": "/meɪk ə keɪk/",
+      "meaning": "làm bánh",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "take a break",
+      "ipa": "/teɪk ə breɪk/",
+      "meaning": "nghỉ giải lao",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "play the game",
+      "ipa": "/pleɪ ðə ɡeɪm/",
+      "meaning": "chơi trò chơi",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "say your name",
+      "ipa": "/seɪ jʊər neɪm/",
+      "meaning": "nói tên bạn",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "wait for rain",
+      "ipa": "/weɪt fər reɪn/",
+      "meaning": "chờ mưa",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "a great day",
+      "ipa": "/ə ɡreɪt deɪ/",
+      "meaning": "một ngày tuyệt vời",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "paint a shape",
+      "ipa": "/peɪnt ə ʃeɪp/",
+      "meaning": "vẽ một hình",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "stay safe home",
+      "ipa": "/steɪ seɪf hoʊm/",
+      "meaning": "ở nhà an toàn",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "make a change",
+      "ipa": "/meɪk ə tʃeɪndʒ/",
+      "meaning": "tạo thay đổi",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "They make a cake for the party.",
+      "ipa": "/ðeɪ meɪk ə keɪk fər ðə ˈpɑːrti/",
+      "meaning": "Họ làm một cái bánh cho bữa tiệc.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "3She stays in a safe place every day.",
+      "ipa": "/ʃi steɪz ɪn ə seɪf pleɪs ˈevri deɪ/",
+      "meaning": "Cô ấy ở một nơi an toàn mỗi ngày.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "The rain makes the train late.",
+      "ipa": "/ðə reɪn meɪks ðə treɪn leɪt/",
+      "meaning": "Cơn mưa làm tàu bị trễ.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "She will stay at home today.",
+      "ipa": "/ʃi wɪl steɪ æt hoʊm təˈdeɪ/",
+      "meaning": "Cô ấy sẽ ở nhà hôm nay.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Don’t just complain, explain the situation and find a good solution.",
+      "ipa": "/doʊnt dʒʌst kəmˈpleɪn ɪkˈspleɪn ðə ˌsɪtʃuˈeɪʃən ənd faɪnd ə ɡʊd səˈluːʃən/",
+      "meaning": "Đừng chỉ phàn nàn, hãy giải thích tình huống và tìm một giải pháp tốt.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "My eighty-eight father still likes playing baseball.",
+      "ipa": "/maɪ ˈeɪti eɪt ˈfɑːðər stɪl laɪks ˈpleɪɪŋ ˈbeɪsˌbɔːl/",
+      "meaning": "Bố 88 tuổi của tôi vẫn thích chơi bóng chày.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "It’s Monday and I want to be lazy.",
+      "ipa": "/ɪts ˈmʌndeɪ ənd aɪ wɑːnt tə bi ˈleɪzi/",
+      "meaning": "Hôm nay là thứ Hai và tôi muốn lười biếng.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "A brave baker bakes a great cake in May.",
+      "ipa": "/ə breɪv ˈbeɪkər beɪks ə ɡreɪt keɪk ɪn meɪ/",
+      "meaning": "Một thợ làm bánh dũng cảm làm bánh ngon vào tháng 5.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "They say the same name on a rainy day.",
+      "ipa": "/ðeɪ seɪ ðə seɪm neɪm ɑːn ə ˈreɪni deɪ/",
+      "meaning": "Họ nói cùng một cái tên vào một ngày mưa.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Đọc giống chữ 'ê' trong tiếng Việt."
+  ]
+}

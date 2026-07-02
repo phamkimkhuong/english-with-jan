@@ -1,0 +1,449 @@
+{
+  "ipa": "u:",
+  "name": "u dài",
+  "type": "monophthong_long",
+  "description": "Tròn môi và chu ra trước như đang huýt sáo. Lưỡi thụt sâu và nâng cao phần cuống lưỡi. Phát âm kéo dài.",
+  "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "school",
+      "ipa": "/skuːl/",
+      "meaning": "trường học",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "sch{oo}l"
+    },
+    {
+      "word": "cartoon",
+      "ipa": "/kɑːrˈtuːn/",
+      "meaning": "phim hoạt hình",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "cart{oo}n"
+    },
+    {
+      "word": "phim hoạt hình",
+      "ipa": "/suːn/",
+      "meaning": "adv",
+      "partOfSpeech": "soon",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "sớm",
+      "ipa": "/tuːl/",
+      "meaning": "n",
+      "partOfSpeech": "tool",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "dụng cụ",
+      "ipa": "/fuːd/",
+      "meaning": "n",
+      "partOfSpeech": "food",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "thức ăn",
+      "ipa": "/buːt/",
+      "meaning": "n",
+      "partOfSpeech": "boot",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "afternoon",
+      "ipa": "/ˌæftərˈnuːn/",
+      "meaning": "buổi chiều",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "aftern{oo}n"
+    },
+    {
+      "word": "buổi chiều",
+      "ipa": "/ruːd/",
+      "meaning": "adj",
+      "partOfSpeech": "rude",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "thô lỗ",
+      "ipa": "/ruːl/",
+      "meaning": "n",
+      "partOfSpeech": "rule",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "quy tắc",
+      "ipa": "/dʒuːn/",
+      "meaning": "n",
+      "partOfSpeech": "June",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "truth",
+      "ipa": "/truːθ/",
+      "meaning": "sự thật",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "tr{u}th"
+    },
+    {
+      "word": "include",
+      "ipa": "/ɪnˈkluːd/",
+      "meaning": "bao gồm",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false,
+      "displayWord": "incl{u}de"
+    },
+    {
+      "word": "bao gồm",
+      "ipa": "/fluː/",
+      "meaning": "v",
+      "partOfSpeech": "flew",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "bay",
+      "ipa": "/bluː/",
+      "meaning": "v",
+      "partOfSpeech": "blew",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "thổi",
+      "ipa": "/druː/",
+      "meaning": "v",
+      "partOfSpeech": "drew",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "vẽ",
+      "ipa": "/duː/",
+      "meaning": "v",
+      "partOfSpeech": "do",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "whose",
+      "ipa": "/huːz/",
+      "meaning": "của ai",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "pronoun",
+      "hidden": false,
+      "displayWord": "wh{o}se"
+    },
+    {
+      "word": "của ai",
+      "ipa": "/luːz/",
+      "meaning": "v",
+      "partOfSpeech": "lose",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "prove",
+      "ipa": "/pruːv/",
+      "meaning": "chứng minh",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false,
+      "displayWord": "pr{o}ve"
+    },
+    {
+      "word": "improve",
+      "ipa": "/ɪmˈpruːv/",
+      "meaning": "cải thiện",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false,
+      "displayWord": "impr{o}ve"
+    },
+    {
+      "word": "cải thiện",
+      "ipa": "/truː/",
+      "meaning": "adj",
+      "partOfSpeech": "true",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "đúng, thật",
+      "ipa": "/ɡluː/",
+      "meaning": "n",
+      "partOfSpeech": "glue",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "keo",
+      "ipa": "/bluː/",
+      "meaning": "n",
+      "partOfSpeech": "blue",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "group",
+      "ipa": "/ɡruːp/",
+      "meaning": "nhóm",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "gr{ou}p"
+    },
+    {
+      "word": "nhóm",
+      "ipa": "/suːp/",
+      "meaning": "n",
+      "partOfSpeech": "soup",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "routine",
+      "ipa": "/ruːˈtiːn/",
+      "meaning": "thói quen",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "r{ou}tine"
+    },
+    {
+      "word": "fruit",
+      "ipa": "/fruːt/",
+      "meaning": "hoa quả",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "fr{ui}t"
+    },
+    {
+      "word": "juice",
+      "ipa": "/dʒuːs/",
+      "meaning": "nước ép",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false,
+      "displayWord": "j{ui}ce"
+    },
+    {
+      "word": "recruit",
+      "ipa": "/rɪˈkruːt/",
+      "meaning": "tuyển dụng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false,
+      "displayWord": "recr{ui}t"
+    },
+    {
+      "word": "tuyển dụng",
+      "ipa": "/tuː/",
+      "meaning": "number",
+      "partOfSpeech": "two",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "hai",
+      "ipa": "/ʃuː/",
+      "meaning": "n",
+      "partOfSpeech": "shoe",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "choose a spoon",
+      "ipa": "/tʃuːz ə spuːn/",
+      "meaning": "chọn một cái thìa",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "ch{oo}se a sp{oo}n"
+    },
+    {
+      "word": "blue boots",
+      "ipa": "/bluː buːts/",
+      "meaning": "giày ống màu xanh",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "bl{ue} b{oo}ts"
+    },
+    {
+      "word": "a few groups",
+      "ipa": "/ə fjuː ɡruːps/",
+      "meaning": "một vài nhóm",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "a f{ew} gr{ou}ps"
+    },
+    {
+      "word": "new duty",
+      "ipa": "/nuː ˈduːti/",
+      "meaning": "nhiệm vụ mới",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "n{ew} d{u}ty"
+    },
+    {
+      "word": "cute student",
+      "ipa": "/kjuːt ˈstuːdənt/",
+      "meaning": "sinh viên xinh xắn",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "cute st{u}dent"
+    },
+    {
+      "word": "suitable rule",
+      "ipa": "/ˈsuːtəbl ruːl/",
+      "meaning": "quy tắc phù hợp",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "s{ui}table r{u}le"
+    },
+    {
+      "word": "Few rooms are cool.",
+      "ipa": "/fjuː ruːmz ɑːr kuːl/",
+      "meaning": "Rất ít phòng mát.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "F{ew} r{oo}ms are c{oo}l."
+    },
+    {
+      "word": "The students move to the room.",
+      "ipa": "/ðə ˈstuːdənts muːv tə ðə ruːm/",
+      "meaning": "Các học sinh di chuyển vào căn phòng.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "The st{u}dents m{o}ve to the r{oo}m."
+    },
+    {
+      "word": "It is true that the moon is blue.",
+      "ipa": "/ɪt ɪz truː ðæt ðə muːn ɪz bluː/",
+      "meaning": "Sự thật là mặt trăng có màu xanh.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "It is tr{ue} that the m{oo}n is blue."
+    },
+    {
+      "word": "The room has room for fewer blue shoes.",
+      "ipa": "/ðə ruːm hæz ruːm fər ˈfjuːər bluː ʃuːz/",
+      "meaning": "Căn phòng còn chỗ cho ít đôi giày xanh hơn.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "The r{oo}m has r{oo}m for f{ew}er bl{ue} sh{oe}s."
+    },
+    {
+      "word": "The cute tutor is suitable for this group.",
+      "ipa": "/ðə kjuːt ˈtuːtər ɪz ˈsuːtəbl fər ðɪs ɡruːp/",
+      "meaning": "Cô gia sư xinh xắn phù hợp với nhóm này.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "The c{u}te t{u}tor is s{ui}table for this gr{ou}p."
+    },
+    {
+      "word": "The new student likes fruit juice and I do, too.",
+      "ipa": "/ðə nuː ˈstuːdənt laɪks fruːt dʒuːs ənd aɪ duː tuː/",
+      "meaning": "Bạn học sinh mới thích nước ép hoa quả và tôi cũng vậy.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "The n{ew} st{u}dent likes fr{ui}t j{ui}ce and I d{o}, t{oo}."
+    },
+    {
+      "word": "I choose to use this computer for my music.",
+      "ipa": "/aɪ tʃuːz tə juːz ðɪs kəmˈpjuːtər fər maɪ ˈmjuːzɪk/",
+      "meaning": "Tôi chọn sử dụng chiếc máy tính này cho âm nhạc của mình.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "I ch{oo}se to {u}se this comp{u}ter for my m{u}sic."
+    },
+    {
+      "word": "The cute student refused to use the huge computer.",
+      "ipa": "/ðə kjuːt ˈstuːdənt rɪˈfjuːzd tə juːz ðə hjuːdʒ kəmˈpjuːtər/",
+      "meaning": "Học sinh dễ thương từ chối sử dụng chiếc máy tính khổng lồ.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "The c{u}te st{u}dent ref{u}sed to {u}se the h{u}ge comp{u}ter."
+    },
+    {
+      "word": "If you choose to use Luke's blue flute, you must prove you can tune it.",
+      "ipa": "/ɪf juː tʃuːz tə juːz luːks bluː fluːt, juː məst pruːv juː kæn tjuːn ɪt/",
+      "meaning": "Nếu bạn chọn dùng cây sáo xanh của Luke, bạn phải chứng minh bạn có thể chỉnh âm nó.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "If you ch{oo}se to {u}se L{u}ke's bl{ue} fl{u}te, you m{u}st pr{o}ve you can t{u}ne it."
+    }
+  ],
+  "commonMistakes": [
+    "Không chu môi hết cỡ làm âm bị ngắn và loãng."
+  ]
+}

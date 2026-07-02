@@ -1,0 +1,373 @@
+{
+  "ipa": "ɪə",
+  "name": "nguyên âm đôi /ɪə/",
+  "type": "diphthong",
+  "description": "Bắt đầu từ âm /ɪ/ và lướt nhẹ sang âm /ə/. Lưỡi thả lỏng dần.",
+  "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "Nghĩa",
+      "ipa": "/ɪər/",
+      "meaning": "n",
+      "partOfSpeech": "ear",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "tai",
+      "ipa": "/hɪər/",
+      "meaning": "v",
+      "partOfSpeech": "hear",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "nghe thấy",
+      "ipa": "/dɪər/",
+      "meaning": "adj",
+      "partOfSpeech": "dear",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "thân mến",
+      "ipa": "/tɪər/",
+      "meaning": "n",
+      "partOfSpeech": "tear",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "nước mắt",
+      "ipa": "/fɪər/",
+      "meaning": "n/v",
+      "partOfSpeech": "fear",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "sợ hãi",
+      "ipa": "/jɪər/",
+      "meaning": "n",
+      "partOfSpeech": "year",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "năm",
+      "ipa": "/nɪər/",
+      "meaning": "adj/adv",
+      "partOfSpeech": "near",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "clear",
+      "ipa": "/klɪər/",
+      "meaning": "rõ ràng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "appear",
+      "ipa": "/əˈpɪər/",
+      "meaning": "xuất hiện",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "beard",
+      "ipa": "/bɪərd/",
+      "meaning": "râu",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "râu",
+      "ipa": "/bɪər/",
+      "meaning": "n",
+      "partOfSpeech": "beer",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "cheers",
+      "ipa": "/tʃɪərz/",
+      "meaning": "chúc sức khoẻ, cổ vũ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "nv",
+      "hidden": false
+    },
+    {
+      "word": "chúc sức khoẻ, cổ vũ",
+      "ipa": "/dɪər/",
+      "meaning": "n",
+      "partOfSpeech": "deer",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "con hươu",
+      "ipa": "/pɪər/",
+      "meaning": "n",
+      "partOfSpeech": "peer",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "career",
+      "ipa": "/kəˈrɪər/",
+      "meaning": "sự nghiệp",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "cheerful",
+      "ipa": "/ˈtʃɪərfəl/",
+      "meaning": "vui vẻ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "engineer",
+      "ipa": "/ˌendʒɪˈnɪər/",
+      "meaning": "kỹ sư",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "kỹ sư",
+      "ipa": "/hɪər/",
+      "meaning": "adv",
+      "partOfSpeech": "here",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "we’re",
+      "ipa": "/wɪər/",
+      "meaning": "chúng tôi là",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "pronoun",
+      "hidden": false
+    },
+    {
+      "word": "sincere",
+      "ipa": "/sɪnˈsɪər/",
+      "meaning": "chân thành",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "nearly",
+      "ipa": "/ˈnɪrli/",
+      "meaning": "gần như",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adverb",
+      "hidden": false
+    },
+    {
+      "word": "I’m all ears",
+      "ipa": "/aɪm ɑ:l ɪrz/",
+      "meaning": "tôi đang lắng nghe",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "next year",
+      "ipa": "/nekst jɪr/",
+      "meaning": "năm tới",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "New Year",
+      "ipa": "/nu jɪr/",
+      "meaning": "năm mới",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "clear water",
+      "ipa": "/klɪr ˈwɑ:tər/",
+      "meaning": "nước trong",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "hear a clear sound",
+      "ipa": "/hɪr ə klɪr saʊnd/",
+      "meaning": "nghe âm thanh rõ ràng",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "come near here",
+      "ipa": "/kʌm nɪr hɪr/",
+      "meaning": "lại gần đây",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "a dear friend",
+      "ipa": "/ə dɪr frend/",
+      "meaning": "người bạn thân",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "a cheerful face",
+      "ipa": "/ə ˈtʃɪrfəl feɪs/",
+      "meaning": "khuôn mặt vui vẻ",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "a lot of peers",
+      "ipa": "/ə lɑ:t əv pɪrz/",
+      "meaning": "nhiều người cùng tuổi",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "It’s nearly 5pm",
+      "ipa": "/ɪts ˈnɪrli faɪv piː em/",
+      "meaning": "sắp 5 giờ chiều",
+      "audioUrl": "",
+      "type": "phrase",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Can you hear me clearly?",
+      "ipa": "/kæn ju hɪr mi ˈklɪrli/",
+      "meaning": "Bạn có nghe rõ tôi không?",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": ".I travel every year.",
+      "ipa": "/aɪ ˈtrævəl ˈɛvri jɪr/",
+      "meaning": "Tôi đi du lịch mỗi năm.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "He sheds a tear because of fear.",
+      "ipa": "/hi ʃɛdz ə tɪr bɪˈkɔz əv fɪr/",
+      "meaning": "Anh ấy rơi nước mắt vì sợ hãi.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Cheers to the New Year!",
+      "ipa": "/tʃɪrz tə ðə nu jɪr/",
+      "meaning": "Chúc mừng năm mới!",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Would you like to go out for some beer?",
+      "ipa": "/wʊd ju laɪk tə ɡoʊ aʊt fər səm bɪr/",
+      "meaning": "Bạn có muốn đi uống bia không?",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "I can hear you clearly when you are near here.",
+      "ipa": "/aɪ kæn hɪr ju ˈklɪrli wɛn ju ɑr nɪr hɪr/",
+      "meaning": "Tôi có thể nghe bạn rõ khi bạn ở gần đây.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "I hear a clear cheer near my dear friend every year.",
+      "ipa": "/aɪ hɪr ə klɪr tʃɪr nɪr maɪ dɪr frend ˈɛvri jɪr/",
+      "meaning": "Tôi nghe một tiếng cổ vũ rõ ràng gần người bạn thân mỗi năm.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "Dear peers near here, hear clear cheers every year!",
+      "ipa": "/dɪr pɪrz nɪr hɪr hɪr klɪr tʃɪrz ˈɛvri jɪr/",
+      "meaning": "Các bạn thân mến gần đây, hãy nghe tiếng cổ vũ rõ ràng mỗi năm!",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    },
+    {
+      "word": "I fear I cannot hear clearly near here this year.",
+      "ipa": "/aɪ fɪr aɪ ˈkænɑt hɪr ˈklɪrli nɪr hɪr ðɪs jɪr/",
+      "meaning": "Tôi sợ rằng tôi không thể nghe rõ gần đây năm nay.",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Đọc giống chữ 'ia' tiếng Việt."
+  ]
+}

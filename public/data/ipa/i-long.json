@@ -1,0 +1,443 @@
+{
+  "ipa": "i:",
+  "name": "i dài",
+  "type": "monophthong_long",
+  "description": "Môi mở rộng sang hai bên như đang cười. Lưỡi nâng cao, đầu lưỡi chạm vào răng dưới. Âm phát ra dài hơn âm /i/ trong tiếng Việt.",
+  "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "NGHĨA",
+      "ipa": "/miːt/",
+      "meaning": "V",
+      "partOfSpeech": "meet",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "gặp gỡ",
+      "ipa": "/fiːl/",
+      "meaning": "V",
+      "partOfSpeech": "feel",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "cảm thấy",
+      "ipa": "/siː/",
+      "meaning": "V",
+      "partOfSpeech": "see",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "nhìn thấy",
+      "ipa": "/friː/",
+      "meaning": "ADJ",
+      "partOfSpeech": "free",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "ea",
+      "ipa": "/tiːm/",
+      "meaning": "N",
+      "partOfSpeech": "team",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "reach",
+      "ipa": "/riːtʃ/",
+      "meaning": "đạt tới",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "audioUrlMale": "",
+      "hidden": false,
+      "displayWord": "r{ea}ch"
+    },
+    {
+      "word": "đạt tới",
+      "ipa": "/miːn/",
+      "meaning": "V",
+      "partOfSpeech": "mean",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "có nghĩa là",
+      "ipa": "/siː/",
+      "meaning": "N",
+      "partOfSpeech": "sea",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "belief",
+      "ipa": "/bɪˈliːf/",
+      "meaning": "lòng tin",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "audioUrlMale": "",
+      "hidden": false,
+      "displayWord": "bel{ie}f"
+    },
+    {
+      "word": "piece",
+      "ipa": "/piːs/",
+      "meaning": "mảnh, miếng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "audioUrlMale": "",
+      "hidden": false,
+      "displayWord": "p{ie}ce"
+    },
+    {
+      "word": "receive",
+      "ipa": "/rɪˈsiːv/",
+      "meaning": "nhận được",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "audioUrlMale": "",
+      "hidden": false,
+      "displayWord": "rec{ei}ve"
+    },
+    {
+      "word": "final e",
+      "ipa": "/miː/",
+      "meaning": "PRON",
+      "partOfSpeech": "me",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "tôi",
+      "ipa": "/wiː/",
+      "meaning": "PRON",
+      "partOfSpeech": "we",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "chúng tôi",
+      "ipa": "/ʃiː/",
+      "meaning": "PRON",
+      "partOfSpeech": "she",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "cô ấy",
+      "ipa": "/hiː/",
+      "meaning": "PRON",
+      "partOfSpeech": "he",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "these",
+      "ipa": "/ðiːz/",
+      "meaning": "những cái này",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "determiner",
+      "audioUrlMale": "",
+      "hidden": false,
+      "displayWord": "th{e}se"
+    },
+    {
+      "word": "Chinese",
+      "ipa": "/ˌtʃaɪˈniːz/",
+      "meaning": "người Trung Quốc",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective/noun",
+      "audioUrlMale": "",
+      "hidden": false,
+      "displayWord": "Chin{e}se"
+    },
+    {
+      "word": "Peter",
+      "ipa": "/ˈpiːtər/",
+      "meaning": "tên riêng Peter",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "proper noun",
+      "audioUrlMale": "",
+      "hidden": false,
+      "displayWord": "P{e}ter"
+    },
+    {
+      "word": "final y",
+      "ipa": "/ˈsɪti/",
+      "meaning": "N",
+      "partOfSpeech": "city",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "thành phố",
+      "ipa": "/ˈdjuːti/",
+      "meaning": "N",
+      "partOfSpeech": "duty",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "country",
+      "ipa": "/ˈkʌntri/",
+      "meaning": "đất nước",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "audioUrlMale": "",
+      "hidden": false,
+      "displayWord": "countr{y}"
+    },
+    {
+      "word": "ability",
+      "ipa": "/əˈbɪləti/",
+      "meaning": "khả năng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "audioUrlMale": "",
+      "hidden": false,
+      "displayWord": "abilit{y}"
+    },
+    {
+      "word": "unique",
+      "ipa": "/juːˈniːk/",
+      "meaning": "độc nhất",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "audioUrlMale": "",
+      "hidden": false,
+      "displayWord": "un{i}que"
+    },
+    {
+      "word": "boutique",
+      "ipa": "/buːˈtiːk/",
+      "meaning": "cửa hàng thời trang",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "audioUrlMale": "",
+      "hidden": false,
+      "displayWord": "bout{i}que"
+    },
+    {
+      "word": "critique",
+      "ipa": "/krɪˈtiːk/",
+      "meaning": "phê bình",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "audioUrlMale": "",
+      "hidden": false,
+      "displayWord": "crit{i}que"
+    },
+    {
+      "word": "deep sea",
+      "ipa": "/diːp siː/",
+      "meaning": "biển sâu",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "d{ee}p s{ea}"
+    },
+    {
+      "word": "beans and cheese",
+      "ipa": "/biːnz ænd tʃiːz/",
+      "meaning": "đậu và phô mai",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "b{ea}ns and ch{ee}se"
+    },
+    {
+      "word": "three meals",
+      "ipa": "/θriː miːlz/",
+      "meaning": "ba bữa ăn",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "thr{ee} m{ea}ls"
+    },
+    {
+      "word": "green tea",
+      "ipa": "/ɡriːn tiː/",
+      "meaning": "trà xanh",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "gr{ee}n t{ea}"
+    },
+    {
+      "word": "speak Chinese",
+      "ipa": "/spiːk ˌtʃaɪˈniːz/",
+      "meaning": "nói tiếng Trung",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "sp{ea}k Chin{e}se"
+    },
+    {
+      "word": "a piece of pizza",
+      "ipa": "/ə piːs əv ˈpiːtsə/",
+      "meaning": "một miếng pizza",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "a p{ie}ce of p{i}zza"
+    },
+    {
+      "word": "drink green tea",
+      "ipa": "/drɪŋk ɡriːn tiː/",
+      "meaning": "uống trà xanh",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "drink gr{ee}n t{ea}"
+    },
+    {
+      "word": "read a magazine",
+      "ipa": "/riːd ə ˌmæɡəˈziːn/",
+      "meaning": "đọc tạp chí",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "r{ea}d a magaz{i}ne"
+    },
+    {
+      "word": "meet a friend",
+      "ipa": "/miːt ə frend/",
+      "meaning": "gặp một người bạn",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "m{ee}t a friend"
+    },
+    {
+      "word": "sleep deeply",
+      "ipa": "/sliːp ˈdiːpli/",
+      "meaning": "ngủ sâu",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false,
+      "displayWord": "sl{ee}p d{ee}ply"
+    },
+    {
+      "word": "Meat is cheap.",
+      "ipa": "/miːt ɪz tʃiːp/",
+      "meaning": "Thịt rẻ",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "M{ea}t is ch{ea}p."
+    },
+    {
+      "word": "Peter’s in the team.",
+      "ipa": "/ˈpiːtərz ɪn ðə tiːm/",
+      "meaning": "Peter là thành viên trong nhóm",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "P{e}ter’s in the t{ea}m."
+    },
+    {
+      "word": "Can you see the sea?",
+      "ipa": "/kæn juː siː ðə siː/",
+      "meaning": "Bạn có thấy biển không?",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "Can you s{ee} the s{ea}?"
+    },
+    {
+      "word": "I need a piece of cheese.",
+      "ipa": "/aɪ niːd ə piːs əv tʃiːz/",
+      "meaning": "Tôi cần một miếng phô mai",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "I n{ee}d a p{ie}ce of ch{ee}se."
+    },
+    {
+      "word": "Three Chinese teachers are in the meeting.",
+      "ipa": "/θriː tʃaɪˈniːz ˈtiːtʃərz ɑːr ɪn ðə ˈmiːtɪŋ/",
+      "meaning": "Ba giáo viên Trung đang họp",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "Thr{ee} Chin{e}se t{ea}chers are in the m{ee}ting."
+    },
+    {
+      "word": "The employees agreed to meet at eight fifteen.",
+      "ipa": "/ði ˌemplɔɪiːz əˈɡriːd tə miːt æt eɪt ˈfɪftiːn/",
+      "meaning": "Nhân viên đã đồng ý gặp lúc 8:15",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "The employ{ee}s agr{ee}d to m{ee}t at eight fift{ee}n."
+    },
+    {
+      "word": "Don’t keep the TV near the heater.",
+      "ipa": "/dəʊnt kiːp ðə ˌtiːviː nɪə ðə ˈhiːtər/",
+      "meaning": "Đừng để TV gần máy sưởi",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "Don’t k{ee}p the {TV }near the h{ea}ter."
+    },
+    {
+      "word": "It’s extremely easy to cheat when the teacher isn’t here.",
+      "ipa": "/ɪts ɪkˈstriːmli ˈiːzi tə tʃiːt wɛn ðə ˈtiːtʃər ɪznt hɪər/",
+      "meaning": "Rất dễ gian lận khi giáo viên không ở đây",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "It’s extr{e}mely {ea}sy to ch{ea}t when the t{ea}cher isn’t here."
+    },
+    {
+      "word": "Please speak to Peter about the employee meeting.",
+      "ipa": "/pliːz spiːk tə ˈpiːtər əˈbaʊt ði ˌemplɔɪiː ˈmiːtɪŋ/",
+      "meaning": "Hãy nói với Peter về cuộc họp nhân viên",
+      "audioUrl": "",
+      "type": "sentence",
+      "partOfSpeech": "",
+      "hidden": false,
+      "displayWord": "Pl{ea}se sp{ea}k to P{e}ter about the employ{ee} m{ee}ting."
+    }
+  ],
+  "commonMistakes": [
+    "Phát âm quá ngắn giống âm 'i' tiếng Việt.",
+    "Không cười (không mở rộng môi sang hai bên) làm âm bị nghẹt."
+  ]
+}

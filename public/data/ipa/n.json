@@ -1,0 +1,18 @@
+{
+  "ipa": "n",
+  "name": "phụ âm mũi /n/",
+  "type": "consonant_voiced",
+  "description": "Đặt đầu lưỡi chạm vào lợi răng hàm trên, chặn luồng hơi lại rồi để thoát ra bằng mũi.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "no",
+      "ipa": "/nəʊ/",
+      "meaning": "không",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": []
+}

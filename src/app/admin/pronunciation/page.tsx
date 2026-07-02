@@ -14,6 +14,23 @@ export default function AdminPronunciationPage() {
     handlePublishSuccess,
   } = useAdminIPASyllabus();
 
+  const handleExportJSON = () => {
+    const dataToExport = {
+      lastUpdated: new Date().toISOString(),
+      version: Date.now(),
+      sounds: sounds
+    };
+    const jsonString = `data:text/json;charset=utf-8,${encodeURIComponent(
+      JSON.stringify(dataToExport, null, 2)
+    )}`;
+    const downloadAnchor = document.createElement("a");
+    downloadAnchor.setAttribute("href", jsonString);
+    downloadAnchor.setAttribute("download", "default_ipa.json");
+    document.body.appendChild(downloadAnchor);
+    downloadAnchor.click();
+    downloadAnchor.remove();
+  };
+
   const [isListCollapsed, setIsListCollapsed] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<"all" | "monophthong" | "diphthong" | "consonant">("all");
@@ -98,6 +115,26 @@ export default function AdminPronunciationPage() {
             Chỉnh sửa chi tiết cách phát âm, từ vựng ví dụ và tệp âm thanh hướng dẫn.
           </p>
         </div>
+        <button
+          type="button"
+          onClick={handleExportJSON}
+          className="btn btn-outline"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+            fontSize: "0.85rem",
+            fontWeight: "bold",
+            height: "36px",
+          }}
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          Xuất tệp JSON (Export local data)
+        </button>
       </div>
 
       {/* Top panel: Bảng 44 âm & Bộ lọc tìm kiếm */}

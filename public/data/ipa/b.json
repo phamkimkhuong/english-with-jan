@@ -1,0 +1,18 @@
+{
+  "ipa": "b",
+  "name": "phụ âm hữu thanh /b/",
+  "type": "consonant_voiced",
+  "description": "Giống âm /p/ nhưng làm rung dây thanh quản ở cổ họng khi phát âm.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "bad",
+      "ipa": "/bæd/",
+      "meaning": "tệ hại",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": []
+}

@@ -1,0 +1,18 @@
+{
+  "ipa": "dʒ",
+  "name": "phụ âm hữu thanh /dʒ/",
+  "type": "consonant_voiced",
+  "description": "Giống âm /tʃ/ nhưng làm rung dây thanh quản ở cổ họng.",
+  "mouthShapeImage": "",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "judge",
+      "ipa": "/dʒʌdʒ/",
+      "meaning": "thẩm phán",
+      "audioUrl": "",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": []
+}

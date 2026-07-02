@@ -1,0 +1,249 @@
+{
+  "ipa": "ɔ:",
+  "name": "o ngắn & o dài không r",
+  "type": "monophthong_long",
+  "description": "Trong tiếng Anh-Mỹ (GA), hai nhóm âm phân biệt trong tiếng Anh-Anh (RP) đã được gộp lại thành một và phát âm giống hệt âm /ɑ:/ (âm a dài dẹt miệng, hạ hàm):\n\n• Nhóm O ngắn (Anh-Anh là /ɒ/): ví dụ hot, box, on...\n• Nhóm O dài không R (Anh-Anh là /ɔ:/): ví dụ law, caught, talk...\n\nHọc viên không cần tròn môi như khi đọc chữ 'o' trong tiếng Việt hoặc tiếng Anh-Anh. Hãy mở miệng rộng theo chiều dọc, hạ hàm dưới sâu xuống để phát âm giống như âm /ɑ:/.",
+  "mouthShapeImage": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&q=80",
+  "audioUrl": "",
+  "examples": [
+    {
+      "word": "Nghĩa",
+      "ipa": "/bɔːl/",
+      "meaning": "/bɑːl/",
+      "partOfSpeech": "ball",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "quả bóng",
+      "ipa": "/fɔːl/",
+      "meaning": "/fɑːl/",
+      "partOfSpeech": "fall",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "small",
+      "ipa": "/smɑːl/",
+      "meaning": "nhỏ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "adjective",
+      "hidden": false
+    },
+    {
+      "word": "nhỏ",
+      "ipa": "/lɔː/",
+      "meaning": "/lɑː/",
+      "partOfSpeech": "law",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "luật",
+      "ipa": "/sɔː/",
+      "meaning": "/sɑː/",
+      "partOfSpeech": "saw",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "đi bộ",
+      "ipa": "/tɔːk/",
+      "meaning": "/tɑːk/",
+      "partOfSpeech": "talk",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "bought",
+      "ipa": "/bɑːt/",
+      "meaning": "đã mua",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "verb",
+      "hidden": false
+    },
+    {
+      "word": "thought",
+      "ipa": "/θɑːt/",
+      "meaning": "suy nghĩ / đã nghĩ",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun/verb",
+      "hidden": false
+    },
+    {
+      "word": "water",
+      "ipa": "/ˈwɑːtər/",
+      "meaning": "nước",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "daughter",
+      "ipa": "/ˈdɑːtər/",
+      "meaning": "con gái",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "autumn",
+      "ipa": "/ˈɑːt̬əm/",
+      "meaning": "mùa thu",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "Nghĩa",
+      "ipa": "/hɒt/",
+      "meaning": "/hɑːt/",
+      "partOfSpeech": "hot",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "nóng",
+      "ipa": "/nɒt/",
+      "meaning": "/nɑːt/",
+      "partOfSpeech": "not",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "không",
+      "ipa": "/lɒt/",
+      "meaning": "/lɑːt/",
+      "partOfSpeech": "lot",
+      "audioUrl": "",
+      "hidden": false,
+      "type": "word"
+    },
+    {
+      "word": "bottle",
+      "ipa": "/ˈbɑːtəl/",
+      "meaning": "cái chai",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "problem",
+      "ipa": "/ˈprɑːbləm/",
+      "meaning": "vấn đề",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "hospital",
+      "ipa": "/ˈhɑːspɪtəl/",
+      "meaning": "bệnh viện",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "office",
+      "ipa": "/ˈɑːfɪs/",
+      "meaning": "văn phòng",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "coffee",
+      "ipa": "/ˈkɑːfi/",
+      "meaning": "cà phê",
+      "audioUrl": "",
+      "type": "word",
+      "partOfSpeech": "noun",
+      "hidden": false
+    },
+    {
+      "word": "not at all",
+      "ipa": "/nɑːt ət ɑːl/",
+      "meaning": "không hề, không chút nào",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a lot of water",
+      "ipa": "/ə lɑːt əv ˈwɑːtər/",
+      "meaning": "nhiều nước",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "bottle of water",
+      "ipa": "/ˈbɑːtəl əv ˈwɑːtər/",
+      "meaning": "chai nước",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "a small ball",
+      "ipa": "/ə smɑːl bɑːl/",
+      "meaning": "một quả bóng nhỏ",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "walk and talk",
+      "ipa": "/wɑːk ənd tɑːk/",
+      "meaning": "đi bộ và nói chuyện",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "all the walls",
+      "ipa": "/ɑːl ðə wɑːlz/",
+      "meaning": "tất cả các bức tường",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "bought some water",
+      "ipa": "/bɑːt səm ˈwɑːtər/",
+      "meaning": "đã mua một ít nước",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    },
+    {
+      "word": "caught the ball",
+      "ipa": "/kɑːt ðə bɑːl/",
+      "meaning": "đã bắt được quả bóng",
+      "audioUrl": "",
+      "type": "phrase",
+      "hidden": false
+    }
+  ],
+  "commonMistakes": [
+    "Tròn môi quá mức giống chữ 'o' Việt Nam.",
+    "Không mở miệng đủ rộng và hạ hàm dưới."
+  ]
+}
