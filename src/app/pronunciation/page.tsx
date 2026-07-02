@@ -69,7 +69,7 @@ const HeadphonesIcon = () => (
 );
 
 export default function PronunciationPage() {
-  const { user, role, unlockedCourses } = useAuth();
+  const { user } = useAuth();
   const {
     sounds,
     loading,
@@ -77,7 +77,8 @@ export default function PronunciationPage() {
     setActiveTab,
   } = useIPASyllabus();
 
-  const hasAccess = role === "admin" || role === "teacher" || unlockedCourses.includes("ipa") || unlockedCourses.includes("all");
+  // Cho phép tất cả học viên vào học bình thường
+  const hasAccess = true;
 
   const handleSoundClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (!hasAccess) {

@@ -11,6 +11,16 @@
       "audioUrl": "",
       "examples": [
         {
+          "word": "sheep",
+          "ipa": "/ʃiːp/",
+          "meaning": "con cừu",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "noun",
+          "audioUrlMale": "https://dictionary.cambridge.org/media/english/us_pron/s/she/sheep/sheep.mp3",
+          "hidden": false
+        },
+        {
           "word": "meet",
           "ipa": "/miːt/",
           "meaning": "gặp gỡ",
@@ -374,6 +384,177 @@
           "type": "phrase",
           "hidden": false,
           "displayWord": "sl{ee}p d{ee}ply"
+        },
+        {
+          "word": "Meat is cheap.",
+          "ipa": "/miːt ɪz tʃiːp/",
+          "meaning": "Thịt rẻ.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "Peter's in the team.",
+          "ipa": "/ˈpiːtərz ɪn ðə tiːm/",
+          "meaning": "Peter là thành viên trong nhóm.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "Can you see the sea?",
+          "ipa": "/kæn juː siː ðə siː/",
+          "meaning": "Bạn có thấy biển không?",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "I need a piece of cheese.",
+          "ipa": "/aɪ niːd ə piːs əv tʃiːz/",
+          "meaning": "Tôi cần một miếng phô mai.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "Three Chinese teachers are in the meeting.",
+          "ipa": "/θriː tʃaɪˈniːz ˈtiːtʃərz ɑːr ɪn ðə ˈmiːtɪŋ/",
+          "meaning": "Ba giáo viên Trung Quốc đang họp.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "The employees agreed to meet at eight fifteen.",
+          "ipa": "/ði ˌemplɔɪiːz əˈɡriːd tə miːt æt eɪt ˈfɪftiːn/",
+          "meaning": "Nhân viên đã đồng ý gặp lúc 8:15.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "Don't keep the TV near the heater.",
+          "ipa": "/dəʊnt kiːp ðə ˌtiːviː nɪə ðə ˈhiːtər/",
+          "meaning": "Đừng để TV gần máy sưởi.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "It's extremely easy to cheat when the teacher isn't here.",
+          "ipa": "/ɪts ɪkˈstriːmli ˈiːzi tə tʃiːt wɛn ðə ˈtiːtʃər ɪznt hɪər/",
+          "meaning": "Rất dễ gian lận khi giáo viên không ở đây.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "Please speak to Peter about the employee meeting.",
+          "ipa": "/pliːz spiːk tə ˈpiːtər əˈbaʊt ði ˌemplɔɪiː ˈmiːtɪŋ/",
+          "meaning": "Hãy nói với Peter về cuộc họp nhân viên.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "khóe môi mở rộng sang 2 bên và căng",
+          "ipa": "",
+          "meaning": "(lưỡi nâng nhẹ và căng)",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Meat is cheap.",
+          "displayWord": "M{ea}t is ch{ea}p.",
+          "ipa": "/miːt ɪz tʃiːp/",
+          "meaning": "Thịt rẻ",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Peter’s in the team.",
+          "displayWord": "P{e}ter’s in the t{ea}m.",
+          "ipa": "/ˈpiːtərz ɪn ðə tiːm/",
+          "meaning": "Peter là thành viên trong nhóm",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Can you see the sea?",
+          "displayWord": "Can you s{ee} the s{ea}?",
+          "ipa": "/kæn juː siː ðə siː/",
+          "meaning": "Bạn có thấy biển không?",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I need a piece of cheese.",
+          "displayWord": "I n{ee}d a p{ie}ce of ch{ee}se.",
+          "ipa": "/aɪ niːd ə piːs əv tʃiːz/",
+          "meaning": "Tôi cần một miếng phô mai",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Three Chinese teachers are in the meeting.",
+          "displayWord": "Thr{ee} Chin{e}se t{ea}chers are in the m{ee}ting.",
+          "ipa": "/θriː tʃaɪˈniːz ˈtiːtʃərz ɑːr ɪn ðə ˈmiːtɪŋ/",
+          "meaning": "Ba giáo viên Trung đang họp",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The employees agreed to meet at eight fifteen.",
+          "displayWord": "The employ{ee}s agr{ee}d to m{ee}t at eight fift{ee}n.",
+          "ipa": "/ði ˌemplɔɪiːz əˈɡriːd tə miːt æt eɪt ˈfɪftiːn/",
+          "meaning": "Nhân viên đã đồng ý gặp lúc 8:15",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Don’t keep the TV near the heater.",
+          "displayWord": "Don’t k{ee}p the {TV }near the h{ea}ter.",
+          "ipa": "/dəʊnt kiːp ðə ˌtiːviː nɪə ðə ˈhiːtər/",
+          "meaning": "Đừng để TV gần máy sưởi",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "It’s extremely easy to cheat when the teacher isn’t here.",
+          "displayWord": "It’s extr{e}mely {ea}sy to ch{ea}t when the t{ea}cher isn’t here.",
+          "ipa": "/ɪts ɪkˈstriːmli ˈiːzi tə tʃiːt wɛn ðə ˈtiːtʃər ɪznt hɪər/",
+          "meaning": "Rất dễ gian lận khi giáo viên không ở đây",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Please speak to Peter about the employee meeting.",
+          "displayWord": "Pl{ea}se sp{ea}k to P{e}ter about the employ{ee} m{ee}ting.",
+          "ipa": "/pliːz spiːk tə ˈpiːtər əˈbaʊt ði ˌemplɔɪiː ˈmiːtɪŋ/",
+          "meaning": "Hãy nói với Peter về cuộc họp nhân viên",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
         },
         {
           "word": "Meat is cheap.",
@@ -826,6 +1007,168 @@
           "type": "phrase",
           "hidden": false,
           "displayWord": "w{i}nter w{i}nd"
+        },
+        {
+          "word": "It is difficult to live here.",
+          "ipa": "/ɪt ɪz ˈdɪfɪkəlt tə lɪv hɪər/",
+          "meaning": "Thật khó để sống ở đây.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "Jim will visit the kids for a few minutes.",
+          "ipa": "/dʒɪm wɪl ˈvɪzɪt ðə kɪdz fə ə fjuː ˈmɪnɪts/",
+          "meaning": "Jim sẽ đến thăm bọn trẻ trong vài phút.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "My eldest sister often listens to guitar music.",
+          "ipa": "/maɪ ˈeldɪst ˈsɪstər ˈɒfən ˈlɪsənz tə ɡɪˈtɑːr ˈmjuːzɪk/",
+          "meaning": "Chị cả của tôi thường nghe nhạc ghi ta.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "Kim will visit her big sister Linda in Virginia.",
+          "ipa": "/kɪm wɪl ˈvɪzɪt hɜːr bɪɡ ˈsɪstər ˈlɪndə ɪn vərˈdʒɪniə/",
+          "meaning": "Kim sẽ đến thăm chị gái Linda của cô ấy ở Virginia.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "Bill Clinton visited the Middle East.",
+          "ipa": "/bɪl ˈklɪntən ˈvɪzɪtɪd ðə ˈmɪdəl iːst/",
+          "meaning": "Bill Clinton đã đến thăm Trung Đông.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "The Smiths invited him to an informal dinner.",
+          "ipa": "/ðə smɪθs ɪnˈvaɪtɪd hɪm tuː ən ɪnˈfɔːrməl ˈdɪnər/",
+          "meaning": "Gia đình Smith đã mời anh ấy đến một bữa tối thân mật.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "This city has an interesting history.",
+          "ipa": "/ðɪs ˈsɪti hæz ən ˈɪntrəstɪŋ ˈhɪstəri/",
+          "meaning": "Thành phố này có một lịch sử thú vị.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "When did Bill Clinton visit the Middle East?",
+          "ipa": "/wen dɪd bɪl ˈklɪntən ˈvɪzɪt ðə ˈmɪdəl iːst/",
+          "meaning": "Bill Clinton đã đến thăm Trung Đông khi nào?",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "In the beginning it was difficult for Jim.",
+          "ipa": "/ɪn ðə bɪˈɡɪnɪŋ ɪt wəz ˈdɪfɪkəlt fər dʒɪm/",
+          "meaning": "Ban đầu, điều đó rất khó đối với Jim.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "It is difficult to live here.",
+          "displayWord": "{I}t {i}s d{i}ff{i}cult to l{i}ve here.",
+          "ipa": "/ɪt ɪz ˈdɪfɪkəlt tə lɪv hɪər/",
+          "meaning": "Thật khó để sống ở đây.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Jim will visit the kids for a few minutes.",
+          "displayWord": "J{i}m w{i}ll v{i}s{i}t the k{i}ds for a few m{i}n{u}tes.",
+          "ipa": "/dʒɪm wɪl ˈvɪzɪt ðə kɪdz fə ə fjuː ˈmɪnɪts/",
+          "meaning": "Jim sẽ đến thăm bọn trẻ trong vài phút.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "My eldest sister often listens to guitar music.",
+          "displayWord": "My eld{e}st s{i}ster often l{i}stens to g{ui}tar mus{i}c.",
+          "ipa": "/maɪ ˈeldɪst ˈsɪstər ˈɒfən ˈlɪsənz tə ɡɪˈtɑːr ˈmjuːzɪk/",
+          "meaning": "Chị cả của tôi thường nghe nhạc ghi ta.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Kim will visit her big sister Linda in Virginia.",
+          "displayWord": "K{i}m w{i}ll v{i}s{i}t her b{i}g s{i}ster L{i}nda {i}n Virg{i}nia.",
+          "ipa": "/kɪm wɪl ˈvɪzɪt hɜːr bɪɡ ˈsɪstər ˈlɪndə ɪn vərˈdʒɪniə/",
+          "meaning": "Kim sẽ đến thăm chị gái Linda của cô ấy ở Virginia.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Bill Clinton visited the Middle East.",
+          "displayWord": "B{i}ll Cl{i}nton v{i}s{i}ted the M{i}ddle East.",
+          "ipa": "/bɪl ˈklɪntən ˈvɪzɪtɪd ðə ˈmɪdəl iːst/",
+          "meaning": "Bill Clinton đã đến thăm Trung Đông.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The Smiths invited him to an informal dinner.",
+          "displayWord": "The Sm{i}ths {i}nvit{e}d h{i}m to an {i}nformal d{i}nner.",
+          "ipa": "/ðə smɪθs ɪnˈvaɪtɪd hɪm tuː ən ɪnˈfɔːrməl ˈdɪnər/",
+          "meaning": "Gia đình Smith đã mời anh ấy đến một bữa tối thân mật.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "This city has an interesting history.",
+          "displayWord": "Th{i}s c{i}ty has an {i}nterest{i}ng h{i}story.",
+          "ipa": "/ðɪs ˈsɪti hæz ən ˈɪntrəstɪŋ ˈhɪstəri/",
+          "meaning": "Thành phố này có một lịch sử thú vị.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "When did Bill Clinton visit the Middle East?",
+          "displayWord": "When d{i}d B{i}ll Cl{i}nton v{i}s{i}t the M{i}ddle East?",
+          "ipa": "/wen dɪd bɪl ˈklɪntən ˈvɪzɪt ðə ˈmɪdəl iːst/",
+          "meaning": "Bill Clinton đã đến thăm Trung Đông khi nào?",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "In the beginning it was difficult for Jim.",
+          "displayWord": "{I}n the beg{i}nn{i}ng {i}t was d{i}ff{i}cult for J{i}m.",
+          "ipa": "/ɪn ðə bɪˈɡɪnɪŋ ɪt wəz ˈdɪfɪkəlt fər dʒɪm/",
+          "meaning": "Ban đầu, điều đó rất khó đối với Jim.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
         },
         {
           "word": "It is difficult to live here.",
@@ -1396,6 +1739,186 @@
           "type": "phrase",
           "hidden": false,
           "displayWord": "r{e}d p{e}n"
+        },
+        {
+          "word": "I never tell anyone.",
+          "ipa": "/aɪ ˈnevər tel ˈeniwʌn/",
+          "meaning": "Tôi chẳng bao giờ kể với ai cả.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "I have got a headache.",
+          "ipa": "/aɪ hæv ɡɑːt ə ˈhedeɪk/",
+          "meaning": "Tôi bị đau đầu.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "He slept on the best bed.",
+          "ipa": "/hi slept ɑːn ðə best bed/",
+          "meaning": "Anh ta ngủ trên chiếc giường tốt nhất.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "The wet dress is very heavy.",
+          "ipa": "/ðə wet dres ɪz ˈveri ˈhevi/",
+          "meaning": "Chiếc váy ướt rất nặng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "My friend has bread and eggs for breakfast.",
+          "ipa": "/maɪ frend hæz bred ənd eɡz fər ˈbrekfəst/",
+          "meaning": "Bạn tôi ăn bánh mì và trứng cho bữa sáng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "I expect this session to end at ten.",
+          "ipa": "/aɪ ɪkˈspekt ðɪs ˈseʃən tu end ət ten/",
+          "meaning": "Tôi mong buổi học này kết thúc lúc mười giờ.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "I see my best friend Fred every seven days.",
+          "ipa": "/aɪ siː maɪ best frend fred ˈevri ˈsevən deɪz/",
+          "meaning": "Tôi gặp người bạn thân nhất Fred mỗi bảy ngày.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "The red pen is on the bed.",
+          "ipa": "/ðə red pen ɪz ɑːn ðə bed/",
+          "meaning": "Cái bút đỏ nằm trên giường.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "He gets ten eggs every week.",
+          "ipa": "/hi ɡets ten eɡz ˈevri wiːk/",
+          "meaning": "Anh ấy lấy mười quả trứng mỗi tuần.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "Seven selfish shellfish selling seven shells.",
+          "ipa": "/ˈsevən ˈselfɪʃ ˈʃelfɪʃ ˈselɪŋ ˈsevən ʃelz/",
+          "meaning": "Bảy con động vật có vỏ ích kỷ bán bảy cái vỏ.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "I never tell anyone.",
+          "displayWord": "I n{e}ver t{e}ll {a}nyone.",
+          "ipa": "/aɪ ˈnevər tel ˈeniwʌn/",
+          "meaning": "Tôi chẳng bao giờ kể với ai cả.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I have got a headache.",
+          "displayWord": "I have got a h{ea}dache.",
+          "ipa": "/aɪ hæv ɡɑːt ə ˈhedeɪk/",
+          "meaning": "Tôi bị đau đầu.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "He slept on the best bed.",
+          "displayWord": "He sl{e}pt on the b{e}st b{e}d.",
+          "ipa": "/hi slept ɑːn ðə best bed/",
+          "meaning": "Anh ta ngủ trên chiếc giường tốt nhất.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The wet dress is very heavy.",
+          "displayWord": "The w{e}t dr{e}ss is v{e}ry h{ea}vy.",
+          "ipa": "/ðə wet dres ɪz ˈveri ˈhevi/",
+          "meaning": "Chiếc váy ướt rất nặng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "My friend has bread and eggs for breakfast.",
+          "displayWord": "My fr{ie}nd has br{ea}d and {e}ggs for br{ea}kfast.",
+          "ipa": "/maɪ frend hæz bred ənd eɡz fər ˈbrekfəst/",
+          "meaning": "Bạn tôi ăn bánh mì và trứng cho bữa sáng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I expect this session to end at ten.",
+          "displayWord": "I exp{e}ct this s{e}ssion to {e}nd at t{e}n.",
+          "ipa": "/aɪ ɪkˈspekt ðɪs ˈseʃən tu end ət ten/",
+          "meaning": "Tôi mong buổi học này kết thúc lúc mười giờ.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I see my best friend Fred every seven days.",
+          "displayWord": "I see my b{e}st fr{ie}nd Fr{e}d {e}very s{e}ven d{ay}s.",
+          "ipa": "/aɪ siː maɪ best frend fred ˈevri ˈsevən deɪz/",
+          "meaning": "Tôi gặp người bạn thân nhất Fred mỗi bảy ngày.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The red pen is on the bed.",
+          "displayWord": "The r{e}d p{e}n is on the b{e}d.",
+          "ipa": "/ðə red pen ɪz ɑːn ðə bed/",
+          "meaning": "Cái bút đỏ nằm trên giường.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "He gets ten eggs every week.",
+          "displayWord": "He g{e}ts t{e}n {e}ggs {e}very week.",
+          "ipa": "/hi ɡets ten eɡz ˈevri wiːk/",
+          "meaning": "Anh ấy lấy mười quả trứng mỗi tuần.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Seven selfish shellfish selling seven shells.",
+          "displayWord": "S{e}ven s{e}lfish sh{e}llfish s{e}lling s{e}ven shells.",
+          "ipa": "/ˈsevən ˈselfɪʃ ˈʃelfɪʃ ˈselɪŋ ˈsevən ʃelz/",
+          "meaning": "Bảy con động vật có vỏ ích kỷ bán bảy cái vỏ",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
         },
         {
           "word": "I never tell anyone.",
@@ -2372,7 +2895,6 @@
           "meaning": "Bố tôi uống cà phê nóng.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -2381,7 +2903,6 @@
           "meaning": "Tôi cần một chai nước.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -2390,7 +2911,6 @@
           "meaning": "Tom đã có một công việc ở trường đại học/cao đẳng.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -2399,12 +2919,100 @@
           "meaning": "Bác sĩ làm việc trong văn phòng.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
           "word": "Mom goes shopping a lot and often stops for hot coffee.",
           "ipa": "/mɑːm ɡoʊz ˈʃɑːpɪŋ ə lɑːt ənd ˈɑːfən stɑːps fər hɑːt ˈkɑːfi/",
+          "meaning": "Mẹ đi mua sắm rất nhiều và thường dừng lại để mua cà phê nóng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "My father drinks hot coffee.",
+          "ipa": "/maɪ ˈfɑː.ðər drɪŋks hɑːt ˈkɑː.fi/",
+          "meaning": "Bố tôi uống cà phê nóng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I need a bottle of water.",
+          "ipa": "/aɪ niːd ə ˈbɑː.t̬əl əv ˈwɑː.t̬ər/",
+          "meaning": "Tôi cần một chai nước.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Tom got a college job.",
+          "ipa": "/tɑːm ɡɑːt ə ˈkɑː.lɪdʒ dʒɑːb/",
+          "meaning": "Tom đã có một công việc ở trường đại học/cao đẳng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The doctor works in the office.",
+          "ipa": "/ðə ˈdɑːk.tər wɝːks ɪn ði ˈɑː.fɪs/",
+          "meaning": "Bác sĩ làm việc trong văn phòng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Mom goes shopping a lot and often stops for hot coffee.",
+          "ipa": "/mɑːm ɡoʊz ˈʃɑː.pɪŋ ə lɑːt ənd ˈɑː.fən stɑːps fər hɑːt ˈkɑː.fi/",
+          "meaning": "Mẹ đi mua sắm rất nhiều và thường dừng lại để mua cà phê nóng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "My father drinks hot coffee.",
+          "ipa": "/maɪ ˈfɑː.ðər drɪŋks hɑːt ˈkɑː.fi/",
+          "meaning": "Bố tôi uống cà phê nóng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I need a bottle of water.",
+          "ipa": "/aɪ niːd ə ˈbɑː.t̬əl əv ˈwɑː.t̬ər/",
+          "meaning": "Tôi cần một chai nước.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Tom got a college job.",
+          "ipa": "/tɑːm ɡɑːt ə ˈkɑː.lɪdʒ dʒɑːb/",
+          "meaning": "Tom đã có một công việc ở trường đại học/cao đẳng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The doctor works in the office.",
+          "ipa": "/ðə ˈdɑːk.tər wɝːks ɪn ði ˈɑː.fɪs/",
+          "meaning": "Bác sĩ làm việc trong văn phòng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Mom goes shopping a lot and often stops for hot coffee.",
+          "ipa": "/mɑːm ɡoʊz ˈʃɑː.pɪŋ ə lɑːt ənd ˈɑː.fən stɑːps fər hɑːt ˈkɑː.fi/",
           "meaning": "Mẹ đi mua sắm rất nhiều và thường dừng lại để mua cà phê nóng.",
           "audioUrl": "",
           "type": "sentence",
@@ -3594,6 +4202,176 @@
           "meaning": "Bạn có thể mở cửa giúp tôi được không?",
           "audioUrl": "",
           "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "Do you like it? Of course!",
+          "ipa": "/duː juː laɪk ɪt? əv kɔːrs/",
+          "meaning": "Bạn thích nó chứ? Tất nhiên rồi!",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "More forks are on the floor.",
+          "ipa": "/mɔːr fɔːrks ɑːr ɑːn ðə flɔːr/",
+          "meaning": "Nhiều cái nĩa ở trên sàn.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "The horse is near the store door.",
+          "ipa": "/ðə hɔːrs ɪz nɪr ðə stɔːr dɔːr/",
+          "meaning": "Con ngựa ở gần cửa hàng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "I was born and raised in the north of Vietnam.",
+          "ipa": "/aɪ wəz bɔːrn ənd reɪzd ɪn ðə nɔːrθ əv ˌviːetˈnɑːm/",
+          "meaning": "Tôi sinh ra và lớn lên ở miền Bắc Việt Nam.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "More and more horses ran across the floor.",
+          "ipa": "/mɔːr ænd mɔːr ˈhɔːrsɪz ræn əˈkrɔːs ðə flɔːr/",
+          "meaning": "Ngày càng nhiều con ngựa chạy qua sàn.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "The short horse wore more orange shorts.",
+          "ipa": "/ðə ʃɔːrt hɔːrs wɔːr mɔːr ˈɔːrɪndʒ ʃɔːrts/",
+          "meaning": "Con ngựa thấp mặc thêm quần short màu cam.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "Of course, learning a foreign language requires time and effort.",
+          "ipa": "/əv kɔːrs ˈlɜːrnɪŋ ə ˈfɔːrən ˈlæŋɡwɪdʒ rɪˈkwaɪərz taɪm ənd ˈefərt/",
+          "meaning": "Tất nhiên, học một ngoại ngữ đòi hỏi thời gian và nỗ lực.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "Four short horses snored on the floor near the store door.",
+          "ipa": "/fɔːr ʃɔːrt ˈhɔːrsɪz snɔːrd ɑːn ðə flɔːr nɪr ðə stɔːr dɔːr/",
+          "meaning": "Bốn con ngựa thấp ngáy trên sàn gần cửa hàng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "Although the course was difficult, it was worth every hour of hard work.",
+          "ipa": "/ɔːlˈðoʊ ðə kɔːrs wəz ˈdɪfɪkəlt ɪt wəz wɜːrθ ˈevri ˈaʊər əv hɑːrd wɜːrk/",
+          "meaning": "Mặc dù khóa học khó, nhưng nó xứng đáng với từng giờ làm việc chăm chỉ.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "Can you open the door, please?",
+          "ipa": "/kæn juː ˈoʊpən ðə dɔːr pliːz/",
+          "meaning": "Bạn có thể mở cửa giúp tôi được không?",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Do you like it? Of course!",
+          "ipa": "/duː juː laɪk ɪt? əv kɔːrs/",
+          "meaning": "Bạn thích nó chứ? Tất nhiên rồi!",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "More forks are on the floor.",
+          "ipa": "/mɔːr fɔːrks ɑːr ɑːn ðə flɔːr/",
+          "meaning": "Nhiều cái nĩa ở trên sàn.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The horse is near the store door.",
+          "ipa": "/ðə hɔːrs ɪz nɪr ðə stɔːr dɔːr/",
+          "meaning": "Con ngựa ở gần cửa hàng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I was born and raised in the north of Vietnam.",
+          "ipa": "/aɪ wəz bɔːrn ənd reɪzd ɪn ðə nɔːrθ əv ˌviːetˈnɑːm/",
+          "meaning": "Tôi sinh ra và lớn lên ở miền Bắc Việt Nam.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "More and more horses ran across the floor.",
+          "ipa": "/mɔːr ænd mɔːr ˈhɔːrsɪz ræn əˈkrɔːs ðə flɔːr/",
+          "meaning": "Ngày càng nhiều con ngựa chạy qua sàn.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The short horse wore more orange shorts.",
+          "ipa": "/ðə ʃɔːrt hɔːrs wɔːr mɔːr ˈɔːrɪndʒ ʃɔːrts/",
+          "meaning": "Con ngựa thấp mặc thêm quần short màu cam.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Of course, learning a foreign language requires time and effort.",
+          "ipa": "/əv kɔːrs ˈlɜːrnɪŋ ə ˈfɔːrən ˈlæŋɡwɪdʒ rɪˈkwaɪərz taɪm ənd ˈefərt/",
+          "meaning": "Tất nhiên, học một ngoại ngữ đòi hỏi thời gian và nỗ lực.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Four short horses snored on the floor near the store door.",
+          "ipa": "/fɔːr ʃɔːrt ˈhɔːrsɪz snɔːrd ɑːn ðə flɔːr nɪr ðə stɔːr dɔːr/",
+          "meaning": "Bốn con ngựa thấp ngáy trên sàn gần cửa hàng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Although the course was difficult, it was worth every hour of hard work.",
+          "ipa": "/ɔːlˈðoʊ ðə kɔːrs wəz ˈdɪfɪkəlt ɪt wəz wɜːrθ ˈevri ˈaʊər əv hɑːrd wɜːrk/",
+          "meaning": "Mặc dù khóa học khó, nhưng nó xứng đáng với từng giờ làm việc chăm chỉ.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Can you open the door, please?",
+          "ipa": "/kæn juː ˈoʊpən ðə dɔːr pliːz/",
+          "meaning": "Bạn có thể mở cửa giúp tôi được không?",
+          "audioUrl": "",
+          "type": "sentence",
           "partOfSpeech": "",
           "hidden": false
         },
@@ -3931,6 +4709,281 @@
           "meaning": "Người phụ nữ này là một đầu bếp giỏi.",
           "audioUrl": "",
           "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "I understood the book but he couldn't.",
+          "ipa": "/aɪ ˌʌndərˈstʊd ðə bʊk bʌt hiː ˈkʊd.ənt/",
+          "meaning": "Tôi đã hiểu cuốn sách nhưng anh ta không thể.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "I took a look at the wool pullover.",
+          "ipa": "/aɪ tʊk ə lʊk æt ðə wʊl ˈpʊlˌoʊvər/",
+          "meaning": "Tôi đã nhìn cái áo len chui cổ.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "You should push the door, not pull it.",
+          "ipa": "/juː ʃʊd pʊʃ ðə dɔːr nɑːt pʊl ɪt/",
+          "meaning": "Bạn nên đẩy cửa, không phải kéo nó.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "The cook made a delicious pudding with sugar.",
+          "ipa": "/ðə kʊk meɪd ə dɪˈlɪʃəs ˈpʊdɪŋ wɪð ˈʃʊɡ.ər/",
+          "meaning": "Người đầu bếp đã làm món pudding rất ngon với đường.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "You should read this cookery book if you could.",
+          "ipa": "/juː ʃʊd riːd ðɪs ˈkʊk.ər.i bʊk ɪf juː kʊd/",
+          "meaning": "Bạn nên đọc cuốn sách nấu ăn này nếu bạn có thể.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "Luke could cook good cookies if Luke would cook good cookies.",
+          "ipa": "/luːk kʊd kʊk ɡʊd ˈkʊkiz ɪf luːk wʊd kʊk ɡʊd ˈkʊkiz/",
+          "meaning": "Luke có thể nấu bánh quy ngon nếu Luke muốn nấu bánh quy ngon.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "thức ăn",
+          "ipa": "food /fuːd/",
+          "meaning": "bàn chân",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "foot fʊt",
+          "hidden": false
+        },
+        {
+          "word": "kẻ ngốc",
+          "ipa": "fool /fuːl/",
+          "meaning": "đầy",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "full fʊl",
+          "hidden": false
+        },
+        {
+          "word": "hồ bơi",
+          "ipa": "pool /puːl/",
+          "meaning": "kéo",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "pull pʊl",
+          "hidden": false
+        },
+        {
+          "word": "tên Luke",
+          "ipa": "Luke /luːk/",
+          "meaning": "nhìn",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "look lʊk",
+          "hidden": false
+        },
+        {
+          "word": "giày ống",
+          "ipa": "boot /buːt/",
+          "meaning": "sách",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "book bʊk",
+          "hidden": false
+        },
+        {
+          "word": "bắn",
+          "ipa": "shoot /ʃuːt/",
+          "meaning": "rung / đã lắc",
+          "audioUrl": "",
+          "type": "word",
+          "partOfSpeech": "shook ʃʊk",
+          "hidden": false
+        },
+        {
+          "word": "Put the blue shoes on your good foot.",
+          "ipa": "/pʊt ðə bluː ʃuːz ɑːn jɔːr ɡʊd fʊt/",
+          "meaning": "Đặt đôi giày xanh lên bàn chân tốt của bạn.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Luke could cook good food in a cool room.",
+          "ipa": "/luːk kʊd kʊk ɡʊd fuːd ɪn ə kuːl ruːm/",
+          "meaning": "Luke có thể nấu món ăn ngon trong một căn phòng mát.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Luke would cook good cookies, but could not look at the food in the cool room.",
+          "ipa": "/luːk wʊd kʊk ɡʊd ˈkʊkiz bʌt kʊd nɑːt lʊk æt ðə fuːd ɪn ðə kuːl ruːm/",
+          "meaning": "Luke sẽ nấu bánh quy ngon, nhưng không thể nhìn thức ăn trong căn phòng mát.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "If you choose to look at Luke's good flute, you should move it soon.",
+          "ipa": "/ɪf juː tʃuːz tə lʊk æt luːks ɡʊd fluːt, juː ʃʊd muːv ɪt suːn/",
+          "meaning": "Nếu bạn chọn nhìn cây sáo tốt của Luke, bạn nên di chuyển nó sớm.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Ruth put her blue boots into a full wooden room.",
+          "ipa": "/ruːθ pʊt hɚ bluː buːts ˈɪntuː ə fʊl ˈwʊdn ruːm/",
+          "meaning": "Ruth đặt đôi bốt xanh của cô ấy vào một căn phòng gỗ đầy.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "This woman is a good cook.",
+          "displayWord": "This w{o}man is a g{oo}d c{oo}k.",
+          "ipa": "/ðɪs ˈwʊmən ɪz ə ɡʊd kʊk/",
+          "meaning": "Người phụ nữ này là một đầu bếp giỏi.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I understood the book but he couldn’t.",
+          "displayWord": "I underst{oo}d the b{oo}k but he c{ou}ldn’t.",
+          "ipa": "/aɪ ˌʌndərˈstʊd ðə bʊk bʌt hiː ˈkʊd.ənt/",
+          "meaning": "Tôi đã hiểu cuốn sách nhưng anh ta không thể.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I took a look at the wool pullover.",
+          "displayWord": "I t{oo}k a l{oo}k at the w{oo}l p{u}llover.",
+          "ipa": "/aɪ tʊk ə lʊk æt ðə wʊl ˈpʊlˌoʊvər/",
+          "meaning": "Tôi đã nhìn cái áo len chui cổ.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "You should push the door, not pull it.",
+          "displayWord": "You sh{ou}ld p{u}sh the door, not pull it.",
+          "ipa": "/juː ʃʊd pʊʃ ðə dɔːr, nɑːt pʊl ɪt/",
+          "meaning": "Bạn nên đẩy cửa, không phải kéo nó.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The cook made a delicious pudding with sugar.",
+          "displayWord": "The c{oo}k made a delicious p{u}dding with s{u}gar.",
+          "ipa": "/ðə kʊk meɪd ə dɪˈlɪʃəs ˈpʊdɪŋ wɪð ˈʃʊɡ.ər/",
+          "meaning": "Người đầu bếp đã làm món pudding rất ngon với đường.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "You should read this cookery book if you could.",
+          "displayWord": "You sh{ou}ld read this c{oo}kery b{oo}k if you c{ou}ld.",
+          "ipa": "/juː ʃʊd riːd ðɪs ˈkʊk.ər.i bʊk ɪf juː kʊd/",
+          "meaning": "Bạn nên đọc cuốn sách nấu ăn này nếu bạn có thể.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Luke could cook good cookies if Luke would cook good cookies.",
+          "displayWord": "Luke c{ou}ld c{oo}k g{oo}d c{oo}kies if Luke w{ou}ld c{oo}k g{oo}d c{oo}kies.",
+          "ipa": "/luːk kʊd kʊk ɡʊd ˈkʊkiz ɪf luːk wʊd kʊk ɡʊd ˈkʊkiz/",
+          "meaning": "Luke có thể nấu bánh quy ngon nếu Luke muốn nấu bánh quy ngon.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Put the blue shoes on your good foot.",
+          "displayWord": "P{u}t the bl{ue} sh{oe}s on your g{oo}d f{oo}t.",
+          "ipa": "/pʊt ðə bluː ʃuːz ɑːn jɔːr ɡʊd fʊt/",
+          "meaning": "Đặt đôi giày xanh lên bàn chân tốt của bạn.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Luke could cook good food in a cool room.",
+          "displayWord": "L{u}ke c{ou}ld c{oo}k g{oo}d f{oo}d in a c{oo}l r{oo}m.",
+          "ipa": "/luːk kʊd kʊk ɡʊd fuːd ɪn ə kuːl ruːm/",
+          "meaning": "Luke có thể nấu món ăn ngon trong một căn phòng mát.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Luke would cook good cookies, but could not look at the food in the cool room.",
+          "displayWord": "L{u}ke w{ou}ld c{oo}k g{oo}d c{oo}kies, but c{ou}ld not l{oo}k at the f{oo}d in the c{oo}l r{oo}m.",
+          "ipa": "/luːk wʊd kʊk ɡʊd ˈkʊkiz bʌt kʊd nɑːt lʊk æt ðə fuːd ɪn ðə kuːl ruːm/",
+          "meaning": "Luke sẽ nấu bánh quy ngon, nhưng không thể nhìn thức ăn trong căn phòng mát.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "If you choose to look at Luke's good flute, you should move it soon.",
+          "displayWord": "If you ch{oo}se to l{oo}k at L{u}ke's good fl{u}te, you sh{ou}ld m{o}ve it s{oo}n.",
+          "ipa": "/ɪf juː tʃuːz tə lʊk æt luːks ɡʊd fluːt, juː ʃʊd muːv ɪt suːn/",
+          "meaning": "Nếu bạn chọn nhìn cây sáo tốt của Luke, bạn nên di chuyển nó sớm.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Ruth put her blue boots into a full wooden room.",
+          "displayWord": "R{u}th p{u}t her bl{ue} b{oo}ts into a f{u}ll w{oo}den r{oo}m.",
+          "ipa": "/ruːθ pʊt hɚ bluː buːts ˈɪntuː ə fʊl ˈwʊdn ruːm/",
+          "meaning": "Ruth đặt đôi bốt xanh của cô ấy vào một căn phòng gỗ đầy.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "This woman is a good cook.",
+          "ipa": "/ðɪs ˈwʊmən ɪz ə ɡʊd kʊk/",
+          "meaning": "Người phụ nữ này là một đầu bếp giỏi.",
+          "audioUrl": "",
+          "type": "sentence",
           "partOfSpeech": "",
           "hidden": false,
           "displayWord": "This w{o}man is a g{oo}d c{oo}k."
@@ -3994,60 +5047,6 @@
           "partOfSpeech": "",
           "hidden": false,
           "displayWord": "Luke c{ou}ld c{oo}k g{oo}d c{oo}kies if Luke w{ou}ld c{oo}k g{oo}d c{oo}kies."
-        },
-        {
-          "word": "thức ăn",
-          "ipa": "food /fuːd/",
-          "meaning": "bàn chân",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "foot fʊt",
-          "hidden": false
-        },
-        {
-          "word": "kẻ ngốc",
-          "ipa": "fool /fuːl/",
-          "meaning": "đầy",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "full fʊl",
-          "hidden": false
-        },
-        {
-          "word": "hồ bơi",
-          "ipa": "pool /puːl/",
-          "meaning": "kéo",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "pull pʊl",
-          "hidden": false
-        },
-        {
-          "word": "tên Luke",
-          "ipa": "Luke /luːk/",
-          "meaning": "nhìn",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "look lʊk",
-          "hidden": false
-        },
-        {
-          "word": "giày ống",
-          "ipa": "boot /buːt/",
-          "meaning": "sách",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "book bʊk",
-          "hidden": false
-        },
-        {
-          "word": "bắn",
-          "ipa": "shoot /ʃuːt/",
-          "meaning": "rung / đã lắc",
-          "audioUrl": "",
-          "type": "word",
-          "partOfSpeech": "shook ʃʊk",
-          "hidden": false
         },
         {
           "word": "Put the blue shoes on your good foot.",
@@ -4484,6 +5483,168 @@
           "type": "phrase",
           "hidden": false,
           "displayWord": "s{ui}table r{u}le"
+        },
+        {
+          "word": "Few rooms are cool.",
+          "ipa": "/fjuː ruːmz ɑːr kuːl/",
+          "meaning": "Rất ít phòng mát.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "The students move to the room.",
+          "ipa": "/ðə ˈstuːdənts muːv tə ðə ruːm/",
+          "meaning": "Các học sinh di chuyển vào căn phòng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "It is true that the moon is blue.",
+          "ipa": "/ɪt ɪz truː ðæt ðə muːn ɪz bluː/",
+          "meaning": "Sự thật là mặt trăng có màu xanh.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "The room has room for fewer blue shoes.",
+          "ipa": "/ðə ruːm hæz ruːm fər ˈfjuːər bluː ʃuːz/",
+          "meaning": "Căn phòng còn chỗ cho ít đôi giày xanh hơn.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "The cute tutor is suitable for this group.",
+          "ipa": "/ðə kjuːt ˈtuːtər ɪz ˈsuːtəbl fər ðɪs ɡruːp/",
+          "meaning": "Cô gia sư xinh xắn phù hợp với nhóm này.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "The new student likes fruit juice and I do, too.",
+          "ipa": "/ðə nuː ˈstuːdənt laɪks fruːt dʒuːs ənd aɪ duː tuː/",
+          "meaning": "Bạn học sinh mới thích nước ép hoa quả và tôi cũng vậy.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "I choose to use this computer for my music.",
+          "ipa": "/aɪ tʃuːz tə juːz ðɪs kəmˈpjuːtər fər maɪ ˈmjuːzɪk/",
+          "meaning": "Tôi chọn sử dụng chiếc máy tính này cho âm nhạc của mình.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "The cute student refused to use the huge computer.",
+          "ipa": "/ðə kjuːt ˈstuːdənt rɪˈfjuːzd tə juːz ðə hjuːdʒ kəmˈpjuːtər/",
+          "meaning": "Học sinh dễ thương từ chối sử dụng chiếc máy tính khổng lồ.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "If you choose to use Luke's blue flute, you must prove you can tune it.",
+          "ipa": "/ɪf juː tʃuːz tə juːz luːks bluː fluːt juː məst pruːv juː kæn tjuːn ɪt/",
+          "meaning": "Nếu bạn chọn dùng cây sáo xanh của Luke, bạn phải chứng minh bạn có thể chỉnh âm nó.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "Few rooms are cool.",
+          "displayWord": "F{ew} r{oo}ms are c{oo}l.",
+          "ipa": "/fjuː ruːmz ɑːr kuːl/",
+          "meaning": "Rất ít phòng mát.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The students move to the room.",
+          "displayWord": "The st{u}dents m{o}ve to the r{oo}m.",
+          "ipa": "/ðə ˈstuːdənts muːv tə ðə ruːm/",
+          "meaning": "Các học sinh di chuyển vào căn phòng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "It is true that the moon is blue.",
+          "displayWord": "It is tr{ue} that the m{oo}n is blue.",
+          "ipa": "/ɪt ɪz truː ðæt ðə muːn ɪz bluː/",
+          "meaning": "Sự thật là mặt trăng có màu xanh.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The room has room for fewer blue shoes.",
+          "displayWord": "The r{oo}m has r{oo}m for f{ew}er bl{ue} sh{oe}s.",
+          "ipa": "/ðə ruːm hæz ruːm fər ˈfjuːər bluː ʃuːz/",
+          "meaning": "Căn phòng còn chỗ cho ít đôi giày xanh hơn.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The cute tutor is suitable for this group.",
+          "displayWord": "The c{u}te t{u}tor is s{ui}table for this gr{ou}p.",
+          "ipa": "/ðə kjuːt ˈtuːtər ɪz ˈsuːtəbl fər ðɪs ɡruːp/",
+          "meaning": "Cô gia sư xinh xắn phù hợp với nhóm này.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The new student likes fruit juice and I do, too.",
+          "displayWord": "The n{ew} st{u}dent likes fr{ui}t j{ui}ce and I d{o}, t{oo}.",
+          "ipa": "/ðə nuː ˈstuːdənt laɪks fruːt dʒuːs ənd aɪ duː tuː/",
+          "meaning": "Bạn học sinh mới thích nước ép hoa quả và tôi cũng vậy.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I choose to use this computer for my music.",
+          "displayWord": "I ch{oo}se to {u}se this comp{u}ter for my m{u}sic.",
+          "ipa": "/aɪ tʃuːz tə juːz ðɪs kəmˈpjuːtər fər maɪ ˈmjuːzɪk/",
+          "meaning": "Tôi chọn sử dụng chiếc máy tính này cho âm nhạc của mình.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The cute student refused to use the huge computer.",
+          "displayWord": "The c{u}te st{u}dent ref{u}sed to {u}se the h{u}ge comp{u}ter.",
+          "ipa": "/ðə kjuːt ˈstuːdənt rɪˈfjuːzd tə juːz ðə hjuːdʒ kəmˈpjuːtər/",
+          "meaning": "Học sinh dễ thương từ chối sử dụng chiếc máy tính khổng lồ.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "If you choose to use Luke's blue flute, you must prove you can tune it.",
+          "displayWord": "If you ch{oo}se to {u}se L{u}ke's bl{ue} fl{u}te, you m{u}st pr{o}ve you can t{u}ne it.",
+          "ipa": "/ɪf juː tʃuːz tə juːz luːks bluː fluːt, juː məst pruːv juː kæn tjuːn ɪt/",
+          "meaning": "Nếu bạn chọn dùng cây sáo xanh của Luke, bạn phải chứng minh bạn có thể chỉnh âm nó.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
         },
         {
           "word": "Few rooms are cool.",
@@ -4940,7 +6101,6 @@
           "meaning": "Lũ lụt đến vào mùa hè.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -4949,7 +6109,6 @@
           "meaning": "Cậu ta không học gì vào ngày Chủ nhật.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -4958,7 +6117,6 @@
           "meaning": "Anh họ tôi sẽ đến vào Chủ nhật nếu trời nắng.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -4967,7 +6125,6 @@
           "meaning": "Chú của tôi có đủ tiền.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -4976,7 +6133,6 @@
           "meaning": "Tôi yêu những ngày hè đầy nắng.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -4985,7 +6141,6 @@
           "meaning": "Cậu con trai đói bụng muốn ăn trưa.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -4994,7 +6149,6 @@
           "meaning": "Cô ấy có một cốc mật ong đáng yêu.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -5003,7 +6157,6 @@
           "meaning": "Anh/chị/em họ của tôi học ở Luân Đôn.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -5012,12 +6165,190 @@
           "meaning": "Người chú vui tính của tôi chạy dưới ánh mặt trời nắng.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
           "word": "The young monkey jumps up for some honey.",
           "ipa": "/ðə jʌŋ ˈmʌŋki dʒʌmps ʌp fər sʌm ˈhʌni/",
+          "meaning": "Con khỉ trẻ nhảy lên để lấy một ít mật ong.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "The flood comes in summer.",
+          "ipa": "/ðə flʌd kʌmz ɪn ˈsʌm.ər/",
+          "meaning": "Lũ lụt đến vào mùa hè.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "He studies nothing on Sunday.",
+          "ipa": "/hi ˈstʌd.iz ˈnʌθ.ɪŋ ɑːn ˈsʌn.deɪ/",
+          "meaning": "Cậu ta không học gì vào ngày Chủ nhật.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "My cousin will come on Sunday if it’s sunny.",
+          "ipa": "/maɪ ˈkʌz.ən wɪl kʌm ɑːn ˈsʌn.deɪ ɪf ɪts ˈsʌn.i/",
+          "meaning": "Anh họ tôi sẽ đến vào Chủ nhật nếu trời nắng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "My uncle has enough money.",
+          "ipa": "/maɪ ˈʌŋ.kəl hæz ɪˈnʌf ˈmʌn.i/",
+          "meaning": "Chú của tôi có đủ tiền.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I love sunny summer days.",
+          "ipa": "/aɪ lʌv ˈsʌn.i ˈsʌm.ər deɪz/",
+          "meaning": "Tôi yêu những ngày hè đầy nắng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The hungry son wants some lunch.",
+          "ipa": "/ðə ˈhʌŋ.ɡri sʌn wɑːnts sʌm lʌntʃ/",
+          "meaning": "Cậu con trai đói bụng muốn ăn trưa.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "She has a lovely cup of honey.",
+          "ipa": "/ʃi hæz ə ˈlʌv.li kʌp əv ˈhʌn.i/",
+          "meaning": "Cô ấy có một cốc mật ong đáng yêu.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "My cousin studies in London.",
+          "ipa": "/maɪ ˈkʌz.ən ˈstʌd.iz ɪn ˈlʌn.dən/",
+          "meaning": "Anh/chị/em họ của tôi học ở Luân Đôn.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "My funny uncle runs under the sunny sun.",
+          "ipa": "/maɪ ˈfʌn.i ˈʌŋ.kəl rʌnz ˈʌn.dər ðə ˈsʌn.i sʌn/",
+          "meaning": "Người chú vui tính của tôi chạy dưới ánh mặt trời nắng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The young monkey jumps up for some honey.",
+          "ipa": "/ðə jʌŋ ˈmʌŋ.ki dʒʌmps ʌp fər sʌm ˈhʌn.i/",
+          "meaning": "Con khỉ trẻ nhảy lên để lấy một ít mật ong.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The flood comes in summer.",
+          "ipa": "/ðə flʌd kʌmz ɪn ˈsʌm.ər/",
+          "meaning": "Lũ lụt đến vào mùa hè.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "He studies nothing on Sunday.",
+          "ipa": "/hi ˈstʌd.iz ˈnʌθ.ɪŋ ɑːn ˈsʌn.deɪ/",
+          "meaning": "Cậu ta không học gì vào ngày Chủ nhật.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "My cousin will come on Sunday if it’s sunny.",
+          "ipa": "/maɪ ˈkʌz.ən wɪl kʌm ɑːn ˈsʌn.deɪ ɪf ɪts ˈsʌn.i/",
+          "meaning": "Anh họ tôi sẽ đến vào Chủ nhật nếu trời nắng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "My uncle has enough money.",
+          "ipa": "/maɪ ˈʌŋ.kəl hæz ɪˈnʌf ˈmʌn.i/",
+          "meaning": "Chú của tôi có đủ tiền.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I love sunny summer days.",
+          "ipa": "/aɪ lʌv ˈsʌn.i ˈsʌm.ər deɪz/",
+          "meaning": "Tôi yêu những ngày hè đầy nắng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The hungry son wants some lunch.",
+          "ipa": "/ðə ˈhʌŋ.ɡri sʌn wɑːnts sʌm lʌntʃ/",
+          "meaning": "Cậu con trai đói bụng muốn ăn trưa.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "She has a lovely cup of honey.",
+          "ipa": "/ʃi hæz ə ˈlʌv.li kʌp əv ˈhʌn.i/",
+          "meaning": "Cô ấy có một cốc mật ong đáng yêu.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "My cousin studies in London.",
+          "ipa": "/maɪ ˈkʌz.ən ˈstʌd.iz ɪn ˈlʌn.dən/",
+          "meaning": "Anh/chị/em họ của tôi học ở Luân Đôn.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "My funny uncle runs under the sunny sun.",
+          "ipa": "/maɪ ˈfʌn.i ˈʌŋ.kəl rʌnz ˈʌn.dər ðə ˈsʌn.i sʌn/",
+          "meaning": "Người chú vui tính của tôi chạy dưới ánh mặt trời nắng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The young monkey jumps up for some honey.",
+          "ipa": "/ðə jʌŋ ˈmʌŋ.ki dʒʌmps ʌp fər sʌm ˈhʌn.i/",
           "meaning": "Con khỉ trẻ nhảy lên để lấy một ít mật ong.",
           "audioUrl": "",
           "type": "sentence",
@@ -5402,7 +6733,6 @@
           "meaning": "Cô gái đến sớm.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -5411,7 +6741,6 @@
           "meaning": "Tôi học tiếng Anh.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -5420,7 +6749,6 @@
           "meaning": "Y tá làm việc ở đây.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -5429,7 +6757,6 @@
           "meaning": "Rẽ phải ở đây.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -5438,7 +6765,6 @@
           "meaning": "Tôi nghe thấy từ đó ở nhà thờ.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -5447,7 +6773,6 @@
           "meaning": "Đây là chuyến đi đầu tiên tới Thổ Nhĩ Kỳ của anh ấy.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -5456,7 +6781,6 @@
           "meaning": "Tôi học được điều đó từ một người ở trường đại học.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -5465,7 +6789,6 @@
           "meaning": "Cô y tá thích làm việc vào thứ Năm.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -5474,13 +6797,191 @@
           "meaning": "Cô gái lo lắng đã tổ chức sinh nhật lần thứ ba tại nơi làm việc.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
           "word": "A nervous person may search for the right word before speaking in public.",
           "ipa": "/ə ˈnɜːrvəs ˈpɜːrsən meɪ sɜːrtʃ fər ðə raɪt wɜːrd bɪˈfɔːr ˈspiːkɪŋ ɪn ˈpʌblɪk/",
           "meaning": "Người lo lắng có thể tìm từ đúng trước khi nói trước đám đông.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "The girl is early.",
+          "ipa": "/ðə ɡɜːl ɪz ˈɜːli/",
+          "meaning": "👉 Cô gái đến sớm.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I learn English.",
+          "ipa": "/aɪ lɜːn ˈɪŋɡlɪʃ/",
+          "meaning": "👉 Tôi học tiếng Anh.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The nurse works here.",
+          "ipa": "/ðə nɜːs wɜːks hɪə/",
+          "meaning": "👉 Y tá làm việc ở đây.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Turn right here.",
+          "ipa": "/tɜːn raɪt hɪə/",
+          "meaning": "👉 Rẽ phải ở đây.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I heard that word in the church.",
+          "ipa": "/aɪ hɜːd ðæt wɜːd ɪn ðə tʃɜːtʃ/",
+          "meaning": "👉 Tôi nghe thấy từ đó ở nhà thờ.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "This is his first journey to Turkey.",
+          "ipa": "/ðɪs ɪz hɪz fɜːst ˈdʒɜːni tə ˈtɜːki/",
+          "meaning": "👉 Đây là chuyến đi đầu tiên tới Thổ Nhĩ Kỳ của anh ấy.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I learnt it from a person at the university.",
+          "ipa": "/aɪ lɜːnt ɪt frɒm ə ˈpɜːsən ət ðə ˌjuːnɪˈvɜːsəti/",
+          "meaning": "👉 Tôi học được điều đó từ một người ở trường đại học.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The nurse prefers working on Thursday.",
+          "ipa": "/ðə nɜːs prɪˈfɜːz ˈwɜːkɪŋ ɒn ˈθɜːzdeɪ/",
+          "meaning": "👉 Cô y tá thích làm việc vào thứ Năm.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "A nervous girl celebrated her third birthday at her workplace.",
+          "ipa": "/ə ˈnɜːvəs ɡɜːl ˈselɪbreɪtɪd hɜː θɜːd ˈbɜːθdeɪ ət hɜː ˈwɜːkpleɪs/",
+          "meaning": "👉 Cô gái lo lắng đã tổ chức sinh nhật lần thứ ba tại nơi làm việc.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "A nervous person may search for the right word before speaking in public.",
+          "ipa": "/ə ˈnɜːvəs ˈpɜːsən meɪ sɜːtʃ fə ðə raɪt wɜːd bɪˈfɔː ˈspiːkɪŋ ɪn ˈpʌblɪk/",
+          "meaning": "👉 Người lo lắng có thể tìm từ đúng trước khi nói trước đám đông.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The girl is early.",
+          "ipa": "/ðə ɡɜːl ɪz ˈɜːli/",
+          "meaning": "👉 Cô gái đến sớm.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I learn English.",
+          "ipa": "/aɪ lɜːn ˈɪŋɡlɪʃ/",
+          "meaning": "👉 Tôi học tiếng Anh.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The nurse works here.",
+          "ipa": "/ðə nɜːs wɜːks hɪə/",
+          "meaning": "👉 Y tá làm việc ở đây.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Turn right here.",
+          "ipa": "/tɜːn raɪt hɪə/",
+          "meaning": "👉 Rẽ phải ở đây.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I heard that word in the church.",
+          "ipa": "/aɪ hɜːd ðæt wɜːd ɪn ðə tʃɜːtʃ/",
+          "meaning": "👉 Tôi nghe thấy từ đó ở nhà thờ.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "This is his first journey to Turkey.",
+          "ipa": "/ðɪs ɪz hɪz fɜːst ˈdʒɜːni tə ˈtɜːki/",
+          "meaning": "👉 Đây là chuyến đi đầu tiên tới Thổ Nhĩ Kỳ của anh ấy.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I learnt it from a person at the university.",
+          "ipa": "/aɪ lɜːnt ɪt frɒm ə ˈpɜːsən ət ðə ˌjuːnɪˈvɜːsəti/",
+          "meaning": "👉 Tôi học được điều đó từ một người ở trường đại học.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The nurse prefers working on Thursday.",
+          "ipa": "/ðə nɜːs prɪˈfɜːz ˈwɜːkɪŋ ɒn ˈθɜːzdeɪ/",
+          "meaning": "👉 Cô y tá thích làm việc vào thứ Năm.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "A nervous girl celebrated her third birthday at her workplace.",
+          "ipa": "/ə ˈnɜːvəs ɡɜːl ˈselɪbreɪtɪd hɜː θɜːd ˈbɜːθdeɪ ət hɜː ˈwɜːkpleɪs/",
+          "meaning": "👉 Cô gái lo lắng đã tổ chức sinh nhật lần thứ ba tại nơi làm việc.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "A nervous person may search for the right word before speaking in public.",
+          "ipa": "/ə ˈnɜːvəs ˈpɜːsən meɪ sɜːtʃ fə ðə raɪt wɜːd bɪˈfɔː ˈspiːkɪŋ ɪn ˈpʌblɪk/",
+          "meaning": "👉 Người lo lắng có thể tìm từ đúng trước khi nói trước đám đông.",
           "audioUrl": "",
           "type": "sentence",
           "partOfSpeech": "",
@@ -5930,7 +7431,6 @@
           "meaning": "Câu trả lời đúng.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -5939,7 +7439,6 @@
           "meaning": "Anh ấy có một vấn đề.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -5948,7 +7447,6 @@
           "meaning": "Mẹ tôi ở đây.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -5957,7 +7455,6 @@
           "meaning": "Đây là một cái ghế sofa.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -5966,7 +7463,6 @@
           "meaning": "Bài học này dễ.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -5975,7 +7471,6 @@
           "meaning": "Bố tôi đẹp trai và hào phóng.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -5984,7 +7479,6 @@
           "meaning": "Ai đó phải chịu trách nhiệm cho vụ tai nạn này.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -5993,7 +7487,6 @@
           "meaning": "Người phụ nữ đã gặp một số vấn đề trong căn hộ của cô ta.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
@@ -6002,13 +7495,191 @@
           "meaning": "Một học sinh sáng suốt đã gợi ý một câu trả lời khác.",
           "audioUrl": "",
           "type": "sentence",
-          "partOfSpeech": "",
           "hidden": false
         },
         {
           "word": "Different singers gathered at the museum.",
           "ipa": "/ˈdɪfərənt ˈsɪŋərz ˈɡæðərd æt ðə mjuːˈziːəm/",
           "meaning": "Những ca sĩ khác nhau đã tụ họp ở bảo tàng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "hidden": false
+        },
+        {
+          "word": "The answer is correct.",
+          "ipa": "/ði ˈæn.sər ɪz kəˈrekt/",
+          "meaning": "Câu trả lời đúng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "He has a problem.",
+          "ipa": "/hi hæz ə ˈprɑː.bləm/",
+          "meaning": "Anh ấy có một vấn đề.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "My mother is here.",
+          "ipa": "/maɪ ˈmʌð.ər ɪz hɪr/",
+          "meaning": "Mẹ tôi ở đây.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "This is a sofa.",
+          "ipa": "/ðɪs ɪz ə ˈsoʊ.fə/",
+          "meaning": "Đây là một cái ghế sofa.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The lesson is easy.",
+          "ipa": "/ðə ˈles.ən ɪz ˈiː.zi/",
+          "meaning": "Bài học này dễ.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "My father is handsome and generous.",
+          "ipa": "/maɪ ˈfɑː.ðər ɪz ˈhæn.səm ənd ˈdʒen.ər.əs/",
+          "meaning": "Bố tôi đẹp trai và hào phóng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Somebody must be responsible for this accident.",
+          "ipa": "/ˈsʌm.bə.di mʌst bi rɪˈspɑːn.sə.bəl fər ðɪs ˈæk.sə.dənt/",
+          "meaning": "Ai đó phải chịu trách nhiệm cho vụ tai nạn này.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The woman had some problems in her apartment.",
+          "ipa": "/ðə ˈwʊm.ən hæd sʌm ˈprɑː.bləmz ɪn hər əˈpɑːrt.mənt/",
+          "meaning": "Người phụ nữ đã gặp một số vấn đề trong căn hộ của cô ta.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "A sensible student suggested another answer.",
+          "ipa": "/ə ˈsen.sə.bəl ˈstuː.dənt səˈdʒes.tɪd əˈnʌð.ər ˈæn.sər/",
+          "meaning": "Một học sinh sáng suốt đã gợi ý một câu trả lời khác.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Different singers gathered at the museum.",
+          "ipa": "/ˈdɪf.ər.ənt ˈsɪŋ.ərz ˈɡæð.ərd æt ðə mjuːˈziː.əm/",
+          "meaning": "Những ca sĩ khác nhau đã tụ họp ở bảo tàng",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The answer is correct.",
+          "ipa": "/ði ˈæn.sər ɪz kəˈrekt/",
+          "meaning": "Câu trả lời đúng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "He has a problem.",
+          "ipa": "/hi hæz ə ˈprɑː.bləm/",
+          "meaning": "Anh ấy có một vấn đề.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "My mother is here.",
+          "ipa": "/maɪ ˈmʌð.ər ɪz hɪr/",
+          "meaning": "Mẹ tôi ở đây.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "This is a sofa.",
+          "ipa": "/ðɪs ɪz ə ˈsoʊ.fə/",
+          "meaning": "Đây là một cái ghế sofa.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The lesson is easy.",
+          "ipa": "/ðə ˈles.ən ɪz ˈiː.zi/",
+          "meaning": "Bài học này dễ.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "My father is handsome and generous.",
+          "ipa": "/maɪ ˈfɑː.ðər ɪz ˈhæn.səm ənd ˈdʒen.ər.əs/",
+          "meaning": "Bố tôi đẹp trai và hào phóng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Somebody must be responsible for this accident.",
+          "ipa": "/ˈsʌm.bə.di mʌst bi rɪˈspɑːn.sə.bəl fər ðɪs ˈæk.sə.dənt/",
+          "meaning": "Ai đó phải chịu trách nhiệm cho vụ tai nạn này.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The woman had some problems in her apartment.",
+          "ipa": "/ðə ˈwʊm.ən hæd sʌm ˈprɑː.bləmz ɪn hər əˈpɑːrt.mənt/",
+          "meaning": "Người phụ nữ đã gặp một số vấn đề trong căn hộ của cô ta.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "A sensible student suggested another answer.",
+          "ipa": "/ə ˈsen.sə.bəl ˈstuː.dənt səˈdʒes.tɪd əˈnʌð.ər ˈæn.sər/",
+          "meaning": "Một học sinh sáng suốt đã gợi ý một câu trả lời khác.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Different singers gathered at the museum.",
+          "ipa": "/ˈdɪf.ər.ənt ˈsɪŋ.ərz ˈɡæð.ərd æt ðə mjuːˈziː.əm/",
+          "meaning": "Những ca sĩ khác nhau đã tụ họp ở bảo tàng",
           "audioUrl": "",
           "type": "sentence",
           "partOfSpeech": "",
@@ -6389,6 +8060,168 @@
           "meaning": "tạo thay đổi",
           "audioUrl": "",
           "type": "phrase",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "They make a cake for the party.",
+          "ipa": "/ðeɪ meɪk ə keɪk fər ðə ˈpɑːrti/",
+          "meaning": "Họ làm một cái bánh cho bữa tiệc.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "3She stays in a safe place every day.",
+          "ipa": "/ʃi steɪz ɪn ə seɪf pleɪs ˈevri deɪ/",
+          "meaning": "Cô ấy ở một nơi an toàn mỗi ngày.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The rain makes the train late.",
+          "ipa": "/ðə reɪn meɪks ðə treɪn leɪt/",
+          "meaning": "Cơn mưa làm tàu bị trễ.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "She will stay at home today.",
+          "ipa": "/ʃi wɪl steɪ æt hoʊm təˈdeɪ/",
+          "meaning": "Cô ấy sẽ ở nhà hôm nay.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Don’t just complain, explain the situation and find a good solution.",
+          "ipa": "/doʊnt dʒʌst kəmˈpleɪn ɪkˈspleɪn ðə ˌsɪtʃuˈeɪʃən ənd faɪnd ə ɡʊd səˈluːʃən/",
+          "meaning": "Đừng chỉ phàn nàn, hãy giải thích tình huống và tìm một giải pháp tốt.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "My eighty-eight father still likes playing baseball.",
+          "ipa": "/maɪ ˈeɪti eɪt ˈfɑːðər stɪl laɪks ˈpleɪɪŋ ˈbeɪsˌbɔːl/",
+          "meaning": "Bố 88 tuổi của tôi vẫn thích chơi bóng chày.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "It’s Monday and I want to be lazy.",
+          "ipa": "/ɪts ˈmʌndeɪ ənd aɪ wɑːnt tə bi ˈleɪzi/",
+          "meaning": "Hôm nay là thứ Hai và tôi muốn lười biếng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "A brave baker bakes a great cake in May.",
+          "ipa": "/ə breɪv ˈbeɪkər beɪks ə ɡreɪt keɪk ɪn meɪ/",
+          "meaning": "Một thợ làm bánh dũng cảm làm bánh ngon vào tháng 5.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "They say the same name on a rainy day.",
+          "ipa": "/ðeɪ seɪ ðə seɪm neɪm ɑːn ə ˈreɪni deɪ/",
+          "meaning": "Họ nói cùng một cái tên vào một ngày mưa.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "They make a cake for the party.",
+          "ipa": "/ðeɪ meɪk ə keɪk fər ðə ˈpɑːrti/",
+          "meaning": "Họ làm một cái bánh cho bữa tiệc.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "3She stays in a safe place every day.",
+          "ipa": "/ʃi steɪz ɪn ə seɪf pleɪs ˈevri deɪ/",
+          "meaning": "Cô ấy ở một nơi an toàn mỗi ngày.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The rain makes the train late.",
+          "ipa": "/ðə reɪn meɪks ðə treɪn leɪt/",
+          "meaning": "Cơn mưa làm tàu bị trễ.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "She will stay at home today.",
+          "ipa": "/ʃi wɪl steɪ æt hoʊm təˈdeɪ/",
+          "meaning": "Cô ấy sẽ ở nhà hôm nay.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Don’t just complain, explain the situation and find a good solution.",
+          "ipa": "/doʊnt dʒʌst kəmˈpleɪn ɪkˈspleɪn ðə ˌsɪtʃuˈeɪʃən ənd faɪnd ə ɡʊd səˈluːʃən/",
+          "meaning": "Đừng chỉ phàn nàn, hãy giải thích tình huống và tìm một giải pháp tốt.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "My eighty-eight father still likes playing baseball.",
+          "ipa": "/maɪ ˈeɪti eɪt ˈfɑːðər stɪl laɪks ˈpleɪɪŋ ˈbeɪsˌbɔːl/",
+          "meaning": "Bố 88 tuổi của tôi vẫn thích chơi bóng chày.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "It’s Monday and I want to be lazy.",
+          "ipa": "/ɪts ˈmʌndeɪ ənd aɪ wɑːnt tə bi ˈleɪzi/",
+          "meaning": "Hôm nay là thứ Hai và tôi muốn lười biếng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "A brave baker bakes a great cake in May.",
+          "ipa": "/ə breɪv ˈbeɪkər beɪks ə ɡreɪt keɪk ɪn meɪ/",
+          "meaning": "Một thợ làm bánh dũng cảm làm bánh ngon vào tháng 5.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "They say the same name on a rainy day.",
+          "ipa": "/ðeɪ seɪ ðə seɪm neɪm ɑːn ə ˈreɪni deɪ/",
+          "meaning": "Họ nói cùng một cái tên vào một ngày mưa.",
+          "audioUrl": "",
+          "type": "sentence",
           "partOfSpeech": "",
           "hidden": false
         },
@@ -6857,6 +8690,168 @@
           "meaning": "giấu tài liệu của tôi",
           "audioUrl": "",
           "type": "phrase",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I like my bike.",
+          "ipa": "/aɪ laɪk maɪ baɪk/",
+          "meaning": "Tôi thích xe đạp của tôi.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The sky is bright.",
+          "ipa": "/ðə skaɪ ɪz braɪt/",
+          "meaning": "Bầu trời sáng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "My child is shy.",
+          "ipa": "/maɪ tʃaɪld ɪz ʃaɪ/",
+          "meaning": "Con tôi nhút nhát.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "5I try to find the right light in the night sky.",
+          "ipa": "/aɪ traɪ tə faɪnd ðə raɪt laɪt ɪn ðə naɪt skaɪ/",
+          "meaning": "Tôi cố tìm ánh sáng đúng trong bầu trời đêm.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Why is the price so high for that design?",
+          "ipa": "/waɪ ɪz ðə praɪs soʊ haɪ fər ðæt dɪˈzaɪn/",
+          "meaning": "Tại sao giá lại cao cho thiết kế đó?",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "After crying for hours, my brother smiles.",
+          "ipa": "/ˈæftər ˈkraɪɪŋ fər ˈaʊərz, maɪ ˈbrʌðər smaɪlz/",
+          "meaning": "Sau khi khóc hàng giờ, anh trai tôi mỉm cười.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "It’s ninety-nine-hour drive to Hawaii.",
+          "ipa": "/ɪts ˈnaɪnti naɪn ˈaʊər draɪv tə həˈwaɪi/",
+          "meaning": "Đó là chuyến lái xe 99 giờ đến Hawaii.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "A shy child tries to fly a high white kite in the sky.",
+          "ipa": "/ə ʃaɪ tʃaɪld traɪz tə flaɪ ə haɪ waɪt kaɪt ɪn ðə skaɪ/",
+          "meaning": "Một đứa trẻ nhút nhát cố thả diều trắng cao trên bầu trời.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I try to write right lines at night by bright light.",
+          "ipa": "/aɪ traɪ tə raɪt raɪt laɪnz æt naɪt baɪ braɪt laɪt/",
+          "meaning": "Tôi cố viết những dòng đúng vào ban đêm dưới ánh sáng sáng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I like my bike.",
+          "ipa": "/aɪ laɪk maɪ baɪk/",
+          "meaning": "Tôi thích xe đạp của tôi.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The sky is bright.",
+          "ipa": "/ðə skaɪ ɪz braɪt/",
+          "meaning": "Bầu trời sáng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "My child is shy.",
+          "ipa": "/maɪ tʃaɪld ɪz ʃaɪ/",
+          "meaning": "Con tôi nhút nhát.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "5I try to find the right light in the night sky.",
+          "ipa": "/aɪ traɪ tə faɪnd ðə raɪt laɪt ɪn ðə naɪt skaɪ/",
+          "meaning": "Tôi cố tìm ánh sáng đúng trong bầu trời đêm.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Why is the price so high for that design?",
+          "ipa": "/waɪ ɪz ðə praɪs soʊ haɪ fər ðæt dɪˈzaɪn/",
+          "meaning": "Tại sao giá lại cao cho thiết kế đó?",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "After crying for hours, my brother smiles.",
+          "ipa": "/ˈæftər ˈkraɪɪŋ fər ˈaʊərz, maɪ ˈbrʌðər smaɪlz/",
+          "meaning": "Sau khi khóc hàng giờ, anh trai tôi mỉm cười.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "It’s ninety-nine-hour drive to Hawaii.",
+          "ipa": "/ɪts ˈnaɪnti naɪn ˈaʊər draɪv tə həˈwaɪi/",
+          "meaning": "Đó là chuyến lái xe 99 giờ đến Hawaii.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "A shy child tries to fly a high white kite in the sky.",
+          "ipa": "/ə ʃaɪ tʃaɪld traɪz tə flaɪ ə haɪ waɪt kaɪt ɪn ðə skaɪ/",
+          "meaning": "Một đứa trẻ nhút nhát cố thả diều trắng cao trên bầu trời.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I try to write right lines at night by bright light.",
+          "ipa": "/aɪ traɪ tə raɪt raɪt laɪnz æt naɪt baɪ braɪt laɪt/",
+          "meaning": "Tôi cố viết những dòng đúng vào ban đêm dưới ánh sáng sáng.",
+          "audioUrl": "",
+          "type": "sentence",
           "partOfSpeech": "",
           "hidden": false
         },
@@ -7489,6 +9484,168 @@
           "type": "sentence",
           "partOfSpeech": "",
           "hidden": false
+        },
+        {
+          "word": "The boy has a toy.",
+          "ipa": "/ðə bɔɪ hæz ə tɔɪ/",
+          "meaning": "Cậu bé có một món đồ chơi.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I enjoy the noise.",
+          "ipa": "/aɪ ɪnˈdʒɔɪ ðə nɔɪz/",
+          "meaning": "Tôi thích tiếng ồn.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Please avoid the poison.",
+          "ipa": "/pliːz əˈvɔɪd ðə ˈpɔɪzən/",
+          "meaning": "Hãy tránh chất độc.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The noisy boy enjoys a toy.",
+          "ipa": "/ðə ˈnɔɪzi bɔɪ ɪnˈdʒɔɪz ə tɔɪ/",
+          "meaning": "Cậu bé ồn ào thích một món đồ chơi.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Do not avoid it. It’s your choice.",
+          "ipa": "/duː nɒt əˈvɔɪd ɪt. ɪts jʊər tʃɔɪs/",
+          "meaning": "Đừng tránh nó. Đó là lựa chọn của bạn.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I can’t enjoy this movie because of the annoying noise from that boy.",
+          "ipa": "/aɪ kænt ɪnˈdʒɔɪ ðɪs ˈmuːvi bɪˈkɔːz əv ði əˈnɔɪɪŋ nɔɪz frəm ðæt bɔɪ/",
+          "meaning": "Tôi không thể tận hưởng bộ phim này vì tiếng ồn khó chịu từ cậu bé đó.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Don’t destroy yourself by being disappointed so much.",
+          "ipa": "/doʊnt dɪˈstrɔɪ jɔːrˈsɛlf baɪ ˈbiːɪŋ ˌdɪsəˈpɔɪntɪd soʊ mʌtʃ/",
+          "meaning": "Đừng tự hủy hoại bản thân vì thất vọng quá nhiều.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I have an appointment with an employee who works in a very enjoyable company.",
+          "ipa": "/aɪ hæv ən əˈpɔɪntmənt wɪð ən ɪmˈplɔɪiː huː wɜːrks ɪn ə ˈenʤɔɪəbəl ˈkʌmpəni/",
+          "meaning": "Tôi có một cuộc hẹn với một nhân viên làm việc trong một công ty rất thú vị.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Don’t disappoint your team when you join the meeting, because every point is important.",
+          "ipa": "/doʊnt ˌdɪsəˈpɔɪnt jɔːr tiːm wen ju dʒɔɪn ðə ˈmiːtɪŋ bɪˈkɒz ˈevri pɔɪnt ɪz ɪmˈpɔːrtənt/",
+          "meaning": "Đừng làm đội của bạn thất vọng khi tham gia cuộc họp, vì mọi điểm đều quan trọng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The boy has a toy.",
+          "ipa": "/ðə bɔɪ hæz ə tɔɪ/",
+          "meaning": "Cậu bé có một món đồ chơi.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I enjoy the noise.",
+          "ipa": "/aɪ ɪnˈdʒɔɪ ðə nɔɪz/",
+          "meaning": "Tôi thích tiếng ồn.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Please avoid the poison.",
+          "ipa": "/pliːz əˈvɔɪd ðə ˈpɔɪzən/",
+          "meaning": "Hãy tránh chất độc.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The noisy boy enjoys a toy.",
+          "ipa": "/ðə ˈnɔɪzi bɔɪ ɪnˈdʒɔɪz ə tɔɪ/",
+          "meaning": "Cậu bé ồn ào thích một món đồ chơi.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Do not avoid it. It’s your choice.",
+          "ipa": "/duː nɒt əˈvɔɪd ɪt. ɪts jʊər tʃɔɪs/",
+          "meaning": "Đừng tránh nó. Đó là lựa chọn của bạn.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I can’t enjoy this movie because of the annoying noise from that boy.",
+          "ipa": "/aɪ kænt ɪnˈdʒɔɪ ðɪs ˈmuːvi bɪˈkɔːz əv ði əˈnɔɪɪŋ nɔɪz frəm ðæt bɔɪ/",
+          "meaning": "Tôi không thể tận hưởng bộ phim này vì tiếng ồn khó chịu từ cậu bé đó.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Don’t destroy yourself by being disappointed so much.",
+          "ipa": "/doʊnt dɪˈstrɔɪ jɔːrˈsɛlf baɪ ˈbiːɪŋ ˌdɪsəˈpɔɪntɪd soʊ mʌtʃ/",
+          "meaning": "Đừng tự hủy hoại bản thân vì thất vọng quá nhiều.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I have an appointment with an employee who works in a very enjoyable company.",
+          "ipa": "/aɪ hæv ən əˈpɔɪntmənt wɪð ən ɪmˈplɔɪiː huː wɜːrks ɪn ə ˈenʤɔɪəbəl ˈkʌmpəni/",
+          "meaning": "Tôi có một cuộc hẹn với một nhân viên làm việc trong một công ty rất thú vị.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Don’t disappoint your team when you join the meeting, because every point is important.",
+          "ipa": "/doʊnt ˌdɪsəˈpɔɪnt jɔːr tiːm wen ju dʒɔɪn ðə ˈmiːtɪŋ bɪˈkɒz ˈevri pɔɪnt ɪz ɪmˈpɔːrtənt/",
+          "meaning": "Đừng làm đội của bạn thất vọng khi tham gia cuộc họp, vì mọi điểm đều quan trọng.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
         }
       ],
       "commonMistakes": [
@@ -7865,6 +10022,168 @@
           "meaning": "đám mây tròn",
           "audioUrl": "",
           "type": "phrase",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "There are flowers all around the house.",
+          "ipa": "/ðer ɑːr ˈflaʊ.ərz ɔːl əˈraʊnd ðə haʊs/",
+          "meaning": "Có những bông hoa khắp xung quanh ngôi nhà.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Let’s countdown: 3, 2, 1, Happy New Year.",
+          "ipa": "/lets ˈkaʊnt.daʊn θriː tuː wʌn ˈhæpi nuː jɪr/",
+          "meaning": "Hãy đếm ngược: 3, 2, 1, Chúc mừng năm mới.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I go around the mountain for about an hour.",
+          "ipa": "/aɪ ɡoʊ əˈraʊnd ðə ˈmaʊn.tən fər əˈbaʊt ən ˈaʊər/",
+          "meaning": "Tôi đi quanh ngọn núi khoảng một giờ.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Playing outside is better.",
+          "ipa": "/ˈpleɪɪŋ ˌaʊtˈsaɪd ɪz ˈbetər/",
+          "meaning": "Chơi ở bên ngoài thì tốt hơn.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The loud sound comes from downtown.",
+          "ipa": "/ðə laʊd saʊnd kʌmz frəm ˌdaʊnˈtaʊn/",
+          "meaning": "Âm thanh lớn phát ra từ khu trung tâm thành phố.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I found my mouse outside the house.",
+          "ipa": "/aɪ faʊnd maɪ maʊs ˌaʊtˈsaɪd ðə haʊs/",
+          "meaning": "Tôi tìm thấy con chuột của mình ở bên ngoài ngôi nhà.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "A loud crowd shouted around the town.",
+          "ipa": "/ə laʊd kraʊd ˈʃaʊtɪd əˈraʊnd ðə taʊn/",
+          "meaning": "Một đám đông ồn ào hét lên quanh thị trấn.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Brown clouds around the mountain sound loud.",
+          "ipa": "/braʊn klaʊdz əˈraʊnd ðə ˈmaʊntɪn saʊnd laʊd/",
+          "meaning": "Những đám mây nâu quanh núi nghe rất ồn ào.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Count the clouds around the proud clown.",
+          "ipa": "/kaʊnt ðə klaʊdz əˈraʊnd ðə praʊd klaʊn/",
+          "meaning": "Đếm những đám mây quanh chú hề tự hào.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "There are flowers all around the house.",
+          "ipa": "/ðer ɑːr ˈflaʊ.ərz ɔːl əˈraʊnd ðə haʊs/",
+          "meaning": "Có những bông hoa khắp xung quanh ngôi nhà.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Let’s countdown: 3, 2, 1, Happy New Year.",
+          "ipa": "/lets ˈkaʊnt.daʊn θriː tuː wʌn ˈhæpi nuː jɪr/",
+          "meaning": "Hãy đếm ngược: 3, 2, 1, Chúc mừng năm mới.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I go around the mountain for about an hour.",
+          "ipa": "/aɪ ɡoʊ əˈraʊnd ðə ˈmaʊn.tən fər əˈbaʊt ən ˈaʊər/",
+          "meaning": "Tôi đi quanh ngọn núi khoảng một giờ.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Playing outside is better.",
+          "ipa": "/ˈpleɪɪŋ ˌaʊtˈsaɪd ɪz ˈbetər/",
+          "meaning": "Chơi ở bên ngoài thì tốt hơn.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The loud sound comes from downtown.",
+          "ipa": "/ðə laʊd saʊnd kʌmz frəm ˌdaʊnˈtaʊn/",
+          "meaning": "Âm thanh lớn phát ra từ khu trung tâm thành phố.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I found my mouse outside the house.",
+          "ipa": "/aɪ faʊnd maɪ maʊs ˌaʊtˈsaɪd ðə haʊs/",
+          "meaning": "Tôi tìm thấy con chuột của mình ở bên ngoài ngôi nhà.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "A loud crowd shouted around the town.",
+          "ipa": "/ə laʊd kraʊd ˈʃaʊtɪd əˈraʊnd ðə taʊn/",
+          "meaning": "Một đám đông ồn ào hét lên quanh thị trấn.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Brown clouds around the mountain sound loud.",
+          "ipa": "/braʊn klaʊdz əˈraʊnd ðə ˈmaʊntɪn saʊnd laʊd/",
+          "meaning": "Những đám mây nâu quanh núi nghe rất ồn ào.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Count the clouds around the proud clown.",
+          "ipa": "/kaʊnt ðə klaʊdz əˈraʊnd ðə praʊd klaʊn/",
+          "meaning": "Đếm những đám mây quanh chú hề tự hào.",
+          "audioUrl": "",
+          "type": "sentence",
           "partOfSpeech": "",
           "hidden": false
         },
@@ -8389,6 +10708,168 @@
           "type": "sentence",
           "partOfSpeech": "",
           "hidden": false
+        },
+        {
+          "word": "I close the door.",
+          "ipa": "/aɪ kloʊz ðə dɔːr/",
+          "meaning": "Tôi đóng cửa.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I hope to go home before the show is over.",
+          "ipa": "/aɪ hoʊp tə ɡoʊ hoʊm bɪˈfɔːr ðə ʃoʊ ɪz ˈoʊvər/",
+          "meaning": "Tôi hy vọng về nhà trước khi buổi diễn kết thúc.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "They close the road near the old stone home.",
+          "ipa": "/ðeɪ kloʊz ðə roʊd nɪr ði oʊld stoʊn hoʊm/",
+          "meaning": "Họ đóng con đường gần ngôi nhà đá cũ.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "We hope it’s going to snow tomorrow.",
+          "ipa": "/wi hoʊp ɪts ˈɡoʊɪŋ tə snoʊ təˈmɑːroʊ/",
+          "meaning": "Chúng tôi hy vọng ngày mai trời sẽ có tuyết.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Oh no! Don’t open the window. It’s cold!",
+          "ipa": "/oʊ noʊ! doʊnt ˈoʊpən ðə ˈwɪndoʊ. ɪts koʊld!/",
+          "meaning": "Ôi không! Đừng mở cửa sổ. Trời lạnh đấy!",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I’m sorry. I don’t know you’re joking.",
+          "ipa": "/aɪm ˈsɑːri. aɪ doʊnt noʊ jʊr ˈdʒoʊkɪŋ/",
+          "meaning": "Tôi xin lỗi. Tôi không biết bạn đang đùa.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Go slow so the snow won’t blow over the old stone home.",
+          "ipa": "/ɡoʊ sloʊ soʊ ðə snoʊ woʊnt bloʊ ˈoʊvər ði oʊld stoʊn hoʊm/",
+          "meaning": "Đi chậm để tuyết không thổi qua ngôi nhà đá cũ.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Joe goes home and shows cold snow on the road.",
+          "ipa": "/dʒoʊ ɡoʊz hoʊm ænd ʃoʊz koʊld snoʊ ɑːn ðə roʊd/",
+          "meaning": "Joe về nhà và cho thấy tuyết lạnh trên đường.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "No one knows how low the snow goes on the old road home.",
+          "ipa": "/noʊ wʌn noʊz haʊ loʊ ðə snoʊ ɡoʊz ɑːn ði oʊld roʊd hoʊm/",
+          "meaning": "Không ai biết tuyết thấp đến đâu trên con đường cũ về nhà.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I close the door.",
+          "ipa": "/aɪ kloʊz ðə dɔːr/",
+          "meaning": "Tôi đóng cửa.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I hope to go home before the show is over.",
+          "ipa": "/aɪ hoʊp tə ɡoʊ hoʊm bɪˈfɔːr ðə ʃoʊ ɪz ˈoʊvər/",
+          "meaning": "Tôi hy vọng về nhà trước khi buổi diễn kết thúc.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "They close the road near the old stone home.",
+          "ipa": "/ðeɪ kloʊz ðə roʊd nɪr ði oʊld stoʊn hoʊm/",
+          "meaning": "Họ đóng con đường gần ngôi nhà đá cũ.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "We hope it’s going to snow tomorrow.",
+          "ipa": "/wi hoʊp ɪts ˈɡoʊɪŋ tə snoʊ təˈmɑːroʊ/",
+          "meaning": "Chúng tôi hy vọng ngày mai trời sẽ có tuyết.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Oh no! Don’t open the window. It’s cold!",
+          "ipa": "/oʊ noʊ! doʊnt ˈoʊpən ðə ˈwɪndoʊ. ɪts koʊld!/",
+          "meaning": "Ôi không! Đừng mở cửa sổ. Trời lạnh đấy!",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I’m sorry. I don’t know you’re joking.",
+          "ipa": "/aɪm ˈsɑːri. aɪ doʊnt noʊ jʊr ˈdʒoʊkɪŋ/",
+          "meaning": "Tôi xin lỗi. Tôi không biết bạn đang đùa.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Go slow so the snow won’t blow over the old stone home.",
+          "ipa": "/ɡoʊ sloʊ soʊ ðə snoʊ woʊnt bloʊ ˈoʊvər ði oʊld stoʊn hoʊm/",
+          "meaning": "Đi chậm để tuyết không thổi qua ngôi nhà đá cũ.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Joe goes home and shows cold snow on the road.",
+          "ipa": "/dʒoʊ ɡoʊz hoʊm ænd ʃoʊz koʊld snoʊ ɑːn ðə roʊd/",
+          "meaning": "Joe về nhà và cho thấy tuyết lạnh trên đường.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "No one knows how low the snow goes on the old road home.",
+          "ipa": "/noʊ wʌn noʊz haʊ loʊ ðə snoʊ ɡoʊz ɑːn ði oʊld roʊd hoʊm/",
+          "meaning": "Không ai biết tuyết thấp đến đâu trên con đường cũ về nhà.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
         }
       ],
       "commonMistakes": [
@@ -8684,6 +11165,168 @@
           "meaning": "sắp 5 giờ chiều",
           "audioUrl": "",
           "type": "phrase",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Can you hear me clearly?",
+          "ipa": "/kæn ju hɪr mi ˈklɪrli/",
+          "meaning": "Bạn có nghe rõ tôi không?",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": ".I travel every year.",
+          "ipa": "/aɪ ˈtrævəl ˈɛvri jɪr/",
+          "meaning": "Tôi đi du lịch mỗi năm.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "He sheds a tear because of fear.",
+          "ipa": "/hi ʃɛdz ə tɪr bɪˈkɔz əv fɪr/",
+          "meaning": "Anh ấy rơi nước mắt vì sợ hãi.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Cheers to the New Year!",
+          "ipa": "/tʃɪrz tə ðə nu jɪr/",
+          "meaning": "Chúc mừng năm mới!",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Would you like to go out for some beer?",
+          "ipa": "/wʊd ju laɪk tə ɡoʊ aʊt fər səm bɪr/",
+          "meaning": "Bạn có muốn đi uống bia không?",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I can hear you clearly when you are near here.",
+          "ipa": "/aɪ kæn hɪr ju ˈklɪrli wɛn ju ɑr nɪr hɪr/",
+          "meaning": "Tôi có thể nghe bạn rõ khi bạn ở gần đây.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I hear a clear cheer near my dear friend every year.",
+          "ipa": "/aɪ hɪr ə klɪr tʃɪr nɪr maɪ dɪr frend ˈɛvri jɪr/",
+          "meaning": "Tôi nghe một tiếng cổ vũ rõ ràng gần người bạn thân mỗi năm.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Dear peers near here, hear clear cheers every year!",
+          "ipa": "/dɪr pɪrz nɪr hɪr hɪr klɪr tʃɪrz ˈɛvri jɪr/",
+          "meaning": "Các bạn thân mến gần đây, hãy nghe tiếng cổ vũ rõ ràng mỗi năm!",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I fear I cannot hear clearly near here this year.",
+          "ipa": "/aɪ fɪr aɪ ˈkænɑt hɪr ˈklɪrli nɪr hɪr ðɪs jɪr/",
+          "meaning": "Tôi sợ rằng tôi không thể nghe rõ gần đây năm nay.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Can you hear me clearly?",
+          "ipa": "/kæn ju hɪr mi ˈklɪrli/",
+          "meaning": "Bạn có nghe rõ tôi không?",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": ".I travel every year.",
+          "ipa": "/aɪ ˈtrævəl ˈɛvri jɪr/",
+          "meaning": "Tôi đi du lịch mỗi năm.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "He sheds a tear because of fear.",
+          "ipa": "/hi ʃɛdz ə tɪr bɪˈkɔz əv fɪr/",
+          "meaning": "Anh ấy rơi nước mắt vì sợ hãi.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Cheers to the New Year!",
+          "ipa": "/tʃɪrz tə ðə nu jɪr/",
+          "meaning": "Chúc mừng năm mới!",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Would you like to go out for some beer?",
+          "ipa": "/wʊd ju laɪk tə ɡoʊ aʊt fər səm bɪr/",
+          "meaning": "Bạn có muốn đi uống bia không?",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I can hear you clearly when you are near here.",
+          "ipa": "/aɪ kæn hɪr ju ˈklɪrli wɛn ju ɑr nɪr hɪr/",
+          "meaning": "Tôi có thể nghe bạn rõ khi bạn ở gần đây.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I hear a clear cheer near my dear friend every year.",
+          "ipa": "/aɪ hɪr ə klɪr tʃɪr nɪr maɪ dɪr frend ˈɛvri jɪr/",
+          "meaning": "Tôi nghe một tiếng cổ vũ rõ ràng gần người bạn thân mỗi năm.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Dear peers near here, hear clear cheers every year!",
+          "ipa": "/dɪr pɪrz nɪr hɪr hɪr klɪr tʃɪrz ˈɛvri jɪr/",
+          "meaning": "Các bạn thân mến gần đây, hãy nghe tiếng cổ vũ rõ ràng mỗi năm!",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I fear I cannot hear clearly near here this year.",
+          "ipa": "/aɪ fɪr aɪ ˈkænɑt hɪr ˈklɪrli nɪr hɪr ðɪs jɪr/",
+          "meaning": "Tôi sợ rằng tôi không thể nghe rõ gần đây năm nay.",
+          "audioUrl": "",
+          "type": "sentence",
           "partOfSpeech": "",
           "hidden": false
         },
@@ -9206,6 +11849,168 @@
           "meaning": "nơi nào khác",
           "audioUrl": "",
           "type": "phrase",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": ".I don’t care.",
+          "ipa": "/aɪ doʊnt ker/",
+          "meaning": "Tôi không quan tâm.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The air is fresh.",
+          "ipa": "/ðə er ɪz freʃ/",
+          "meaning": "Không khí rất trong lành.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "She has fair hair.",
+          "ipa": "/ʃi hæz fer her/",
+          "meaning": "Cô ấy có mái tóc vàng nhạt.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I prepare for the exam with care.",
+          "ipa": "/aɪ prɪˈper fər ði ɪɡˈzæm wɪð ker/",
+          "meaning": "Tôi chuẩn bị cho kỳ thi một cách cẩn thận.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "They compare their answers over there.",
+          "ipa": "/ðeɪ kəmˈper ðer ˈænsərz ˈoʊvər ðer/",
+          "meaning": "Họ so sánh câu trả lời của họ ở đằng kia.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "We repair the car in the fresh air.",
+          "ipa": "/wi rɪˈper ðə kɑːr ɪn ðə freʃ er/",
+          "meaning": "Chúng tôi sửa xe trong không khí trong lành.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Rare pairs of fair-haired bears share care in the air.",
+          "ipa": "/rer perz əv fer herd berz ʃer ker ɪn ði er/",
+          "meaning": "Những cặp gấu lông vàng hiếm chia sẻ sự chăm sóc trong không khí.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Careless Claire compares fair pairs near the stairs.",
+          "ipa": "/ˈkerləs kler kəmˈperz fer perz nɪr ðə sterz/",
+          "meaning": "Claire bất cẩn so sánh những đôi công bằng gần cầu thang.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Peter prepares rare repair parts near the airport fair.",
+          "ipa": "/ˈpiːtər prɪˈperz rer rɪˈper pɑrts nɪr ði ˈerˌpɔːrt fer/",
+          "meaning": "Peter chuẩn bị các linh kiện sửa chữa hiếm gần hội chợ sân bay.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": ".I don’t care.",
+          "ipa": "/aɪ doʊnt ker/",
+          "meaning": "Tôi không quan tâm.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "The air is fresh.",
+          "ipa": "/ðə er ɪz freʃ/",
+          "meaning": "Không khí rất trong lành.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "She has fair hair.",
+          "ipa": "/ʃi hæz fer her/",
+          "meaning": "Cô ấy có mái tóc vàng nhạt.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "I prepare for the exam with care.",
+          "ipa": "/aɪ prɪˈper fər ði ɪɡˈzæm wɪð ker/",
+          "meaning": "Tôi chuẩn bị cho kỳ thi một cách cẩn thận.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "They compare their answers over there.",
+          "ipa": "/ðeɪ kəmˈper ðer ˈænsərz ˈoʊvər ðer/",
+          "meaning": "Họ so sánh câu trả lời của họ ở đằng kia.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "We repair the car in the fresh air.",
+          "ipa": "/wi rɪˈper ðə kɑːr ɪn ðə freʃ er/",
+          "meaning": "Chúng tôi sửa xe trong không khí trong lành.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Rare pairs of fair-haired bears share care in the air.",
+          "ipa": "/rer perz əv fer herd berz ʃer ker ɪn ði er/",
+          "meaning": "Những cặp gấu lông vàng hiếm chia sẻ sự chăm sóc trong không khí.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Careless Claire compares fair pairs near the stairs.",
+          "ipa": "/ˈkerləs kler kəmˈperz fer perz nɪr ðə sterz/",
+          "meaning": "Claire bất cẩn so sánh những đôi công bằng gần cầu thang.",
+          "audioUrl": "",
+          "type": "sentence",
+          "partOfSpeech": "",
+          "hidden": false
+        },
+        {
+          "word": "Peter prepares rare repair parts near the airport fair.",
+          "ipa": "/ˈpiːtər prɪˈperz rer rɪˈper pɑrts nɪr ði ˈerˌpɔːrt fer/",
+          "meaning": "Peter chuẩn bị các linh kiện sửa chữa hiếm gần hội chợ sân bay.",
+          "audioUrl": "",
+          "type": "sentence",
           "partOfSpeech": "",
           "hidden": false
         },

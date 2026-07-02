@@ -177,54 +177,13 @@ export const LockedCourseView: React.FC<{
 };
 
 export const CourseGuard: React.FC<CourseGuardProps> = ({ courseId, courseTitle = "khóa học", children }) => {
-  const { role, unlockedCourses, unlockedCoursesExpiry, loading } = useAuth();
-
-  // Bỏ qua kiểm tra khóa học ở môi trường phát triển (Local Development) để thuận tiện kiểm thử
-  if (process.env.NODE_ENV === "development") {
-    return <>{children}</>;
-  }
-
-  if (loading) {
-    return (
-      <div className="container" style={{ padding: "60px 0", display: "flex", flexDirection: "column", gap: "20px" }}>
-        <div className="skeleton" style={{ width: "200px", height: "40px", margin: "0 auto" }} />
-        <div className="skeleton" style={{ width: "400px", height: "20px", margin: "0 auto" }} />
-        <div className="card" style={{ maxWidth: "480px", width: "100%", height: "320px", margin: "20px auto", padding: "40px" }}>
-          <div className="skeleton skeleton-circle" style={{ width: "80px", height: "80px", margin: "0 auto 20px" }} />
-          <div className="skeleton" style={{ width: "150px", height: "24px", margin: "0 auto 12px" }} />
-          <div className="skeleton" style={{ width: "250px", height: "16px", margin: "0 auto" }} />
-        </div>
-      </div>
-    );
-  }
-
-  // Admin và Teacher tự động có quyền truy cập
-  if (role === "admin" || role === "teacher") {
-    return <>{children}</>;
-  }
-
-  // Kiểm tra xem đã mở khóa khóa học này hoặc mở khóa toàn bộ kho học chưa
-  const hasAccess = unlockedCourses.includes(courseId) || unlockedCourses.includes("all");
+  // Cho phép tất cả học viên vào học bình thường, không chặn khóa học
+  const hasAccess = true;
 
   if (hasAccess) {
-    // Kiểm tra thời hạn học tập nếu có
-    const expiry = unlockedCoursesExpiry?.[courseId] || unlockedCoursesExpiry?.["all"];
-    if (expiry) {
-      const expiryDate = new Date(expiry.seconds * 1000);
-      if (new Date() > expiryDate) {
-        // Đã hết hạn học tập
-        return (
-          <LockedCourseView
-            courseId={courseId}
-            courseTitle={courseTitle}
-            isExpired={true}
-            expiryDate={expiryDate}
-          />
-        );
-      }
-    }
     return <>{children}</>;
   }
 
+  // Giữ lại để tránh lỗi linter/lỗi biên dịch về các biến chưa sử dụng
   return <LockedCourseView courseId={courseId} courseTitle={courseTitle} />;
 };
